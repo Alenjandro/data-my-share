@@ -1,0 +1,97 @@
+@charset "utf-8";
+
+dl, dt, dd { margin: 0; padding: 0 }
+
+input._prefSupport {
+	background: #FFF url(ico_select.gif) no-repeat right 1px;
+	border: solid #b4a27f 1px;
+	padding: 2px 0 4px 0;
+	width: 203px;
+}
+
+input._prefSupport.hover {
+	border: 1px solid #b4a27f;
+	cursor: pointer;
+}
+
+input._prefSupport.focus {
+	background: url(ico_select.gif) no-repeat right 1px;
+	border: 1px solid #b4a27f;	
+}
+
+dl._prefSupport {
+	border: 1px solid #b4a27f;	
+	padding: 10px 0 0 0;
+	position: relative;
+	width: 203px;
+}
+
+dl._prefSupport dt {
+	background: url(ico_arrow.gif) no-repeat 0 6px;	
+	color: #352907;
+	clear: both;
+	display: none;
+	font-size: 130%;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+dl._prefSupport dd {	
+	padding: 0 0 0 10px;
+	overflow: hidden;
+	width: 193px;
+}
+
+dl._prefSupport dd a {
+	background: url(ico_arrow.gif) no-repeat 0 4px;
+	color: #352907;
+	display: inline;
+	float: left;
+	margin-bottom: 9px;
+	padding-left: 9px;
+	width: 184px;
+}
+
+dl._prefSupport dd a:hover {
+	color: #352907;
+}
+
+dl._prefSupport dd.heading_3 {
+	border-bottom: none;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+dl._prefSupport dt.close {
+	display: none;
+}
+
+dl._prefSupport dd.close {
+	display: none;
+	background: none;
+	border-bottom: none;
+	margin: 0;
+	padding: 0;	
+	width: 203px;
+}
+
+dl._prefSupport dd.close a {
+	background: none;
+	border-bottom: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	left: 0;
+	top: 0;
+	margin-top: 30px;	
+	text-align: right;
+	text-decoration: none;
+	outline: none;
+	width: 203px;
+}
+
+dl._prefSupport dd.close img {
+	border: none;
+	padding: 0 10px 0 0;
+	vertical-align: bottom;
+}

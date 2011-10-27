@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+@import url("share/default.css");
+
+/* =========================================
+*  COMMON
+* ========================================= */
+
+html {
+	height: 100%;
+	overflow: hidden;
+}
+
+body {
+	padding: 1em;
+	height: 100%;
+	font: Verdana, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+a {
+	color: #0063E8;
+	text-decoration: underline;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+/* =========================================
+*  FRAME
+* ========================================= */
+
+div#pagebody {
+	padding-top: 1em;
+	height: 100%;
+}
+
+dl {
+}
+
+dl dt {
+margin-bottom: .5em;
+}
+
+dl dd {
+margin-bottom: 1em;
+}

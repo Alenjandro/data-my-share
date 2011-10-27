@@ -1,0 +1,7 @@
+RewriteEngine on
+RewriteBase /
+
+RewriteRule ^(.*).html$			index.php [L]
+RewriteRule ^(.*)/(.*).html$		 	index.php [L]
+RewriteRule ^(.*)/(.*)/(.*).html$ 		index.php [L]
+RewriteRule ^(.*)/(.*)/(.*)/(.*).html$ 		index.php [L]

@@ -1,0 +1,169 @@
+@charset "utf-8";
+#dhtmltooltip{
+	border:#666666 2px solid;
+	padding: 5px;
+	font-size: 10pt;
+	z-index: 100;
+	-moz-opacity: 0.9;
+	opacity: 0.9;
+	filter: alpha(opacity=90);
+	left: -300px; top:0px;
+	visibility: hidden;
+	font-family: Arial;
+	position: absolute;
+  	background-color:#FFFFEE;
+	width: 300px;
+	text-align:left;
+}
+#dhtmlpointer{
+	z-index: 101;
+	left: -310px; top:0px;
+	visibility: hidden;
+	position: absolute;
+}
+
+
+
+#chooseCity {
+	width:370px;
+	position:absolute;
+	border:2px solid #cacac8;
+	padding:10px;
+	background:#fff;
+	z-index: 100;
+	display:none;
+	margin-top:-10px;
+	margin-left:600px;
+	
+}
+.boxClose{float:right}
+
+
+#chooseCity .AllCity {
+	padding: 2px 0px 5px 0px;
+	text-align:center;
+}
+
+#chooseCity .AllCity a {
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+	text-decoration: none;
+	color: #000;
+}
+
+#chooseCity .AllCity a:hover {
+	text-decoration: underline;
+	color: #c00;
+}
+
+#chooseCity .Region {
+	font:13px;
+	font-weight:bold;
+	color: #d34a00;
+	padding-bottom: 3px;
+	width:120px;
+}
+
+#chooseCity .RegionPanel {
+	width: 365px;
+	text-align: left;
+	float: left;
+}
+
+#chooseCity .RegionPanel {
+	padding: 2px;
+}
+
+#chooseCity .RegionPanel a {
+	font-family: Tahoma, Verdana, Arial;
+	font-size: 11px;
+	text-decoration: none;
+	color: #333;
+}
+
+#chooseCity .RegionPanel a:hover {
+	color: #c00;
+	text-decoration: underline;
+}
+
+hr { 
+	margin:3px 0px;
+	*margin: -4px 0px;
+	padding: 0px;
+	border: 1px dotted #D9DFEE;
+	height:1px;
+}
+/*== div hien thi cac catalogues khac tren toolbar ==*/
+#chooseCat {
+	width:220px;
+	position:absolute;
+	border:2px solid #cacac8;
+	z-index: 100;
+	display:none;
+	background:#fff;
+	margin-left:744px;
+	*margin-left:260px;
+}
+#chooseCat .CatPanel {
+	text-align:left;
+	float: left;
+	margin:2px;
+}
+
+#chooseCat .CatPanel .City {
+	padding:3px 2px 3px 14px;
+	background:url(images/bullet5.gif) no-repeat 5px 7px;
+}
+#chooseCat .CatPanel .CityHover {
+	color:#fff;
+	padding:3px 2px 3px 14px;
+	cursor:pointer;
+	background:#7e7e7e url(images/bullet6.gif) no-repeat 5px 7px;
+}
+#chooseCat .CatPanel .CityHover a{
+	color:#fff;
+}
+
+
+#chooseCat .CatPanel a {
+	font-weight:bold;
+	color:#354449;
+}
+
+#chooseCat .CatPanel a:hover {
+	color:#fff;
+}
+/*== Vung hien thi cac phan con lai cua link duoi footer ==*/
+.cat_tooltip{
+	background:url(images/ft_linkover.gif) no-repeat;
+	position:absolute;
+	visibility: hidden;
+	width: 327px;
+	height:114px;
+	margin-top:-11px;
+	display:block;
+}
+.cat_tooltip p{
+	 font-weight:bold;
+	 color:#FF8B00;
+	 text-align:left;
+	 margin:3px 7px;
+}
+.cat_tooltip ul{
+	float:left;
+}
+.cat_tooltip li{
+	list-style-type:none;
+	display:block;
+}
+.cat_tooltip li a{
+	text-decoration:none;
+	color:#000;
+	text-align:left;
+}
+.cat_tooltip li a:hover{
+	color:#0271CD;
+	text-align:left;
+	text-decoration:underline;
+}
