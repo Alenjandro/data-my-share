@@ -1,0 +1,59 @@
+.m_banner_hide{display:none}.m_banner_show{display:block}.d_banner_show{ display:block;padding-top:6px}.left_banner_box{padding-bottom:6px}.left_banner_box_index{padding-bottom:0px}.left_banner_box_index span{padding-bottom:6px}
+/* Thaodx add cho qc cheo 09/03/09*/
+.link-top-content{
+	font-family:Arial, Helvetica, sans-serif;
+	color:#990000;
+	text-align:justify;
+	margin-left:20px;
+	margin-right:25px;
+	padding:8px;
+	font-size:12px;
+	font-weight:bold;
+	border:1px solid #dfe7d5;
+	background-color:#f0f0f0;
+}
+.link-top-content a{text-decoration:underline; color:blue;}
+.link-top-content a:visited{text-decoration:underline; color:blue}
+.link-top-content a:hover{text-decoration:underline; color:blue}
+
+
+.d_banner2_show{ 
+	display:block;
+	padding-bottom:6px
+	z-index: -11;
+}
+/* Rich banner padding - Thaodx 3/12/2009 */
+#ReplayAd,#ReplayAd2{
+	text-align:center;
+	padding-left:10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

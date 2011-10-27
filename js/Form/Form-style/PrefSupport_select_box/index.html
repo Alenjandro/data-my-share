@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>プルダウンで都道府県などを入力(選択)するイライラを解消するPrefSupportサンプル</title>
+<link type="text/css" rel="stylesheet" href="style.css" />
+<link type="text/css" rel="stylesheet" href="prefSupport.css" />
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="prefSupport.js"></script>
+</head>
+
+<body>
+<div id="pagebody">
+<div id="content" style="margin: 0 auto; width: 600px;">
+<dl>
+<dt><label for="test01">エリア</label></dt>
+<dd>
+<select id="test01" name="test01" class="prefSupport02">
+<optgroup label="北海道">北海道</optgroup>
+<option value="01">札幌駅・大通・すすきの</option>
+<option value="02">円山公園・琴似・手稲</option>
+<option value="03">小樽・千歳・札幌近郊</option>
+</select>
+</dd>
+
+<dt><label for="test02">エリア</label></dt>
+<dd>
+<select id="test02" name="test02" class="prefSupport02">
+<optgroup label="北海道">北海道</optgroup>
+<option value="01">札幌駅・大通・すすきの</option>
+<option value="02">円山公園・琴似・手稲</option>
+<option value="03">小樽・千歳・札幌近郊</option>
+</select>
+</dd>
+</dl>
+
+<dl>
+<dt><label for="pref">エリア</label></dt>
+<dd>
+<select id="pref" name="pref" class="prefSupport">
+<optgroup label="北海道">北海道</optgroup>
+<option value="01">札幌駅・大通・すすきの</option>
+<option value="02">円山公園・琴似・手稲</option>
+<option value="03">小樽・千歳・札幌近郊</option>
+
+<optgroup label="東京">東京</optgroup>
+<option value="04">銀座・有楽町・日比谷・築地</option>
+<option value="05">新宿・代々木・高田馬場</option>
+<option value="06">渋谷</option>
+<option value="07">原宿・表参道・青山</option>
+<option value="08">原宿・表参道・青山</option>
+<option value="09">東京駅・丸の内・日本橋</option>
+<option value="10">東京駅・丸の内・日本橋</option>
+<option value="11">赤坂・永田町・虎ノ門</option>
+<option value="12">六本木・麻布・広尾・白金</option>
+
+<optgroup label="京都">京都</optgroup>
+<option value="13">河原町・木屋町・先斗町</option>
+<option value="14">祇園・岡崎・清水寺</option>
+
+<optgroup label="大阪">大阪</optgroup>
+<option value="15">梅田・北新地・福島・野田</option>
+<option value="16">心斎橋・堀江・南船場・新町</option>	
+</select>
+</dd>
+
+
+<dt><label for="pref_selected_dammy">料理カテゴリ</label></dt>
+<dd>
+<select id="pref_selected" name="pref_selected" class="prefSupport">
+<optgroup label="北海道">北海道</optgroup>
+<option value="01">札幌駅・大通・すすきの</option>
+<option value="02">円山公園・琴似・手稲</option>
+<option value="03">小樽・千歳・札幌近郊</option>
+
+<optgroup label="東京">東京</optgroup>
+<option value="04">銀座・有楽町・日比谷・築地</option>
+<option value="05">新宿・代々木・高田馬場</option>
+<option value="06">渋谷</option>
+<option value="07">原宿・表参道・青山</option>
+<option value="08">原宿・表参道・青山</option>
+<option value="09">東京駅・丸の内・日本橋</option>
+<option value="10">東京駅・丸の内・日本橋</option>
+<option value="11">赤坂・永田町・虎ノ門</option>
+<option value="12">六本木・麻布・広尾・白金</option>
+
+<optgroup label="京都">京都</optgroup>
+<option value="13">河原町・木屋町・先斗町</option>
+<option value="14">祇園・岡崎・清水寺</option>
+
+<optgroup label="大阪">大阪</optgroup>
+<option value="15">梅田・北新地・福島・野田</option>
+<option value="16">心斎橋・堀江・南船場・新町</option>	
+</select>
+</dd>
+</dl>
+</div>
+</div>
+</body>
+</html>

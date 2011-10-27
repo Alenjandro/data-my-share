@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>プルダウンで都道府県などを入力(選択)するイライラを解消するPrefSupportサンプル</title>
+<link type="text/css" rel="stylesheet" href="style.css" />
+<link type="text/css" rel="stylesheet" href="_prefSupport.css" />
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="_prefSupport.js"></script>
+</head>
+
+<body>
+<div id="pagebody">
+<dl>
+<dt><label for="pref">エリア</label></dt>
+<dd>
+<select id="pref" name="pref" class="_prefSupport">
+<optgroup label="北海道">北海道</optgroup>
+<option value="01">札幌駅・大通・すすきの</option>
+<option value="02">円山公園・琴似・手稲</option>
+<option value="03">小樽・千歳・札幌近郊</option>
+</select>
+</dd>
+
+<dt><label for="test">エリア</label></dt>
+<dd>
+<select id="test" name="test" class="_prefSupport">
+<optgroup label="北海道">北海道</optgroup>
+<option value="01">札幌駅・大通・すすきの</option>
+<option value="02">円山公園・琴似・手稲</option>
+<option value="03">小樽・千歳・札幌近郊</option>
+</select>
+</dd>
+</dl>
+</div>
+</body>
+</html>

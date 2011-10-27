@@ -1,0 +1,117 @@
+.tab-pane {
+	position:	relative;
+	width:		100%;		/* width needed weird IE bug */
+	margin-right:	-2px;	/* to make room for the shadow */
+	/*border:1px #000000 solid;*/
+}
+
+.tab-row .tab {
+
+	width:				200px;
+	height:				29px;
+	background: url( "tab.png" ) no-repeat;
+	
+	position:		relative;
+	top:			0;
+	display:		inline;
+	float:			right;
+	overflow:		hidden;
+	
+	cursor:			Default;
+
+	margin:			0px 0px 1px 0px;
+	padding:		5px 0px 0px 0px;
+	border:			0;
+
+	z-index:		1;
+	font:			11px Tahoma;
+	white-space:	nowrap;
+	text-align:		center;
+}
+
+.tab-row .tab1 {
+
+	height:				29px;	
+	position:		relative;
+	top:			0;
+	display:		inline;
+	float:			right;
+	overflow:		hidden;
+	
+	cursor:			Default;
+
+	margin:			0px 1px 1px 2px;
+	padding:		5px 0px 0px 0px;
+	border:			0;
+
+	z-index:		1;
+	font:			11px Tahoma;
+	white-space:	nowrap;
+	text-align:		center;
+	text-decoration:none
+}
+
+
+
+.tab-row .tab.selected {
+	width:				200px !important;
+	height:				29px !important;
+	background:	url( "tab.active.png" ) no-repeat !important;
+	/*background-repaet:	no-repeat;*/
+
+	border-bottom-width:	0;
+	z-index:		3;
+	margin:			0px 0px -3px 0px;
+	padding:		5px 0px 0px 0px;
+	top:			0px;
+	font:			11px Tahoma;
+}
+
+.tab-row .tab a {
+	font:				11px Tahoma;
+	color:				#0069D2;
+	text-decoration:	none;
+	cursor:				pointer;
+}
+.tab-row .tab1 a {
+	font:				11px Tahoma;
+	color:				#5c71bf;
+	text-decoration:	none;
+	cursor:				pointer;
+}
+
+.tab-row .tab.hover {
+	font:				11px Tahoma;
+	width:				200px;
+	height:				29px;
+	background:	url( "tab.hover.png" ) no-repeat;
+	/*background-repeat:	no-repeat;*/
+}
+
+
+.tab-page {
+	clear:			both;
+	border:			1px solid #9ED8FF;
+	/*background:		rgb( 252, 252, 254 );*/
+	z-index:		2;
+	position:		relative;
+	top:			-7px!important;
+	top: -2px;
+
+	font:			11px Tahoma;
+	color:			Black;
+
+	filter:			progid:DXImageTransform.Microsoft.Gradient(StartColorStr=#fffcfcfe, EndColorStr=#fff4f3ee, GradientType=0)
+					progid:DXImageTransform.Microsoft.Shadow(Color=#ff919899, Strength=2, Direction=135);
+	
+	/*244, 243, 238*/
+	/* 145, 155, 156*/
+	
+	/*padding:		10px;*/
+}
+
+.tab-row {
+	z-index:		1;
+	white-space:	nowrap;
+}
+

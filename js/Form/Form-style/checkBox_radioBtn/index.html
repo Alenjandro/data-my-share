@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Plug-in</title>
+
+<script type="text/javascript" src='jquery-1.2.6.min.js'></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src='cust_checkbox_plugin.js'></script>
+<script>
+$(document).ready( function() {
+	$("input[type='radio'],input[type='checkbox']").custCheckBox();
+});
+</script>
+
+</head>
+<body>
+
+
+<div class="group">
+<h2>Check Box Items:</h2>
+<label for="1x">Label One:</label><input type="checkbox" id="1x" value="" name="checkboxone" />
+<label for="2x">Label Two:</label><input type="checkbox" id="2x" value="" name="checkboxone" />
+<label for="3x">Label Three:</label><input type="checkbox" id="3x" value="" name="checkboxone" />
+</div>
+
+<div class="group">
+<h2>Radio Button Items:</h2>
+<label for="4x">Label One:</label><input type="radio" id="4x" value="" name="radioone" />
+<label for="5x">Label Two:</label><input type="radio" id="5x" value="" name="radioone" />
+<label for="6x">Label Three:</label><input type="radio" id="6x" value="" name="radioone" />
+</div>
+
+</body>
+</html>

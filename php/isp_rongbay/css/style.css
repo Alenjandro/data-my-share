@@ -1,0 +1,32 @@
+body {
+		font-size:10px;
+		color:#555555;
+}
+table{ border-collapse:collapse;}
+A:link  {
+	    text-decoration:none;
+	    color:#555555;  
+}
+A:hover {
+		   text-decoration: underline;
+		   color:#555555;  
+}
+A:active  {
+		text-decoration:none;
+		color:#555555;  
+}
+A:visited   {
+		text-decoration:none;
+		color:#555555;
+}
+.space_row{ 
+		height:35px;
+		border-bottom:#CCCCCC 1px solid;
+}
+.height_row{ 
+		height:25px;
+		border-bottom:#CCCCCC 1px solid;
+}
+.input-text {
+		width:200px;
+}
