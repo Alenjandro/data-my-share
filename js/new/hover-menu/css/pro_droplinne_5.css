@@ -1,0 +1,160 @@
+/* ================================================================ 
+This copyright notice must be untouched at all times.
+
+The original version of this scriptt and the associated (x)html
+is available at http://www.stunicholls.com/menu/pro_dropline_5.html
+Copyright (c) 2005-2008 Stu Nicholls. All rights reserved.
+This script and the associated (x)html may be modified in any 
+way to fit your requirements.
+=================================================================== */
+/* define defaults for IE */
+a {color:#000;}
+
+a:visited {color:#111;}
+
+a:hover {color:#222;}
+
+#content {position:relative;}
+
+#outer {
+	text-align:center;
+	width:100%; 
+	background:url(tab2.gif); 
+	height:30px;
+}
+
+#outer ul {	
+	margin: 0 auto;
+	padding: 0;
+	height: 26px;
+	border-left: 1px solid #555;
+}
+#outer ul li {
+	display: inline;
+	float: left;
+	width: auto;  
+	height: 26px;
+}
+
+#outer ul li a {
+	float: left;
+	text-decoration: none;
+	text-align: center;
+	line-height: 22px; 
+	display: block; 
+	height: 24px;
+	padding: 0 20px; 
+	white-space: nowrap; 
+	color: #000; 
+	border: 1px solid #555; 
+	margin-left: -1px;
+}
+
+#outer ul li a.down { background:url(down.gif) no-repeat right center; }
+
+#outer ul li a:hover { color:#fff; background:#689; }
+
+#outer ul li a.down:hover, #outer ul li a.select {
+	color: #fff;
+	background: #689 url(down_over.gif) no-repeat right center;
+}
+
+#outer ul li a:focus { outline: none; }
+
+#outer ul li.clicked a, #outer ul li.clicked a:hover {
+	color: #000;
+	background: #8ac url(down_up.gif) no-repeat right center;
+}
+#outer ul li.clicked a.select:hover {
+	color: #fff; 
+	background: #a4a427 url(down_over.gif) no-repeat right center;
+}
+
+#submenus ul.none { display:none; }
+
+#submenus ul.yes { display:table; }
+
+#selected ul { background:#6a849f; }
+
+#selected ul li {
+	display: inline;
+	float: left;
+	width: auto;
+}
+
+#submenus {
+	clear:left; 
+	text-align:center; 
+	width:100%; 
+	background:#6a849f; 
+	position:absolute;
+}
+
+#submenus ul {
+	margin:0 auto; 
+	height:20px;
+}
+
+#submenus ul li {
+	display: inline;
+	width:auto;
+}
+
+#submenus ul li a {
+	color:#fff; 
+	text-decoration:none;
+	text-align:center; 
+	line-height:16px; 	
+	height:20px; 
+	padding:0 14px 0 10px; 
+	white-space:nowrap; 
+}
+
+#submenus ul li a.last {
+	background:#6a849f;
+}
+
+#submenus ul li a:hover { 
+	color:#fff;
+	text-decoration:underline;
+}
+
+#selected {
+	clear: left;
+	text-align: center;
+	width: 100%;
+	background: #6a849f; 
+	position:absolute;
+}
+
+#selected ul {
+	margin:0 auto;
+	height:20px;
+}
+
+#selected ul li {
+	display: inline;
+	float: none;
+	width: auto;
+}
+
+#selected ul li a {
+	float: none;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	line-height:16px;
+	height: 20px;
+	padding: 0 14px 0 10px;
+	white-space: nowrap;
+	background: url(diamond2.gif) no-repeat right center;
+}
+
+#selected ul li a.last {
+	background:#6a849f;
+}
+
+#selected ul li a:hover {
+	color: #fff;
+	text-decoration: underline;
+}

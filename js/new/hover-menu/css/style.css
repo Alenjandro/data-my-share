@@ -1,0 +1,119 @@
+body {padding:0; margin:0; border:0; font:76% "times new roman", serif; text-align:center; background:#fff url(../images/stu.gif) no-repeat 40px 27px;}
+a {color:#000;}
+a:visited {color:#111;}
+a:active {color:#222;}
+a:hover {text-decoration:none; color:#000;}
+p {font:normal 0.9em/1.5em verdana, arial, serif; margin:0; padding:0.5em 0;}
+p.small, p.small a, p.small a:visited {font-size:10px; color:#888;}
+h2 {font-size:1.6em; margin:0; padding:5px 0 5px 0; color:#444;}
+h3 {font-size:1.1em; color:#666; margin:0; padding:0 0 15px 0;}
+
+#wrapper {min-width:750px; text-align:left; position:relative;}
+#heading {padding:10px 20px 0 20px; border-bottom:5px solid #fc0; margin:0 0 20px 0;}
+* html #heading {height:95px;}
+#heading h1 {font: bold italic 3em "times new roman", serif; margin:0 0 0 50px; padding:0;}
+#heading h1 span {color:#888; padding-left:2px;}
+#heading h2 {font: normal 0.9em verdana, arial, sans-serif; margin-left:50px; padding-bottom:10px; color:#444;}
+
+#search {float:right; margin:10px;}
+#search form {font: 11px verdana, arial, serif; margin:0; padding:0;}
+#search form img {border:0; float:left; margin-right:10px;}
+#search input {font: 11px verdana, arial, serif;}
+
+
+#navigation {clear:both; width:750px; padding:0; margin:0 auto; list-style:none; height:25px; position:relative; z-index:500; font-size:12px; font-family: arial, verdana, sans-serif;}
+#navigation li {float:left; margin-right:4px; background: url(../menu/stunicholls_1.gif);}
+#navigation li a.top {display:block; float:left; height:25px; line-height:25px; color:#333; text-decoration:none; font-weight:bold; text-align:center; padding:0 0 0 5px; cursor:pointer; background:url(../menu/stunicholls_0.gif);}
+#navigation li a b {float:left; display:block; padding:0 10px 0 5px; background:url(../menu/stunicholls_0.gif) right top; color:#333;}
+#navigation li.current a {color:#000; background:url(../menu/stunicholls_2.gif)}
+#navigation li.current a b {color:#000; background:url(../menu/stunicholls_2.gif) right top;}
+#navigation li a.top:hover {color:#000; background: url(../menu/stunicholls_1.gif);}
+#navigation li a.top:hover b {color:#000; background:url(../menu/stunicholls_1.gif) right top;}
+#navigation li.current a.top:hover {color:#000; background: url(../menu/stunicholls_2.gif); cursor:default;}
+#navigation li.current a.top:hover b {color:#000; background:url(../menu/stunicholls_2.gif) right top;}
+
+#navigation table {border-collapse:collapse; margin-right:-10px;}
+
+#navigation ul {position:absolute; left:-9999px; top:-9999px; padding:0; margin:0; list-style:none; background: #fc0 url(../menu/sub_back.gif); padding:10px 0; white-space:nowrap; height:auto; width:auto; z-index:300; text-align:left;}
+
+#navigation li:hover {position:relative; z-index:300;}
+#navigation a:hover {position:relative; z-index:300; background: transparent; font-weight:normal;}
+
+#navigation :hover ul {left:0; top:25px; white-space:nowrap; border:1px solid #fff; border-width:0 1px 1px; border-color:#fff #ccc #aaa #eee;}
+#navigation :hover ul li a:hover {text-decoration:underline;}
+
+/* it could have been this simple if all browsers understood */
+/* show next level */
+#navigation li:hover li:hover > ul {left:-15px; margin-left:100%; top:-10px; border:1px solid #fff; border-color:#fff #ccc #aaa #eee;}
+/* keep further levels hidden */
+#navigation li:hover > ul ul {position:absolute; left:-9999px; top:-9999px; width:auto;}
+/* show path followed */
+#navigation li:hover li:hover > a {text-decoration:underline; font-weight:normal;}
+
+#navigation :hover ul li {float:none; background:transparent;}
+#navigation a:hover ul li {float:left;}
+#navigation :hover ul li a {display:block; font-size:12px; height:18px; line-height:18px; width:auto; padding:0 10px; color:#000;  background:url(trans.gif); text-decoration:none; text-align:left;}
+
+/* show next level */
+#navigation a:hover a:hover ul,
+#navigation a:hover a:hover a:hover ul
+{left:100%; top:-10px; border:1px solid #fff; border-color:#fff #ccc #aaa #eee;}
+
+/* keep further levels hidden */
+#navigation a:hover ul ul,
+#navigation a:hover a:hover ul ul
+{position:absolute; left:-9999px; top:-9999px;}
+
+#content {clear:both; position:relative;}
+
+#content, #middle {width:750px; margin:25px auto;}
+#middle {border-top:1px solid #ddd; background:transparent url(../images/middle_back.gif) repeat-y; height:auto;}
+
+#information {display:inline; width:475px; float:left; margin-right:35px;}
+#right {display:inline; float:left; width:240px; text-align:right;}
+#right a img {border:0; display:block; float:right; margin-bottom:10px;}
+#right h2 {color:#444;}
+
+#right ul {margin:0; padding:0; list-style:none;}
+#right ul li a {font:normal 0.9em/1.5em verdana, arial, sans-serif; font-weight:bold; color:#c60; text-decoration:underline; line-height:1.5em;}
+#right ul li a:hover {text-decoration:none;}
+
+#right p {line-height:14px; padding:3px 0;}
+
+#footer {clear:both; padding:0 0 50px 0; border-top:2px solid #fc0; margin-top:20px; text-align:center; color:#444;}
+#foot {width:750px; margin:0 auto; text-align:left;}
+p#footnav {float:left;}
+p#footnav b {border:1px solid #ddd;}
+#footer a {color:#444;}
+.clear {clear:both;}
+
+#cie {width:750px; height:310px; background:url(../images/bookworm3.jpg) no-repeat right bottom; padding:0; z-index:1;}
+#cie h2#cont {background:transparent; color:#888; font-size:1.5em;}
+#cie h2#is {background:transparent; color:#888; font-size:3.5em;}
+#cie h2#everything {background:transparent; color:#888; font-size:5em;}
+
+#cie h3 {color:#e80; position:absolute; bottom:-20px; right:0; font-size:2em;}
+
+#content ol li, #information ol li {font: normal 0.9em/1.5em verdana, arial, sans-serif; padding:3px 0;}
+.bold {font-weight:bold;}
+a.rss img {border:0; margin-bottom:-3px;}
+
+#ads {padding-top:11px; border-top:1px solid #ddd; margin-top:20px; margin-bottom:-15px; padding-left:11px;}
+#line {width:750px; margin:0 auto;}
+#square {padding:10px 0 10px 8px; border-top:1px solid #fc0; border-bottom:1px solid #fc0; text-align:left;}
+#googlehead {width:234px; height:60px; margin:0 auto;}
+
+.bred {color:#c00; font-weight:bold;}
+
+p.adlink {color:#080;}
+p.adlink a {color:#c60; font-weight:bold;}
+
+p a#footad {float:right;}
+
+div.prevNext {width:750px; height:48px; margin:10px 0;}
+div.prevNext a.nextDemo {float:right; display:block; width:120px; height:48px; background:url(../gallery/nextDemo.png);}
+div.prevNext a.prevDemo {float:left; display:block; width:120px; height:48px; background:url(../gallery/prevDemo.png);}
+div.prevNext a b {position:absolute; left:-9999px;}
+
+.paypal {width:750px; text-align:center; margin-top:-50px;}
+.paypal img {display:block; margin:0 auto;}
