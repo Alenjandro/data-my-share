@@ -1,0 +1,360 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# General Elements
+# layout
+# headerTop
+# gNav
+# supersize
+# clearfix
+
+----------------------------------------*/
+
+
+/* # General Elements
+---------------------------------------------------------------------------- */
+
+html {
+	overflow: hidden;
+}
+
+body {
+	height: 100%;
+	overflow: hidden;
+	width: 100%;
+}
+
+
+/* # layout
+---------------------------------------------------------------------------- */
+
+div#layout {
+}
+
+img {
+	behavior: url("common/js/iepngfix.htc");
+	vertical-align: top;
+}
+
+p#copyright {
+	bottom: 20px;
+	padding: 0;
+	position: absolute;
+	right: 38px;
+}
+
+p.textMogni {
+	bottom: 134px;
+	color: #fff;
+	padding: 20px;
+	position: absolute;
+	right: 18px;
+}
+
+div#gallery {
+	bottom: 17px;
+	color: #fff;
+	height: 175px;
+	left: 40px;
+	position: absolute;
+	width: 270px;
+}
+
+div#gallery h2 {
+	left: 20px;
+	position: absolute;
+	top: 14px;
+}
+
+div#gallery p.bgGallery {
+	background: url(../images/bg_gallery.png) no-repeat left top;
+	behavior: url("common/js/iepngfix.htc");
+	height: 175px;
+}
+
+div#gallery ul {
+	height: 121px;
+	width: 237px;
+}
+
+div#gallery ul li {
+	background: url(../images/bg_line.gif) no-repeat left bottom;
+	clear: both;
+	cursor: pointer;
+	padding: 0 0 11px 0;
+	margin-bottom: 10px;
+	width: auto;
+}
+
+div#gallery ul li p {
+	color: #9a948e;
+	display: inline;
+	float: right;
+	font-size: 90%;
+	width: 165px;
+}
+
+div#gallery ul li.hover p span {
+	text-decoration: underline;
+}
+
+div#gallery ul li.hover p img {
+	filter: alpha(opacity=50);
+	opacity: 0.5;
+}
+
+div#gallery ul li p.photo {
+	background: #fff;
+	float: left;
+	width: auto;
+}
+
+div#gallery ul li p span {
+	color: #fff;
+	display: block;
+}
+
+.jScrollPaneContainer {
+	left: 20px;
+	overflow: hidden;
+	position: absolute;
+	top: 38px;
+	z-index: 1;
+}
+
+.jScrollPaneTrack {
+	background: #6d6359;
+	cursor: pointer;
+	height: 100%;
+	right: 0;
+	top: 0;
+	position: absolute;
+}
+
+.jScrollPaneDrag {
+	background: #fff;
+	cursor: pointer;
+	overflow: hidden;
+	position: absolute;
+}
+
+.jScrollPaneDragTop {
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+}
+
+.jScrollPaneDragBottom {
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+}
+
+a.jScrollArrowUp {
+	display: block;
+	height: 9px;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	text-indent: -2000px;
+	top: 0;
+	z-index: 1;
+}
+
+a.jScrollArrowDown {
+	bottom: 0;
+	display: block;
+	height: 9px;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	text-indent: -2000px;
+	z-index: 1;
+}
+
+
+/* # headerTop
+---------------------------------------------------------------------------- */
+
+div#headerTop {
+	position: absolute;
+	right: 39px;
+	top: 37px;
+}
+
+
+/* # gNav
+---------------------------------------------------------------------------- */
+
+ul#gNav {
+	bottom: 54px;
+	position: absolute;
+	right: 14px;
+}
+
+ul#gNav li {
+	display: inline;
+	float: left;
+	font-size: 0;
+	padding-right: 26px;
+	width: auto;
+}
+
+ul#gNav li a {
+	display: block;
+	height: 12px;
+}
+
+ul#gNav li a img {
+	vertical-align: top;
+}
+
+ul#gNav li a:hover {
+	overflow: hidden;
+}
+
+ul#gNav li a:hover img {
+	visibility: hidden;
+}
+
+ul#gNav li#gNavMenu a {
+	background: url(../images/gnav_menu_o.png) no-repeat left top;
+	behavior: url("common/js/iepngfix.htc");
+	width: 31px;
+}
+
+ul#gNav li#gNavAccess a {
+	background: url(../images/gnav_access_o.png) no-repeat left top;
+	behavior: url("common/js/iepngfix.htc");
+	width: 43px;
+}
+
+ul#gNav li#gNavPhoto a {
+	background: url(../images/gnav_photo_o.png) no-repeat left top;
+	behavior: url("common/js/iepngfix.htc");
+	width: 79px;
+}
+
+ul#gNav li#gNavDesign a {
+	background: url(../images/gnav_design_o.png) no-repeat left top;
+	behavior: url("common/js/iepngfix.htc");
+	width: 79px;
+}
+
+ul#gNav li#gNavContact a {
+	background: url(../images/gnav_contact_o.png) no-repeat left top;
+	behavior: url("common/js/iepngfix.htc");
+	width: 46px;
+}
+
+
+/* # supersize
+---------------------------------------------------------------------------- */
+
+#loading {
+	background-image: url(../images/loading.gif);
+	height: 16px;
+	left: 49.5%;
+	position: absolute;
+	text-indent: -999em;
+	top: 49.5%;
+	width: 16px;
+	z-index: 10;
+}
+
+#supersized {
+	position: absolute;
+	z-index: -1;
+}
+
+#supersized img, 
+#supersized a {
+	cursor: default;
+	height: 100%;
+	position: absolute;
+	width: 100%;
+	z-index: -1;
+}
+	
+#supersized .prevslide,
+#supersized .prevslide img {
+	z-index: 1;
+}
+
+#supersized .activeslide,
+#supersized .activeslide img {
+	z-index: 2;
+}
+
+p#previous a,
+p#next a {
+	display: block;
+	background: url(../common/images/blank.gif) repeat;
+	cursor: default;
+	outline: none;
+	overflow: hidden;
+}
+
+p#previous a em,
+p#next a em {
+	background: url(../common/images/blank.gif) repeat;
+	cursor: pointer;
+	display: block;
+	height: 17px;
+	text-indent: -9999px;
+	width: 16px;
+}
+
+p#previous a:hover em {
+	background: url(../images/btn_prev.png) no-repeat left top;
+	left: 9px;
+	position: absolute;
+	top: 50%;
+}
+
+* html p#previous a:hover em {
+	background: url(../images/btn_prev.gif) no-repeat left top;
+}
+
+p#next a:hover em {
+	background: url(../images/btn_next.png) no-repeat left top;
+	position: absolute;
+	right: 9px;
+	top: 50%;
+}
+
+* html p#next a:hover em {
+	background: url(../images/btn_next.gif) no-repeat left top;
+}
+
+div#buttons {
+	display: none;
+	position: absolute;
+}
+
+img#loading {
+	position: absolute;
+	left: 240px;
+	top: 170px;
+}
+
+
+/* # clearfix
+---------------------------------------------------------------------------- */
+
+div#gallery ul li {
+	zoom: 1;
+}
+
+div#gallery ul li:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}
