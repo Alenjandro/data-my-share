@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="shift_jis">
+<title>スカウト企業への返信・問い合わせページ</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=0.5,minimum-scale=0.5, maximum-scale=0.5, user-scalable=yes">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" href="../sp_common/css/base.css" media="screen">
+<script src="../sp_common/js/jquery.min.js"></script>
+<script src="../sp_common/js/script_common.js" charset="shift_jis"></script>
+<script src="../sp_common/js/script_entry.js" charset="shift_jis"></script>
+</head>
+
+<body><!-- #BeginLibraryItem "/Library/header_login2.lbi" --><!--&&& 【ログイン】ヘッダーテンプレート [START] &&&-->
+<header id="siteHeader">
+<div id="siteHeaderInner">
+<p id="siteId"><a href="#"><img src="../sp_common/images/h_logo.png" alt="@type&reg;"></a></p>
+<p id="hTagline">自分を磨く、キャリアをつくる。<br>
+転職サイトは[アット・タイプ]</p>
+<nav id="gNav">
+<dl>
+<dt><a href="#gNavContent" class="btn1 openBtn"><span>メニュー</span></a></dt>
+<dd>
+<ul id="gNavContent">
+<li><a href="#" class="self">ログアウト</a></li>
+<li><a href="#" class="self">求人情報から探す</a></li>
+<li><a href="#">企業からのスカウト</a></li>
+<li><a href="#">マッチングサービス</a></li>
+<li><a href="#">検討中リスト</a></li>
+<li><a href="#">応募/メッセージ管理</a></li>
+<li><a href="#">転職ノウハウ</a></li>
+<li><a href="#">非公開求人の紹介</a></li>
+</ul>
+</dd>
+</dl>
+</nav>
+<!-- / id siteHeaderInner --></div>
+<!-- / id siteHeader --></header>
+<!--&&& 【ログイン】ヘッダーテンプレート [END] &&&--><!-- #EndLibraryItem --><section id="content" class="cMypage">
+<div id="contentHead">
+<h1>メッセージ入力</h1>
+<p><a href="/mypage/scout_answer_input.do?Id=***&mid=***" class="btn1 backBtn"><span>戻る</span></a></p>
+<!-- / id contentHead --></div>
+
+<div id="mypageLeadBox">
+<p class="leadBox">件名、本文を入力し、「確認ページ」へをクリックしてください。応募後には、企業のメッセージは「応募/メッセージ管理」に届きます。</p>
+</div>
+
+<ul class="fmItemList">
+<li>受信日
+<!--&&&  システムから取得  [START]&&&-->
+11/01/18
+<!--&&&  システムから取得  [END]&&&-->
+</li>
+<li>
+<!--&&&  システムから取得  [START]&&&-->
+★締め切り間近！1/31説明会開催<br>
+★未経験も大歓迎
+<!--&&&  システムから取得  [END]&&&-->
+</li>
+<li class="lastList">応募期限　
+<!--&&&  システムから取得  [START]&&&-->
+11/02/03
+<!--&&&  システムから取得  [END]&&&-->
+</li>
+</ul>
+
+<div id="scoutAnswer" class="mypageBox">
+<form action="/mypage/scout_answer_confirm.do" method="post">
+<dl>
+<dt>宛先</dt>
+<dd>
+<!--&&&  システムから取得  [START]&&&-->
+株式会社プロパーエージェント
+<!--&&&  システムから取得  [END]&&&-->
+</dd>
+
+<dt>差出人</dt>
+<dd>
+<!--&&&  システムから取得  [START]&&&-->
+山田　タロウ（匿名で送信されます）
+<!--&&&  システムから取得  [END]&&&-->
+</dd>
+
+<dt>件名</dt>
+<dd><input id="fmAnswerName" type="text" name="fmAnswerName" onFocus="this.blur();" value="Re:締め切り間近！"></dd>
+
+<dt>本文</dt>
+<dd><textarea name="email" id="email" cols="20" rows="6" onFocus="this.blur();">メール本文がはいります。
+メール本文がはいります。
+メール本文がはいります。
+メール本文がはいります。
+メール本文がはいります。
+メール本文がはいります。</textarea></dd>
+</dl>
+<p class="fmSubmit"><button class="btn3 arrowRBtn"><span>確認ページへ</span></button></p>
+</form>
+<!-- / id scoutAnswer --></div>
+
+<!-- / id content --></section><!-- #BeginLibraryItem "/Library/footer_login.lbi" --><!--&&& 【ログイン】フッターテンプレート [START] &&&-->
+<footer id="siteFooter">
+<p id="pageTop">
+<a href="#siteHeader" class="btn1"><span>ページのTOPへ</span></a>
+</p>
+<div id="siteFInner">
+<p id="siteFPCBtn"><a href="#" class="pcSiteBtn btn1"><span>PCサイトに切り替える</span></a></p>
+<nav id="siteFNav">
+<ul>
+<li><a href="/company/" target="_blank">会社案内</a></li><!--
+--><li><a href="/s/kojin/">個人情報について</a></li><!--
+--><li><a href="/help/category_14.html">@type会員規約</a></li>
+</ul>
+<ul><li><a href="http://type.jp">ホーム</a></li><!--
+--><li><a href="#">ログアウト</a></li>
+</ul>
+</nav>
+<p id="siteFCopy"><small>Copyright 1999-2011 CAREER DESIGN CENTER CO.LTD. All Rights Reserved. </small></p>
+<!-- / id sFContent --></div>
+<!-- / id siteFooter --></footer>
+<!--&&& 【ログイン】フッターテンプレート [END] &&&--><!-- #EndLibraryItem --></body>
+</html>

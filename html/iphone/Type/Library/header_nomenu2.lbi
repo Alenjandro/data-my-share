@@ -1,0 +1,9 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--&&& 【ログイン】ヘッダーテンプレート(メニュー無し) [START] &&&-->
+<header id="siteHeader">
+<div id="siteHeaderInner">
+<p id="siteId"><a href="#"><img src="../sp_common/images/h_logo.png" alt="@type&reg;"></a></p>
+<p id="hTagline">自分を磨く、キャリアをつくる。<br>
+転職サイトは[アット・タイプ]</p>
+<!-- / id siteHeaderInner --></div>
+<!-- / id siteHeader --></header>
+<!--&&& 【ログイン】ヘッダーテンプレート(メニュー無し) [END] &&&-->

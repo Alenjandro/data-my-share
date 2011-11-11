@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="shift_jis">
+<title>二股ページ</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=0.5,minimum-scale=0.5, maximum-scale=0.5, user-scalable=yes">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" href="../sp_common/css/base.css" media="screen">
+<script src="../sp_common/js/jquery.min.js"></script>
+<script src="../sp_common/js/script_common.js" charset="shift_jis"></script>
+<script src="../sp_common/js/script_entry.js" charset="shift_jis"></script>
+</head>
+
+<body><!-- #BeginLibraryItem "/Library/header_login2.lbi" --><!--&&& 【ログイン】ヘッダーテンプレート [START] &&&-->
+<header id="siteHeader">
+<div id="siteHeaderInner">
+<p id="siteId"><a href="#"><img src="../sp_common/images/h_logo.png" alt="@type&reg;"></a></p>
+<p id="hTagline">自分を磨く、キャリアをつくる。<br>
+転職サイトは[アット・タイプ]</p>
+<nav id="gNav">
+<dl>
+<dt><a href="#gNavContent" class="btn1 openBtn"><span>メニュー</span></a></dt>
+<dd>
+<ul id="gNavContent">
+<li><a href="#" class="self">ログアウト</a></li>
+<li><a href="#" class="self">求人情報から探す</a></li>
+<li><a href="#">企業からのスカウト</a></li>
+<li><a href="#">マッチングサービス</a></li>
+<li><a href="#">検討中リスト</a></li>
+<li><a href="#">応募/メッセージ管理</a></li>
+<li><a href="#">転職ノウハウ</a></li>
+<li><a href="#">非公開求人の紹介</a></li>
+</ul>
+</dd>
+</dl>
+</nav>
+<!-- / id siteHeaderInner --></div>
+<!-- / id siteHeader --></header>
+<!--&&& 【ログイン】ヘッダーテンプレート [END] &&&--><!-- #EndLibraryItem --><section id="content" class="cEntry">
+<div id="contentHead">
+<h1>応募手続き</h1>
+<p><a href="#" class="btn1 backBtn"><span>戻る</span></a></p>
+<!-- / id contentHead --></div>
+
+<ul class="basicBoxList1 entryTargetList">
+<li>
+<dl class="entryInnerList1">
+<dt>応募先企業</dt>
+<dd>
+<!--&&&  システムから取得  [START]&&&-->
+小笠原確認用企業株式会社
+<!--&&&  システムから取得  [END]&&&-->
+</dd>
+</dl>
+</li>
+<li>
+<dl class="entryInnerList1">
+<dt>応募職種名</dt>
+<dd>
+<!--&&&  システムから取得  [START]&&&-->
+WEBマスター★要件定義も、マネジメントも、新規サイト構築も
+<!--&&&  システムから取得  [END]&&&-->
+</dd>
+</dl>
+</li>
+</ul>
+
+<div id="entryMemberTab" class="tab">
+<ul class="tabIndex">
+<li><a href="#entryMemberYesTab" class="selected">既に会員登録している</a></li><!--
+--><li><a href="#entryMemberNoTab">まだ会員登録していない</a></li>
+</ul>
+<div id="entryMemberYesTab" class="tabPanel">
+<div class="loginBox">
+<!--&&& ログインフォーム [START] &&&-->
+<form action="/entry/confirm.do" method="post">
+<dl class="loginInfo">
+<dt><label for="fmLoginId">ユーザーID(メールアドレス)</label></dt>
+<dd>
+<input type="email" name="fmLoginId" id="fmLoginId">
+</dd>
+<dt><label for="fmLoginPassword">パスワード</label></dt>
+<dd>
+<input type="password" name="fmLoginPassword" id="fmLoginPassword">
+</dd>
+</dl>
+<div class="fmBoxGroup">
+<div class="fmBox loginAuto">
+<label for="fmLoginAuto">
+<input type="checkbox" name="fmLoginAuto" id="fmLoginAuto" checked="checked">
+次回から自動的にログインする
+</label>
+<!-- / class fmBox --></div>
+<!-- / class fmBoxGroup --></div>
+<div class="fmSubmit"><button class="btn3 loginBtn"><span>ログイン</span></button></div>
+<ul class="fmBoxGroup loginUtility">
+<li class="fmBox"><a href="#" class="aArrow1">パスワードの簡単再設定</a></li>
+<li class="fmBox"><a href="#" class="aArrow1">SSL(https)</a></li>
+</ul>
+</form>
+<!-- / id indexLogin --></div>
+<!--&&& ログインフォーム [END] &&&-->
+
+<!-- / id entryMemberYesTab --></div>
+
+<div id="entryMemberNoTab" class="tabPanel">
+<!--&&& 応募遷移フォーム [START] &&&-->
+<form action="#" method="post">
+<ul class="basicBoxList1">
+<li>
+<input type="radio" name="fmEntryMemberNoParam" id="fmEntryMemberNoParam1" checked="checked">
+<label for="fmEntryMemberNoParam1">
+会員登録をしてから応募(推奨)<br>
+※今回の入力内容が保存されます。
+</label>
+</li>
+<li>
+<input type="radio" name="fmEntryMemberNoParam" id="fmEntryMemberNoParam2">
+<label for="fmEntryMemberNoParam2">
+会員登録をせず、応募のみ行う
+</label>
+</li>
+</ul>
+<p class="fmSubmit">
+<button class="btn3 nextBtn"><span>次へ</span></button>
+</p>
+</form>
+<!--&&& 応募遷移フォーム [END] &&&-->
+<!-- / id entryMemberNoTab --></div>
+
+<!-- / class tab --></div>
+
+
+<!-- / id content --></section><!-- #BeginLibraryItem "/Library/footer_login.lbi" --><!--&&& 【ログイン】フッターテンプレート [START] &&&-->
+<footer id="siteFooter">
+<p id="pageTop">
+<a href="#siteHeader" class="btn1"><span>ページのTOPへ</span></a>
+</p>
+<div id="siteFInner">
+<p id="siteFPCBtn"><a href="#" class="pcSiteBtn btn1"><span>PCサイトに切り替える</span></a></p>
+<nav id="siteFNav">
+<ul>
+<li><a href="/company/" target="_blank">会社案内</a></li><!--
+--><li><a href="/s/kojin/">個人情報について</a></li><!--
+--><li><a href="/help/category_14.html">@type会員規約</a></li>
+</ul>
+<ul><li><a href="http://type.jp">ホーム</a></li><!--
+--><li><a href="#">ログアウト</a></li>
+</ul>
+</nav>
+<p id="siteFCopy"><small>Copyright 1999-2011 CAREER DESIGN CENTER CO.LTD. All Rights Reserved. </small></p>
+<!-- / id sFContent --></div>
+<!-- / id siteFooter --></footer>
+<!--&&& 【ログイン】フッターテンプレート [END] &&&--><!-- #EndLibraryItem --></body>
+</html>
