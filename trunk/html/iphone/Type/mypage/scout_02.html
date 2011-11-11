@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="shift_jis">
+<title>スカウト一覧ページ</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=0.5,minimum-scale=0.5, maximum-scale=0.5, user-scalable=yes">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" href="../sp_common/css/base.css" media="screen">
+<script src="../sp_common/js/jquery.min.js"></script>
+<script src="../sp_common/js/script_common.js" charset="shift_jis"></script>
+<script src="../sp_common/js/script_entry.js" charset="shift_jis"></script>
+</head>
+
+<body><!-- #BeginLibraryItem "/Library/header_login2.lbi" --><!--&&& 【ログイン】ヘッダーテンプレート [START] &&&-->
+<header id="siteHeader">
+<div id="siteHeaderInner">
+<p id="siteId"><a href="#"><img src="../sp_common/images/h_logo.png" alt="@type&reg;"></a></p>
+<p id="hTagline">自分を磨く、キャリアをつくる。<br>
+転職サイトは[アット・タイプ]</p>
+<nav id="gNav">
+<dl>
+<dt><a href="#gNavContent" class="btn1 openBtn"><span>メニュー</span></a></dt>
+<dd>
+<ul id="gNavContent">
+<li><a href="#" class="self">ログアウト</a></li>
+<li><a href="#" class="self">求人情報から探す</a></li>
+<li><a href="#">企業からのスカウト</a></li>
+<li><a href="#">マッチングサービス</a></li>
+<li><a href="#">検討中リスト</a></li>
+<li><a href="#">応募/メッセージ管理</a></li>
+<li><a href="#">転職ノウハウ</a></li>
+<li><a href="#">非公開求人の紹介</a></li>
+</ul>
+</dd>
+</dl>
+</nav>
+<!-- / id siteHeaderInner --></div>
+<!-- / id siteHeader --></header>
+<!--&&& 【ログイン】ヘッダーテンプレート [END] &&&--><!-- #EndLibraryItem --><section id="content" class="cMypage cJob">
+<div id="contentHead">
+<h1>企業からのスカウト</h1>
+<!-- / id contentHead --></div>
+
+<form action="/mypage/user_detail_confirm.do" method="post" id="fmChange">
+<p class="change">
+<span class="floatL">表示切替<br>
+<!--&&&  システムから取得  [START]&&&-->
+（4件）
+<!--&&&  システムから取得  [END]&&&-->
+</span>
+<span class="dispFlag">
+<select name="dispFlag" id="scout_dispFlag" onChange="javaScript:submit(this.form)">
+<option value="1">掲載中(応募可能)企業一覧</option>
+<option value="2">未読一覧</option>
+<option value="0">全件一覧</option>
+</select>
+</span></p>
+</form>
+
+<ul id="mailList">
+<li>
+<p class="status"><!--&&&  システムから取得  [START]&&&-->既読<!--&&&  システムから取得  [END]&&&--></p>
+<dl>
+<dt><!--&&&  システムから取得  [START]&&&-->社名：<!--&&&  システムから取得  [END]&&&--></dt>
+<dd><!--&&&  システムから取得  [START]&&&-->プロパーエージェント<!--&&&  システムから取得  [END]&&&--></dd>
+<dt><!--&&&  システムから取得  [START]&&&-->件名：<!--&&&  システムから取得  [END]&&&--></dt>
+<dd><a href="/mypage/access_refusal_company_list.do"><!--&&&  システムから取得  [START]&&&-->★締め切り間近！1/31説明会開催<br>
+★未経験も大歓迎<!--&&&  システムから取得  [END]&&&--></a></dd>
+</dl>
+<ul class="clearfix">
+<li>送受信日：<!--&&&  システムから取得  [START]&&&-->11/01/18<!--&&&  システムから取得  [END]&&&--></li>
+<li>応募期限：<!--&&&  システムから取得  [START]&&&-->11/02/03<!--&&&  システムから取得  [END]&&&--></li>
+</ul>
+</li>
+
+<li>
+<p class="status"><!--&&&  システムから取得  [START]&&&-->未読あり<!--&&&  システムから取得  [END]&&&--></p>
+<dl>
+<dt><!--&&&  システムから取得  [START]&&&-->社名：<!--&&&  システムから取得  [END]&&&--></dt>
+<dd><!--&&&  システムから取得  [START]&&&-->プロパーエージェント<!--&&&  システムから取得  [END]&&&--></dd>
+<dt><!--&&&  システムから取得  [START]&&&-->件名：<!--&&&  システムから取得  [END]&&&--></dt>
+<dd><a href="/mypage/access_refusal_company_list.do"><!--&&&  システムから取得  [START]&&&-->★締め切り間近！1/31説明会開催<br>
+★未経験も大歓迎<!--&&&  システムから取得  [END]&&&--></a></dd>
+</dl>
+<ul class="clearfix">
+<li>送受信日：<!--&&&  システムから取得  [START]&&&-->11/01/18<!--&&&  システムから取得  [END]&&&--></li>
+<li>応募期限：<!--&&&  システムから取得  [START]&&&-->11/02/03<!--&&&  システムから取得  [END]&&&--></li>
+</ul>
+</li>
+
+<li>
+<p class="status"><!--&&&  システムから取得  [START]&&&-->既読<!--&&&  システムから取得  [END]&&&--></p>
+<dl>
+<dt><!--&&&  システムから取得  [START]&&&-->社名：<!--&&&  システムから取得  [END]&&&--></dt>
+<dd><!--&&&  システムから取得  [START]&&&-->プロパーエージェント<!--&&&  システムから取得  [END]&&&--></dd>
+<dt><!--&&&  システムから取得  [START]&&&-->件名：<!--&&&  システムから取得  [END]&&&--></dt>
+<dd><a href="/mypage/access_refusal_company_list.do"><!--&&&  システムから取得  [START]&&&-->★締め切り間近！1/31説明会開催<br>
+★未経験も大歓迎<!--&&&  システムから取得  [END]&&&--></a></dd>
+</dl>
+<ul class="clearfix">
+<li>送受信日：<!--&&&  システムから取得  [START]&&&-->11/01/18<!--&&&  システムから取得  [END]&&&--></li>
+<li>応募期限：<!--&&&  システムから取得  [START]&&&-->11/02/03<!--&&&  システムから取得  [END]&&&--></li>
+</ul>
+</li>
+
+<li>
+<p class="status"><!--&&&  システムから取得  [START]&&&-->未読あり</p>
+<dl>
+<dt><!--&&&  システムから取得  [START]&&&-->社名：<!--&&&  システムから取得  [END]&&&--></dt>
+<dd><!--&&&  システムから取得  [START]&&&-->プロパーエージェント<!--&&&  システムから取得  [END]&&&--></dd>
+<dt><!--&&&  システムから取得  [START]&&&-->件名：<!--&&&  システムから取得  [END]&&&--></dt>
+<dd><a href="/mypage/access_refusal_company_list.do"><!--&&&  システムから取得  [START]&&&-->★締め切り間近！1/31説明会開催<br>
+★未経験も大歓迎<!--&&&  システムから取得  [END]&&&--></a></dd>
+</dl>
+<ul class="clearfix">
+<li>送受信日：<!--&&&  システムから取得  [START]&&&-->11/01/18<!--&&&  システムから取得  [END]&&&--></li>
+<li>応募期限：<!--&&&  システムから取得  [START]&&&-->11/02/03<!--&&&  システムから取得  [END]&&&--></li>
+</ul>
+</li>
+</ul>
+
+<div class="use">
+<div class="useInner clearfix">
+<p class="title floatL"><strong>スカウト利用状況</strong></p>
+<p class="under floatL">利用中</p>
+<p class="floatL"><a class="btn1 deleteBtn" href="#"><span>利用停止</span></a></p>
+</div>
+<!--<p class="alignC"><a href="/mypage/scout.do">利用中が「未使用」の画面へ遷移</a></p>-->
+<p class="alignC"><a class="aArrow1" href="/mypage/access_refusal_company_list.do">アクセス拒否企業の設定をする</a></p>
+<!-- / class use --></div>
+
+<div id="jobOfferDetailInfo">
+<section id="tip">
+<h2 class="mh alignC">もっとスカウトをもらう！ <br>
+スカウトを増やす2つのコツ</h2>
+
+<div class="innerContent">
+<div class="inner">
+<dl class="tipList">
+<dt><img src="../sp_common/images/mypage/ttl_register.gif" alt=""></dt>
+<dd class="clearfix">
+<p class="floatL"><img src="../sp_common/images/mypage/img_register.gif" alt=""></p>
+<p class="floatR">採用担当者は登録した履歴書・職務経歴などを見て人材を探します。<br>
+経歴をしっかりと登録しておくことでスカウトされる可能性が高まります。</p>
+</dd>
+<dt class="update"><img src="../sp_common/images/mypage/ttl_update.gif" alt=""></dt>
+<dd class="clearfix">
+<p class="floatL"><img src="../sp_common/images/mypage/img_update.gif" alt=""></p>
+<p class="floatR">登録する経歴は常に最新の情報にしておくことが重要です。<br>
+更新頻度が高い人ほどスカウトが届く可能性が高くなっています。</p>
+</dd>
+</dl>
+
+<p class="alignC edit"><a class="btn1 arrowRBtn" href="/mypage/user_detail_confirm.do"><span>履歴書・職務経歴書・スキルシートの編集</span></a></p>
+<!-- / class inner --></div>
+<!-- / class innerContent --></div>
+<!-- / id tip --></section>
+
+<section id="company">
+<h2 class="mh alignC">あなたの経歴を閲覧した企業</h2>
+
+<div class="innerContent">
+<p class="leadText">あなたの経歴は過去30日間で<!--&&&  システムから取得  [START]&&&-->19<!--&&&  システムから取得  [END]&&&-->回閲覧されました（最新10件まで表示）</p>
+<!-- / class innerContent --></div>
+<!-- / id company --></section>
+<!-- / id jobOfferDetailInfo --></div>
+<!-- / id content --></section><!-- #BeginLibraryItem "/Library/footer_login.lbi" --><!--&&& 【ログイン】フッターテンプレート [START] &&&-->
+<footer id="siteFooter">
+<p id="pageTop">
+<a href="#siteHeader" class="btn1"><span>ページのTOPへ</span></a>
+</p>
+<div id="siteFInner">
+<p id="siteFPCBtn"><a href="#" class="pcSiteBtn btn1"><span>PCサイトに切り替える</span></a></p>
+<nav id="siteFNav">
+<ul>
+<li><a href="/company/" target="_blank">会社案内</a></li><!--
+--><li><a href="/s/kojin/">個人情報について</a></li><!--
+--><li><a href="/help/category_14.html">@type会員規約</a></li>
+</ul>
+<ul><li><a href="http://type.jp">ホーム</a></li><!--
+--><li><a href="#">ログアウト</a></li>
+</ul>
+</nav>
+<p id="siteFCopy"><small>Copyright 1999-2011 CAREER DESIGN CENTER CO.LTD. All Rights Reserved. </small></p>
+<!-- / id sFContent --></div>
+<!-- / id siteFooter --></footer>
+<!--&&& 【ログイン】フッターテンプレート [END] &&&--><!-- #EndLibraryItem --></body>
+</html>

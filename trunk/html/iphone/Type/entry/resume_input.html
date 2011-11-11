@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="shift_jis">
+<title>履歴書内容の変更ページ</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=0.5,minimum-scale=0.5, maximum-scale=0.5, user-scalable=yes">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" href="../sp_common/css/base.css" media="screen">
+<script src="../sp_common/js/jquery.min.js"></script>
+<script src="../sp_common/js/script_common.js" charset="shift_jis"></script>
+<script src="../sp_common/js/script_entry.js" charset="shift_jis"></script>
+</head>
+
+<body><!-- #BeginLibraryItem "/Library/header_login2.lbi" --><!--&&& 【ログイン】ヘッダーテンプレート [START] &&&-->
+<header id="siteHeader">
+<div id="siteHeaderInner">
+<p id="siteId"><a href="#"><img src="../sp_common/images/h_logo.png" alt="@type&reg;"></a></p>
+<p id="hTagline">自分を磨く、キャリアをつくる。<br>
+転職サイトは[アット・タイプ]</p>
+<nav id="gNav">
+<dl>
+<dt><a href="#gNavContent" class="btn1 openBtn"><span>メニュー</span></a></dt>
+<dd>
+<ul id="gNavContent">
+<li><a href="#" class="self">ログアウト</a></li>
+<li><a href="#" class="self">求人情報から探す</a></li>
+<li><a href="#">企業からのスカウト</a></li>
+<li><a href="#">マッチングサービス</a></li>
+<li><a href="#">検討中リスト</a></li>
+<li><a href="#">応募/メッセージ管理</a></li>
+<li><a href="#">転職ノウハウ</a></li>
+<li><a href="#">非公開求人の紹介</a></li>
+</ul>
+</dd>
+</dl>
+</nav>
+<!-- / id siteHeaderInner --></div>
+<!-- / id siteHeader --></header>
+<!--&&& 【ログイン】ヘッダーテンプレート [END] &&&--><!-- #EndLibraryItem --><section id="content" class="cEntry cResume">
+<div id="contentHead">
+<h1>登録内容の編集</h1>
+<p><a href="#" class="btn1 backBtn"><span>戻る</span></a></p>
+<!-- / id contentHead --></div>
+
+<!--&&& エラー [START] &&&-->
+<ul class="fmErrorList">
+<li>テキストテキストテキストテキスト</li>
+<li>テキストテキストテキストテキスト</li>
+<li>テキストテキストテキストテキスト</li>
+<li>テキストテキストテキストテキスト</li>
+<li>テキストテキストテキストテキスト</li>
+</ul>
+<!--&&& エラー [END] &&&-->
+
+<form action="#" method="post">
+<section id="entryResumeSec" class="entrySec">
+<h2 class="mh noBG"><span>履歴書</span></h2>
+
+<section class="entrySec">
+<h3 class="sh">個人プロフィール</h3>
+<dl class="entryBasicList1">
+<dt>氏名&nbsp;<span class="fmDuty"><img src="../sp_common/images/entry/ico_required.png" alt="必須"></span></dt>
+<dd>
+
+<ul class="fmItemList">
+<li>
+<label for="fmResumeName1">姓</label><input type="text" name="fmResumeName1" id="fmResumeName1">
+<label for="fmResumeName2">名</label><input type="text" name="fmResumeName2" id="fmResumeName2">
+</li>
+<li>
+<label for="fmResumeNameKana1">セイ</label><input type="text" name="fmResumeNameKana1" id="fmResumeNameKana1">
+<label for="fmResumeNameKana2">メイ</label><input type="text" name="fmResumeNameKana2" id="fmResumeNameKana2">
+<span class="fmFormat">(全角カナ)</span>
+</li>
+</ul>
+
+</dd>
+<dt>性別&nbsp;<span class="fmDuty"><img src="../sp_common/images/entry/ico_required.png" alt="必須"></span></dt>
+<dd>
+<input type="radio" name="fmResumeSex" id="fmResumeSex1">
+<label for="fmResumeSex1">男性</label>
+<input type="radio" name="fmResumeSex" id="fmResumeSex2">
+<label for="fmResumeSex2">女性</label>
+</dd>
+<dt>メールアドレス<span class="fmDuty"><img src="../sp_common/images/entry/ico_free.png" alt="任意"></span></dt>
+<dd>
+<input type="email" name="fmResumeMail" id="fmResumeMail">
+<span class="fmFormat">(半角)</span>
+<p>※携帯メールアドレスはご利用いただけません。</p>
+</dd>
+<dt>携帯メールアドレス<span class="fmDuty"><img src="../sp_common/images/entry/ico_free.png" alt="任意"></span></dt>
+<dd>
+<input type="email" name="fmResumeMobileMail" id="fmResumeMobileMail">
+<span class="fmFormat">(半角)</span>
+</dd>
+<dt>生年月日<span class="fmDuty"><img src="../sp_common/images/entry/ico_free.png" alt="任意"></span></dt>
+<dd>
+<select name="fmResumeBirthYear" id="fmResumeBirthYear">
+<option value="2011">2011</option>
+</select>
+年
+<select name="fmResumeBirthMonth" id="fmResumeBirthMonth">
+<option value="1">01</option>
+<option value="2">02</option>
+<option value="3">03</option>
+<option value="4">04</option>
+<option value="5">05</option>
+<option value="6">06</option>
+<option value="7">07</option>
+<option value="8">08</option>
+<option value="9">09</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+</select>
+月
+<select name="fmResumeBirthDay" id="fmResumeBirthDay">
+<option value="1">01</option>
+<option value="2">02</option>
+<option value="3">03</option>
+<option value="4">04</option>
+<option value="5">05</option>
+<option value="6">06</option>
+<option value="7">07</option>
+<option value="8">08</option>
+<option value="9">09</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+</select>
+日
+</dd>
+<dt>現住所&nbsp;<span class="fmDuty"><img src="../sp_common/images/entry/ico_required.png" alt="必須"></span></dt>
+<dd>
+<ul class="fmItemList">
+<li>
+〒
+<input type="number" name="fmResumeZip1" id="fmResumeZip1" size="6">
+-
+<input type="number" name="fmResumeZip2" id="fmResumeZip2" size="8">
+</li>
+<li>
+<label for="fmResumePref">都道府県</label><br>
+<select name="fmResumePref" id="fmResumePref">
+<option value="">選択してください</option>
+<optgroup label="北海道・東北">
+<option value="北海道">北海道</option>
+<option value="青森県">青森県</option>
+<option value="秋田県">秋田県</option>
+<option value="岩手県">岩手県</option>
+<option value="山形県">山形県</option>
+<option value="宮城県">宮城県</option>
+<option value="福島県">福島県</option>
+</optgroup>
+<optgroup label="甲信越・北陸">
+<option value="山梨県">山梨県</option>
+<option value="長野県">長野県</option>
+<option value="新潟県">新潟県</option>
+<option value="富山県">富山県</option>
+<option value="石川県">石川県</option>
+<option value="福井県">福井県</option>
+</optgroup>
+<optgroup label="関東">
+<option value="茨城県">茨城県</option>
+<option value="栃木県">栃木県</option>
+<option value="群馬県">群馬県</option>
+<option value="埼玉県">埼玉県</option>
+<option value="千葉県">千葉県</option>
+<option value="東京都">東京都</option>
+<option value="神奈川県">神奈川県</option>
+</optgroup>
+<optgroup label="東海">
+<option value="愛知県">愛知県</option>
+<option value="静岡県">静岡県</option>
+<option value="岐阜県">岐阜県</option>
+<option value="三重県">三重県</option>
+</optgroup>
+<optgroup label="関西">
+<option value="大阪府">大阪府</option>
+<option value="兵庫県">兵庫県</option>
+<option value="京都府">京都府</option>
+<option value="滋賀県">滋賀県</option>
+<option value="奈良県">奈良県</option>
+<option value="和歌山県">和歌山県</option>
+</optgroup>
+<optgroup label="中国">
+<option value="岡山県">岡山県</option>
+<option value="広島県">広島県</option>
+<option value="鳥取県">鳥取県</option>
+<option value="島根県">島根県</option>
+<option value="山口県">山口県</option>
+</optgroup>
+<optgroup label="四国">
+<option value="徳島県">徳島県</option>
+<option value="香川県">香川県</option>
+<option value="愛媛県">愛媛県</option>
+<option value="高知県">高知県</option>
+</optgroup>
+<optgroup label="九州・沖縄">
+<option value="福岡県">福岡県</option>
+<option value="佐賀県">佐賀県</option>
+<option value="長崎県">長崎県</option>
+<option value="熊本県">熊本県</option>
+<option value="大分県">大分県</option>
+<option value="宮崎県">宮崎県</option>
+<option value="鹿児島県">鹿児島県</option>
+<option value="沖縄県">沖縄県</option>
+</optgroup>
+</select>
+</li>
+<li>
+<label for="fmResumeAddress">市区町村以降</label><br>
+<input type="text" name="fmResumeAddress" id="fmResumeAddress">
+<span class="fmFormat">(全角)</span><br>
+<span class="fmEx">(例：港区赤坂3-21-20 赤坂ロングビーチビル6F)</span>
+</li>
+</ul>
+</dd>
+<dt>電話番号(どちらか必須)<span class="fmDuty"><img src="../sp_common/images/entry/ico_required.png" alt="必須"></span></dt>
+<dd>
+<ul class="fmItemList">
+<li>
+<label for="fmResumeTel">自宅電話番号</label><br>
+<input type="tel" name="fmResumeTel" id="fmResumeTel">
+<span class="fmFormat">(半角)</span>
+</li>
+<li>
+<label for="fmResumeMobile">携帯電話番号</label><br>
+<input type="tel" name="fmResumeMobile" id="fmResumeMobile">
+<span class="fmFormat">(半角)</span>
+</li>
+</ul>
+</dd>
+</dl>
+<!-- / class entrySec --></section>
+
+<section class="entrySec">
+<h3 class="sh">学歴</h3>
+<dl class="entryBasicList1 noBG">
+<dt>最終学歴&nbsp;<span class="fmDuty"><img src="../sp_common/images/entry/ico_required.png" alt="必須"></span></dt>
+<dd>
+<ul class="fmItemList">
+<li>
+<label for="fmResumeSchoolType">学種</label><br>
+<select name="fmResumeSchoolType" id="fmResumeSchoolType">
+<option value="">選択してください</option>
+<option value="">テキストテキスト</option>
+<option value="">テキストテキスト</option>
+<option value="">テキストテキスト</option>
+</select>
+</li>
+<li>
+<label for="fmResumeSchoolName">学校名</label><br>
+<input type="text" name="fmResumeSchoolName" id="fmResumeSchoolName">
+</li>
+<li>
+<label for="fmResumeSchoolMajor">学部/学科/専攻</label><br>
+<input type="text" name="fmResumeSchoolMajor" id="fmResumeSchoolMajor">
+</li>
+<li>
+<label for="fmResumeSchoolGraduationYear">卒業年月</label><br>
+<select name="fmResumeSchoolGraduationYear" id="fmResumeSchoolGraduationYear">
+<option value="2011">2011</option>
+<option value="2011">2011</option>
+<option value="2011">2011</option>
+<option value="2011">2011</option>
+<option value="2011">2011</option>
+<option value="2011">2011</option>
+<option value="2011">2011</option>
+<option value="2011">2011</option>
+</select>
+年
+<select name="fmResumeSchoolGraduationMonth" id="fmResumeSchoolGraduationMonth">
+<option value="1">01</option>
+<option value="2">02</option>
+<option value="3">03</option>
+<option value="4">04</option>
+<option value="5">05</option>
+<option value="6">06</option>
+<option value="7">07</option>
+<option value="8">08</option>
+<option value="9">09</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+</select>
+月
+</li>
+</ul>
+</dd>
+<dt>学歴補足事項</dt>
+<dd>
+<p>学歴について補足事項があれば記入してください<br>
+(全角1000文字以内)
+</p>
+<div class="alignC">
+<textarea name="fmResumeSchoolAddInfo" id="fmResumeSchoolAddInfo" class="fmCountArea" cols="30" rows="10"></textarea>
+<!-- / class alignC --></div>
+</dd>
+</dl>
+<!-- / class entrySec --></section>
+
+<section class="entrySec">
+<h3 class="sh">経験職種・業種など</h3>
+<dl class="entryBasicList1">
+<dt>現在の就業状況&nbsp;<span class="fmDuty"><img src="../sp_common/images/entry/ico_required.png" alt="必須"></span></dt>
+<dd>
+<input type="radio" name="fmResumeAtWork" id="fmResumeAtWork1">
+<label for="fmResumeAtWork1">就業している</label>
+<input type="radio" name="fmResumeAtWork" id="fmResumeAtWork2">
+<label for="fmResumeAtWork2">就業していない</label>
+</dd>
+<dt>現在までの転職回数</dt>
+<dd>
+<select name="fmResumeJobChange" id="fmResumeJobChange">
+<option value="0">0</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+</select>
+回
+</dd>
+<dt>経験職種&nbsp;<span class="fmDuty"><img src="../sp_common/images/entry/ico_required.png" alt="必須"></span></dt>
+<dd>
+<p>時期の古い順に経験した職種を選択してください</p>
+<p class="note">
+※同じ職種を複数回経験された場合は経験年数を足してご記入ください
+</p>
+
+<ul id="fmResumeJob" class="fmItemList">
+<li>
+<div class="fmBox1">
+<label for="fmResumeJobType1">職種</label><br>
+<select name="fmResumeJobType1" id="fmResumeJobType1">
+<option value="">選択してください</option>
+<option value="">テキストテキスト</option>
+<option value="">テキストテキスト</option>
+</select>
+</div>
+<div class="fmBox1">
+<label for="fmResumeJobYear1">年数</label><br>
+<select name="fmResumeJobYear1" id="fmResumeJobYear1">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+</select>
+年
+</div>
+</li>
+<li>
+<div class="fmBox1">
+<label for="fmResumeJobType2">職種</label><br>
+<select name="fmResumeJobType2" id="fmResumeJobType2">
+<option value="">選択してください</option>
+<option value="">テキストテキスト</option>
+<option value="">テキストテキスト</option>
+</select>
+</div>
+<div class="fmBox1">
+<label for="fmResumeJobYear2">年数</label><br>
+<select name="fmResumeJobYear2" id="fmResumeJobYear2">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+</select>
+年
+</div>
+</li>
+<li>
+<div class="fmBox1">
+<label for="fmResumeJobType3">職種</label><br>
+<select name="fmResumeJobType3" id="fmResumeJobType3">
+<option value="">選択してください</option>
+<option value="">テキストテキスト</option>
+<option value="">テキストテキスト</option>
+</select>
+</div>
+<div class="fmBox1">
+<label for="fmResumeJobYear3">年数</label><br>
+<select name="fmResumeJobYear3" id="fmResumeJobYear3">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+</select>
+年
+</div>
+</li>
+<li>
+<div class="fmBox1">
+<label for="fmResumeJobType4">職種</label><br>
+<select name="fmResumeJobType4" id="fmResumeJobType4">
+<option value="">選択してください</option>
+<option value="">テキストテキスト</option>
+<option value="">テキストテキスト</option>
+</select>
+</div>
+<div class="fmBox1">
+<label for="fmResumeJobYear4">年数</label><br>
+<select name="fmResumeJobYear4" id="fmResumeJobYear4">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+</select>
+年
+</div>
+</li>
+</ul>
+<p class="entryAddContent fmCloneContent"><a href="#fmResumeJob" class="btn1 plusRBtn"><span>さらに経験職種を追加</span></a></p>
+</dd>
+<dt>経験業種&nbsp;<span class="fmDuty"><img src="../sp_common/images/entry/ico_free.png" alt="任意"></span></dt></dt>
+<dd>
+<p>時期の古い順に経験した業種を選択してください</p>
+<ul id="fmResumeBiz" class="fmItemList">
+<li>
+<label for="fmResumeBiz1">業種</label><br>
+<select name="fmResumeBiz1" id="fmResumeBiz1">
+<option value="">選択してください</option>
+<option value="">テキストテキスト1</option>
+<option value="">テキストテキスト2</option>
+</select>
+</li>
+<li>
+<label for="fmResumeBiz2">業種</label><br>
+<select name="fmResumeBiz2" id="fmResumeBiz2">
+<option value="">選択してください</option>
+<option value="">テキストテキスト1</option>
+<option value="">テキストテキスト2</option>
+</select>
+</li>
+<li>
+<label for="fmResumeBiz3">業種</label><br>
+<select name="fmResumeBiz3" id="fmResumeBiz3">
+<option value="">選択してください</option>
+<option value="">テキストテキスト1</option>
+<option value="">テキストテキスト2</option>
+</select>
+</li>
+</ul>
+<p class="entryAddContent fmCloneContent"><a href="#fmResumeBiz" class="btn1 plusRBtn"><span>さらに経験業種を追加</span></a></p>
+</dd>
+</dl>
+<!-- / class entrySec --></section>
+
+<section class="entrySec">
+<h3 class="sh">語学・資格</h3>
+<dl class="entryBasicList1 noBG">
+<dt>英語&nbsp;<span class="fmDuty"><img src="../sp_common/images/entry/ico_free.png" alt="任意"></span></dt>
+<dd>
+<ul class="fmItemList">
+<li>
+<label for="fmResumeEngTOEIC">TOEIC</label>
+<input type="number" name="fmResumeEngTOEIC" id="fmResumeEngTOEIC">
+点
+</li>
+<li>
+<label for="fmResumeEngTOEFL">TOEFL</label>
+<input type="number" name="fmResumeEngTOEFL" id="fmResumeEngTOEFL">
+点
+</li>
+<li>
+<label for="fmResumeEngSkill">英語スキル</label>
+<select name="fmResumeEngSkill" id="fmResumeEngSkill">
+<option value="">テキストテキスト</option>
+<option value="">テキストテキスト</option>
+<option value="">テキストテキスト</option>
+<option value="">テキストテキスト</option>
+<option value="">テキストテキスト</option>
+</select>
+</li>
+</ul>
+</dd>
+<dt>英語以外&nbsp;<span class="fmDuty"><img src="../sp_common/images/entry/ico_free.png" alt="任意"></span></dt>
+<dd>
+<span>全角1000文字以内</span>
+<div class="alignC">
+<textarea name="fmResumeLang" id="fmResumeLang" class="fmCountArea" cols="30" rows="10"></textarea>
+</div>
+</dd>
+<dt>保有資格&nbsp;<span class="fmDuty"><img src="../sp_common/images/entry/ico_free.png" alt="任意"></span></dt>
+<dd>
+<span>全角1000文字以内</span>
+<div class="alignC">
+<textarea name="fmResumeLangCapacity" id="fmResumeLangCapacity" class="fmCountArea" cols="30" rows="10"></textarea>
+<!-- / class alignC --></div>
+</dd>
+</dl>
+<!-- / class entrySec --></section>
+<!-- / id entryResumeSec --></section>
+
+<div class="entryNoteBox">
+<div class="entryNoteBoxInner">
+<p>当サイトでは、利用者が安心して入力していただけるように、個人情報を入力するページに暗号化技術のSSL(Secure Sockets Layer) を導入しております。</p>
+<p>
+※個人情報を保護するため、以下の場合は入力内容が無効になりますのでご注意ください。<br>
+・約1時間以上同じページで入力を続けた場合<br>
+・応募完了前にインターネット接続を切断した場合
+</p>
+<!-- / class entryNoteBoxInner --></div>
+<!-- / class basicNoteBox --></div>
+<p class="fmSubmit">
+<button class="btn3 applicationBtn"><span>保存して戻る</span></button>
+</p>
+
+</form>
+
+<!-- / id content --></section><!-- #BeginLibraryItem "/Library/footer_login.lbi" --><!--&&& 【ログイン】フッターテンプレート [START] &&&-->
+<footer id="siteFooter">
+<p id="pageTop">
+<a href="#siteHeader" class="btn1"><span>ページのTOPへ</span></a>
+</p>
+<div id="siteFInner">
+<p id="siteFPCBtn"><a href="#" class="pcSiteBtn btn1"><span>PCサイトに切り替える</span></a></p>
+<nav id="siteFNav">
+<ul>
+<li><a href="/company/" target="_blank">会社案内</a></li><!--
+--><li><a href="/s/kojin/">個人情報について</a></li><!--
+--><li><a href="/help/category_14.html">@type会員規約</a></li>
+</ul>
+<ul><li><a href="http://type.jp">ホーム</a></li><!--
+--><li><a href="#">ログアウト</a></li>
+</ul>
+</nav>
+<p id="siteFCopy"><small>Copyright 1999-2011 CAREER DESIGN CENTER CO.LTD. All Rights Reserved. </small></p>
+<!-- / id sFContent --></div>
+<!-- / id siteFooter --></footer>
+<!--&&& 【ログイン】フッターテンプレート [END] &&&--><!-- #EndLibraryItem --></body>
+</html>

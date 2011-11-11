@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="shift_jis">
+<title>スカウト拒否設定企業一覧・検索</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=0.5,minimum-scale=0.5, maximum-scale=0.5, user-scalable=yes">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" href="../sp_common/css/base.css" media="screen">
+<script src="../sp_common/js/jquery.min.js"></script>
+<script src="../sp_common/js/script_common.js" charset="shift_jis"></script>
+<script src="../sp_common/js/script_entry.js" charset="shift_jis"></script>
+</head>
+
+<body><!-- #BeginLibraryItem "/Library/header_login2.lbi" --><!--&&& 【ログイン】ヘッダーテンプレート [START] &&&-->
+<header id="siteHeader">
+<div id="siteHeaderInner">
+<p id="siteId"><a href="#"><img src="../sp_common/images/h_logo.png" alt="@type&reg;"></a></p>
+<p id="hTagline">自分を磨く、キャリアをつくる。<br>
+転職サイトは[アット・タイプ]</p>
+<nav id="gNav">
+<dl>
+<dt><a href="#gNavContent" class="btn1 openBtn"><span>メニュー</span></a></dt>
+<dd>
+<ul id="gNavContent">
+<li><a href="#" class="self">ログアウト</a></li>
+<li><a href="#" class="self">求人情報から探す</a></li>
+<li><a href="#">企業からのスカウト</a></li>
+<li><a href="#">マッチングサービス</a></li>
+<li><a href="#">検討中リスト</a></li>
+<li><a href="#">応募/メッセージ管理</a></li>
+<li><a href="#">転職ノウハウ</a></li>
+<li><a href="#">非公開求人の紹介</a></li>
+</ul>
+</dd>
+</dl>
+</nav>
+<!-- / id siteHeaderInner --></div>
+<!-- / id siteHeader --></header>
+<!--&&& 【ログイン】ヘッダーテンプレート [END] &&&--><!-- #EndLibraryItem --><section id="content" class="cMypage">
+<div id="contentHead">
+<h1>アクセスを拒否する企業一覧</h1>
+<p><a href="/mypage/scout.do" class="btn1 backBtn"><span>戻る</span></a></p>
+<!-- / id contentHead --></div>
+
+<ul class="fmItemList otherFmItemList">
+<li>経歴へのアクセス拒否を設定している企業はありません。</li>
+</ul>
+
+<form action="/mypage/access_refusal_company_search.do" method="post">
+<div class="entryAccessBox entryBoxBefore">
+<div class="entryAccessBoxInner">
+<p class="findCompanyText">あなたの経歴へアクセスを拒否したい企業を検索して設定できます。</p>
+<p class="findCompany"><input type="text" name="fmFindCompany" id="fmFindCompany">
+<button class="btn1 arrowRBtn"><span>社名検索</span></button></p>
+</div>
+</div>
+</form>
+
+<div class="entryAccessBox entryBoxReset">
+<div class="entryAccessBoxInner">
+<h2 class="bHead">アクセス拒否機能についての注意</h2>
+<ul class="basicList">
+<li>■「アクセス拒否機能」とは、現在の勤務先や得意先など特定の企業に対してスカウトを受けたくない場合（WEB履歴書を閲覧されたくない場合）、企業名を指定してWEB履歴書を非公開にすることができる機能です。</li>
+<li>■なお、「アクセス拒否機能」の設定に関わらず、企業は以下の欄を閲覧することはできません。</li>
+</ul>
+
+<dl class="accessList">
+<dt>[履歴書]　</dt>
+<dd>氏名、生年月日、都道府県以外の住所、自宅電話番号、携帯電話番号、メールアドレス、携帯メールアドレス</dd>
+<dt>[職務経歴書]　</dt>
+<dd>勤務先企業</dd>
+</dl>
+
+<ul class="basicList">
+<li>■アクセス拒否をしたい企業は、＠typeに掲載実績のある企業の中から指定することができます。対象企業は随時追加されていきますので、 スカウトの利用を開始された後でも、定期的にご確認のうえ、設定の更新をお願い致します。</li>
+<li>■同じ社名でも、支社や部門等の違いにより、複数の候補が表示される場合があります。</li>
+</ul>
+</div>
+</div>
+<!-- / id content --></section><!-- #BeginLibraryItem "/Library/footer_login.lbi" --><!--&&& 【ログイン】フッターテンプレート [START] &&&-->
+<footer id="siteFooter">
+<p id="pageTop">
+<a href="#siteHeader" class="btn1"><span>ページのTOPへ</span></a>
+</p>
+<div id="siteFInner">
+<p id="siteFPCBtn"><a href="#" class="pcSiteBtn btn1"><span>PCサイトに切り替える</span></a></p>
+<nav id="siteFNav">
+<ul>
+<li><a href="/company/" target="_blank">会社案内</a></li><!--
+--><li><a href="/s/kojin/">個人情報について</a></li><!--
+--><li><a href="/help/category_14.html">@type会員規約</a></li>
+</ul>
+<ul><li><a href="http://type.jp">ホーム</a></li><!--
+--><li><a href="#">ログアウト</a></li>
+</ul>
+</nav>
+<p id="siteFCopy"><small>Copyright 1999-2011 CAREER DESIGN CENTER CO.LTD. All Rights Reserved. </small></p>
+<!-- / id sFContent --></div>
+<!-- / id siteFooter --></footer>
+<!--&&& 【ログイン】フッターテンプレート [END] &&&--><!-- #EndLibraryItem --></body>
+</html>
