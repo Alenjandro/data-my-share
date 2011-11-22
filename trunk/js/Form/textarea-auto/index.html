@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script>
+function checkRows(textArea){
+
+if (navigator.appName.indexOf("Microsoft Internet Explorer") == 0)
+{
+textArea.style.overflow = 'visible';
+return;
+}
+
+while (
+textArea.rows > 1 &&
+textArea.scrollHeight < textArea.offsetHeight
+){
+textArea.rows--;
+}
+
+while (textArea.scrollHeight > textArea.offsetHeight)
+{
+textArea.rows++;
+}
+
+textArea.rows++;
+
+
+return;
+}
+</script>
+
+</head>
+
+<body>
+
+<textarea style="overflow:hidden;" onkeyup="checkRows(this)" >Some Test Text</textarea>
+
+</body>
