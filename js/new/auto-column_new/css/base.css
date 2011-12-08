@@ -1,0 +1,159 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# General Elements
+# body
+# layout
+# header
+# pageBody
+# content
+# footer
+# clearfix
+
+----------------------------------------*/
+
+
+/* # General Elements
+---------------------------------------------------------------------------- */
+
+a {
+	color: #333;
+	text-decoration: underline;
+}
+a:hover {
+	color: #333;
+	text-decoration: none;
+}
+
+
+/* # body
+---------------------------------------------------------------------------- */
+
+body {
+	background: url(../images/bg_body.gif) repeat left top;	
+	color: #000;
+	font-size: 75%;
+	font-family: "メイリオ", "ヒラギノ", "MSゴシック";
+	line-height: 1.5;
+}
+
+
+/* # layout
+---------------------------------------------------------------------------- */
+
+div#layout {
+	background: url(../images/bg_layout.gif) repeat-x left top;	
+}
+
+
+/* # header
+---------------------------------------------------------------------------- */
+
+div#header {
+	background: url(../images/bg_header.png) no-repeat left top;
+	margin: 0 auto;
+	height: 114px;
+	width: 936px;
+}
+
+div#header h1 {
+	padding: 54px 0 0 100px;
+	position: relative;
+	z-index: 10;
+}
+
+
+/* # pageBody
+---------------------------------------------------------------------------- */
+
+div#pageBody {
+	margin: 0 auto;
+	width: 934px;
+}
+
+
+/* # content
+---------------------------------------------------------------------------- */
+
+div#content p.pageTop {
+	clear: both;
+	padding-right: 34px;
+	text-align: right;
+}
+
+
+/* # footer
+---------------------------------------------------------------------------- */
+
+div#footer {
+	background: url(../images/bg_footer.gif) repeat-x left bottom;
+	clear: both;
+}
+
+div#footer div.footerInner {
+	margin: 0 auto;
+	width: 931px;
+}
+
+div#footer div.footerInner ul.imageLink {
+	padding: 0 0 14px 0;
+	text-align: center;
+}
+
+div#footer div.footerInner ul.imageLink li {
+	display: inline;
+	padding: 0 10px;
+	width: auto;
+}
+
+div#footer div.footerInner ul.imageLink li img {
+	vertical-align: middle;
+}
+
+div#footer div.footerInner ul.fNav {
+	clear: both;
+	text-align: center;
+}
+
+div#footer div.footerInner ul.fNav li {
+	background: url(../images/bg_line01.gif) no-repeat right center;
+	display: inline;
+	margin-right: 6px;
+	padding: 0 12px 0 0;
+	width: auto;
+}
+
+div#footer div.footerInner ul.fNav li.fNavLast {
+    background: none;
+    margin-right: 0;
+    padding: 0;
+}
+
+div#footer div.footerInner p#copyright {
+	background: url(../images/bg_copyright.png) no-repeat left bottom;
+	color: #fff;
+	font-size: 120%;
+	height: 43px;
+	margin-top: 9px;
+	padding: 11px 0 0 0;
+	text-align: center;
+}
+
+
+/* # clearfix
+---------------------------------------------------------------------------- */
+
+div#footer div.footerInner ul.imageLink {
+	zoom: 1;
+}
+
+div#footer div.footerInner ul.imageLink:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}
