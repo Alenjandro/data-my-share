@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+/* ****************************************************
+Title: import.css
+Created: 2011-11-08
+Last Modified: 2011-11-08
+Editor(s): nishio
+Last Editor: nishio
+***************************************************** */
+
+
+/* for all
+---------------------------------------------------------------------------- */
+
+@import "reset.css";
+@import "modules.css";
+@import "base.css";

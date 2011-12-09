@@ -1,0 +1,142 @@
+@charset "utf-8";
+
+/* ****************************************************
+Title: base.css
+Created: 2011-11-15
+Last Modified: 2011-11-15
+Editor(s): nishio
+Last Editor: nishio
+***************************************************** */
+
+
+/* Table Of Contents
+----------------------------------------
+
+# General Elements
+# body
+# layout
+# header
+# visual & pageBody
+# content
+# sidebar
+# footer
+# clearfix
+# common classes
+
+----------------------------------------*/
+
+
+/* # General Elements
+---------------------------------------------------------------------------- */
+
+h1,h2,h3,h4,h5,h6,em { font-weight: bold; }
+
+a { color: #258fb8; }
+a:hover	{ text-decoration: none; }
+
+table {
+	width: 100%;
+}
+
+textarea {
+	font-size: 12px;
+	font-size: 100%\9;
+}
+
+
+/* # body
+---------------------------------------------------------------------------- */
+
+body {
+	color: #666;
+	font-size: 75%;
+	font-family: "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3";
+	line-height: 1.6;
+	-webkit-text-size-adjust: none;
+}
+
+
+/* # layout
+---------------------------------------------------------------------------- */
+
+#layout {
+	min-width: 950px;
+	width: 100%;
+	position: relative;
+}
+
+
+/* # header
+---------------------------------------------------------------------------- */
+
+
+
+/* # gNav
+---------------------------------------------------------------------------- */
+
+
+
+/* # visual & pageBody
+---------------------------------------------------------------------------- */
+
+
+
+/* # content
+---------------------------------------------------------------------------- */
+
+
+
+/* # footer
+---------------------------------------------------------------------------- */
+
+
+
+/* # clearfix
+---------------------------------------------------------------------------- */
+
+
+
+/* # common classes
+---------------------------------------------------------------------------- */
+
+/* margin */
+.mt0 { margin-top: 0 !important; }
+.mr0 { margin-right: 0 !important; }
+.mb0 { margin-bottom: 0 !important; }
+.ml0 { margin-left: 0 !important; }
+
+.pt0 { padding-top: 0 !important; }
+.pr0 { padding-right: 0 !important; }
+.pb0 { padding-bottom: 0 !important; }
+.pl0 { padding-left: 0 !important; }
+
+/* txt */
+.figure .figcaption {
+	display: inline-block;
+	/display: inline;
+	vertical-align: bottom;
+	/zoom: 1;
+}
+
+/* layout */
+.fL { float: left; }
+.fR { float: right; }
+
+.overBd {
+	display: block;
+	overflow: hidden;
+	word-wrap: break-word;
+	zoom: 1;
+}
+
+/* table */
+
+
+/* hover */
+.oh li a:hover img,
+.oh:hover img {
+	opacity: 0.75;
+	-moz-opacity: 0.75;
+	/filter: alpha(opacity=75);
+	-ms-filter: "alpha(opacity=75)";	
+}

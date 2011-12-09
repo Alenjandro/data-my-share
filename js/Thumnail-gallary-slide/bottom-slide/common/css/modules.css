@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+/* ****************************************************
+Title: modules.css
+Created: 2010-01-07
+Last Modified: 2011-09-02
+Editor(s): Nishio
+Last Editor: Nishio
+***************************************************** */
+
+
+/* Table Of Contents
+----------------------------------------
+
+# offscreen
+# float clear
+# float
+# align
+# valign
+# rollover
+# font color
+# font size
+# last list 
+# clearfix
+# inline-block
+
+----------------------------------------*/
+
+
+/* # offscreen
+---------------------------------------------------------------------------- */
+
+.offscreen {
+	text-indent: -9999em;
+	position: absolute;
+	overflow: hidden;
+}
+
+
+/* # float clear
+---------------------------------------------------------------------------- */
+
+.clearL { clear:left; }
+.clearR { clear:right; }
+.clearBoth { clear:both; }
+
+
+/* # float
+---------------------------------------------------------------------------- */
+
+.floatL  { float:left !important; }
+.floatR { float:right !important; }
+
+
+/* # align
+---------------------------------------------------------------------------- */
+
+.alignL { text-align: left !important; }
+.alignR { text-align: right !important; }
+.alignCenter { text-align: center !important; }
+
+
+/* # valign
+---------------------------------------------------------------------------- */
+
+.vAlignBtm { vertical-align: bottom !important; }
+.vAlignTop { vertical-align: top !important; }
+.vAlignMid { vertical-align: middle !important; }
+
+/* # rollover
+---------------------------------------------------------------------------- */
+
+.imgover {}
+
+
+/* # font color
+---------------------------------------------------------------------------- */
+
+.attention { 
+	color: #ff0000; 
+}
+
+.required { 
+	color: #ff6666; 
+}
+
+
+/* # font size
+---------------------------------------------------------------------------- */
+
+.smallText { font-size: 83%; }
+
+
+/* # last list 
+---------------------------------------------------------------------------- */
+
+.lastList {
+	background: none !important;
+	border: none !important;
+	margin-right: 0 !important;
+}
+
+
+/* # clearfix
+---------------------------------------------------------------------------- */
+
+.cf {
+	zoom: 1;
+}
+
+.cf:after {
+	clear: both;
+	content: ".";
+	display: block; 
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}
