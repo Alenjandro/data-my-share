@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="expires" content="0">
+<meta name="content-language" content="ja">
+<title></title>
+<script type="text/javascript" src="hovermap_files/jquery.js"></script>
+<script type="text/javascript" src="hovermap_files/jp.js" charset="utf-8"></script>
+<script type="text/javascript">
+function mapOn(area)
+{
+		if(area != "")
+		{
+			// URLデコード
+			area = decodeURI(area);
+			// セレクトボックス変更
+			
+			var img = $("#area_map_image");
+			var src = "hovermap_files/map_" + areaNames[area] + ".png";
+			img.attr('src', src);
+		}
+}
+function mapOff()
+{
+			
+	var vars = $.getUrlVars();
+	var area = vars["area"];
+		
+		if(area == undefined)
+		{
+		
+			var img = $("#area_map_image");
+			var src = "hovermap_files/map_normal.png";
+			img.attr('src', src);	
+		}else if(area != "")
+		{
+			
+			// URLデコード
+			area = decodeURI(area);
+			// セレクトボックス変更
+			
+			var img = $("#area_map_image");
+			var src = "hovermap_files/map_" + areaNames[area] + ".png";
+			img.attr('src', src);
+		}else{
+		
+			var img = $("#area_map_image");
+			var src = "hovermap_files/map_normal.png";
+			img.attr('src', src);
+		}
+
+}
+</script>
+</head>
+<body>
+
+<div id="area_map">
+<ul>
+<li><img src="hovermap_files/map_nanbu.png" id="area_map_image" alt="地図" usemap="#Map" border="0" height="135" width="250"></li>
+</ul>
+
+<map name="Map">
+	<area shape="poly" coords="73,31,74,26,79,19,86,6,92,7,102,11,108,14,112,13,118,13,121,17,127,10,141,17,150,25,156,23,165,23,171,19,175,19,180,22,184,20,187,17,192,19,196,31,200,38,197,42,195,46,197,50,194,54,188,57,181,58,176,59,165,54,163,58,163,61,158,61,158,64,153,64,145,68,135,74,128,78,124,78,120,73,115,74,111,75,105,80,101,79,98,78,96,75,98,73,93,66,94,56,90,51,90,47,92,42,93,39,87,37,82,38,77,45,74,46,74,42,79,36" href="https://flets-members.jp/pub/pages/hikarihappy/saitama/?area=%E5%8C%97%E9%83%A8%E3%82%A8%E3%83%AA%E3%82%A2" alt="北部エリア" onmouseover="mapOn('北部エリア');" onmouseout="mapOff();">
+	<area shape="poly" coords="99,80,107,82,113,77,119,75,126,80,134,76,154,66,159,66,161,63,166,57,178,60,188,59,196,55,198,52,195,45,204,45,209,46,212,49,216,56,219,59,219,63,223,71,225,77,231,84,235,92,239,100,237,104,239,112,239,115,234,115,231,113,225,113,221,112,216,111,214,108,210,109,210,112,212,114,208,117,203,116,199,113,191,115,185,121,181,122,174,127,169,123,171,118,169,115,155,122,144,125,139,122,137,119,132,119,128,119,126,114,120,110,113,110,106,108,101,109,93,107,86,104,90,101,86,92,91,88,97,85" href="https://flets-members.jp/pub/pages/hikarihappy/saitama/?area=%E5%8D%97%E9%83%A8%E3%82%A8%E3%83%AA%E3%82%A2" alt="南部エリア" onmouseover="mapOn('南部エリア');" onmouseout="mapOff();">
+	<area shape="poly" coords="75,35,76,38,72,44,75,47,80,44,84,40,90,40,89,47,88,52,92,57,92,65,96,72,96,77,98,81,93,86,85,91,88,100,84,104,78,104,71,100,68,99,64,103,59,104,53,111,49,111,45,115,39,110,37,107,33,108,28,108,27,104,19,100,14,97,15,91,11,87,10,81,15,77,18,70,20,70,24,71,29,70,32,64,37,58,43,55,50,54,52,54,55,47,58,47,61,48,68,44" href="https://flets-members.jp/pub/pages/hikarihappy/saitama/?area=%E7%A7%A9%E7%88%B6%E3%82%A8%E3%83%AA%E3%82%A2" alt="秩父エリア" onmouseover="mapOn('秩父エリア');" onmouseout="mapOff();">
+</map>
+</div>
+
+</body>
+</html>
