@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" dir="ltr" lang="ja"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>jQuery Cookie First Access Control</title>
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<script type="text/javascript" src="files/jquery_002.js"></script>
+<script type="text/javascript" src="files/jquery.js"></script>
+<script type="text/javascript">
+$(function(){
+	if($.cookie("access")){
+		$('#first').css({display:'none'});
+	}
+	$(window).load(function(){
+		$.cookie("access",$('body').addClass('access'));
+	})
+});
+</script>
+</head>
+
+<body class="access">
+<h1>jQuery Cookie First Access Control</h1>
+
+<div id="container">
+
+<div id="first">Noi dung se bien mat khi reload</div>
+
+
+</div>
+
+<h2>COPYRIGHT © <a href="http://black-flag.net/">BLACKFLAG.NET</a> ALL RIGHTS RESERVED.</h2>
+
+
+</body></html>
