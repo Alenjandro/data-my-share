@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>untitled</title>
+<meta name="viewport" content="width=device-width">
+<style type="text/css" media="screen">
+body {background: #e5e5e5; padding: 1em; margin: 0; font-size: 16px;}
+body * {margin: 0; padding: 0; font-family: "Lucida Grande", helvetica, sans-serif;}
+p {margin: 0 0 1em; font-size: 14px;}
+
+input, textarea, select {
+border: 2px solid #555;
+padding: 0.5em;
+font-size: 15px;
+line-height: 1.2em;
+width: 60%;
+background: #fff;
+background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ccc));
+-webkit-appearance: none;
+-webkit-box-shadow: 1px 1px 1px #fff;
+-webkit-border-radius: 0.5em;
+}
+
+input:focus, textarea:focus, select:focus {
+outline: none;
+border: 2px solid #058cf5;
+}
+
+textarea {
+height: 55px;
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #aaa), color-stop(0.05, #fff));
+}
+
+select {
+padding: 17px 10px 17px 7px;
+background: #fff url(images/bg_select.png) no-repeat right center;
+-webkit-background-size: 842px 62px;
+}
+
+input[type=text] {
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #aaa), color-stop(0.12, #fff));
+}
+
+input[type=submit] {
+width: auto;
+border-radius: 2em;
+padding: 0.25em 1em;
+line-height: 1.5em;
+}
+
+input[type=checkbox],
+input[type=radio] {
+display: inline-block;
+font-size: 15px;
+line-height: 1em;
+margin: 0 0.25em 0 0;
+padding: 0;
+width: 56px;
+height: 56px;
+-webkit-border-radius: 1em;
+vertical-align: middle;
+}
+
+input[type=radio] {
+-webkit-border-radius: 2em;
+}
+
+input[type=checkbox]:checked {
+background: url(images/ico_checkbox_o.png) no-repeat center center;
+-webkit-background-size: 56px 56px;
+}
+
+input[type=radio]:checked {
+background: url(images/ico_radio_o.png) no-repeat center center;
+-webkit-background-size: 56px 56px;
+}
+
+</style>
+</head>
+
+<body>
+<p><input placeholder="Text input" type="text"></p>
+<p><input value="Text input focused" autofocus="" type="text"></p>
+<p><textarea placeholder="Textarea"></textarea></p>
+<p><label><input checked="checked" type="checkbox"> Checkbox</label></p>
+<p><label><input type="checkbox"> Checkbox</label></p>
+<p><label><input checked="checked" type="radio" name="radio"> Radio 01</label></p>
+<p><label><input type="radio" name="radio"> Radio 02</label></p>
+<p><select><option selected="selected">Select…</option><option>Another</option></select></p>
+<p><input value="Submit" type="submit"></p>
+
+
+
+</body></html>
