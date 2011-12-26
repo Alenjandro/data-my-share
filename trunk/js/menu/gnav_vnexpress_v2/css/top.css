@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+/* # gNav
+---------------------------------------------------------------------------- */
+
+div#gNav dl dd ul li#gNavHome a img {
+	visibility: hidden;
+}
+
