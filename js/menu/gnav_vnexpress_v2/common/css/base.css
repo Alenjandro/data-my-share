@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+/* # gNav
+---------------------------------------------------------------------------- */
+
+div#gNav {
+	background: url(../images/bg_gnav01.gif) repeat-x 0 0;
+	padding-bottom: 11px;
+	height: 59px;
+}
+
+div#gNav dl dt {
+	overflow: hidden;
+	position: absolute;
+	text-indent: -9999em;
+}
+
+div#gNav dl dd ul {
+	background: url(../images/bg_gnav02.gif) repeat-x 0 0;
+	margin: 0 auto;
+	width: 960px;
+}
+
+div#gNav dl dd ul li {
+	float: left;
+	position: relative;
+	width: auto;
+}
+
+div#gNav dl dd ul li a {
+	display: block;
+}
+
+div#gNav dl dd ul li a:hover {
+	overflow: hidden;
+}
+
+div#gNav dl dd ul li a:hover img {
+	visibility: hidden;
+}
+
+div#gNav dl dd ul li#gNavHome a { background: url(../images/gnav_home_o.gif) no-repeat left top; }
+div#gNav dl dd ul li#gNavAbout a { background: url(../images/gnav_about_o.gif) no-repeat left top; }
+div#gNav dl dd ul li#gNavProduct a { background: url(../images/gnav_product_o.gif) no-repeat left top; }
+div#gNav dl dd ul li#gNavInvestor a { background: url(../images/gnav_investor_o.gif) no-repeat left top; }
+div#gNav dl dd ul li#gNavRecruit a { background: url(../images/gnav_recruit_o.gif) no-repeat left top; }
+div#gNav dl dd ul li#gNavCsr a { background: url(../images/gnav_csr_o.gif) no-repeat left top; }
+
+div#gNav dl dd div {
+	background: #CCCCCC;
+	padding-top: 15px;
+	height: 50px;
+}
+
+div#gNav dl dd div ul {
+	background: none!important;
+	display: none;
+}
+
+div#gNav dl dd div ul.show {
+	display: block;
+}
+
+div#gNav dl dd div ul li {
+	padding-right: 20px;
+}
+
+div#gNav dl dd div ul a  {
+	background: none!important;
+}
+
+
+/* # clearfix
+---------------------------------------------------------------------------- */
+
+div#gNav dl dd ul {
+	zoom: 1;
+}
+
+div#gNav dl dd ul:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}
