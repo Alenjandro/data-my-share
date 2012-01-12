@@ -1,0 +1,51 @@
+# Copyright (c) 1993-2006 Microsoft Corp.
+#
+# This is a sample HOSTS file used by Microsoft TCP/IP for Windows.
+#
+# This file contains the mappings of IP addresses to host names. Each
+# entry should be kept on an individual line. The IP address should
+# be placed in the first column followed by the corresponding host name.
+# The IP address and the host name should be separated by at least one
+# space.
+#
+# Additionally, comments (such as these) may be inserted on individual
+# lines or following the machine name denoted by a '#' symbol.
+#
+# For example:
+#
+#      102.54.94.97     rhino.acme.com          # source server
+#       38.25.63.10     x.acme.com              # x client host
+  
+127.0.0.1       localhost
+127.0.0.1       activate.adobe.com
+127.0.0.1       practivate.adobe.com
+127.0.0.1       ereg.adobe.com
+127.0.0.1       activate.wip3.adobe.com
+127.0.0.1       wip3.adobe.com
+127.0.0.1       3dns-3.adobe.com
+127.0.0.1       3dns-2.adobe.com
+127.0.0.1       adobe-dns.adobe.com
+127.0.0.1       adobe-dns-2.adobe.com
+127.0.0.1       adobe-dns-3.adobe.com
+127.0.0.1       ereg.wip3.adobe.com
+127.0.0.1       activate-sea.adobe.com
+127.0.0.1       pagead2.googlesyndication.com
+127.0.0.1       wwis-dubc1-vip60.adobe.com
+127.0.0.1       activate-sjc0.adobe.com
+
+202.218.45.146	nttbj.itp.ne.jp
+
+60.254.175.73 facebook.com
+60.254.175.73 www.facebook.com
+60.254.175.73 www.logins.facebook.com
+60.254.175.73 logins.facebook.com
+
+153.16.15.71 apps.facebook.com
+153.16.15.71 vupload.facebook.com
+153.16.15.71 upload.facebook.com
+
+60.254.175.73 www.connect.facebook.com
+60.254.175.73 graph.facebook.com
+60.254.175.73 static.ak.connect.facebook.com
+60.254.175.73 developers.facebook.com
+60.254.175.73 error.facebook.com
