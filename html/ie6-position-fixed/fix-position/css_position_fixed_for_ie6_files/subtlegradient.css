@@ -1,0 +1,43 @@
+html body{
+	display:none;
+}
+html body{
+	display:block;
+	color:#fff;
+}
+
+html,
+body {
+	background: url('../images/background-texture.gif') repeat-x fixed top center;
+}
+#toolbar {
+	background: #666 url('../images/toolbar.gif') repeat-x top left;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	height: 37px;
+	width: 100%;
+	overflow: hidden;
+	text-align: left;
+}
+#toolbar ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	margin-left: 168px;
+}
+#toolbar li {
+	float: left;
+	display: inline;
+	height: 36px;
+}
+
+body{margin-top:6em;}
+
+
+* html #toolbar{
+	position: absolute;
+	top: expression(eval(document.documentElement.scrollTop));
+	left: expression(eval(document.documentElement.scrollLeft));
+	width: expression(eval(document.documentElement.clientWidth));
+}
