@@ -1,0 +1,1451 @@
+@charset "utf-8";
+
+/* ****************************************************
+Title: modules.css
+Created: 2010-01-07
+Last Modified: 2012-03-29
+***************************************************** */
+
+
+/* Table Of Contents
+----------------------------------------
+
+# offscreen
+# float clear
+# float
+# align
+# valign
+# rollover
+# font color
+# font size
+# last list 
+# head style for kawaijuku
+# layout style for kawaijuku
+# text style for kawaijuku
+# list style for kawaijuku
+# column style for kawaijuku
+# table style for kawaijuku
+# link style for kawaijuku
+# form style for kawaijuku
+# etc style for kawaijuku
+# jquery ui
+# clearfix
+# inline-block
+
+----------------------------------------*/
+
+
+/* # offscreen
+---------------------------------------------------------------------------- */
+
+.offscreen {
+	text-indent: -9999em;
+	position: absolute;
+	overflow: hidden;
+}
+
+
+/* # float clear
+---------------------------------------------------------------------------- */
+
+.clearLeft  { clear:left; }
+.clearRight { clear:right; }
+.clearBoth  { clear:both; }
+
+
+/* # float
+---------------------------------------------------------------------------- */
+
+.floatLeft  { float:left; }
+.floatRight { float:right; }
+
+
+/* # align
+---------------------------------------------------------------------------- */
+
+.alignLeft   { text-align: left !important; }
+.alignCenter { text-align: center !important; }
+.alignRight  { text-align: right !important; }
+
+
+/* # valign
+---------------------------------------------------------------------------- */
+
+.valignBaseline { vertical-align: baseline; }
+
+
+/* # rollover
+---------------------------------------------------------------------------- */
+
+.imgover {}
+
+
+/* # font color
+---------------------------------------------------------------------------- */
+
+.attention { 
+	color: #f00; 
+}
+
+.required { 
+	color: #f66; 
+}
+
+
+/* # font size
+---------------------------------------------------------------------------- */
+
+.smallText { font-size: 83%; }
+
+
+/* # last list 
+---------------------------------------------------------------------------- */
+
+.lastList {
+	background: none !important;
+	border: none !important;
+	margin-right: 0 !important;
+}
+
+
+/* # head style for kawaijuku
+---------------------------------------------------------------------------- */
+
+div.hGroup101 {
+	background: #ffffff url(../images/bg_head01.gif) repeat-x left bottom;
+	border-top: solid 2px #a52a00;
+	margin: 0 0 15px;
+	padding: 20px;
+	position: relative;
+}
+
+div.hGroup101 .head {
+	font-size: 134%;
+	font-weight: bold;
+	margin: 0;
+}
+
+div.hGroup101 .cat {
+	margin: 0;
+	position: absolute;
+	right: 20px;
+	top: 29px;
+}
+
+div.hGroup101 .print {
+	margin: -15px 0 0;
+	position: absolute;
+	right: 20px;
+	top: 50%;
+}
+
+div.hGroup201,
+div.hGroup202 {
+	background: #ffffff;
+	border-top: solid 2px #a52a00;
+	border-bottom: solid 1px #d6d6d6;
+	margin: 0 0 15px;
+	padding: 1px 0;
+	position: relative;
+}
+
+div.hGroup201 .head,
+div.hGroup202 .head {
+	background: #f7f7f7;
+	font-size: 117%;
+	font-weight: bold;
+	margin: 0;
+	padding: 12px 10px 12px 21px;
+}
+
+div.hGroup201 .head a {
+	background: url(../images/ico_arrow01.gif) no-repeat 0 0.2em;
+	display: inline-block;
+	margin: 0 0 0 -11px;
+	padding: 0 0 0 24px;
+}
+
+div.hGroup201 .head a.ext {
+	background: url(../images/ico_ext.gif) no-repeat 0 0.4em;
+}
+
+div.hGroup202 .head {
+	background-image: url(../images/bg_head202.gif);
+	background-position: 10px 10px;
+	background-repeat: no-repeat;
+	padding-left: 42px;
+}
+
+div.hGroup201 .sub,
+div.hGroup202 .sub {
+	position: absolute;
+	top: 15px;
+	right: 12px;
+}
+
+div.hGroup203 {
+	background: #fcf6f4;
+	border-top: solid 1px #eee4e1;
+	margin-bottom: 10px;
+	padding: 10px 20px;
+}
+
+div.hGroup203 .head {
+	font-weight: bold;
+}
+
+div.hGroup203 .head a {
+	background: url(../images/ico_arrow03.gif) no-repeat 0 0.1em;
+	padding: 0 0 0 16px;
+}
+
+div.hGroup301,
+div.hGroup302 {
+	background: url(../images/bg_head301_btm.gif) no-repeat left bottom;
+	margin: 0 0 15px;
+	position: relative;
+	width: 717px;
+}
+
+div.hGroup301 .head,
+div.hGroup302 .head {
+	background: url(../images/bg_head301_top.gif) no-repeat left top;
+	font-weight: bold;
+	margin: 0;
+	padding: 9px 10px 9px 11px;
+}
+
+div.hGroup301 .head a,
+div.hGroup302 .head a {
+	background: url(../images/ico_arrow09.gif) no-repeat 0 0.3em;
+	display: inline-block;
+	padding: 0 0 0 19px;
+}
+
+div.hGroup301 .head a.ext,
+div.hGroup302 .head a.ext {
+	background: url(../images/ico_ext.gif) no-repeat 0 0.4em;
+}
+
+div.hGroup301 .sub,
+div.hGroup302 .sub {
+	color: #666666;
+	font-size: 91%;
+	position: absolute;
+	right: 15px;
+	top: 13px;
+}
+
+div.hGroup302 {
+	background: url(../images/bg_head302_btm.gif) no-repeat left bottom;
+	width: 349px;
+}
+
+div.hGroup302 .head {
+	background: url(../images/bg_head302_top.gif) no-repeat left top;
+}
+
+div.hGroup401 {
+	background: url(../images/bg_head401_btm.gif) no-repeat left bottom;
+	margin: 0 0 15px;
+	width: 717px;
+}
+
+div.hGroup401 .head {
+	background: url(../images/bg_head401_top.gif) no-repeat left top;
+	font-weight: bold;
+	margin: 0;
+	padding: 5px 10px 5px 11px;
+}
+
+div.hGroup401 .head a {
+	background: url(../images/ico_arrow10.gif) no-repeat 0 0.5em;
+	display: inline-block;
+	padding: 0 0 0 13px;
+}
+
+div.shGroup201 {
+	background: #ffffff;
+	border-top: solid 1px #d1d4d5;
+	border-bottom: solid 1px #e5e5e5;
+	position: relative;
+	zoom: 1;
+}
+
+div.shGroup201 .head {
+	color: #2d4474;
+	font-weight: bold;
+}
+
+div.shGroup201 .head a {
+	background: #faefeb url(../images/ico_arrow01.gif) no-repeat 8px 14px;
+	color: #2d4474;
+	display: block;
+	padding: 13px 7px 13px 31px;
+	width: 153px;
+}
+
+div.shGroup201 .current {
+	color: #a52a00;
+}
+
+div.shGroup201 .current a {
+	background-image: url(../images/ico_arrow01_a.gif);
+	color: #a52a00;
+	text-decoration: none;
+}
+
+div.shGroup202 {
+	background: #0072ba;
+	padding: 6px 0;
+	zoom: 1;
+}
+
+div.shGroup202 .head {
+	color: #ffffff;
+	font-weight: bold;
+}
+
+div.shGroup202 .head a {
+	background: url(../images/ico_arrow02.gif) no-repeat 8px 0.25em;
+	color: #ffffff;
+	display: block;
+	padding: 2px 8px 2px 31px;
+	width: 152px;
+}
+
+div.shGroup202 .head span {
+	display: block;
+	padding: 2px 8px;
+}
+
+
+/* # layout style for kawaijuku
+---------------------------------------------------------------------------- */
+
+.b2Col {
+	clear: both;
+	margin: 1
+}
+
+.b2Col .b2ColL,
+.b2Col .b2ColR {
+	clear: none !important;
+	padding: 0;
+	width: 349px;
+}
+
+.b2Col .b2ColL {
+	float: left;
+}
+
+.b2Col .b2ColR {
+	float: right;
+}
+
+.wFull .b2ColL,
+.wFull .b2ColR {
+	width: 373px;
+}
+
+.itCol1,
+.itCol2 {
+	clear: both;
+}
+
+.itCol1 .imgCol,
+.itCol2 .imgCol {
+	float: left;
+	margin-right: 14px;
+}
+
+.itCol1 .txtCol,
+.itCol2 .txtCol {
+	margin-left: 10px; 
+	padding-top: 2px;
+	overflow: hidden;
+	zoom: 1;
+}
+
+.itCol1 .txtCol p,
+.itCol2 .txtCol p {
+	margin-bottom: 10px;
+}
+
+.itCol1 {
+	padding: 0 10px;
+}
+
+.sec1 {
+	clear: both;
+	margin: 0 0 30px;
+}
+
+.sec2 {
+	clear: both;
+	margin: 30px 0;
+}
+
+.sec3 {
+	clear: both;
+	margin: 20px 0;
+}
+
+.sdList {
+	border-top: solid 1px #d1d4d5;
+	border-bottom: solid 1px #d1d4d5;
+	margin: 0 0 -1px;
+	padding: 10px;
+	position: relative;
+}
+
+.band1 {
+	background: #fcf6f4;
+	padding: 7px 22px;
+}
+
+.visual {
+	margin: 20px 0;
+	text-align: center;
+}
+
+
+/* # text style for kawaijuku
+---------------------------------------------------------------------------- */
+
+.textT {
+	margin: 0 0 5px;
+}
+
+.textB {
+	margin: 0 0 15px;
+}
+
+.caption {
+	display: block;
+	font-size: 83%;
+	padding: 5px 0 0;
+}
+
+.strong {
+	font-weight: bold;
+}
+
+.caution1 {
+	color: #898989;
+	font-size: 83%;
+}
+
+.caution2 {
+	color: #b71a35;
+}
+
+.icon1,
+.icon2,
+.icon3,
+.icon4,
+.icon5,
+.icon6,
+.icon7,
+.icon8,
+.icon9 {
+	background: #000000;
+	color: #ffffff;
+	display: inline-block;
+	font-size: 83%;
+	font-weight: normal;
+	line-height: 1.0;
+	padding: 3px 8px 2px;
+	vertical-align: middle;
+}
+
+* html .icon1,
+* html .icon2,
+* html .icon3,
+* html .icon4,
+* html .icon5,
+* html .icon6,
+* html .icon7,
+* html .icon8,
+* html .icon9 {
+	display: inline;
+	padding-bottom: 3px;
+	zoom: 1;
+}
+
+*:first-child+html .icon1,
+*:first-child+html .icon2,
+*:first-child+html .icon3,
+*:first-child+html .icon4,
+*:first-child+html .icon5,
+*:first-child+html .icon6,
+*:first-child+html .icon7,
+*:first-child+html .icon8,
+*:first-child+html .icon9 {
+	display: inline;
+	padding-bottom: 3px;
+	zoom: 1;
+}
+
+.icon1 {
+	background: #f2dfd9;
+	color: #a52b01;
+	padding-left: 3px;
+	padding-right: 3px;
+}
+
+.icon2 {
+	background: #f04368;
+}
+
+.icon3 {
+	background: #9936b4;
+}
+
+.icon4 {
+	background: #1a3fb7;
+}
+
+.icon5 {
+	background: #017c66;
+}
+
+.icon6 {
+	background: #28a418;
+}
+
+.icon7 {
+	background: #c52514;
+}
+
+.icon8 {
+	background: #b77a1a;
+}
+
+.icon9 {
+	background: #ffa200;
+}
+
+.iconFixed {
+	padding-left: 0;
+	padding-right: 0;
+	text-align: center;
+	width: 6em;
+}
+
+
+/* # list style for kawaijuku
+---------------------------------------------------------------------------- */
+
+ul.lineLink {
+	line-height: 1.1;
+}
+
+ul.lineLink li {
+	border-left: solid 1px #cccccc;
+	display: inline;
+	margin: 0 0 0 9px;
+	padding: 0 0 0 9px;
+}
+
+ul.lineLink li.first {
+	border: none;
+	margin-left: 0;
+	padding: 0;
+}
+
+ul.lineLink li a {
+	white-space: nowrap;
+}
+
+.discList {
+	list-style: disc;
+}
+
+.discList li {
+	margin-left: 20px;
+}
+
+.circleList1 li {
+	background: url(../images/ico_circle01.gif) no-repeat 0 0.2em;
+	margin: 0 0 5px;
+	padding: 0 0 0 22px;
+}
+
+.numList1 li,
+.numList2 li {
+	margin: 0 0 5px;
+	padding: 0 0 0 22px;
+	position: relative;
+	zoom: 1;
+}
+
+.numList1 li .num,
+.numList2 li .num {
+	font-weight: bold;
+	left: 3px;
+	position: absolute;
+	top: 1px;
+}
+
+.numList1 li .num {
+	color: #004878;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 83%;
+}
+
+.numList2 li .num {
+	color: #333333;
+}
+
+.numList2 li {
+	border-bottom: dotted 1px #b2b2b2;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+}
+
+dl.dList1 {
+	margin: 20px 0;
+}
+
+dl.dList1 dt {
+	font-weight: bold;
+}
+
+dl.dList1 dt img {
+	vertical-align: -2px;
+}
+
+dl.dList1 dd {
+	border-bottom: dotted 1px #b2b2b2;
+	margin: 0 0 10px;
+	padding: 0 0 10px;
+}
+
+dl.dList1 dd.last {
+	border-bottom: none;
+	margin-bottom: 10px;
+	padding-bottom: 0;
+}
+
+dl.dList1 dd p {
+	margin: 0;
+}
+
+dl.dList1 dd p.image {
+	float: right;
+	margin: -1em 0 0 0;
+}
+
+dl.dList1 dd a.arrow1 {
+	padding-left: 20px
+}
+
+dl.dList1 dd div.description {
+	padding: 0 0 0 20px;
+}
+
+dl.dList1 dd div.description p {
+	margin: 5px 0 0;
+}
+
+ul.pager {
+	margin: 15px 0;
+	text-align: center;
+}
+
+ul.pager li,
+ul.pager li a,
+ul.pager li span {
+	display: inline-block;
+}
+
+* html ul.pager li,
+* html ul.pager li a,
+* html ul.pager li span {
+	display: inline;
+	zoom: 1;
+}
+
+*:first-child+html ul.pager li,
+*:first-child+html ul.pager li a,
+*:first-child+html ul.pager li span {
+	display: inline;
+	zoom: 1;
+}
+
+* html ul.pager li {
+	margin: 0 0.25em;
+}
+
+*:first-child+html ul.pager li {
+	margin: 0 0.25em;
+}
+
+ul.pager li a,
+ul.pager li span {
+	border: solid 1px #d6d6d6;
+	padding: 3px 8px;
+}
+
+ul.pager li a:hover {
+	background: #ebf6fe;
+	border: solid 1px #99c7e3;
+	color: #0072ba;
+}
+
+ul.pager li.pagePrev a,
+ul.pager li.pageNext a,
+ul.pager li.pagePrev a:hover,
+ul.pager li.pageNext a:hover {
+	border: none;
+	padding: 0;
+	vertical-align: baseline;
+	zoom: 1;
+}
+
+* html ul.pager li.pagePrev,
+* html ul.pager li.pageNext {
+	vertical-align: 0.35em;
+}
+
+*:first-child+html ul.pager li.pagePrev,
+*:first-child+html ul.pager li.pageNext {
+	vertical-align: 0.35em;
+}
+
+ul.pager li.pagePrev {
+	margin-right: 5px;
+}
+
+ul.pager li.pagePrev a,
+ul.pager li.pagePrev a:hover {
+	background: url(../images/ico_back01.gif) no-repeat 0 0.3em;
+	padding-left: 16px;
+}
+
+ul.pager li.pageNext {
+	margin-left: 5px;
+}
+
+ul.pager li.pageNext a,
+ul.pager li.pageNext a:hover {
+	background: url(../images/ico_arrow05.gif) no-repeat 100% 0.3em;
+	padding-right: 16px;
+}
+
+ul.pager li span {
+	background: #a52b01;
+	border: solid 1px #a52b01;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+
+/* # column style for kawaijuku
+---------------------------------------------------------------------------- */
+
+div.bColumn1 div.bColumnIn .head,
+div.bColumn2 div.bColumnIn .head,
+div.bColumn3 div.bColumnIn .head {
+	font-weight: bold;
+	margin: 0 0 5px;
+}
+
+div.bColumn1 div.bColumnIn p,
+div.bColumn2 div.bColumnIn p,
+div.bColumn3 div.bColumnIn p {
+	margin-top: 5px;
+}
+
+div.bColumn1 {
+	background: url(../images/bg_column01.gif) repeat left top;
+	clear: both;
+	margin: 20px 0;
+	padding: 3px;
+	zoom: 1;
+}
+
+div.bColumn1 div.bColumnIn {
+	background: #ffffff;
+	padding: 18px 18px 13px;
+}
+
+div.bColumn2 {
+	border: solid 1px #d1d4d5;
+	margin: 0 0 20px;
+}
+
+div.bColumn2 div.bColumnIn {
+	padding: 10px;
+}
+
+div.bColumn3 {
+	border: solid 1px #d1d4d5;
+	height: 109px;
+	margin: 20px 0;
+	overflow: auto;
+}
+
+div.bColumn3 div.bColumnIn {
+	padding: 15px 19px;
+}
+
+div.bColumn4 {
+	border: solid 1px #eee4e1;
+	margin: 20px 0;
+}
+
+div.bColumn4 .head {
+	background: #fcf6f4;
+	border-bottom: solid 1px #eee4e1;
+	font-weight: bold;
+	margin: 0 -19px 20px;
+	padding: 9px 10px;
+}
+
+div.bColumn4 div.bColumnIn {
+	padding: 0 19px 15px;
+}
+
+
+/* # table style for kawaijuku
+---------------------------------------------------------------------------- */
+
+div.table1,
+div.table2 {
+	clear: both;
+	margin: 20px 0;
+}
+
+div.table1 table,
+div.table2 table {
+	width: 100%;
+}
+
+div.table1 table th,
+div.table1 table td,
+div.table2 table th,
+div.table2 table td {
+	border-bottom: solid 1px #eee4e1;
+	padding: 15px;
+}
+
+div.table1 table th,
+div.table2 table th {
+	background: #fcf6f4;
+	vertical-align: top;
+}
+
+div.table1 table td.cell1,
+div.table2 table td.cell1 {
+	background: #fed0d0;
+}
+
+div.table1 table thead th,
+div.table2 table thead th {
+	background: #a5a5a5;
+	color: #ffffff;
+	font-weight: bold;
+	padding: 3px 0;
+	text-align: center;
+	vertical-align: middle;
+	width: auto;
+}
+
+div.table1 table th,
+div.table1 table td {
+	border-top: solid 1px #eee4e1;
+}
+
+div.table1 table th {
+	font-weight: bold;
+	width: 142px;
+}
+
+div.table1 table td div {
+	margin: 0;
+}
+
+div.table2 table th {
+	font-weight: bold;
+	width: 100px;
+}
+
+div.table2 table td {
+	border-left: solid 1px #eee4e1;
+	text-align: center;
+}
+
+div.table2 table td.first {
+	border-left: none;
+}
+
+
+/* # link style for kawaijuku
+---------------------------------------------------------------------------- */
+
+.ext {
+	background: url(../images/ico_ext.gif) no-repeat 0 0.2em;
+	padding: 0 0 0 17px;
+}
+
+.pdf {
+	background: url(../images/ico_pdf.gif) no-repeat 0 0;
+	padding: 2px 0 2px 17px;
+}
+
+.back {
+	background: url(../images/ico_back01.gif) no-repeat 0 0.15em;
+	padding: 0 0 2px 17px;
+}
+
+.rss {
+	background: url(../images/ico_rss01.gif) no-repeat 0 0;
+	padding: 2px 0 2px 20px;
+}
+
+.pageTop {
+	background: url(../images/ico_pagetop.gif) no-repeat 100% 0.2em;
+	margin: 25px 0 -2px;
+	padding: 0 16px 2px 0;
+	text-align: right;
+}
+
+.inPage {
+	background: url(../images/ico_down01.gif) no-repeat 0 0.15em;
+	padding: 0 0 0 17px;
+	white-space: nowrap;
+}
+
+a.arrow1,
+span.arrow1,
+.arrow1 li {
+	background: url(../images/ico_arrow03.gif) no-repeat 0 0.25em;
+	padding-left: 15px;
+}
+
+a.arrow1,
+span.arrow1 {
+	display: inline-block;
+}
+
+* html a.arrow1,
+* html span.arrow1 {
+	display: inline;
+	zoom: 1;
+}
+
+*:first:child+html a.arrow1,
+*:first:child+html span.arrow1 {
+	display: inline;
+	zoom: 1;
+}
+
+.arrow2 {
+	background: url(../images/ico_arrow08.gif) no-repeat 0 0.4em;
+	padding-left: 7px;
+}
+
+.add {
+	background: url(../images/ico_add01.gif) no-repeat 0 0.15em;
+	padding-left: 19px;
+}
+
+ul.inPageList1 {
+	margin: 0 0 15px;
+}
+
+ul.inPageList1 li {
+	display: inline;
+	margin: 0 15px 0 0;
+}
+
+ul.inPageList1 li a {
+	background: url(../images/ico_down01.gif) no-repeat 0 0.1em;
+	padding: 0 0 0 20px;
+	white-space: nowrap;
+}
+
+ul.selectLink li,
+ul.selectLink li a {
+	display: inline-block;
+}
+
+* html ul.selectLink li,
+* html ul.selectLink li a {
+	display: inline-block;
+	zoom: 1;
+}
+
+*:first-child+html ul.selectLink li,
+*:first-child+html ul.selectLink li a {
+	display: inline-block;
+	zoom: 1;
+}
+
+ul.selectLink li {
+	background: url(../images/bg_select_link_r.gif) no-repeat right top;
+	color: #999999;
+	margin: 3px 0;
+}
+
+ul.selectLink li a {
+	background: url(../images/bg_select_link_l.gif) no-repeat left top;
+	color: #999999;
+	font-weight: bold;
+	line-height: 25px;
+	padding: 0 10px;
+	text-align: center;
+	text-decoration: none;
+}
+
+ul.selectLink li.selected a {
+	color: #004878;
+	text-decoration: underline;
+}
+
+
+/* # form style for kawaijuku
+---------------------------------------------------------------------------- */
+
+.form1 {
+	background: #fcf6f4;
+	margin: 0 0 20px;
+}
+
+.form1 table {
+	width: 100%;
+}
+
+.form1 input,
+.form1 select,
+.form1 img {
+	vertical-align: middle;
+}
+
+.form1 th,
+.form1 td {
+	border-top: solid 1px #eee4e1;
+	padding: 9px 3px 9px 9px;
+}
+
+.form1 tr.first th,
+.form1 tr.first td {
+	border-top: none;
+}
+
+.form1 th {
+	width: 96px;
+}
+
+.form1 td.half {
+	width: 225px;
+}
+
+.form2 {
+	background: #fcf6f4;
+	margin: 0 0 20px;
+	padding: 20px;
+}
+
+.form2 p {
+	margin: 0;
+}
+
+.form2 input,
+.form2 img {
+	vertical-align: middle;
+}
+
+.bButton1 {
+	margin: 20px 0;
+	text-align: center;
+}
+
+.bButton1 img,
+.bButton1 input {
+	vertical-align: middle;
+}
+
+.bButton2 {
+	background: #fcf6f4;
+	margin: 20px 0;
+	padding: 10px 0;
+	text-align: center;
+}
+
+.srchNav {
+	margin: 20px 0;
+}
+
+.srchNav p.srchStatus {
+	float: left;
+}
+
+.srchNav p.srchStatus .count {
+	font-size: 250%;
+	font-weight: bold;
+	padding: 0 5px 0 0;
+}
+
+.srchNav div.srchDisplay {
+	float: right;
+}
+
+.srchNav p.srchOrder {
+	float: left;
+}
+
+.srchNav p.srchCount {
+	display: inline;
+	float: left;
+	margin: 0 0 0 10px;
+}
+
+input.frm115 {
+	width: 115px;
+}
+
+input.frm195 {
+	width: 195px;
+}
+
+input.frm315 {
+	width: 315px;
+}
+
+input.frm395 {
+	width: 395px;
+}
+
+input.frm480 {
+	width: 480px;
+}
+
+input.frm520 {
+	width: 520px;
+}
+
+textarea.frmFull {
+	width: 98%;
+}
+
+
+/* # etc style for kawaijuku
+---------------------------------------------------------------------------- */
+
+.banner {
+	margin: 0;
+	text-align: center;
+}
+
+div.lvNav {
+	margin: -15px 0 15px;
+}
+
+div.lvNav ul li {
+	border-left: solid 1px #d1d4d5;
+	border-bottom: solid 1px #d1d4d5;
+	float: left;
+	width: 150px;
+}
+
+div.lvNav ul li.first {
+	border-left: none;
+	width: 153px;
+}
+
+div.lvNav ul li a {
+	display: block;
+	padding: 7px;
+	text-align: center;
+}
+
+div.lvNav ul li a span {
+	background: url(../images/ico_arrow03.gif) no-repeat 0 0;
+	margin: 0 auto;
+	padding: 0 0 0 20px;
+}
+
+div.lvNav ul li a:hover {
+	background-color: #ebf6fe;
+}
+
+div.lvNav ul li.current a {
+	color: #a52a00;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+div.lvNav ul li.current a span {
+	background-image: url(../images/ico_down02.gif);
+}
+
+div.tbNav {
+	margin: -16px -1px 15px;
+}
+
+div.tbNav table {
+	width: 100%;
+}
+
+div.tbNav table td {
+	border: solid 1px #d1d4d5;
+	padding: 8px 0;
+	text-align: center;
+}
+
+div.tbNav table td.hover {
+	background: #ebf6fe;
+	cursor: pointer;
+}
+
+div.tbNav table td.hover a {
+	text-decoration: none;
+}
+
+div.tbNav table td.current a {
+	background-image: url(../images/ico_down02.gif);
+	color: #a52a00;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+div.visual {
+	margin: 0 0 20px;
+}
+
+div.visual p.visLink {
+	margin: -66px 11px 0 0;
+	text-align: right;
+}
+
+div.tabs1,
+div.tabs2 {
+	border-bottom: solid 1px #d1d4d5;
+	margin: 0 0 20px;
+	padding: 0 9px 0 4px;
+}
+
+div.tabs1 ul li,
+div.tabs2 ul li {
+	display: inline-block;
+	margin: 0 0 -1px 5px;
+}
+
+* html div.tabs1 ul li,
+* html div.tabs2 ul li {
+	display: inline;
+	zoom: 1;
+}
+
+*:first-child+html div.tabs1 ul li,
+*:first-child+html div.tabs2 ul li {
+	display: inline;
+	zoom: 1;
+}
+
+div.tabs1 ul li a {
+	background: url(../images/bg_tab.gif) no-repeat left top;
+	display: block;
+	font-weight: bold;
+	height: 26px;
+	padding: 8px 20px 0;
+	text-align: center;
+	width: 141px;
+}
+
+div.tabs1 ul li a:hover {
+	background-image: url(../images/bg_tab_o.gif);
+}
+
+div.tabs1 ul li.selected a,
+div.tabs1 ul li.ui-tabs-selected a {
+	background-image: url(../images/bg_tab_a.gif);
+	color: #a52a00;
+}
+
+div.tabs2 {
+	padding: 0 0 0 4px;
+}
+
+div.tabs2 ul li {
+	margin: 0 3px -1px 0;
+}
+
+.ui-tabs-hide {
+	display: none;
+}
+
+.faqSec {
+	margin: 0 0 10px;
+}
+
+.faqSec .faqIcon {
+	left: 10px;
+	position: absolute;
+	top: 6px;
+}
+
+.faqSec .faqHead {
+	background: #ffffff no-repeat right center;
+	border: solid 1px #d1d4d5;
+	margin: 0 0 10px;
+	padding: 8px 10px 8px 39px;
+	position: relative;
+	zoom: 1;
+}
+
+.faqSec .faqBody {
+	border: solid 1px #d1d4d5;
+	border-top: none;
+	margin: -10px 0 0;
+	padding: 13px 5px 0 39px;
+	position: relative;
+	zoom: 1;
+}
+
+.faqSec .faqBody p {
+	margin: 0 0 5px;
+}
+
+.faqSec .faqBody .faqIcon {
+	top: 10px;
+}
+
+.faqSec .faqBody .faqRelation {
+	background: #f7f7f7;
+	margin: 0 -5px 0 -39px;
+	padding: 5px 15px;
+	position: relative;
+}
+
+.faqSec .faqBody .faqRelation .head {
+	float: left;
+}
+
+.faqSec .faqBody .faqRelation ul {
+	float: left;
+	padding: 0 0 0 8px;
+	overflow: hidden;
+}
+
+.open .faqHead {
+	background-image: url(../images/bg_faq_close.gif);
+}
+
+.close .faqHead {
+	background-image: url(../images/bg_faq_open.gif);
+}
+
+.close .faqBody {
+	display: none;
+}
+
+div.getAdobe div.bColumnIn {
+	font-size: 83%;
+	padding: 20px;
+}
+
+img.bdr1 {
+	border: solid 1px #e5e5e5;
+}
+
+img.bdr2 {
+	border: solid 1px #e5e5e5;
+	padding: 1px;
+}
+
+
+/* # jquery ui 
+---------------------------------------------------------------------------- */
+
+/* Overlays */
+.ui-widget-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #666666/*{bgColorOverlay}*/ url(../images/bg_overlay01.png)/*{bgImgUrlOverlay}*/ 50%/*{bgOverlayXPos}*/ 50%/*{bgOverlayYPos}*/ repeat/*{bgOverlayRepeat}*/; opacity: .8;filter:Alpha(Opacity=80)/*{opacityOverlay}*/; }
+.ui-widget-shadow { margin: -8px/*{offsetTopShadow}*/ 0 0 -8px/*{offsetLeftShadow}*/; padding: 8px/*{thicknessShadow}*/; background: #666666/*{bgColorShadow}*/ url(../images/bg_overlay01.png)/*{bgImgUrlShadow}*/ 50%/*{bgShadowXPos}*/ 50%/*{bgShadowYPos}*/ repeat/*{bgShadowRepeat}*/; opacity: .8;filter:Alpha(Opacity=80)/*{opacityShadow}*/; -moz-border-radius: 8px/*{cornerRadiusShadow}*/; -khtml-border-radius: 8px/*{cornerRadiusShadow}*/; -webkit-border-radius: 8px/*{cornerRadiusShadow}*/; border-radius: 8px/*{cornerRadiusShadow}*/; }
+
+
+.ui-dialog-content {
+	display: none;
+}
+
+.ui-dialog {
+	border: solid 1px #eee4e1;
+	background: #ffffff;
+	position: absolute;
+}
+
+.ui-dialog .ui-dialog-titlebar {
+	background: #fcf6f4;
+	border-bottom: solid 1px #eee4e1;
+	font-weight: bold;
+	margin: 0 0 20px;
+	padding: 9px 10px;
+}
+
+.ui-dialog .ui-dialog-titlebar .ui-dialog-title {
+	float: left;
+}
+
+.ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-close {
+	background: url(../images/ico_arrow03.gif) no-repeat 0 0.25em;
+	float: right;
+	padding-left: 15px;
+}
+
+.ui-dialog .ui-dialog-content {
+	padding: 0 19px 15px;
+}
+
+
+/* # clearfix 
+---------------------------------------------------------------------------- */
+
+.clearfix {
+	zoom: 1;
+}
+
+.clearfix:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}
+
+div.bColumnIn,
+.b2Col,
+.itCol1,
+.itCol2,
+.form2,
+.srchNav,
+div.tabs1,
+dl.dList1 dd,
+div.lvNav,
+ul.selectLink,
+.faqSec .faqBody .faqRelation,
+.ui-helper-clearfix {
+	zoom: 1;
+}
+
+div.bColumnIn:after,
+.b2Col:after,
+.itCol1:after,
+.itCol2:after,
+.form2:after,
+.srchNav:after,
+div.tabs1:after,
+dl.dList1 dd:after,
+div.lvNav:after,
+ul.selectLink:after,
+.faqSec .faqBody .faqRelation:after,
+.ui-helper-clearfix:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}

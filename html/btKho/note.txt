@@ -1,0 +1,3 @@
+_ bg gian chieu ngang
+_ cau truc new, tang dt gian bg dd (va nguoc lai)
+_ float khong can set class last

@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+/* ****************************************************
+Title: print.css
+Created: 2010/01/12
+Last Modified: 2012/04/02
+***************************************************** */
+
+
+/* Table Of Contents
+----------------------------------------
+
+# Adjusts for print
+
+----------------------------------------*/
+
+
+/* Adjusts for print
+---------------------------------------------------------------------------- */
+
+body {
+	font-size: 14pt;
+}
+
+* html body {
+	zoom: 70%;
+}
+
+div.gStyle,
+div#header,
+div#gNav,
+div#topicPath,
+div#sidebar,
+div#fNav,
+div#footer,
+p.pageTop {
+	display: none;
+}
+
+div#pageBody div#pageBodyIn {
+	background: none;
+	border: none;
+}
+
+div#content {
+	float: none;
+	margin: 0 auto;
+}
