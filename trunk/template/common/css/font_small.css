@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+/* ****************************************************
+Title: font_small.css
+Created: 2012-02-13
+Last Modified: 2012-02-13
+***************************************************** */
+
+
+/* Table Of Contents
+----------------------------------------
+
+# body
+# header
+
+----------------------------------------*/
+
+
+/* # body
+---------------------------------------------------------------------------- */
+
+body {
+	font-size: 62.5%;
+}
+
+
+/* # header
+---------------------------------------------------------------------------- */
+
+div#header div#hContent div#hFontSize ul li#fontSizeM img,
+div#header div#hContent div#hFontSize ul li#fontSizeL img {
+	visibility: visible;
+}
+
+div#header div#hContent div#hFontSize ul li#fontSizeS img {
+	visibility: hidden;
+}

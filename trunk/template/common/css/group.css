@@ -1,0 +1,128 @@
+@charset "utf-8";
+
+/* ****************************************************
+Title: group.css
+Created: 2012-02-13
+Last Modified: 2012-03-23
+***************************************************** */
+
+
+/* Table Of Contents
+----------------------------------------
+
+# Reset 'Browser standard style'
+# gStyle
+# clearfix
+
+----------------------------------------*/
+
+
+/* # Reset 'Browser standard style'
+---------------------------------------------------------------------------- */
+
+.gStyle p, .gStyle ul, .gStyle ol, .gStyle li {
+	font-size: 100%;
+	font-style: normal;
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+.gStyle img { 
+	border: 0; 
+	vertical-align: bottom;
+}
+
+.gStyle ol, .gStyle ul { list-style: none; } 
+
+
+/* # gStyle 
+---------------------------------------------------------------------------- */
+
+div.gStyle  {
+	background-color: #fff;
+	color: #000;
+	line-height: 1.5;
+}
+
+div.gStyle div.gStyleIn {
+	margin: 0 auto;
+	width: 960px;
+}
+
+.gStyle a    { color: #004979; }
+.gStyle a:hover   { text-decoration: none; }
+
+div#gHeader {
+	border-top: solid 2px #0072ba;
+	border-bottom: solid 1px #e5e5e5;
+	padding: 3px 0 4px;
+}
+
+div#gHeader p.groupLogo {
+	float: right;
+	margin: 4px 0 0 18px;
+}
+
+div#gHeader p.groupContact {
+	float: right;
+	margin: 2px 0 0;
+}
+
+div#gFooter {
+	padding: 14px 0;
+}
+
+div#gFooter p.groupLogo {
+	float: left;
+	margin: 9px 0;
+}
+
+div#gFooter div#gFooterGroups {
+	float: right;
+}
+
+div#gFooter div#gFooterGroups p {
+	margin: 0 0 7px;
+}
+
+div#gFooter div#gFooterGroups ul {
+	line-height: 1.0;
+}
+
+div#gFooter div#gFooterGroups ul li {
+	border-left: solid 1px #cccccc;
+	display: inline;
+	margin: 0 0 0 9px;
+	padding: 0 0 0 9px;
+}
+
+div#gFooter div#gFooterGroups ul li.first {
+	border: none;
+	margin-left: 0;
+	padding: 0;
+}
+
+div#gFooter div#gFooterGroups ul li a {
+	white-space: nowrap;
+}
+
+
+/* # clearfix
+---------------------------------------------------------------------------- */
+
+div#gHeader,
+div#gFooter {
+	zoom: 1;
+}
+
+div#gHeader:after,
+div#gFooter:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}

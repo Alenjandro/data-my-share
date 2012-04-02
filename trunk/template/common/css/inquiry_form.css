@@ -1,0 +1,119 @@
+@charset "utf-8";
+
+/* ****************************************************
+Title: inquiry_form.css
+Created: 2012-03-27
+Last Modified: 2012-03-27
+***************************************************** */
+
+
+/* Table Of Contents
+----------------------------------------
+
+# content
+# clearfix
+
+----------------------------------------*/
+
+
+/* # content
+---------------------------------------------------------------------------- */
+
+div#content p.flow {
+	margin: 0 0 25px;
+}
+
+div#content .example {
+	color: #666666;
+}
+
+div#content div#frmContact p.textT {
+	margin-bottom: 10px;
+}
+
+div#content div#frmContact input,
+div#content div#frmContact select {
+	vertical-align: -2px;
+}
+
+div#content div#frmContact img {
+	vertical-align: middle;
+}
+
+div#content div#frmContact ul.categories li {
+	float: left;
+	white-space: nowrap;
+	width: 200px;
+}
+
+div#content div#frmContact span.label {
+	display: inline-block;
+	margin: 5px 0;
+	width: 8em;
+}
+
+* html div#content div#frmContact span.label {
+	display: inline;
+	zoom: 1;
+}
+
+*:first-child+html div#content div#frmContact span.label {
+	display: inline;
+	zoom: 1;
+}
+
+div#content div#privacy {
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+div#content div#privacy input#privacy2 {
+	margin-left: 40px;
+}
+
+div#content p.ssl {
+	text-align: center;
+}
+
+div#content td.error {
+	background: #fee8e8;
+}
+
+div#content ul.errorList {
+	clear: both;
+	color: #b71a35;
+	display: none;
+	padding: 10px 0 0;
+}
+
+div#content .error ul.errorList {
+	display: block;
+}
+
+div#content .bButton {
+	display: block;
+}
+
+div#content div#buttons p.errButton {
+	display: none;
+}
+
+div#content div#buttons ul.errorList {
+	margin: 0 0 10px;
+}
+
+div#content div#buttons.error input {
+	cursor: not-allowed;
+}
+
+div#content div#buttons.error p.errButton {
+	display: block;
+}
+
+div#content div#buttons.error p.confButton {
+	display: none;
+}
+
+
+/* # clearfix
+---------------------------------------------------------------------------- */
