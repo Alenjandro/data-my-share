@@ -1,0 +1,175 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# visual
+# content
+
+----------------------------------------*/
+
+
+/* # visual
+---------------------------------------------------------------------------- */
+
+div#visual {
+	clear: both;
+	margin: 11px 15px 13px 15px;
+}
+
+.slide {
+	height: 328px;
+	overflow: hidden;
+	position: relative;
+	width: 870px;
+}
+
+.slide .preload {
+	color: #fff;	
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	text-align: center;
+	width: 100%;
+	z-index: 100000;
+}
+
+.slide .preload img {
+	visibility: hidden;
+}
+
+.slideOuter {
+	height: 328px;
+	overflow: hidden;
+	position: relative;
+	width: 658px;
+	z-index: 3;
+}
+
+ul.slideWapper {
+	height: 328px;
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 658px;
+}
+
+ul.slideWapper li {
+	overflow: hidden;
+	height: 328px!important;
+	width: 658px!important;
+}
+
+.lof-opacity li {
+	float: inherit;
+	height: 328px!important;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 658px!important;
+}
+
+ul.slideWapper li img {
+	height: 328px!important;
+	width: 658px!important;
+}
+
+ul.thumbList { 
+	height: 100%;
+	position: absolute;
+	top: 0;
+	width: 206px!important;
+}
+
+ul.thumbList li {
+	cursor: pointer;
+	overflow: hidden;
+	width: 206px;
+}
+
+.thumb {
+	height: 328px!important;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 206px;
+	z-index: 100;
+}
+
+.thumbList li.active a#visualButton01 img,
+.thumbList li.active a#visualButton02 img,
+.thumbList li.active a#visualButton03 img,
+.thumbList li.active a#visualButton04 img {
+	visibility: hidden;
+}
+
+.thumbList li.active a {
+	display: block;
+	height: 82px;
+	width: 206px;
+}
+
+.thumbList li.active a#visualButton01 {
+	background: url(../images/bnr_visual01_o.gif) no-repeat 0 0;
+}
+
+.thumbList li.active a#visualButton02 {
+	background: url(../images/bnr_visual02_o.gif) no-repeat 0 0;
+}
+
+.thumbList li.active a#visualButton03 {
+	background: url(../images/bnr_visual03_o.gif) no-repeat 0 0;
+}
+
+.thumbList li.active a#visualButton04 {
+	background: url(../images/bnr_visual04_o.gif) no-repeat 0 0;
+}
+
+.thumbList li img {
+	height: 82px;
+	width: 206px;
+}
+
+.slide .button-next,
+.slide .button-previous {
+	display: none;
+    cursor: pointer;
+    height: 28px;
+    position: absolute;
+    text-indent: -999px;
+    top: 0;
+    width: 28px;
+    z-index: 400;
+}
+
+.slide .button-next {
+	display: none;
+    right: 100px;
+	top: 10px;
+}
+
+.slide .button-previous {
+	display: none;
+    right: 100px;
+	top: 259px;
+}
+
+
+/* # clearfix
+---------------------------------------------------------------------------- */
+
+div#visual {
+	zoom: 1;
+}
+
+div#visual:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}
