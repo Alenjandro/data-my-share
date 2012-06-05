@@ -1,0 +1,120 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# General Elements
+# body
+# layout
+# header
+# gNav
+# content
+# sidebar
+# footer
+# clearfix
+# common classes
+
+----------------------------------------*/
+
+
+/* # General Elements
+---------------------------------------------------------------------------- */
+
+
+/* # body
+---------------------------------------------------------------------------- */
+
+body {
+	background-color: #fff;
+	color: #333;
+	font-size: 75%;
+	font-family: "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3";
+	line-height: 1.5;
+}
+
+/* # gNav
+---------------------------------------------------------------------------- */
+
+div#gNav .gNavBg {
+	background: url(../images/bg_gnav.png) no-repeat center 0;
+	margin-top: -50px;
+	height: 50px;
+}
+
+div#gNav dl dt {
+	overflow: hidden;
+	position: absolute;
+	text-indent: -9999em;
+}
+
+div#gNav dl dd ul {
+	margin: -50px auto 0;
+	position: relative;
+	z-index: 1;
+	width: 960px;
+}
+
+div#gNav dl dd ul li {
+	display: inline;
+	float: left;
+}
+
+div#gNav dl dd ul li a {
+	display: block;
+	margin-right: -1px;
+	height: 50px;
+	position: relative;
+	text-indent: -9999em;
+	width: 161px;
+}
+
+div#gNav dl dd ul li a:hover {
+	position: relative;
+	z-index: 10;
+}
+
+div#gNav dl dd ul li#gNavTop a { background: url(../images/gnav_top.png) no-repeat 0 0; }
+div#gNav dl dd ul li#gNavService a { background: url(../images/gnav_service.png) no-repeat 0 0; }
+div#gNav dl dd ul li#gNavCompany a { background: url(../images/gnav_company.png) no-repeat 0 0; }
+div#gNav dl dd ul li#gNavCost a { background: url(../images/gnav_cost.png) no-repeat 0 0; }
+div#gNav dl dd ul li#gNavCaseStudy a { background: url(../images/gnav_case_study.png) no-repeat 0 0; }
+div#gNav dl dd ul li#gNavRecruit a { background: url(../images/gnav_recruit.png) no-repeat 0 0; }
+
+div#gNav dl dd ul li#gNavTop a:hover { background: url(../images/gnav_top_o.png) no-repeat 0 0; }
+div#gNav dl dd ul li#gNavService a:hover { background: url(../images/gnav_service_o.png) no-repeat 0 0; }
+div#gNav dl dd ul li#gNavCompany a:hover { background: url(../images/gnav_company_o.png) no-repeat 0 0; }
+div#gNav dl dd ul li#gNavCost a:hover { background: url(../images/gnav_cost_o.png) no-repeat 0 0; }
+div#gNav dl dd ul li#gNavCaseStudy a:hover { background: url(../images/gnav_case_study_o.png) no-repeat 0 0; }
+div#gNav dl dd ul li#gNavRecruit a:hover { background: url(../images/gnav_recruit_o.png) no-repeat 0 0; }
+
+
+/* # visual
+---------------------------------------------------------------------------- */
+
+div#visual {
+	background: url(../images/bg_visual.jpg) no-repeat center 0;
+	position: relative;
+	z-index: -1;
+}
+
+div#visualInner {
+	margin: 0 auto;
+	width: 1040px;
+}
+
+
+/* # clearfix
+---------------------------------------------------------------------------- */
+
+div#gNav dl dd ul {
+	zoom: 1;
+}
+
+div#gNav dl dd ul:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}
