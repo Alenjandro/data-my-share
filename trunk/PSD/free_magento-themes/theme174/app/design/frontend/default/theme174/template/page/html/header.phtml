@@ -1,0 +1,59 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+  *
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright  Copyright (c) 2011 template-help.com
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+/**
+ * @var Mage_Page_Block_Html_Header $this
+ */
+?>
+<?php echo $this->getChildHtml('ie') ?>
+<div class="header-container">
+    <div class="page">
+        <div class="header">
+            <?php if ($this->getIsHomePage()):?>
+            <h1 class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a></h1>
+            <?php else:?>
+            <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a>
+            <?php endif?>
+            <div class="quick-access">
+                <p class="welcome-msg"><?php echo $this->getWelcome()?></p>
+                <?php echo $this->getChildHtml('topLinks') ?>
+                <div class="clear"></div>                
+                <?php echo $this->getChildHtml('topSearch') ?>
+                <script type="text/javascript">
+					if(navigator.userAgent.indexOf('WebKit')!=-1){						
+						if(navigator.userAgent.indexOf('Chrome')==-1){
+							document.getElementById('search_mini_form').getElementsByTagName('button')[0].className += ' safari-fix';							
+						}
+					}
+                </script>
+            </div>
+            <br class="clear" />
+            <?php echo $this->getChildHtml('topContainer'); ?>
+        </div>
+    </div>
+</div>
+<div class="menu-wrapper">
+	<div class="page">
+    	<?php echo $this->getChildHtml('topMenu') ?>        
+    </div>
+</div>
+<?php echo $this->getChildHtml('flash') ?> 
+<?php echo $this->getChildHtml('slider') ?> 
