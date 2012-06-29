@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+/* Table Of Contents
+---------------------------------------- */
+
+div#layout {
+	margin: 20px auto 0;
+	width: 612px;
+}
+
+ul.tabList {
+	background: url(../images/bg_dot.gif) repeat-x 0 0;
+	border-bottom: 1px solid #c81233;
+	margin: 0 10px 0 11px;
+	padding-top: 1px;
+}
+
+ul.tabList li {
+	cursor: pointer;
+	float: left;
+	margin-right: 1px;
+	width: auto;
+}
+
+ul.info {
+	margin-right: -14px;
+}
+
+ul.info li {
+	display: inline;
+	float: left;
+	margin: 0 14px 14px 0;
+	padding: 0;
+	width: 191px;
+	padding: 9px 0 5px;
+}
+
+
+/* # clearfix
+---------------------------------------------------------------------------- */
+
+ul {
+	zoom: 1;
+}
+
+ul:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}
