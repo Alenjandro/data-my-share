@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+.meter-wrap{
+    position: relative;
+}
+
+.meter-wrap,
+.meter-value,
+.meter-text {
+    /* The width and height of your image */
+    width: 155px; height: 30px;
+}
+
+.meter-wrap,
+.meter-value {
+    background: #bdbdbd url(meter-outline.png) top left no-repeat;
+}
+
+.meter-value {
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-radius: 20px;
+}
+
+.meter-text {
+    position: absolute;
+    top:0; 
+	right:0;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+}
+</style>
+</head>
+
+<body>
+<div class="meter-wrap">
+    <div class="meter-value" style="background-color: #0a0; width: 60%;">
+        <div class="meter-text">
+            60%
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
