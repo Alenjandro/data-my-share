@@ -1,0 +1,360 @@
+@charset "utf-8";
+
+/*   
+Theme Name: koutsu-navi
+Theme URI:http://igrove.co.jp/
+Description: WordPress theme designed by <a target="_blank" href="http://igrove.co.jp/">iGrove</a>
+Author: iGrove
+Author URI: http://igrove.co.jp/
+Version: (version 1.1)
+*/
+
+
+/* Table Of Contents
+----------------------------------------
+
+#01 General Elements
+#02 gNavi
+#03 visual & pageBody
+#04 sidebar
+#05 primary
+#06 secondary
+#09 clearfix
+#10 common classes
+
+----------------------------------------*/
+
+@import "../../../../common/css/reset.css";
+@import "../../../../common/css/base.css";
+@import "../../../../common/css/modules.css";
+
+
+/* #01 index
+---------------------------------------------------------------------------- */
+
+div#content h1 {
+	float: left;
+	position: relative;
+	margin-bottom: 15px;
+}
+
+div#content h1 a {
+	position: absolute;
+	top: 24px;
+	right: 25px;
+}
+
+div#content h2.title {
+	border: 1px solid #DEDEDE;
+	border-right: none;
+	background: #F5F5F5 url(images/bg_mh.gif) no-repeat 0 0;
+	clear: both;
+	font-size: 120%;
+	font-weight: bold;
+	padding: 8px 10px 5px 10px;
+	width: 649px;
+}
+
+div#sidebar ul#sNaviTrain,
+div#sidebar ul#sNaviOutdoor, 
+div#sidebar ul#sNaviBusTaxi, 
+div#sidebar ul#sNavistation  {
+	display: none;
+}
+
+div#sidebar #bustaxiHead {
+	padding-bottom: 10px;
+}
+
+div#sidebar p.lNavi {
+	padding: 0;
+	margin: 0;
+}
+
+div#sidebar dl.info {
+	padding: 10px 0 10px 0;
+}
+
+div#sidebar dl.info ul li {
+	background: url(images/bg_dot.gif) repeat-x bottom left;
+	clear: both;
+	padding: 7px 0 8px 6px;
+}
+
+div#sidebar dl.info ul li a {
+	background: url(../../../../common/images/icon_arrow_link_w.gif) no-repeat 0 2px;
+	padding: 0 0 0 24px;
+}
+
+
+/* #01 common
+---------------------------------------------------------------------------- */
+
+div#content dl.info,
+div#content div.tabs-container dl {
+	border: 1px solid #DCDCDC;
+	clear: both;
+	padding: 9px 0 0 0;
+	width: 668px;
+}
+
+div#content dl.info dt,
+div#content div.tabs-container dl dt {
+	float: none;
+	padding: 0 0 0 10px;
+	z-index: 100;
+	width: 100px;
+}
+
+div#content dt.notFound {
+	padding: 0 0 8px 10px!important;
+	width: 658px!important;
+}
+
+div#content dl.info dd,
+div#content div.tabs-container dl dd {
+	background: url(images/bg_dot.gif) repeat-x top left;
+	clear: both;
+	display: block;
+	float: none;
+	margin: -2em 0 8px 0;
+	position: relative;
+	padding: 7px 0 3px 114px;
+	width: 554px;
+}
+
+div#content dl.info dd.last,
+div#content div.tabs-container dl dd.last {
+	background: none;
+	margin: -1.4em 0 0 0;
+	padding: 0 0 9px 114px;
+}
+
+div#content dl.info dd img,
+div#content div.tabs-container dl dd img {
+	float: left;
+}
+
+div#content dl.info dd span,
+div#content div.tabs-container dl dd span {
+	display: block;
+	font-size: 0%;
+	float: left;
+	margin: 0 11px 0 0;
+}
+
+div#content div.tabs-container dl dd img {
+	float: left;
+}
+
+div#content div.tabs-container dl dd span.link {
+	display: block;
+	float: right;
+	font-size: 100%;
+	margin: 0;
+	text-align: left;
+	width: 480px;
+}
+
+div#content dl.info dd a,
+div#content div.tabs-container dl dd span.link a {
+	outline: none;
+}
+
+div#content ul.naviPage,
+div#content div.tabs-container ul.naviPage {
+	clear: both;
+	padding: 6px 3px 15px 3px;
+	text-align: center;
+	width: 664px;
+}
+
+div#content ul.naviPage li,
+div#content div.tabs-container ul.naviPage li {
+	display: block;
+	float: left;
+	width: 221px;
+}
+
+div#content ul.naviPage li.back {
+	text-align: left;
+}
+
+div#content ul.naviPage li.back a {
+	background: url(images/ico_arrow_back.gif) no-repeat 0 0.2em;
+	padding: 0 0 0 22px;
+}
+
+div#content ul.naviPage li.new {
+	text-align: center;
+	width: 222px;
+}
+
+div#content ul.naviPage li.new span.getYear {
+	display: none;
+}
+
+div#content ul.naviPage li.next {
+	text-align: right;
+}
+
+div#content ul.naviPage li.next a {
+	background: url(images/ico_arrow_next.gif) no-repeat right 0.2em;
+	clear: both;
+	padding: 0 22px 0 0;
+}
+
+div#content ul.single li.next {
+	float: right;
+}
+
+div#content dl.detail {
+	padding: 7px 10px 15px 10px;
+}
+
+div#content p.buPdf {
+	padding: 10px 0 10px 0;
+}
+
+/* #01 Tab
+---------------------------------------------------------------------------- */
+
+div#content div#remote-tab-5 div,
+div#content div#remote-tab-4 div,
+div#content div#remote-tab-3 div,
+div#content div#remote-tab-2 div,
+div#content div#remote-tab-1 div {
+	display: none;
+}
+
+div#content div#remote-tab-1 div#tab01,
+div#content div#remote-tab-2 div#tab02,
+div#content div#remote-tab-3 div#tab03,
+div#content div#remote-tab-4 div#tab04,
+div#content div#remote-tab-5 div#tab05 {
+	display: block;
+}
+
+
+.tabs-hide {
+        display: none;
+}
+
+/* Skin */
+div#content ul.tabs-nav {
+	clear: both;
+	border-left: 1px solid #DCDCDC;
+	border-right: 1px solid #DCDCDC;
+	background: #FFF!important;
+	margin: 0 0 -5px 0px!important;
+	padding: 0 0 5px 0!important;
+	position: relative;
+	z-index: 10;
+}
+
+div#content ul.tabs-nav li {
+	border-bottom: 1px solid #DCDCDC;
+    float: left;
+	display: block;
+	height: 33px;
+	z-index: 0;
+}
+
+div#content ul.tabs-nav li a {
+	cursor: pointer;
+    display: block;
+	height: 33px;
+	outline: none;
+	text-align: center;
+	text-indent: -9999px;
+	width: 134px;
+	z-index: 2;
+}
+
+div#content ul.tabs-nav li#mediaTabs a {
+	background: url(images/title_media.gif) no-repeat 0 0;
+	width: 134px;
+}
+
+div#content ul.tabs-nav li#mediaTabs a:hover,
+div#content ul.tabs-nav li.tabs-selected a#tab1 {
+	background: url(images/title_media_o.gif) no-repeat 0 0 !important;
+}
+
+div#content ul.tabs-nav li#stationTabs a {
+	background: url(images/title_station.gif) no-repeat 0 0;
+}
+
+div#content ul.tabs-nav li#stationTabs a:hover,
+div#content ul.tabs-nav li.tabs-selected a#tab2 {
+	background: url(images/title_station_o.gif) no-repeat 0 0!important;
+}
+
+div#content ul.tabs-nav li#trainTabs a {
+	background: url(images/title_train.gif) no-repeat 0 0;
+}
+
+div#content ul.tabs-nav li#trainTabs a:hover,
+div#content ul.tabs-nav li.tabs-selected a#tab3 {
+	background: url(images/title_train_o.gif) no-repeat 0 0;
+}
+
+div#content ul.tabs-nav li#outdoorTabs a {
+	background: url(images/title_outdoor.gif) no-repeat 0 0;
+}
+
+div#content ul.tabs-nav li#outdoorTabs a:hover,
+div#content ul.tabs-nav li.tabs-selected a#tab4 {
+	background: url(images/title_outdoor_o.gif) no-repeat 0 0;
+}
+
+div#content ul.tabs-nav li#trafficTabs a {
+	background: url(images/title_traffic.gif) no-repeat 0 0;
+	width: 132px;
+}
+
+div#content ul.tabs-nav li#trafficTabs a:hover,
+div#content ul.tabs-nav li.tabs-selected a#tab5 {
+	background: url(images/title_traffic_o.gif) no-repeat 0 0;
+}
+
+
+*>.tabs-nav a span { /* hide from IE 6 */
+    width: auto;
+    height: auto;
+}
+.tabs-nav .tabs-selected a span {
+    padding-top: 7px;
+}
+.tabs-nav .tabs-selected a span, .tabs-nav a:hover span, .tabs-nav a:focus span, .tabs-nav a:active span {
+    background-position: 0 -50px;
+}
+.tabs-nav a span, .tabs-nav .tabs-disabled a:hover span, .tabs-nav .tabs-disabled a:focus span, .tabs-nav .tabs-disabled a:active span {
+    background-position: 0 0;
+}
+.tabs-nav .tabs-selected a:link, .tabs-nav .tabs-selected a:visited, .tabs-nav .tabs-disabled a:link, .tabs-nav .tabs-disabled a:visited { /* @ Opera, use pseudo classes otherwise it confuses cursor... */
+    cursor: text;
+}
+.tabs-nav a:hover, .tabs-nav a:focus, .tabs-nav a:active { /* @ Opera, we need to be explicit again here now... */
+    cursor: pointer;
+}
+.tabs-nav .tabs-disabled {
+    opacity: .4;
+}
+
+body#info div#content h1 {
+	background: #FFF;
+	margin: 0 0 -5px 0;
+	position: relative;
+	z-index: 10;
+}
+
+body#info div#content h1 a img {
+	border: none;
+	padding: 0;
+}
+
+body#info div#content h1 img {
+	border-bottom: 1px solid #DCDCDC;
+	padding: 0 0 24px 0;
+}

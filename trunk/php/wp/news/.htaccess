@@ -1,0 +1,10 @@
+AddHandler x-httpd-php528 .php
+Options +FollowSymLinks
+suPHP_ConfigPath /usr/home/e4010003/html/news/
+<FilesMatch "\.ini$">
+  Order Allow,Deny
+</FilesMatch>
+
+# BEGIN WordPress
+
+# END WordPress
