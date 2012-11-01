@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# pageBody
+
+----------------------------------------*/
+
+
+/* # pageBody
+---------------------------------------------------------------------------- */
+
+body {
+	background: #fff;
+}
+
+.wrapper05,
+.wrapper04,
+.wrapper03,
+.wrapper02,
+.wrapper01 {
+	width: 100%;
+	height: 400px;				
+	overflow: hidden;
+	height: 200px;
+	margin-bottom: 30px;
+}
+
+.wrapper01 {
+	height: 400px;
+}
+
+.wrapper05,
+.wrapper04 {
+	height: 100px;
+}
+
+#photo01 li {
+	display: block;
+	width: 1000px;
+	height: 400px;
+	float: left;
+}
+
+#photo03 li, 
+#photo02 li {
+	display: block;
+	width: 500px;
+	height: 200px;
+	float: left;
+}
+
+#photo05 li,
+#photo04 li {
+	display: block;
+	width: 500px;
+	height: 100px;
+	float: left;
+}
