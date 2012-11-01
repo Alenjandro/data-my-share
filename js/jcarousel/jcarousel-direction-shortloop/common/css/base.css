@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# body
+# pageBody
+
+----------------------------------------*/
+
+
+/* # body
+---------------------------------------------------------------------------- */
+
+body {
+	background-color: #fff;
+	color: #000;
+	font-size: 75%;
+	font-family: "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3";
+	line-height: 1.5;
+}
+
+/* # clearfix
+---------------------------------------------------------------------------- */
+
+div#pageBody {
+	zoom: 1;
+}
+
+div#pageBody:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}
