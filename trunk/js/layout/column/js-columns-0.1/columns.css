@@ -1,0 +1,404 @@
+/*
+ * Global CSS
+ */
+
+
+/*
+ * Eric Meyer's Global Reset
+ * http://meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/
+ */
+		html, body, div, span, applet, object, iframe,
+		h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+		a, abbr, acronym, address, big, cite, code,
+		del, dfn, em, font, img, ins, kbd, q, s, samp,
+		small, strike, strong, sub, sup, tt, var,
+		dl, dt, dd, ol, ul, li,
+		fieldset, form, label, legend,
+		table, caption, tbody, tfoot, thead, tr, th, td {
+			margin: 0;
+			padding: 0;
+			border: 0;
+			outline: 0;
+			font-weight: inherit;
+			font-style: inherit;
+			font-size: 100%;
+			font-family: inherit;
+			vertical-align: baseline;
+		}
+
+		/* remember to define focus styles! */
+		:focus {
+			outline: 0;
+		}
+
+		body {
+			line-height: 1;
+			color: black;
+			background: white;
+		}
+
+		ol, ul {
+			list-style: none;
+		}
+
+		/* tables still need 'cellspacing="0"' in the markup */
+		table {
+			border-collapse: separate;
+			border-spacing: 0;
+		}
+
+		caption, th, td {
+			text-align: left;
+			font-weight: normal;
+		}
+
+		blockquote:before, blockquote:after,
+		q:before, q:after {
+			content: "";
+		}
+
+		blockquote, q {
+			quotes: "" "";
+		}
+
+
+/* HTML elements */
+	html,
+	body {
+		height:100%; /* for sticky footer */
+	}	
+	
+	body {
+		background: #fff;
+		min-height:100%;
+		color:#666;
+		font:62.5%/1.25 Arial, Helvetica, sans-serif; /* reset 1em to 10px */
+	}
+	
+	/* headings */
+		h1,
+		h2, 
+		h3, 
+		h4 { 
+			color:#dd1d29;
+		}
+
+		h1 { 
+			font-size:2em;			
+			font-weight:bold;
+		}
+
+		h2 {
+			font-size:1.6em;
+		}
+		
+		h3 {
+			font-size:1.3em;
+		}
+		
+		h4 {
+			font-size:1.3em;
+		}
+
+	
+	/* lists */
+		ul,
+		ol, 
+		dl {
+			margin-bottom:1.5em;
+		}
+
+		ol {
+			list-style: decimal;
+			margin-left: 2em;
+		}
+		
+		ul {
+			margin-left:1.5em;
+		}
+
+		li {
+			padding-bottom:0.5em;
+		}
+
+		ul li {
+			list-style-type:disc;
+		}
+		
+		/* lists - nested lists */
+			li ol, 
+			li ul { 
+				margin:0 2em;
+			}
+			
+			li li { 
+				font-size:1em; 
+			}
+
+		/* lists - extra classes */
+			
+
+	/* text */
+		p,
+		address {
+			font-size:1.2em;
+			font-style:normal;
+			margin-bottom:1.5em;
+		}
+		
+		em { 
+			font-style:italic;
+		}
+		
+		strong {
+			font-weight:bold;
+		}
+
+		
+		/* text:extra classes */
+			
+		
+
+	/* links */
+		a, 
+		a:link {
+			color:#000; 
+			outline:0; 
+			font-style:inherit; 
+			font-weight:inherit;
+			text-decoration:underline; 
+		}
+	
+		a:hover,
+		a:active,
+		a:focus { 
+			color:#666;
+		}
+		
+		a:focus { 
+			outline:1px dotted #666;
+		}
+		
+	
+	/* deprecated tags - alerting CMS users that they are using illegal tags */
+	/*b, big, blink, center, font, i, layer, marquee, small, u {
+			background:yellow;
+			border:2px dashed green;
+			color:red;
+			font-size:30px;
+			font-weight:bold;
+		}
+		b:after, big:after, blink:after, center:after,  font:after, i:after, layer:after, marquee:after, small:after, u:after { 
+			content:" You are using a deprecated tag; please fix." 
+		}*/
+
+
+/* Extra classes */
+	/* last element in a row */
+		.row-end {
+			margin-right:0 !important;
+			padding-right:0 !important;
+		}
+	
+	
+	/* print styles */
+		.printonly { 
+			display:none !important; 
+		}
+		
+		
+	/* clearfix - fixes float clearing issues */
+		 .clearfix:after { /* fixed for IE */
+			 clear:both; 
+			 content:"."; 
+			 display:block; 
+			 height:0; 
+			 visibility:hidden;
+		}
+		
+
+	/* horizontal rule (hr) - allows universal control */
+		.hr {
+			border:1px solid #333; /* necessary to ensure hr is only 1px high in all browsers */
+			clear:both;
+			color:#333; /* needed for IE */
+			height:3px;
+			margin:10px 0 20px 0;
+			padding:0;
+		}
+
+		hr {
+			display:none;
+		}		
+	
+
+
+/* global ids / areas */
+	/* wrapper - surrounds all page content */
+		#wrapper {
+			min-height: 100%; /* for sticky footer - Fixed for IE 6 */
+			margin:0 auto;
+		}
+		
+
+	
+		
+	/* footer - sticky: http://www.cssstickyfooter.com/ */
+		#footer {
+			position:relative;
+			margin-top: -35px; /* negative value of footer height */
+			height: 35px; /* also set padding-bottom of content block */
+			clear:both;
+			width:100%;
+			overflow:hidden;
+			float:left;
+			background:#ebeef5;
+		}
+		
+		/* centre content */
+		#footer ul {
+		  	padding:10px 0 0 0; 
+		  	margin:0 auto; 
+		  	float:left;
+			position:relative;
+		  	left:50%;
+			font-size:1.4em;
+		}
+		
+		#footer li {
+			right:50%;
+			list-style:none;
+			float:left;
+			position:relative;
+			margin-right:10px;
+		}
+		
+		#footer li a {
+			text-decoration:none;
+		}
+
+				
+	/* content block */
+		#content {
+			padding-bottom:35px; /* height of the footer */
+			position:relative;
+		}
+
+				
+		/* content - row, surrounds each horizontal block of content, provides spacing */
+			#content .content-row {
+				padding:15px 14px 15px 14px;
+				clear:both;
+			}
+			
+			
+			/* main block styles */
+				.block-right {
+					display:inline;
+					float:right;
+					margin:0 0 20px 20px !important;
+				}
+
+				.block-left {
+					display:inline;
+					float:left;
+					margin:0 20px 20px 0 !important;
+				}
+				
+				.block-1-col {
+					width:25%;
+				}
+			
+				.block-2-col {
+					width:50%;
+				}
+				.block-4-col {
+					width:100%;
+				}
+
+				
+			
+			/* main text content styles */
+				#content .content-row p,
+				#content .content-row ul,
+				#content .content-row dl {
+					margin:0;
+					font-size:1.6em;
+					line-height:2.25em;
+				}
+				
+				#content .content-row p span {
+					background:#e9eef4 no-repeat left top;
+					padding:8px 5px 4px 5px;
+				}
+				
+				#content .content-row p a {
+					text-decoration:none;
+				}
+				/* img with caption */
+						#content .content-row dl {
+							line-height:1.8;
+						}
+						#content .content-row dt {
+							margin:0;
+							background:#ed1b28 no-repeat left top;
+							color:#fff;
+						}
+						#content .content-row dt span {
+							padding:6px 5px 6px 5px;
+							background:no-repeat left top;
+						}
+						#content .content-row dt span.caption {
+							padding-left:33px;
+							background-image:url(../../images/site/icon_text_block_8.png);
+						}
+						#content .content-row dd img {
+							width:100%;
+						}
+
+
+/* Columns-specific stuff */
+.col {
+	position:absolute;
+}
+.columns {
+	margin:0 1em;
+	font-family:Georgia, arial;
+	text-transform:none;
+	text-align:justify;
+	padding:0 !important;
+
+}
+.columns p {
+	text-indent: 10px;
+	font-weight:normal;
+}
+.interstitial {
+	border:1px solid black;
+	border-width:1px 0;
+}
+.interstitial blockquote {
+	font-size:120%;
+	font-weight:600;
+}
+.interstitial cite {
+	font-size:90%;
+}
+.interstitial img {
+	width:100%;
+}
+
+.col-up:hover, .col-down:hover { 
+	background-color:#F5F5F5;
+	cursor:pointer;
+}
+
+.col-page{
+	position:relative;
+}
+
+/*temp*/
+#wrapper {
+	max-width:none;
+}
+
