@@ -1,0 +1,5461 @@
+@charset "Shift_JIS";
+
+/* ****************************************************
+Title: base.css
+Created: 2011-10-24
+Last Modified: 2011-11-10
+***************************************************** */
+
+
+/* Table Of Contents
+----------------------------------------
+
+# Reset
+# General Elements
+# body
+# header
+# content
+  # common
+  # individual pages
+# footer
+# common classes
+# clearfix
+
+----------------------------------------*/
+
+
+/* # Reset
+---------------------------------------------------------------------------- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, figure, figcaption, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, button, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	background: transparent;
+	border: 0;
+	font-size: 100%;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+ol, ul { list-style: none; } 
+
+table { 
+	border-collapse: collapse;
+	border-spacing: 0;
+	font-size: 100%;
+}
+
+caption, th, td {
+	font-weight: normal;
+	text-align: left;
+	vertical-align: top;
+}
+
+fieldset {
+	border: none;
+}
+
+input, textarea, select, label {
+	font-size: 100%;
+	vertical-align: middle;
+}
+
+select,
+textarea {
+       padding: 5px;
+}
+
+label, button {
+	cursor: pointer;
+}
+
+textarea {
+	overflow: auto;
+}
+
+header, hgroup, footer,article, section, nav, aside, figure, figcaption {
+	display: block;
+}
+
+a {
+	vertical-align: baseline;
+}
+
+img {
+	border: none;
+	max-width: 100%;
+	vertical-align: bottom;
+}
+
+em, strong {
+	font-weight: bold;
+	font-style: normal;
+}
+
+object {
+	outline: none;
+	vertical-align: middle;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+code {
+	font-family: monospace;
+}
+
+sup {
+	vertical-align: text-top;
+}
+
+sub {
+	vertical-align: text-bottom;
+}
+
+small {
+	font-style: normal;
+}
+
+ins {
+	text-decoration: none;
+}
+
+mark {
+	font-weight: bold;
+}
+
+del {
+	text-decoration: line-through;
+}
+
+abbr, acronym {
+	border: none;
+	font-variant: normal;
+}
+
+abbr[title], dfn[title] {
+	border-bottom: 1px dotted #333;
+	cursor: help;
+}
+
+address, caption, cite, code, dfn, var {
+	font-weight: normal;
+	font-style: normal;
+}
+
+hr {
+	display: none;
+}
+
+pre {
+	font-family: monospace;
+}
+
+rt { text-align: center; }
+
+rp { display: none; }
+
+optgroup { font-style: normal; }
+
+
+/* # General Elements
+---------------------------------------------------------------------------- */
+
+a {
+	color: #036;
+	text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	font-weight: bold;
+	line-height: 1.241;
+}
+
+table {
+	width: 100%;
+}
+
+label {
+	color: #036;
+	vertical-align: middle;
+}
+
+button {
+	font-family: "HelveticaNeue",Helvetica,Arial,sans-serif;
+	font-weight: bold;
+}
+
+
+/* # html & body
+---------------------------------------------------------------------------- */
+
+html {
+	-webkit-text-size-adjust: none;
+}
+
+body {
+	background-color: #fff;
+	color: #000;
+	font-family: "HelveticaNeue",Helvetica,Arial,sans-serif;
+	font-size: 24px;
+	line-height: 1.5;
+	min-width: 640px;
+}
+
+
+/* # header
+---------------------------------------------------------------------------- */
+
+#siteHeader {
+	background-image:
+		-moz-linear-gradient(top, rgba(0,0,0,0.22) 0%, rgba(0,0,0,0) 100%);
+	background-image:
+		-webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0,0,0,0.22)), color-stop(1, rgba(0,0,0,0)));
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	-webkit-background-size: 100% 15px;
+	background-size: 100% 15px;
+	padding-bottom: 15px;
+	position: relative;
+	z-index: 15;
+}
+
+#siteHeader:after {
+	background-image:
+		-moz-linear-gradient(top, rgb(79,88,158) 0%, rgb(67,77,148) 50%, rgb(55,64,137) 50%, rgb(55,64,137) 100%);
+	background-image:
+		-webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(79,88,158)), color-stop(0.5, rgb(67,77,148)), color-stop(0.5, rgb(55,64,137)), color-stop(1, rgb(55,64,137)));
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	-webkit-background-size: 100% 15px;
+	background-size: 100% 15px;
+	content: '';
+	height: 15px;
+	display: block;
+}
+
+#siteHeader #siteHeaderInner {
+	background-color: #ffe800;
+	-moz-box-shadow: inset 0px 0px 15px 0px rgba(202, 202, 202, 1);
+	-webkit-box-shadow: inset 0px 0px 15px 0px rgba(202, 202, 202, 1);
+	box-shadow: inset 0px 0px 15px 0px rgba(202, 202, 202, 1);
+	min-height: 63px;
+	padding: 20px 11px 0 18px;
+	position: relative;
+}
+
+#siteHeader #siteId {
+	float: left;
+}
+
+#siteHeader a {
+	color: #2f3c66;
+}
+
+#siteHeader #hTagline {
+	float: left;
+	font-size: 15px;
+	line-height: 1.36;
+	margin-left: 26px;
+	text-shadow: 1px 1px 1px #fff;
+}
+
+/* gNav */
+#siteHeader #gNav {
+	float: right;
+	margin-top: -10px;
+	position: relative;
+	z-index: 5;
+}
+
+#siteHeader #gNav dt {
+	position: relative;
+	z-index: 7;
+}
+
+#siteHeader #gNav dt a span {
+	font-size: 22px;
+	padding-right: 35px;
+}
+
+#siteHeader #gNav ul {
+	background-color: #f3f3f3;
+	border: 5px solid #2f3c66;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	display: none;
+	padding-top: 37px;
+	position: absolute;
+	right: 16px;
+	top: 30px;
+	width: 335px;
+	z-index: 6;
+}
+
+#siteHeader #gNav ul:after {
+	border-top: 1px solid #fff;
+	content: '';
+	display: block;
+	height: 23px;
+}
+
+#siteHeader #gNav ul li {
+	border-top: 1px solid #aaa;
+	font-size: 22px;
+	font-weight: bold;
+}
+
+#siteHeader #gNav ul li:last-child {
+	border-bottom: 1px solid #aaa;
+}
+
+#siteHeader #gNav ul li a {
+	background: url(../images/ico_pc_m.png) no-repeat 96% center;
+	border-top: 1px solid #fff;
+	display: block;
+	line-height: 1.21;
+	padding: 14px 70px 14px 20px;
+}
+
+#siteHeader #gNav ul li a.self {
+	background: url(../images/ico_arrow_blue_m_r.png) no-repeat 96% center;
+}
+
+
+/* # content
+---------------------------------------------------------------------------- */
+
+/* # common
+------------------------------------------------- */
+
+#content {
+	min-height: 418px;
+}
+
+#content p {
+	margin-bottom: 15px;
+}
+
+#content .modTxt01 {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#content p.fSizeReset{
+	font-size: 100%;
+	font-weight: bold;
+	line-height: 1.241;
+}
+
+#content > p {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#content * > p:last-child {
+	margin-bottom: 0;
+}
+
+/* contentHead */
+#content #contentHead {
+	background-color: #dfdfdf;
+	border-bottom: 1px solid #aaa;
+	display: -webkit-box;
+	display: -moz-box;
+	display: flexbox;
+	top: -15px;
+	margin-bottom: -15px;
+	min-height: 81px;
+	position: relative;
+	width: 100%;
+	z-index: 1;
+}
+
+#content #contentHead h1,
+#content #contentHead p {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+#content #contentHead h1 {
+	-moz-box-flex: 1;
+	-webkit-box-flex: 1;
+	box-flex: 1;
+	border-left: 1px solid #fff;
+	-moz-box-ordinal-group: 2;
+	-webkit-box-ordinal-group: 2;
+	color: #2f3c66;
+	flex-order: 2;
+	font-size: 28px;
+	padding-top: 24px;
+}
+
+#content #contentHead p {
+	border-right: 1px solid #aaa;
+	-moz-box-ordinal-group: 1;
+	-webkit-box-ordinal-group: 1;
+	flex-order: 1;
+	padding-bottom: 9px;
+	padding-top: 9px;
+	width: 154px;
+}
+
+#content #contentHead + form {
+	margin-top: 19px;
+}
+
+/* basicBoxList */
+#content .basicBoxList1,
+#content .basicBoxList1 > li {
+	background-image:
+		-moz-linear-gradient(top, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 100%);
+	background-image:
+		-webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0,0,0,0.1)), color-stop(1, rgba(0,0,0,0)));
+	background-repeat: no-repeat;
+	background-size: 100% 18px;
+}
+
+#content .basicBoxList1,
+#content .basicBoxList1 > li.noBDB {
+	background-image:none !important;
+}
+
+#content .basicBoxList1 {
+	background-position: left bottom;
+	padding-bottom: 18px;
+}
+
+#content .basicBoxList1 > li {
+	background-position: left top;
+	background-repeat: no-repeat;
+	border-bottom: 1px solid #ccc;
+	padding: 18px 20px;
+}
+/* if double borders were no need case(for l/mypage/anony_skillmatch_list_login.html LINE77)
+#content .basicBoxList1 > li.noBDB {
+	border-bottom: none;
+}
+*/
+
+/* loginBox */
+#content .loginBox {
+	margin-top: 25px;
+}
+
+#content .loginBox,
+#content .roundBox {
+	background-color: #f3f3f3;
+	border: 4px solid #2f3c66;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	-moz-box-shadow:
+		0px 0px 10px 0px rgba(0,0,0,0.2);
+	-webkit-box-shadow:
+		0px 0px 10px 0px rgba(0,0,0,0.2);
+	box-shadow:
+		0px 0px 10px 0px rgba(0,0,0,0.2);
+	margin-left: auto;
+	margin-right: auto;
+	width: 606px;
+}
+
+#content .loginBox .loginInfo {
+	padding: 0 19px;
+}
+
+#content .loginBox .loginAuto {
+	text-align: center;
+}
+
+#content .loginBox .fmBoxGroup {
+	border-bottom: 1px solid #fff;
+	border-top: 1px solid #aaa;
+	display: table;
+	margin: 15px 0;
+	width: 100%;
+}
+
+#content .loginBox .fmBox {
+	border-bottom: 1px solid #aaa;
+}
+
+#content .loginBox .fmBoxGroup .fmBox {
+	border-left: 1px solid #fff;
+	border-right: 1px solid #aaa;
+	border-top: 1px solid #fff;
+	display: table-cell;
+	padding: 6px 10px;
+	vertical-align: middle;
+}
+
+#content .loginBox .fmBoxGroup .fmBox:first-child,
+#content .loginBox .fmBoxGroup .fmBox:last-child {
+	border-left: none;
+} 
+
+#content .loginBox .fmSubmit {
+	margin-top: 0;
+}
+
+#content .loginBox .loginUtility {
+	border-bottom: none;
+	margin-bottom: 0;
+}
+
+#content .loginBox .loginUtility li {
+	border-bottom: none;
+	text-align: center;
+}
+
+
+/* # individual
+------------------------------------------------- */
+
+/* # cIndex
+------------------------------------------ */
+
+/* indexMemberContent */
+#content.cIndex #indexMemberContent {
+	margin: 18px auto;
+	width: 614px;
+}
+
+#content.cIndex #indexMemberContent h2 {
+	color: #036;
+	margin: 0 10px 16px;
+}
+
+#content.cIndex #indexMemberContentInner ul {
+	background-color: #f3f3f3;
+}
+
+#content.cIndex #indexMemberContent li {
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #aaa;
+	font-weight: bold;
+	font-size: 20px;
+	width: 302px;
+}
+
+#content.cIndex #indexMemberContent li:nth-child(odd) {
+	border-right: 1px solid #aaa;
+	float: left;
+}
+
+#content.cIndex #indexMemberContent li:nth-child(even) {
+	border-left: 1px solid #fff;
+	float: right;
+}
+
+#content.cIndex #indexMemberContent li:nth-child(odd).first {
+	border-top: none;
+	-moz-border-radius-topleft: 10px;
+	-webkit-border-radius: 10px 0 0 0;
+	border-radius: 10px 0 0 0; 
+}
+
+#content.cIndex #indexMemberContent li:nth-child(even).first {
+	border-top: none;
+	-moz-border-radius-topright: 10px;
+	-webkit-border-radius: 0 10px 0 0;
+	border-radius: 0 10px 0 0; 	
+}
+
+#content.cIndex #indexMemberContent li:nth-child(odd).last {
+	border-bottom: none;
+	-moz-border-radius-bottomleft: 10px;
+	-webkit-border-radius: 0 0 0 10px;
+	border-radius: 0 0 0 10px;
+}
+
+#content.cIndex #indexMemberContent li:nth-child(even).last {
+	border-bottom: none;
+	-moz-border-radius-bottomright: 10px;
+	-webkit-border-radius: 0 0 10px 0;
+	border-radius: 0 0 10px 0;
+}
+
+#content.cIndex #indexMemberContent .focus {
+	background-color: #fdffcf;
+}
+
+#content.cIndex #indexMemberContent li span {
+	font-size: 14px;
+	margin-left: 8px;
+}
+
+#content.cIndex #indexMemberContent .focus span {
+	color: #f60;
+}
+
+#content.cIndex #indexMemberContent li a {
+	background: url(../images/ico_pc_m.png) no-repeat 96% center;
+	display: block;
+	padding: 23px 45px 23px 13px;
+}
+
+/* indexLogin */
+#content.cIndex #indexLogin {
+	display: none;
+}
+
+/* indexNMemberContent */
+#content.cIndex #indexNMemberContent {
+	padding: 10px 0;
+}
+
+#content.cIndex #indexNMemberContent > ul {
+	text-align: center;
+}
+
+#content.cIndex #indexNMemberContent > ul li {
+	display: inline-block;
+	vertical-align: baseline;
+}
+
+#content.cIndex #indexNMemberContent > ul li:last-child {
+	margin-left: 16px;
+}
+
+/* indexNav */
+#content.cIndex #indexNav {
+	background-image:
+		-moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 100%);
+	background-image:
+		-webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0,0,0,0)), color-stop(1, rgba(0,0,0,0.1)));
+	background-position: left top;
+	background-repeat: no-repeat;
+	-webkit-background-size: 100% 10px;
+	background-size: 100% 10px;
+	padding-top: 10px;
+}
+
+#content.cIndex #indexNav > ul {
+	background-image: -moz-linear-gradient(top, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0,0,0,0.1)), color-stop(1, rgba(0,0,0,0)));
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	-webkit-background-size: 100% 10px;
+	background-size: 100% 10px;
+	padding-bottom: 10px;
+}
+
+#content.cIndex #indexNav > ul > li {
+	background-image: -moz-linear-gradient(top, rgb(79,88,158) 0%, rgb(67,77,148) 50%, rgb(55,64,137) 50%, rgb(55,64,137) 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(79,88,158)), color-stop(0.5, rgb(67,77,148)), color-stop(0.5, rgb(55,64,137)), color-stop(1, rgb(55,64,137)));
+	background-repeat: no-repeat;
+	-webkit-background-size: 100% 9px;
+	background-size: 100% 9px;
+	border-bottom: 1px solid #bebebe;
+	padding-top: 9px;
+}
+
+#content.cIndex #indexNav > ul > li#indexNavSearch {
+	background-image:
+		-moz-linear-gradient(top, rgb(79,88,158) 0%, rgb(67,77,148) 50%, rgb(55,64,137) 50%, rgb(55,64,137) 100%);
+	background-image:
+		-webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(79,88,158)), color-stop(0.5, rgb(67,77,148)), color-stop(0.5, rgb(55,64,137)), color-stop(1, rgb(55,64,137)));
+	
+	background-position: left top;
+	background-repeat: no-repeat;
+	-webkit-background-size: 100% 9px;
+	background-size: 100% 9px;
+	border-bottom: none;
+}
+
+#content.cIndex #indexNav > ul > li > a {
+	background-color: #efefef;
+	background-repeat: no-repeat, no-repeat, repeat-y, repeat-x;
+	background-position: 97% center, 13px center, 111px bottom, left bottom;
+	color: #2f3c66;
+	display: block;
+	font-weight: bold;
+	font-size: 35px;
+	line-height: 1.21;
+	padding: 30px 70px 30px 130px;
+}
+
+#content.cIndex #indexNav > ul > li#indexNavSearch > a {
+	background-image:
+		url(../images/ico_arrow_blue_l_btm.png),
+		url(../images/ico_search.png),
+		url(../images/bg_indexnav2.gif),
+		url(../images/bg_indexnav.gif);
+}
+
+#content.cIndex #indexNav > ul > li#indexNavSearch > a.open {
+	background-image:
+		url(../images/ico_arrow_blue_l_top.png),
+		url(../images/ico_search.png),
+		url(../images/bg_indexnav2.gif),
+		url(../images/bg_indexnav.gif);
+}
+
+#content.cIndex #indexNav > ul > li#indexNavScout > a {
+	background-image:
+		url(../images/ico_pc_l.png),
+		url(../images/ico_scout.png),
+		url(../images/bg_indexnav2.gif),
+		url(../images/bg_indexnav.gif);
+}
+
+#content.cIndex #indexNav > ul > li#indexNavMatching > a {
+	background-image:
+		url(../images/ico_pc_l.png),
+		url(../images/ico_matching.png),
+		url(../images/bg_indexnav2.gif),
+		url(../images/bg_indexnav.gif);
+}
+
+#content.cIndex #indexNav > ul > li#indexNavReview > a {
+	background-image:
+		url(../images/ico_pc_l.png),
+		url(../images/ico_review.png),
+		url(../images/bg_indexnav2.gif),
+		url(../images/bg_indexnav.gif);
+}
+
+#content.cIndex #indexNav > ul > li#indexNavReview > a {
+	background-image:
+		url(../images/ico_pc_l.png),
+		url(../images/ico_review.png),
+		url(../images/bg_indexnav2.gif),
+		url(../images/bg_indexnav.gif);
+}
+
+#content.cIndex #indexNav > ul > li#indexNavManagement > a {
+	background-image:
+		url(../images/ico_pc_l.png),
+		url(../images/ico_management.png),
+		url(../images/bg_indexnav2.gif),
+		url(../images/bg_indexnav.gif);
+}
+
+/* indexNav level2 */
+#content.cIndex #indexNav > ul > li#indexNavSearch > ul {
+	background-image:
+		-moz-linear-gradient(top, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 100%);
+	background-image:
+		-webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0,0,0,0.1)), color-stop(1, rgba(0,0,0,0)));
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	-webkit-background-size: 100% 10px;
+	background-size: 100% 10px;
+	margin-bottom: 18px;	
+	padding-bottom: 10px;
+}
+
+#content.cIndex #indexNav > ul > li > ul > li {
+	background-color: rgb(223,223,223);
+	background-image: -moz-linear-gradient(top, rgba(181,181,181,1) 0%, rgba(181,181,181,0) 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(181,181,181,1)), color-stop(1, rgba(181,181,181,0)));	
+	background-position: left top;
+	background-repeat: no-repeat;
+	-webkit-background-size: 100% 11px;
+	background-size: 100% 11px;
+	font-size: 28px;
+}
+
+#content.cIndex #indexNav > ul > li > ul > li > a {
+	background: url(../images/ico_pc_m.png) no-repeat 96% center;
+	border-bottom: 1px solid #fff;
+	color: #2f3c66;
+	display: block;
+	font-weight: bold;
+	line-height: 1.21;
+	padding: 20px 70px 20px 20px;
+}
+
+#content.cIndex #indexNav > ul > li > ul > li > .base {
+	background-image: url(../images/ico_arrow_blue_m_btm.png);
+}
+
+#content.cIndex #indexNav > ul > li > ul > li > .open {
+	background-image: url(../images/ico_arrow_blue_m_top.png);
+}
+
+/* indexNav level3 */
+#content.cIndex #indexNav .innerNav2 {
+ 	background-color: #f3f3f3;
+}
+
+#content.cIndex #indexNav .innerNav2 li {
+	border-top: 1px solid #aaa;
+	font-size: 24px;
+}
+
+#content.cIndex #indexNav .innerNav2 a {
+	background: url(../images/ico_pc_m.png) no-repeat 96% center;
+	border-top: 1px solid #fff;
+	color: #036;
+	display: block;
+	line-height: 1.21;
+	padding: 23px 70px 24px 20px;
+}
+
+#content.cIndex #indexNav .innerNav2Multi a {
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+#content.cIndex #indexNav .innerNav2 a:before,
+#content.cIndex #indexNav .innerNav2Multi dt:before {
+	border-top: 12px solid transparent;
+	border-right: 0px solid transparent;
+	border-left: #036 17px solid;
+	border-bottom: 12px solid transparent;
+	content: "";
+	display: inline-block;
+	font-size: 0;
+	height: 0;
+	margin-bottom: -4px;
+	padding-left: 5px;
+	vertical-align: baseline;
+	width: 0;
+}
+
+#content.cIndex #indexNav .innerNav2Multi a:before {
+	display: none;
+}
+
+#content.cIndex #indexNav .innerNav2Multi .itemNum {
+	font-size: 15px;
+	margin-left: 10px;
+}
+
+#content.cIndex #indexNav .innerNav2Multi dd {
+	color: #333;
+	font-size: 18px;
+	margin-top: 6px;
+}
+
+#content.cIndex #indexNav .indexNavContent {
+	background-color: #f3f3f3;
+	border-top: 1px solid #aaa;
+	padding: 20px 0;
+}
+
+#content.cIndex #indexNav .indexNavContent ul,
+#content.cIndex #indexNav .indexNavContent label,
+#content.cIndex #indexNav .indexNavContent select {
+	font-size: 20px;
+}
+
+#content.cIndex #indexNav .indexNavContent .fmBoxGroup {
+	border-bottom: 1px solid #fff;
+	border-top: 1px solid #aaa;
+	display: table;
+	margin: 15px 0;
+	width: 100%;
+}
+
+#content.cIndex #indexNav .indexNavContent .fmBox {
+	border-bottom: 1px solid #aaa;
+}
+
+#content.cIndex #indexNav .indexNavContent .fmBoxGroup .fmBox {
+	border-left: 1px solid #fff;
+	border-right: 1px solid #aaa;
+	border-top: 1px solid #fff;
+	display: table-cell;
+	padding: 20px 10px;
+	vertical-align: middle;
+}
+
+#content.cIndex #indexNav .indexNavContent .fmBoxGroup .fmBox:first-child,
+#content.cIndex #indexNav .indexNavContent .fmBoxGroup .fmBox:last-child {
+	border-left: none;
+} 
+
+#content.cIndex #indexNav .indexNavContent #fmKSearchSelect {
+	width: 203px;
+}
+
+#content.cIndex #indexNav .indexNavContent #fmKibouSearch {
+	width: 620px;
+}
+
+
+#content.cIndex #indexNav .indexNavContent .fmSearchOpt {
+	margin-top: 15px;
+	text-align: center;
+}
+
+#content.cIndex #indexNav .indexNavContent .fmSearchOpt li {
+	display: inline;
+}
+
+
+/* # cLogin
+------------------------------------------ */
+
+#content.cLogin .fmLogin,
+#content.cLogin .fmSubmitButton {
+	background:
+		-moz-linear-gradient(top, rgba(0,0,0,0.09) 0%, rgba(0,0,0,0) 100%);
+	background:
+		-webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0,0,0,0.09)), color-stop(1, rgba(0,0,0,0)));
+	background-position: left top;
+	background-repeat: no-repeat;
+	-webkit-background-size: 100% 19px;
+	background-size: 100% 19px;
+}
+
+#content.cLogin .fmLogin {
+	background-position: left top;
+	padding-top: 23px;
+}
+
+#content.cLogin .loginBox {
+	border: 7px solid #2F3C66;
+	margin-top: 0;
+	margin-bottom: 24px;
+}
+
+#content.cLogin .loginBox .loginInfo > dt {
+	margin-top: 4px;
+}
+
+#content.cLogin .loginBox .loginInfo > dd {
+	padding-bottom: 5px;
+}
+
+#content.cLogin .loginBox .loginInfo > dd:last-child {
+	padding-bottom: 0;
+}
+
+#content.cLogin .loginBox .fmBoxGroup .fmBox:last-child {
+	border-right: none;
+}
+
+#content.cLogin .fmInputError p {
+	background: #fbddd8;
+	border-bottom: 1px solid #ccc;
+	color: #ff3300;
+	font-size: 130%;
+	padding: 18px 0 20px 20px;
+}
+
+#content.cLogin .fmSubmitButton {
+	border-top: 1px solid #ccc;
+	padding: 22px 0 26px 0;
+}
+
+#content.cLogin .entryNoteBox.noBG .entryNoteBoxInner {
+	border-bottom: none;
+	padding: 0 20px 0 20px;
+}
+
+#content.cLogin .loginBox .fmBoxGroup .fmBox {
+	padding: 6px 5px 6px 10px;
+}
+
+
+/* # cReminder
+------------------------------------------ */
+
+#content.cReminder .infoText p {
+	padding: 15px 15px 0 15px;
+}
+
+#content.cReminder .infoText p strong {
+	font-size: 130%;
+}
+
+#content.cReminder .infoText p:last-child {
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 22px;
+}
+
+#content.cReminder .loginBox .fmSubmit {
+	margin: 15px 0 20px 0;
+}
+
+#content.cReminder .infoText p.noteText {
+	margin-bottom: 0;
+	padding: 0 0 0 40px;
+	text-indent: -25px;
+}
+
+#content.cReminder .infoText p.noteText:last-child {
+	border-bottom: none;
+	margin-bottom: 7px;
+}
+
+#content.cReminder .basicBoxList1 {
+	margin-bottom: -16px;
+}
+
+#content.cReminder .basicBoxList1 > li {
+	padding: 14px 0 0 0;
+}
+
+#content.cReminder .basicBoxList1 > li:last-child {
+	padding-top: 21px;
+}
+
+#content.cReminder .basicBoxList1 > li ul.fmItemList li {
+	padding-bottom: 19px;
+}
+
+#content.cReminder .basicBoxList1 > li ul.fmItemList li:last-child {
+	padding-bottom: 7px;
+}
+
+#content.cReminder .fmBox2 {
+	background: none!important;
+}
+
+#content.cReminder .fmBox2 p {
+	border-bottom: none!important;
+	padding-bottom: 0!important;
+}
+
+
+/* # cEntry
+------------------------------------------ */
+
+/* common */
+#content.cEntry .entrySec .mh,
+#content.cEntry .entrySec .sh,
+#content.cEntry .entryNoteBox,
+#content.cEntry .entryNoteBox:before,
+#content.cEntry .entrySec .entryBasicList1:after/*,
+#content.cEntry .entryBasicList1 > dd */{
+	background-image:
+		-moz-linear-gradient(top, rgba(0,0,0,0.09) 0%, rgba(0,0,0,0) 100%);
+	background-image:
+		-webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0,0,0,0.09)), color-stop(1, rgba(0,0,0,0)));
+	background-position: left top;
+	background-repeat: no-repeat;
+	-webkit-background-size: 100% 19px;
+	background-size: 100% 19px;
+}
+
+#content.cEntry .entrySec .mh {
+	background-position: left bottom;
+	padding-bottom: 19px;
+}
+
+#content.cEntry .entrySec .mh.noBG {
+	padding-bottom: 0;
+}
+
+#content.cEntry .entrySec .mh > span {
+	background-color: #dfdfdf;
+	background-image:
+		-moz-linear-gradient(top, rgba(0,0,0,0.17) 0%, rgba(0,0,0,0) 100%);
+	background-image:
+		-webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0,0,0,0.17)), color-stop(1, rgba(0,0,0,0)));
+	background-position: left top;
+	background-repeat: no-repeat;
+	-webkit-background-size: 100% 10px;
+	background-size: 100% 10px;
+	border-bottom: 1px solid #ccc;
+	color: #2f3c66;
+	display: block;
+	font-size: 28px;
+	padding: 25px 20px 20px;
+	position: relative;
+}
+
+#content.cEntry .entrySec .sh {
+	background-color: #fff;
+	border-top: 1px solid #ccc;
+	color: #2f3c66;
+	padding: 13px 20px;
+}
+
+#content.cEntry .entrySec .shReset {
+	background: none;
+	border-top: none;
+}
+
+#content.cEntry .entrySec .sh h3,
+#content.cEntry .entrySec .sh p {
+	display: inline-block;
+	vertical-align: middle;
+	width: 50%;
+}
+
+#content.cEntry .entrySec .sh h3 {
+	text-align: left;
+	width: 40%;
+}
+#content.cEntry .entrySec .sh p {
+	text-align: right;
+	width: 60%;
+}
+
+#content.cEntry .entrySec .mh + entrySec .sh {
+	border-top: none;
+}
+
+#content.cEntry .entrySec > .entrySec {
+	margin-bottom: 49px;
+}
+
+#content.cEntry .entrySec > .entrySec:last-child {
+	margin-bottom: 0;
+}
+
+#content.cEntry .entrySec .note {
+	color: #f60;
+	margin-bottom: 20px;
+	margin-top: 20px;	
+}
+
+#content.cEntry .entrySec > .note {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#content.cEntry .entrySec .fmSubmit {
+	margin: 10px 0 45px;
+}
+
+#content.cEntry .entrySec .fmSearch {
+	margin: 10px 0 0;
+	padding: 26px 20px 25px;
+	text-align: center;
+}
+
+#content.cEntry .entrySec .fmSearch p {
+	text-align: left;
+}
+
+/*
+#content.cEntry .entryTargetList { border-top: 1px solid #ccc; }
+#content.cEntry #contentHead + .entryTargetList { border-top: none; }*/
+#content.cEntry .entryTargetList dl { font-size: 30px; }
+#content.cEntry .entryTargetList dt { font-weight: bold; }
+#content.cEntry .entryTargetList dd { font-size:34px; color: #333; }
+#content.cEntry .entryTargetList.noBG { padding-bottom: 0; }
+
+#content.cEntry .entrySec .entryBasicList1:after {
+	border-top: 1px solid #ccc;
+	content: '';
+	display: block;
+	height: 19px;
+}
+
+#content.cEntry .entryBasicList1.noBG:after {
+	background: none;
+	border-top: none;
+	height: auto;
+}
+
+#content.cEntry .innerContent > .resultText {
+	padding: 14px 0 0;
+	text-align: center;
+}
+
+#content.cEntry .innerContent > .resultText span {
+	color: #ff3300;s
+}
+
+#content.cEntry .entryBasicList1 > dt {
+	background-color: #efefef;
+	border-bottom: 1px solid #cbcbcb;
+	border-top: 1px solid #cbcbcb;
+	font-weight: bold;
+	padding: 8px 20px 5px;
+	position: relative;
+}
+
+#content.cEntry .entryBasicList1 > dt .fmDuty {
+	line-height: 0;
+	position: absolute;
+	right: 20px;
+	top: 7px;
+}
+
+#content.cEntry .entryBasicList1 > dd { padding: 16px 20px 20px; }
+#content.cEntry .entryBasicList1 > dd.noPd { padding: 0; }
+#content.cEntry .entryBasicList1 > dd.noPdB { padding-bottom: 0; }
+/*#content.cEntry .entryBasicList1 > dt + dd { background: none; }*/
+#content.cEntry .entryBasicList1 > dd + dd { border-top: 1px solid #ccc; }
+
+#content.cEntry .entryBasicList1 > dd .contentBox {
+	margin: 0 auto;
+	padding: 20px;
+	width: 600px;
+}
+
+#content.cEntry .entryBasicList1 > dd .fmItemList {
+	margin-left: -20px;
+	margin-right: -20px;
+	padding-bottom:20px;
+}
+
+#content.cEntry .entryBasicList1 > dd .fmItemList:first-child {
+	margin-top: -16px;
+}
+
+#content.cEntry .entryBasicList1 > dd .fmItemList:last-child {
+	margin-bottom: -20px;
+}
+
+#content.cEntry .entryBasicList1 > dd .hintList {
+	background: #daeef4;
+	border-radius: 10px;
+	-moz-box-shadow:
+		0px 0px 10px 0px rgba(0,0,0,0.2),
+		0px 0px 0px 2px rgb(137,145,170);
+	-webkit-box-shadow:
+		0px 0px 10px 0px rgba(0,0,0,0.2),
+		0px 0px 0px 2px rgb(137,145,170);
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px #8991aa inset;
+	padding: 17px 22px;
+}
+
+#content.cEntry .entryDetailList > li:not(:last-child),
+#content.cEntry .entrySkillDetailList > dt,
+#content.cEntry .entryInfoDetailList > dt {
+	border-bottom: 1px dashed #606060;
+	margin-bottom: 16px;
+	padding-bottom: 16px;
+}
+
+#content.cEntry .entrySkillDetailList > dt,
+#content.cEntry .entryInfoDetailList > dt {
+	font-weight: bold;
+}
+
+#content.cEntry .entryInfoDetailList > dt ~ dt {
+	margin-top: 30px;
+}
+
+#content.cEntry .entryAddContent {
+	border-top: 1px solid #ccc;
+	margin-bottom: 0;
+	padding-bottom: 14px;
+	padding-top: 14px;
+	text-align: center;
+}
+
+#content.cEntry .entryBasicList1 > dd .entryAddContent {
+	margin-bottom: -20px;
+	margin-left: -20px;
+	margin-right: -20px;
+	text-align: center;
+}
+
+#content.cEntry #entryResumeSec.entrySec > .entrySec .entryBasicList1.noBG .fmInputError .alignC textarea {
+	min-height: 229px;
+}
+
+/* entryNoteBox */
+#content.cEntry .entryNoteBox {
+	background-position: left bottom;
+	border-top: 1px solid #ccc;
+	padding: 0 0 19px;
+}
+
+#content.cEntry .entryNoteBox:before {
+	content: '';
+	display: block;
+	height: 19px;
+}
+
+#content.cEntry .entryNoteBoxInner {
+	border-bottom: 1px solid #ccc;
+	padding: 19px 20px 56px;
+}
+
+/* entryMemberTab */
+#content.cEntry #entryMemberTab .basicBoxList1 {
+	
+}
+
+
+/* # cJob
+------------------------------------------ */
+
+/* common */
+#content.cJob > header {
+	margin: 0 auto;
+	min-height: 92px;
+	padding: 14px 11px;
+	position: relative;
+	/*width: 618px;*/
+}
+
+#content.cJob > header .logo {
+	margin-top: -31px;
+	position: absolute;
+	right: 10px;
+	top: auto;
+}
+
+#content.cJob > header .conditionList {
+	margin-bottom: 16px;
+}
+
+#content.cJob > header .conditionList li {
+	display: inline-block;
+	margin-right: 6px;
+}
+
+#content.cJob > header h1 {
+	border-left: 6px solid #374189;
+	color: #333;
+	font-size: 28px;
+	padding: 2px 0 2px 7px;
+}
+
+#content.cJob > .tab {
+	margin-bottom: 17px;
+}
+
+#content.cJob > .tab li {
+	margin-right: 7px;
+}
+
+#content.cJob > .tab li a {
+	font-size: 20px;
+	padding-left: 14px;
+	padding-right: 14px;
+	width: 170px;
+}
+
+#content.cJob .btnSetArea,
+#content.cJob .btnSetArea:before {
+	background-image:
+		-moz-linear-gradient(top, rgba(0,0,0,0.09) 0%, rgba(0,0,0,0) 100%);
+	background-image:
+		-webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0,0,0,0.09)), color-stop(1, rgba(0,0,0,0)));
+	background-position: left top;
+	background-repeat: no-repeat;
+	-webkit-background-size: 100% 19px;
+	background-size: 100% 19px;
+}
+
+#content.cJob .btnSetArea {
+	background-position: left bottom;
+	border-top: 1px solid #ccc;
+	padding-bottom: 19px;
+}
+
+#content.cJob .btnSetArea:before {
+	content: '';
+	display: block;
+	height: 19px;
+}
+
+#content.cJob .btnSetArea .btnSetAreaInner {
+	border-bottom: 1px solid #ccc;
+	padding: 0 20px 19px;
+}
+
+#content.cJob .btnSet {
+	text-align: center;
+}
+
+#content.cJob .btnSet li {
+	display: inline-block;
+	margin-right: 28px;
+}
+
+#content.cJob .btnSet li:last-child {
+	margin-right: 0;
+}
+
+#content.cJob .btnSetArea2 .inner,
+#content.cJob .btnSetArea .btnSetAreaInner .inner {
+	padding-top: 20px;
+	text-align: center;
+}
+
+#content.cJob .moreInfo { /* js */ }
+
+#content.cJob .moreBtn {
+	margin-top: 30px;
+	text-align: center;
+}
+
+#content.cJob .considerationListBtn {
+	margin-top: 15px;
+}
+
+#content.cJob .considerationListBtn a.open {
+	background: url(../images/ico_arrow_blue_s_top.png) no-repeat left center;
+}
+
+
+/* jobOfferBasicInfo */
+#content.cJob #jobOfferBasicInfo > header {
+	margin-top: 20px;
+	padding: 0 20px 20px;
+}
+
+#content.cJob #jobOfferBasicInfo > header .conditionList li {
+	display: inline-block;
+	margin-bottom: 7px;
+	margin-right: 6px;
+}
+
+#content.cJob #jobOfferBasicInfo > header h2 {
+	font-size: 28px;
+	margin-top: 12px;
+}
+
+#content.cJob #jobOfferBasicInfo .visual {
+	text-align: center;
+}
+
+#content.cJob #jobOfferBasicInfo .visual img {
+	width:90%;
+}
+
+#content.cJob #jobOfferBasicInfo .body {
+	font-size: 28px;
+	padding: 20px;
+}
+
+#content.cJob #jobOfferBasicInfo .body .catch {
+	color: #036;
+	font-size: 30px;
+}
+
+#content.cJob #jobOfferBasicInfo #prList {
+	margin-top: 38px;
+}
+
+#content.cJob #jobOfferBasicInfo #prList dt {
+	color: #036;
+	font-size: 22px;
+	padding: 0 13px;
+}
+
+#content.cJob #jobOfferBasicInfo #prList dd {
+	background-image:
+		-moz-linear-gradient(top, rgba(0,0,0,0.17) 0%, rgba(0,0,0,0) 100%);
+	background-image:
+		-webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0,0,0,0.17)), color-stop(1, rgba(0,0,0,0)));
+	background-position: left top;
+	background-repeat: no-repeat;
+	-webkit-background-size: 100% 10px;
+	background-size: 100% 10px;
+	border-top: 1px solid #ccc;
+	font-size: 22px;
+	margin-top: -2.0769em;
+	margin-bottom: 0.5769em;
+	padding-bottom: 0.5769em;
+	padding-left: 100px;
+	padding-top: 0.5769em;
+}
+
+#content.cJob #jobOfferBasicInfo #prList dd:last-child {
+	margin-bottom: 0;
+}
+
+#content.cJob #jobOfferBasicInfo #prList ul {
+	border-left: 2px solid #ccc;
+	margin-bottom: -5px;
+	padding-left: 14px;
+}
+
+#content.cJob #jobOfferBasicInfo #prList li {
+	display: inline-block;
+	margin-bottom: 5px;
+	margin-right: 10px;
+}
+
+#content.cJob #jobOfferBasicInfo #prList li:last-child {
+	margin-right: 0;
+}
+
+/* jobOfferDetailInfo */
+#content.cJob #jobOfferDetailInfo .mh {
+	background-color: #dfdfdf;
+	background-image:
+		-moz-linear-gradient(top, rgba(0,0,0,0.17) 0%, rgba(0,0,0,0) 100%);
+	background-image:
+		-webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0,0,0,0.17)), color-stop(1, rgba(0,0,0,0)));
+	background-position: left top;
+	background-repeat: no-repeat;
+	-webkit-background-size: 100% 10px;
+	background-size: 100% 10px;
+	border-bottom: 1px solid #ccc;
+	color: #2f3c66;
+	display: block;
+	font-size: 28px;
+	position: relative;
+}
+
+#content.cJob #jobOfferDetailInfo .mh a {
+	color: #2f3c66;
+	display: block;
+	padding: 20px 65px 20px 20px;
+}
+
+#content.cJob #jobOfferDetailInfo .mh .base {
+	background: url(../images/ico_arrow_blue_m_btm.png) no-repeat 96% center;
+}
+
+#content.cJob #jobOfferDetailInfo .mh .open {
+	background-image: url(../images/ico_arrow_blue_m_top.png);
+}
+
+#content.cJob #jobOfferDetailInfo .innerContent {
+	padding: 20px;
+}
+
+#content.cJob #jobOfferDetailInfo .innerNav {
+}
+
+#content.cJob #jobOfferDetailInfo .innerNav > dt {
+	background-color: #f3f3f3;
+	border-bottom: 1px solid #aaa;
+}
+
+#content.cJob #jobOfferDetailInfo .innerNav > dt a {
+	background: url(../images/ico_arrow_blue_m_btm.png) no-repeat 96% center;
+	display: block;
+	padding: 20px 20px;
+}
+
+#content.cJob #jobOfferDetailInfo .innerNav > dt .open {
+	background-image: url(../images/ico_arrow_blue_m_top.png);
+}
+
+#content.cJob #jobOfferDetailInfo .innerNav > dt a:before {
+    border-color: transparent transparent transparent #003366;
+    border-style: solid;
+    border-width: 12px 0 12px 17px;
+    content: "";
+    display: inline-block;
+    font-size: 0;
+    height: 0;
+    margin-bottom: -4px;
+    padding-left: 5px;
+    vertical-align: baseline;
+    width: 0;
+}
+
+#content.cJob #jobOfferDetailInfo .innerNav > dd {
+	border-bottom: 1px solid #aaa;
+	padding: 20px;
+}
+
+#content.cJob #jobOfferDetailInfo .jobPointList dt {
+	color: #f60;
+	font-weight: normal;
+}
+
+#content.cJob #jobOfferDetailInfo .jobPointList dt img:first-child {
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+#content.cJob #jobOfferDetailInfo .jobFlowTbl tbody th {
+	border-right: 1px solid #ccc;
+	padding: 10px;
+}
+
+#content.cJob #jobOfferDetailInfo .jobFlowTbl tbody td {
+	padding: 10px;
+}
+
+#content.cJob #jobOfferDetailInfo .jobFlowTbl tbody tr {
+	border-bottom: 1px solid #ccc;
+}
+
+#content.cJob #jobOfferDetailInfo .jobFlowTbl tbody tr:last-child {
+	border-bottom: none;
+}
+
+#content.cJob #jobOfferDetailInfo .btnSetArea2 {
+	padding: 20px;
+}
+
+#content.cJob #jobOfferDetailInfo .btnSet + p {
+	margin-top: 15px;
+}
+
+#content.cJob .conditionTable th.bgGrey {
+	background: #efefef;
+}
+
+#content.cJob .tableStyle {
+	margin-bottom: 19px;
+}
+
+#content.cJob .tableStyle th {
+	border: 1px solid #ccc;
+	border-left: none;
+	padding-top: 20px;
+}
+
+#content.cJob .tableStyle td {
+	border: 1px solid #ccc;
+	border-right: none;
+}
+
+#content.cJob .tableStyle th.bgGrey {
+	background: #efefef;
+	text-align: center;
+	width: 187px;
+}
+
+#content.cJob .tableStyle ul li {
+	border-bottom: 1px solid #ccc;
+	padding: 13px 13px 13px 16px;
+}
+
+#content.cJob .tableStyle ul li:last-child {
+	border-bottom: none;
+}
+
+#content.cJob .tableStyle ul li label {
+	color: #000;
+}
+
+#content.cJob .tableStyle ul li img {
+	margin-right: 2px;
+	vertical-align: middle;
+}
+
+#content.cJob .welcome {
+	vertical-align: middle;
+}
+
+#content.cJob .borderTop {
+	border-top: 1px solid #ccc;
+	padding-top: 10px;
+}
+
+#content.cJob .detail {
+	/*border-top: 1px solid #ccc;
+	margin: 0 0 -5px -20px;*/
+	padding-top: 10px;
+	text-align: center;
+}
+
+#content.cJob ul.checkMore {
+	border-top: 1px solid #ccc;
+	display: none;
+}
+
+#content.cJob ul.checkMore + p.checkMoreBtn {
+	padding-top: 20px;
+}
+
+#content.cJob .tableStyle + p.checkMoreBtn {
+	margin-top: -19px;
+	padding-top: 19px;
+}
+
+#content.cJob .entryBasicList1.fmRegister label {
+	color: #000;
+	margin-bottom: 12px;
+}
+
+/* jobOutline */
+#content.cJob #jobOfferDetailInfo .jobOutlineArticle {
+	background-image:
+		-moz-linear-gradient(top, rgba(0,0,0,0.09) 0%, rgba(0,0,0,0) 100%);
+	background-image:
+		-webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0,0,0,0.09)), color-stop(1, rgba(0,0,0,0)));
+	background-position: left top;
+	background-repeat: no-repeat;
+	-webkit-background-size: 100% 19px;
+	background-size: 100% 19px;
+	broder-top: 1px solid #ccc;
+	padding: 20px;
+}
+
+#content.cJob #jobOfferDetailInfo .jobOutlineArticle header {
+	margin-bottom: 15px;
+}
+#content.cJob #jobOfferDetailInfo .jobOutlineArticle header figure img {
+	width:60%
+	}
+
+#content.cJob #jobOfferDetailInfo .jobOutlineArticle header figure + h3 {
+	color: #036;
+	font-size: 30px;
+	margin-top: 15px;
+}
+
+#content.cJob div.shadowBG:before {
+	background-image:
+		-moz-linear-gradient(top, rgba(0,0,0,0.09) 0%, rgba(0,0,0,0) 100%);
+	background-image:
+		-webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0,0,0,0.09)), 
+color-stop(1, rgba(0,0,0,0)));
+	background-position: left top;
+	background-repeat: no-repeat;
+	-webkit-background-size: 100% 19px;
+	background-size: 100% 19px;
+}
+
+#content.cJob div.shadowBG:before {
+	content: '';
+	display: block;
+	height: 19px;
+}
+
+#content.cJob #jobOfferDetailInfo ul.icoList + p.note {
+	border-top: 1px solid #ccc;
+	margin-bottom: 20px;
+	padding-top: 10px;
+}
+
+#content.cJob #jobOfferDetailInfo div.productArea {
+	padding-bottom: 13px;
+}
+
+#content.cJob #jobOfferDetailInfo div.productArea > p {
+	padding-bottom: 10px;
+}
+
+#content.cJob #jobOfferDetailInfo div.productArea ul li p.title {
+	margin-bottom: 5px;
+	line-height: 1;
+}
+
+#content.cJob #jobOfferDetailInfo div.productArea ul li p:last-child {
+	margin-bottom: 0;
+}
+
+#content.cJob #jobOfferDetailInfo div.productArea + .btnSet1 {
+	border-top: 1px solid #ccc;
+}
+
+#content.cJob #jobOfferDetailInfo dl.entryBasicList1 dd ul.btnSet {
+	border-bottom: none;
+	padding: 20px 0 40px;
+}
+
+#content.cJob #jobOfferDetailInfo p.objectImage + .btnSet1 {
+	border-top: none;
+}
+
+#content.cJob #jobOfferDetailInfo div.productArea ul.floatL {
+	width: 45%;
+}
+
+#content.cJob #jobOfferDetailInfo div.productArea ul li {
+	padding-bottom: 15px;
+}
+
+#content.cJob #jobOfferDetailInfo div.productArea ul.floatL li {
+	padding-bottom: 20px;
+}
+
+#content.cJob #jobOfferDetailInfo div.productArea ul li:last-child {
+	padding-bottom: 0;
+}
+
+#content.cJob #jobOfferDetailInfo p.objectImage {
+	margin-bottom: 5px;
+}
+
+#content.cJob #jobOfferDetailInfo .tableInner,
+#content.cMypage .basicInner .fmItemText .tableInner {
+	padding: 0;
+}
+
+#content.cJob #jobOfferDetailInfo .tableInner td {
+	padding: 15px 5px 15px 11px;
+}
+
+#content.cMypage .basicInner .fmItemText .tableInner td {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+#content.cMypage .fmItemText .tableInner td {
+	width: 50%;
+}
+
+#content.cMypage .fmItemText .tableInner table.autoWidth td {
+	width: auto;
+}
+
+#content.cJob #jobOfferDetailInfo #result {
+	padding-bottom: 30px;
+}
+
+#content.cJob #jobOfferDetailInfo .noSelection .innerContent .basicBoxList1 li:first-child {
+	padding-top: 20px;
+}
+
+#content.cJob #jobOfferDetailInfo .noSelection .innerContent.shadowBG .basicBoxList1 li:first-child {
+	padding-top: 0!important;
+}
+
+#content.cJob .btnSet1 {
+	border-top: 1px solid #ccc;
+	display: table;
+    padding: 20px 0 40px;
+	width: 100%;
+}
+
+#content.cJob .btnSet1 ul {
+	margin: 0 auto;
+	width: 610px;
+}
+
+#content.cJob .btnSet1 li {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#content.cJob .btnSet1 li:first-child {
+	width: 290px;
+}
+
+#content.cJob .btnSet1 li:last-child {
+	padding-left: 10px;
+}
+
+#content.cJob .btnSet1 li a.aArrow1 {
+	background-position: 0 5px;
+}
+
+
+
+
+
+
+
+/* search_01 */
+#content.cJob .jobSec li .floatL {
+	margin: 0!important;
+    padding-top: 0;
+	width: 510px;
+}
+
+#content.cJob .jobSec li .floatL label,
+#content.cJob .jobSec li .floatL input {
+	display: inline;
+}
+
+#content.cJob .cJobSec li .floatR {
+	margin-bottom: 0;
+    padding-top: 3px;
+}
+
+#content.cJob .jobSec li .floatL input {
+	margin-top: 11px;
+	vertical-align: top;
+}
+
+
+/* category */
+#content.cJob dl.entryBasicList1 dt.base {
+	padding: 0;
+}
+
+#content.cJob dl.entryBasicList1 dt.base a {
+	background: url(../images/ico_arrow_blue_m_btm.png) no-repeat right center;
+	color: #000;
+	display: block;
+	margin-right: 12px;
+	padding: 20px 20px 15px;
+}
+
+#content.cJob dl.entryBasicList1 dt.open a {
+	background: url(../images/ico_arrow_blue_m_top.png) no-repeat right center;
+}
+
+#content.cJob dl.entryBasicList1 dt.base + dd {
+	display: none;
+	padding-top: 0;
+}
+
+#content.cJob dl.entryBasicList1 dt.base + dd ul.fmItemList {
+	margin-top: 0;
+}
+
+
+/* # cResume
+------------------------------------------ */
+
+#content.cResume label[for=fmResumeName1],
+#content.cResume label[for=fmResumeName2],
+#content.cResume label[for=fmResumeNameKana1],
+#content.cResume label[for=fmResumeNameKana2] {
+	min-width: 2em;
+}
+
+#content.cResume #fmResumeName1,
+#content.cResume #fmResumeNameKana1 {
+	margin-right: 12px;
+}
+
+#content.cResume #fmResumeName1,
+#content.cResume #fmResumeName2,
+#content.cResume #fmResumeNameKana1,
+#content.cResume #fmResumeNameKana2 {
+	width: 183px;
+}
+
+#content.cResume #fmResumeMail,
+#content.cResume #fmResumeMobileMail,
+#content.cResume #fmResumeAddress,
+#content.cResume #fmResumeTel,
+#content.cResume #fmResumeMobile {
+	width: 530px;
+}
+
+#content.cResume #fmResumeZip1,
+#content.cResume #fmResumeZip2,
+#content.cResume #fmResumeEngTOEIC,
+#content.cResume #fmResumeEngTOEFL {
+	width: 160px;
+}
+
+#content.cResume .fmResumeNameLabel2,
+#content.cResume .fmResumeNameKanaLabel2 {
+	margin-left: 12px;
+}
+
+
+/* # cExperience
+------------------------------------------ */
+
+#content.cExperience label[for=fmCareerYCDetailNum],
+#content.cExperience label[for=fmCareerYCDetailType],
+#content.cExperience label[for=fmCareerYCDetailIncome] {
+	margin-right: 13px;
+	min-width: 4em;
+}
+
+#content.cExperience #fmCareerEPMonth1,
+#content.cExperience #fmCareerEPMonth2 {
+	margin-left: 18px;
+}
+
+#content.cExperience #fmCareerYCDetailNum,
+#content.cExperience #fmCareerYCDetailIncome {
+	width: 188px;
+}
+
+#content.cExperience #fmCareerDutyTemplate {
+	margin-right: 13px;
+	width: 355px;
+}
+
+#content.cExperience .fmCareerYCDetailLabel {
+	margin-right: 13px;
+}
+
+#content.cExperience .fmCareerEPMonth1,
+#content.cExperience .fmCareerEPMonth2 {
+	margin-left: 18px;
+}
+
+#content.cExperience .fmCareerDutyTemplate {
+	margin-right: 13px;
+	width: 355px;
+}
+
+
+/* # cSkill
+------------------------------------------ */
+
+#content.cSkill .entrySec .leadText {
+	margin-bottom: 0;
+    padding: 0 20px 15px;
+}
+
+#content.cSkill input[type=checkbox] {
+	margin-top: 13px;
+	vertical-align: top;
+}
+
+#content.cSkill .skillSec {
+	margin-bottom: 51px;
+}
+
+#content.cSkill .skillSec .sh {
+	border-top: none;
+}
+
+#content.cSkill #skillExperienceSec02.skillSec {
+	margin-bottom: 27px;
+}
+
+#content.cSkill .skillSec li .floatL {
+	margin-bottom: 0;
+	padding-top: 3px;
+}
+
+#content.cSkill .skillSec li:last-child .floatL {
+	padding-top: 9px;
+}
+
+#content.cSkill .basicList .fmItemList .floatR img { 
+	margin-left: 10px;
+	vertical-align: middle;
+}
+
+#content.cSkill .entrySec .entrySec .noteText {
+	border-top: none!important;
+	padding: 0 10px 0 18px;
+}
+
+#content.cSkill .fmBox.bgBtmOther p.fmSubmit {
+	border-bottom: none!important;
+	margin: 7px 0 20px 0;
+	padding-bottom: 15px!important;
+}
+
+
+/* # cComplete
+------------------------------------------ */
+
+#content.cComplete #contentHead {
+	display: none;
+}
+
+#content.cComplete #completeLeadBox {
+	padding: 10px 20px 20px;
+}
+
+#content.cComplete #completeLeadBox strong {
+	color: #FF6600;
+	font-size: 30px;
+}
+
+#content.cComplete .basicBoxList1 {
+	border-top: 1px solid #ccc;
+}
+
+#content.cComplete .basicBoxList1 > li:first-child {
+	background-image: inherit;
+}
+
+/* completeSkillMatchArea */
+#content.cComplete #completeSkillMatchArea {
+	margin-top: 65px;
+}
+
+#content.cComplete #completeSkillMatchArea h2 {
+	background-color: #dfdfdf;
+	background-image:
+		-moz-linear-gradient(top, rgba(0,0,0,0.17) 0%, rgba(0,0,0,0) 100%);
+	background-image:
+		-webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0,0,0,0.17)), color-stop(1, rgba(0,0,0,0)));
+	background-position: left top;
+	background-repeat: no-repeat;
+	-webkit-background-size: 100% 10px;
+	background-size: 100% 10px;
+	color: #2f3c66;
+	display: block;
+	font-size: 28px;
+	padding: 25px 20px 20px;
+	position: relative;
+}
+
+#content.cComplete #completeSkillMatchArea h3 {
+	background-color: #efefef;
+	border-bottom: 1px solid #cbcbcb;
+	border-top: 1px solid #cbcbcb;
+}
+
+#content.cComplete #completeSkillMatchArea .base {
+	background: url(../images/ico_arrow_blue_m_btm.png) no-repeat 96% center;
+	color: #000;
+	display: block;
+	padding: 20px 20px;
+}
+
+#content.cComplete #completeSkillMatchArea .open {
+	background-image: url(../images/ico_arrow_blue_m_top.png);
+}
+
+#content.cComplete #completeSkillMatchArea h4 a {
+	display: block;
+}
+
+#content.cComplete #completeSkillMatchArea .detailList {
+	margin-top: 25px;
+}
+
+#content.cComplete #completeSkillMatchArea > .sec + .sec {
+	margin-top: -1px;
+}
+
+#content.cComplete #completeSkillMatchArea .completeSkillMatch .sec {
+	border-bottom: 1px solid #ccc;
+	padding: 15px 20px;
+}
+
+#content.cComplete #completeSkillMatchArea .completeSkillMatch .lastSec {
+	border-bottom: none;
+}
+
+#content.cComplete #completeSkillMatchArea .detailList dt {
+	background-color: #838383;
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+	display: inline-block;
+	margin-bottom: 6px;
+	padding: 4px 8px;
+}
+
+
+#scoutDetail + ul.fmItemList li:first-child {
+	padding: 9px 20px 24px;
+}
+
+
+/* # cMypage
+------------------------------------------ */
+
+#content.cMypage .mypageBox ul.detailInfo li:last-child {
+	border-bottom: none;
+	margin-bottom: 0;
+	padding-bottom: 12px;
+}
+
+.bgBtm,
+#content.cMypage #mailList.mailBoxList:after,
+#content.cMypage .entryBasicList1 > dd + dd,
+#content.cMypage section.shadowBG:before,
+#content p.jobText,
+#content.cMypage div.fmBoxReset:before,
+#content.cMypage div.pageLink,
+#content.cMypage div.useItemBox,
+#content.cMypage div.fmBox.alignC,
+#content.cMypage div.fmBox.alignC:before,
+#content.cMypage .entryAccessBox,
+#content.cMypage .entryAccessBox:before {
+	background-image:
+		-moz-linear-gradient(top, rgba(0,0,0,0.09) 0%, rgba(0,0,0,0) 100%);
+	background-image:
+		-webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0,0,0,0.09)), color-stop(1, rgba(0,0,0,0)));
+	background-position: left top;
+	background-repeat: no-repeat;
+	-webkit-background-size: 100% 19px;
+	background-size: 100% 19px;
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent .otherCondition:before {
+	background-image: none;
+	background-position: left top;
+	background-repeat: no-repeat;
+	-webkit-background-size: 100% 19px;
+	background-size: 100% 19px;
+}
+
+.bgBtm {
+	background-position: left bottom;
+}
+
+#content.cMypage .entryBoxBefore {
+	background: none;
+	margin-bottom: -3px;
+	padding-bottom: 0!important;
+}
+
+#content.cMypage .entryBoxBefore .entryAccessBoxInner {
+	border-bottom: 0;
+	padding-bottom: 0;
+}
+
+#content.cMypage .entryBasicList1 .wholeArea {
+	padding: 12px 20px 15px 20px;
+}
+
+#content.cMypage .entryBasicList1 .wholeArea label {
+	color: #000;
+}
+
+/*
+#content.cMypage #contentHead + form.leadFm {
+    margin: 0 0 6px 0;
+}
+*/
+
+/* entryNoteBox */
+#content.cMypage .entryAccessBox {
+	background-position: left bottom;
+	border-top: 1px solid #ccc;
+	padding: 0 0 19px;
+}
+
+#content.cMypage #mailList.mailBoxList:after,
+#content.cMypage section.shadowBG:before,
+#content.cMypage #jobOfferDetailInfo .innerContent .otherCondition:before,
+#content.cMypage div.fmBoxReset:before,
+#content.cMypage .entryAccessBox:before {
+	content: '';
+	display: block;
+	height: 19px;
+}
+
+.bgBtmOther:after {
+	content: '';
+	display: block;
+}
+
+#content.cMypage section.shadowBG .leadBox {
+	padding: 0 20px 20px 20px;
+}
+
+#content.cMypage .entryBoxReset {
+	border-top: none;
+}
+
+#content.cMypage .entryBoxReset h2.bHead {
+	margin-top: 0;
+}
+
+#content.cMypage .entryBoxReset:before {
+	background: none;
+	border: none;
+}
+
+#content.cMypage .entryAccessBoxInner {
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 15px;
+}
+
+#content.cMypage .entryAccessBox a.arrowRBtn,
+#content.cMypage ul.fmItemList a.arrowRBtn,
+#content.cMypage ul.fmItemList li a.deleteBtn {
+	float: right;
+}
+
+#content.cMypage p.findCompany {
+	margin-bottom: 0;
+	padding: 0 20px;
+}
+
+#content.cMypage .fmItemList p.findCompany {
+	padding: 10px 0 0 0;
+}
+
+#content.cMypage .entryAccessBox a.arrowRBtn {
+	margin-top: -5px;
+}
+
+#content.cMypage .btn1.deleteBtn {
+	padding: 5px 10px;
+}
+
+#content.cMypage .btn1.deleteBtn > span {
+	background: url(../images/ico_delete.png) no-repeat right center;
+	min-width: 167px;
+	padding: 10px 39px 10px 0;
+}
+
+#content.cMypage p.fmBtn {
+	background-image:
+		-moz-linear-gradient(top, rgba(0,0,0,0.09) 0%, rgba(0,0,0,0) 100%);
+	background-image:
+		-webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0,0,0,0.09)), color-stop(1, rgba(0,0,0,0)));
+	background-position: left top;
+	background-repeat: no-repeat;
+	-webkit-background-size: 100% 19px;
+	background-size: 100% 19px;
+	border-top: 1px solid #ccc;
+	margin: 0;
+	padding: 28px 0 0 0;
+	text-align: center;
+}
+
+#content.cMypage h2.bHead {
+	background-color: #efefef;
+	color: #f60;
+	text-align: center;
+	margin: 20px 0 10px 0;
+	padding: 8px 0 5px;
+}
+
+#content.cMypage input[type=text]#fmFindCompany {
+	width: 59%;
+}
+
+#content.cMypage dl.accessList {
+	border-top: 1px solid #ccc;
+	padding-top: 0.5em;
+}
+
+#content.cMypage dl.accessList {
+	margin: 10px 0 0 0;
+}
+
+#content.cMypage dl.accessList dt {
+	padding-left: 10px;
+}
+
+#content.cMypage dl.accessList dd {
+	border-bottom: 1px solid #ccc;
+	margin: -1.5em  0 0.5em 0;
+	padding: 0 0.5em 0.5em 7.4em;
+}
+
+#content.cMypage ul.basicList li {
+	padding: 0 10px;
+}
+
+#content.cMypage .fmItem {
+	display: block;
+	float: left;
+	padding-top: 10px;
+}
+
+#content.cMypage .findCompany button.btn1 {
+	float: right;
+	margin: -7px -4px 0 0;
+}
+
+#content.cMypage .findCompanyText {
+	padding: 0 20px;
+}
+
+#content.cMypage .entryAccessBoxInner p.findCompanyText + p.findCompany {
+	padding-bottom: 18px;
+}
+
+#content.cMypage .textExplain {
+	padding-top: 10px;
+}
+
+#content.cMypage .fmItemList label {
+	color: #000;
+}
+
+#content.cMypage #mypageLeadBox .note {
+	color: #f30;
+}
+
+#content.cMypage div.fmBox.alignC {
+	background-position: left bottom;
+	border-top: 1px solid #ccc;
+	padding: 0 0 18px 0;
+}
+
+#content.cMypage div.fmBox.alignC p {
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 18px;
+}
+
+#content.cMypage div.fmBox.alignC:before {
+	content: '';
+	display: block;
+	height: 19px;
+}
+
+#content.cMypage .linkList1 li {
+	padding: 5px 0 10px;
+	text-align: center;
+}
+
+#content.cMypage .linkList1 li a span {
+	width: 304px;
+}
+
+#content.cMypage .linkList2 {
+	background-image:
+		-moz-linear-gradient(top, rgba(0,0,0,0.09) 0%, rgba(0,0,0,0) 100%);
+	background-image:
+		-webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0,0,0,0.09)), color-stop(1, rgba(0,0,0,0)));
+	background-position: left top;
+	background-repeat: no-repeat;
+	-webkit-background-size: 100% 19px;
+	background-size: 100% 19px;
+	border-top: 1px solid #ccc;
+	padding: 18px 0 0 0;
+	text-align: center;
+}
+
+#content.cMypage .linkList2 li {
+	display: inline;
+}
+
+#content.cMypage .basicBoxList1.entryTargetList2 dt {
+	padding-bottom: 10px;
+}
+
+#content.cMypage #mypageLeadBox p {
+	padding: 17px 16px;
+}
+
+#content.cMypage #mypageLeadBox p strong {
+	color: #036;
+	display: block;
+	font-size: 130%;
+}
+
+#content.cMypage #mypageLeadBox p.leadBox {
+	border-bottom: 3px solid #ccc;
+}
+
+#content.cMypage .leadTextBox p.leadBox {
+	border-bottom: 1px solid #ccc!important;
+}
+
+#content.cMypage .fmItemList li.lastList {
+	border-bottom: 1px solid #ccc;
+}
+
+#content.cMypage .mypageBox {
+	background-color: #fff;
+	border: 4px solid #2f3c66;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	-moz-box-shadow:
+		0px 0px 10px 0px rgba(0,0,0,0.2);
+	-webkit-box-shadow:
+		0px 0px 10px 0px rgba(0,0,0,0.2);
+	box-shadow:
+		0px 0px 10px 0px rgba(0,0,0,0.2);
+	margin-top: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 593px;
+}
+
+#content.cMypage .mypageBox ul {
+	margin: 18px 19px 0 19px;
+}
+
+#content.cMypage .mypageBox ul li {
+	border-bottom: 1px dashed #606060;
+	margin-bottom: 13px;
+	padding-bottom: 12px;
+}
+
+#content.cMypage .mypageBox ul li textarea {
+	padding-bottom: 2px;
+}
+
+#content.cMypage .mypageBox ul li.lastList {
+	border-bottom: none;
+}
+
+#content.cMypage .mypageBox ul li input {
+	margin-top: 4px;
+}
+
+#content.cMypage #scoutMessage #scoutDetail {
+	margin-bottom: 15px;
+}
+
+#content.cMypage .mypageBox p.date {
+	border-top: 1px solid #ccc;
+	padding: 8px 19px 6px 33px;
+}
+
+#content.cMypage .mypageBox .fmSubmit {
+	margin: 21px 0 14px 0;
+}
+
+#content.cMypage #jobOfferDetailInfo .mh {
+	padding: 20px 50px 20px 20px;
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent {
+	margin: 0 0 29px 0;
+}
+
+#content.cMypage #jobOfferDetailInfo .innerLast {
+	padding: 0;
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent {
+	background-image:
+		-moz-linear-gradient(top, rgba(0,0,0,0.09) 0%, rgba(0,0,0,0) 100%);
+	background-image:
+		-webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0,0,0,0.09)), color-stop(1, rgba(0,0,0,0)));
+	background-position: left top;
+	background-repeat: no-repeat;
+	-webkit-background-size: 100% 20px;
+	background-size: 100% 20px;
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent {
+	background-position: left bottom;
+	padding: 0 0 20px 0;
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent:before {
+	display: block;
+	height: 20px;
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent div.inner {
+	border-bottom: 1px solid #ccc;
+}
+
+#content.cMypage #jobOfferDetailInfo ul.fmItemList li span {
+	margin-right: 25px;
+}
+
+#content.cMypage dl dt p.fxIndnt{
+	padding-left:100px;
+	text-indent: -100px;	
+}
+
+#content.cMypage dl dt p.fxIndnt span{
+	margin-right: 25px;
+}
+
+#content.cMypage .btnSetBtn,
+#content.cMypage .btnSetBtn:before {
+	background-image:
+		-moz-linear-gradient(top, rgba(0,0,0,0.09) 0%, rgba(0,0,0,0) 100%);
+	background-image:
+		-webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0,0,0,0.09)), color-stop(1, rgba(0,0,0,0)));
+	background-position: left top;
+	background-repeat: no-repeat;
+	-webkit-background-size: 100% 19px;
+	background-size: 100% 19px;
+}
+
+#content.cMypage .btnSetBtn {
+	background-position: left bottom;
+	border-top: 1px solid #ccc;
+	padding: 20px 0 19px 0;
+}
+
+#content.cMypage .btnSet {
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 19px;
+}
+
+#content.cMypage .btnSet:before {
+	display: block;
+	height: 19px;
+}
+
+#content.cMypage dl.mypageBox.feature,
+#content.cMypage dl#feature {
+	background: #daeef4;
+	border: 2px solid #8991aa;
+	margin-bottom: 20px;
+}
+
+#content.cMypage dl.mypageBox.feature dt,
+#content.cMypage dl#feature dt {
+	background: #80bbcd;
+	color: #fff;
+	font-size: 120%;
+	font-weight: bold;
+	margin: 23px 0 0 0;
+	padding: 11px 20px 6px 20px;
+	text-align: center;
+	text-shadow: 2px 2px 1px #6a9baa;
+}
+
+#content.cMypage dl.mypageBox.feature dd,
+#content.cMypage dl#feature dd {
+	padding-bottom: 14px;
+}
+
+#content.cMypage dl.mypageBox.feature dd:last-child,
+#content.cMypage dl#feature dd:last-child {
+	padding-bottom: 34px;
+}
+
+#content.cMypage dl.mypageBox.feature dd p.floatL,
+#content.cMypage dl#feature dd p.floatL {
+	margin-bottom: 0;
+	padding: 20px 0 0 17px;
+	width: 132px;
+}
+
+#content.cMypage dl.mypageBox.feature dd p.floatR,
+#content.cMypage dl#feature dd p.floatR {
+	font-size: 110%;
+	padding: 16px 12px 0 0;
+	width: 414px;
+}
+
+#content.cMypage div.useItemBox {
+	border-top: 1px solid #ccc;
+	clear: both;
+	margin-top: 33px;
+	padding: 10px 0 20px 0;
+}
+
+#content.cMypage div.useItemBox p {
+	font-weight: bold;
+	text-align: center;
+}
+
+#content.cMypage div.useItemBox ul {
+	text-align: center;
+	margin: 0 auto;
+}
+
+#content.cMypage div.useItemBox ul li {
+	display: inline-block;
+	padding: 0 4px;
+}
+
+#content.cMypage div#mypageLeadBox strong.textLeadBox {
+	color: #000;
+	font-size: 110%;
+	padding: 13px 0 6px 0;
+}
+
+#content.cMypage p.confirmBtn {
+	border-top: 1px solid #ccc;
+	margin: 0;
+	padding: 23px 0;
+}
+
+#content.cMypage #jobOfferDetailInfo div.innerContent.noBG {
+	border-bottom: none;
+	margin: 0;
+	padding: 0;
+}
+
+#content.cMypage p.leadText.noBD {
+	border-bottom: 0;
+	margin-bottom: 0;
+}
+
+#content.cMypage  .basicBoxList1 .conditionTable .arrowRBtn > span,
+#content.cMypage .useInner .btn1.arrowRBtn > span {
+	min-width: 0;
+	padding: 5px 39px 2px 0;
+}
+
+#content.cMypage .fmChange {
+	padding: 0 17px 23px 24px;
+}
+
+#content.cMypage .fmChange p.change .floatL,
+#content .fmItemList li .floatL {
+	margin-top: 5px;
+}
+
+#content.cMypage #jobOfferDetailInfo ul.fmItemList li span.floatL {
+	margin-right: 0;
+}
+
+#content.cMypage .fmChange p.change span.dispFlag,
+#content .fmItemList li .dispFlag {
+	margin-left: 23px;
+}
+
+#content.cMypage .fmChange p.change select {
+	width: 434px;
+}
+
+#content.cMypage .use {
+  	background-image:
+		-moz-linear-gradient(top, rgba(0,0,0,0.09) 0%, rgba(0,0,0,0) 100%);
+	background-image:
+		-webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0,0,0,0.09)), color-stop(1, rgba(0,0,0,0)));
+	background-position: left top;
+	background-repeat: no-repeat;
+	-webkit-background-size: 100% 20px;
+	background-size: 100% 20px;
+	border-top: 1px solid #ccc;
+	padding: 26px 0 25px 0;
+}
+
+#content.cMypage .useInner {
+	background-color: #fff;
+	border: 2px solid #ccc;
+	border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px #fff inset;
+	margin: 0 22px 13px 28px;
+	padding: 19px 0 8px 0;
+}
+
+#content.cMypage .useInner .title {
+	color: #2f3c66;
+	font-size: 90%;
+	padding: 9px 10px 0 16px;
+	width: 214px;
+}
+
+#content.cMypage .useInner .btn1.startBtn,
+#content.cMypage .useInner .btn1.deleteBtn {
+	padding: 5px 8px;
+}
+
+#content.cMypage .useInner .btn1.startBtn > span,
+#content.cMypage .useInner .btn1.deleteBtn > span {
+	min-width: 0;
+	padding: 5px 39px 2px 0;
+}
+
+#content.cMypage .useInner .underOff,
+#content.cMypage .useInner .under {
+	background: #fdffcf;
+	border: 2px solid #ccc;
+	color: #ff6600;
+	font-weight: bold;
+	margin: 2px 17px 0 0;
+	padding: 5px 34px 2px 41px;
+}
+
+#content.cMypage .useInner .underOff {
+    background: none repeat scroll 0 0 #ededed!important;
+    color: #999!important;
+}
+
+#content.cMypage .tipList {
+	border-bottom: 1px solid #ccc;
+	margin-top: 26px;
+}
+
+#content.cMypage .tipList dd p {
+	float: left;
+}
+
+#content.cMypage .tipList dd > p:last-child {
+	margin: 7px 0 0 -15px;
+	width: 74%;
+}
+
+#content.cMypage .tipList dd {
+	margin: 16px 0 11px 0;
+}
+
+#content.cMypage .edit {
+	padding: 18px 0;
+}
+
+#content.cMypage .leadText {
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 0;
+	padding: 15px 20px;
+}
+
+#content.cMypage ul#mailList {
+	clear: both;
+	margin-top: 24px;
+}
+
+#content.cMypage #mailList li {
+	border-top: 3px solid #ccc;
+	padding-top: 2px;
+}
+
+#content.cMypage #mailList li.unread {
+	background: #fff6b6;
+}
+
+#content.cMypage #mailList li p.status {
+	height: 45px;
+	margin: 0 10px 0 10px;
+	padding: 17px 0 3px 72px;
+}
+
+#content.cMypage #mailList li.read p.status {
+	background: url(../images/mypage/ico_exist01.gif) no-repeat left center;
+}
+
+#content.cMypage #mailList li.unread p.status {
+	background: url(../images/mypage/ico_unread.gif) no-repeat left center;
+	color: #f60;
+}
+
+#content.cMypage #mailList li dl {
+	border-top: 1px dashed #606060;
+	margin: 0 15px 18px 22px;
+	padding: 8px 0 0 3px;
+}
+
+#content.cMypage #mailList li dl dd {
+	line-height: 1.3;
+	margin: -1.4em 0 0 0;
+	padding: 0 0 0 3em;
+}
+
+#content.cMypage #mailList li dl.typeSeminar dd {
+	padding-left: 6.0em !important;
+}
+
+#content.cMypage #mailList li ul {
+	border-top: 1px solid #ccc;
+	width: 100%;
+}
+
+#content.cMypage #mailList li ul li {
+	float: left;
+	border-right: 1px solid #ccc;
+	border-top: none;
+	padding: 5px 9px 7px 27px;
+	width: 45%!important;
+}
+
+#content.cMypage #mailList li ul li:last-child {
+	border-right: none;
+	padding-right: 0;
+}
+
+#content.cMypage #mailList.mailBoxList {
+	margin: 0;
+}
+
+/*
+#content.cMypage #mailList.mailBoxList li:nth-child(even).first {
+	background: none;
+}
+
+#content.cMypage #mailList.mailBoxList li:nth-child(even).last {
+	background: #fff6b6;
+	border-bottom: 1px solid #ccc;
+}
+
+#content.cMypage #mailList.mailBoxList li:nth-child(even).first p.status {
+	background: url(../images/mypage/ico_exist01.gif) no-repeat left center;
+	color: #000;
+}
+*/
+
+#content.cMypage #mailList.mailBoxList li dl dd {
+	padding: 0 0 0 3.7em;
+}
+
+#content.cMypage #mailList.mailBoxList li dl dd.seminar {
+	padding: 0 0 0 5.5em;
+}
+
+#content.cMypage .tabMypage li a {
+	min-width: 280px;
+	/*padding: 10px 8px;*/
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent table.mailBox {
+	width: 100%;
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent table.mailBox td {
+	border-bottom: 3px solid #ccc;
+	color: #000;
+	padding: 19px 12px 12px 12px;
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent table.mailBox th {
+	border-bottom: 3px solid #ccc;
+	padding: 19px 12px 12px 12px;
+	text-align: center;
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent table.mailBox th:first-child {
+	border-right: 2px solid #ccc;
+	width: 24%;
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent table.mailBox td:last-child,
+#content.cMypage #jobOfferDetailInfo .innerContent table.mailBox th:last-child {
+	border-left: 2px solid #ccc;
+	width: 25%;
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent table.mailBox td:first-child {
+	background: #fff url(../images/mypage/ico_exist01.gif) no-repeat 10px 8px;
+	border-right: 2px solid #ccc;
+	padding: 19px 12px 12px 82px;
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent table.mailBox td.transmission {
+	background: #fff url(../images/mypage/ico_transmission.gif) no-repeat 10px 8px;
+	background-image: url(../images/mypage/ico_transmission.gif) !important; 
+	background-position: 10px 8px !important;
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent table.mailBox tr.select td {
+	background: #324b9c;
+	color: #fff;
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent table.mailBox tr.select td a {
+	color: #fff;
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent table.mailBox tr.select td:first-child {
+	background: #324b9c url(../images/mypage/ico_exist02.gif) no-repeat 10px 8px;
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent table.mailBox tr.unread td {
+	background: #fff6b6;
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent table.mailBox tr.unread td:first-child {
+	background: #fff6b6 url(../images/mypage/ico_unread.gif) no-repeat 10px 8px;
+}
+
+#content.cMypage div.mypageBox {
+	padding-bottom: 9px;
+}
+
+#content.cMypage .mypageBox dl {
+	margin: 18px 19px 0 19px;
+}
+
+#content.cMypage .mypageBox dl dt {
+	border-bottom: 1px dashed #606060;
+	margin-bottom: 7px;
+	padding-bottom: 7px;
+}
+
+#content.cMypage .mypageBox dl dd {
+	padding-bottom: 20px;
+}
+
+#content.cMypage .mypageBox dl dd:last-child {
+	padding-bottom: 7px;
+}
+
+#content.cMypage .mypageBox dl dd textarea {
+	margin-top: 10px;
+	padding-bottom: 2px;
+}
+
+#content.cMypage .mypageBox dl dd textarea.textArea {
+	height: auto;
+	overflow: visible!important;
+}
+
+#content.cMypage .mypageBox dl dd input {
+	margin-top: 10px;
+}
+
+#content.cMypage div.itemBox {
+	border-top: 1px solid #ccc;
+	margin-top: 0;
+	text-align: center;
+}
+
+#content.cMypage div.itemBox ul li {
+	display: block;
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent .infoList li .entryBasicList1,
+#content.cMypage div.itemBox,
+#content.cMypage div.itemBox ul,
+#content.cMypage div.itemBox p.useText {
+	background-image:
+		-moz-linear-gradient(top, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 100%);
+	background-image:
+		-webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0,0,0,0.1)), color-stop(1, rgba(0,0,0,0)));
+	background-repeat: no-repeat;
+	background-size: 100% 18px;
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent .infoList li .entryBasicList1,
+#content.cMypage div.itemBox {
+	background-position: left bottom;
+	padding-bottom: 18px;
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent .infoList .entryBasicList1 > dt {
+	font-weight: normal;
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent .infoList .entryBasicList1 > dd .fmItemList:first-child {
+    margin-top: 0;
+	padding-top: 0;
+}
+
+#content.cMypage div.itemBox ul {
+	background-position: left top;
+	background-repeat: no-repeat;
+	border-bottom: 1px solid #ccc;
+	padding: 25px 0 10px 0;
+}
+
+#content.cMypage div.itemBox.noBG {
+	padding-bottom: 0;
+}
+
+#content.cMypage div.itemBox.noBG ul {
+	border-bottom: none;
+}
+
+#content.cMypage div.itemBox p.useText {
+	margin-bottom: -10px;
+	padding-top: 15px;
+}
+
+#content.cMypage div.itemBox ul li .btn3,
+#content.cMypage div.itemBox ul li .btn4 {
+	margin-bottom: 14px;
+	width: 535px;
+}
+
+#content.cMypage div.itemBox ul li .arrowRBtn > span {
+	padding: 0 39px;
+	min-width: 454px;	
+}
+
+#content.cMypage #jobOfferDetailInfo #term .innerContent {
+	margin: 0;
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent #featureBox {
+	background-image:
+		-moz-linear-gradient(top, rgba(0,0,0,0.09) 0%, rgba(0,0,0,0) 100%);
+	background-image:
+		-webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0,0,0,0.09)), color-stop(1, rgba(0,0,0,0)));
+	background-position: left top;
+	background-repeat: no-repeat;
+	-webkit-background-size: 100% 19px;
+	background-size: 100% 19px;	
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent #featureBox {
+	padding-top: 28px;
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent #featureBox .mypageBox {
+	margin-top: 0;
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent #featureBox .mypageBox dd:last-child {
+	padding-bottom: 0;
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent #featureBox .mypageBox ul {
+	margin: 19px 0 0 0;
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent #featureBox .mypageBox ul li {
+	border-bottom: 1px solid #8991aa;
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent #featureBox .mypageBox ul li:last-child {
+	border-bottom: none;
+	padding-bottom: 0;
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent #featureBox .mypageBox p:first-child {
+	clear: both;
+	color: #003366;
+	margin: 0 0 0 12px;
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent #featureBox .mypageBox div p:nth-child(odd) {
+	float: left;
+	margin: 4px 6px 0 8px;
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent #featureBox .mypageBox div p:nth-child(even) {
+	float: left;
+	margin-top: 16px;
+	width: 71%;
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent #featureBox .mypageBox div p.job {
+	width: 65%;
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent .info {
+	border-bottom: 1px solid #ccc;
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent .info p:nth-child(odd) {
+	float: left;
+	margin: 10px 12px 19px 0;
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent .info p:nth-child(even) {
+	float: left;
+	margin: 13px 0 19px 0;
+	width: 44%;
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent .info p:nth-child(even).skill {
+	width: 45%;
+}
+
+#content.cMypage #entryMemberTab #entryMemberYesTab ul.tabContent dl.entryBasicList1 dt {
+	padding-left: 8px;
+}
+
+#content.cMypage #entryMemberTab ul.tabContent dl.entryBasicList1 dt label {
+	color: #000;
+}
+
+#content.cMypage #entryMemberTab #entryMemberYesTab ul.tabContent dl.entryBasicList1 dt label span {
+	font-size: 130%;
+}
+
+#content.cMypage #entryMemberTab ul.tabContent dl.entryBasicList1 dd {
+	padding: 0;
+}
+
+#content.cMypage #entryMemberTab #entryMemberYesTab ul.tabContent dl.entryBasicList1 dd p:first-child {
+	border-top: none;
+	margin: 0;
+	padding: 0 0 10px 35px;
+}
+
+#content.cMypage .basicBoxList2,
+#content.cMypage .basicBoxList2 > li {
+	background-image:
+		-moz-linear-gradient(top, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 100%);
+	background-image:
+		-webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0,0,0,0.1)), color-stop(1, rgba(0,0,0,0)));
+	background-repeat: no-repeat;
+	background-size: 100% 18px;
+}
+
+
+#content.cMypage .basicBoxList2 {
+	background-position: left bottom;
+	margin-bottom: 16px;
+	padding-bottom: 18px;
+}
+
+#content.cMypage .tabContent > li {
+	border-bottom: 0px solid #ccc!important;
+}
+
+#content.cMypage .basicBoxList2 > li {
+	background-position: left top;
+	background-repeat: no-repeat;
+	border-bottom: 3px solid #ccc;
+	padding: 18px 0 0 0;
+}
+
+#content.cMypage .tabContent > li {
+	padding-top: 25px;
+}
+
+#content.cMypage .tabContent > li:first-child {
+	padding-top: 32px;
+}
+
+#content.cMypage .tabContent.tabContentReset > li {
+	padding-top: 0;
+}
+
+#content.cMypage .tabContent.tabContentReset > li ul {
+	border-bottom: none!important;
+}
+
+#content.cMypage .tabContent.tabContentReset > li:last-child ul {
+	border-bottom: 1px solid #ccc!important;
+}
+
+#content.cMypage .tabContent.tabContentReset li p.date {
+	border: none;
+	float: left;
+	padding: 0 20px 5px 26px;
+}
+
+#content.cMypage .tabContent.tabContentReset li p.date:last-child {
+	border-bottom: 1px solid #ccc;
+}
+
+#content.cMypage .tabContent.tabContentReset.basicBoxList2 > li p.jobDetail {
+	padding: 6px 20px 7px 156px!important;
+	text-indent: -110px;
+}
+
+#content.cMypage .tabContent.tabContentReset.basicBoxList2 > li p.jobDetail a {
+	display: inline;
+	padding-left: 0;
+    text-indent: 0;
+}
+
+#content.cMypage .tabContent.tabContentReset.basicBoxList2 > li p > a.aArrow1 {
+	padding-left: 32px;
+    text-indent: 0;
+}
+
+#content.cMypage ul.tabContentReset dl.entryBasicList1 dt {
+	padding-left: 8px!important;
+}
+
+#content.cMypage #entryMemberTab #entryMemberYesTab ul.tabContentReset dl.entryBasicList1 dd p:first-child {
+	border-top: medium none;
+	color: #000;
+    margin: 0;
+	font-size: 100%;
+    padding: 0 0 10px 35px;
+}
+
+#content.cMypage .basicBoxList2 > li ul.dateList li:last-child,
+#content.cMypage .basicBoxList2 > li ul.dateList li {
+	padding-left: 46px;
+	text-align: left;
+	width: 42%!important;
+}
+
+#content.cMypage .basicBoxList2 > li p:first-child {
+	border-top: 3px solid #ccc;
+	color: #003366;
+	font-size: 120%;
+	margin: 17px 0 8px 0;
+	padding: 16px 0 0 17px;
+}
+
+#content.cMypage .basicBoxList2 > li p.link {
+	padding: 0 0 6px 16px;
+}
+
+#content.cMypage .basicBoxList2 > li p.linkReset {
+	padding-left: 41px;
+}
+
+#content.cMypage .basicBoxList2 > li p > a {
+	text-indent: -5px;
+	padding-left: 5px
+}
+
+#content.cMypage .basicBoxList2 > li ul {
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+#content.cMypage .basicBoxList2 > li ul li {
+	float: left;
+	padding: 6px 0 7px 0;
+	text-align: center;
+	width: 50%;
+}
+
+#content.cMypage .basicBoxList2 > p label {
+	color: #003366;
+}
+
+#content.cMypage .basicBoxList2 > li > ul > li:last-child,
+#content.cMypage #entryMemberTab #entryMemberYesTab ul.tabContent dl.entryBasicList1 dd ul > li:last-child {
+	border-left: 1px solid #ccc;
+	width: 49%;
+}
+
+#content.cMypage .basicBoxList2 > li p.date {
+	border-bottom: 1px solid #ccc;
+	color: #000;
+	font-size: 100%;
+	margin: 0;
+	padding: 0 0 5px 20px;
+}
+
+#content.cMypage .basicBoxList2 > li p.company {
+	border-bottom: 1px solid #ccc;
+	padding-left: 18px;
+}
+
+#content.cMypage .confirmBox {
+	margin-bottom: -20px;
+}
+
+#content.cMypage .confirmBox li {
+	padding: 0;
+}
+ 
+#content.cMypage .confirmBox li p:first-child {
+	margin: 0;
+}
+
+#content.cMypage .confirmBox li ul {
+	border-bottom: none;
+	margin-bottom: 0;
+}
+
+#content.cMypage .confirmBox > li ul.date li,
+#content.cMypage .confirmBox > li ul.date li:last-child {
+	padding-left: 10px;
+	text-align: left;
+	width: 100%;
+}
+
+#content.cMypage #entryMemberTab #entryMemberNoTab .basicBoxList2 li ul {
+	margin-top: 15px;
+}
+
+#content.cMypage #entryMemberTab #entryMemberNoTab .basicBoxList2 li ul li {
+	border-top: 3px solid #ccc;
+	text-align: left;
+	width: 100%;
+}
+
+#content.cMypage #jobOfferDetailInfo #condition div.fmBoxReset p {
+	padding: 10px 0 3px 0;
+}
+
+#content.cMypage #jobOfferDetailInfo #condition .innerContent .basicBoxList1 > li {
+	padding-top: 30px;
+}
+
+#content.cMypage #jobOfferDetailInfo #condition .innerContent .basicBoxList1 > li:first-child {
+	padding-top: 20px;
+}
+
+/* if double borders were no need case(for l/mypage/anony_skillmatch_list_login.html LINE77)
+#content.cMypage #jobOfferDetailInfo #condition .innerContent .basicBoxList1 > li.noBDB {
+	padding-top: 0px;
+}
+*/
+#content.cMypage #jobOfferDetailInfo #condition.noSelection .innerContent .basicBoxList1 li {
+	border-bottom: 0;
+	margin-bottom: -1px;
+	padding-top: 0;
+}
+
+#content.cMypage #jobOfferDetailInfo #condition.noSelection .innerContent .basicBoxList1 li:first-child {
+	padding-top: 20px;
+}
+
+#content.cMypage .conditionDetail .innerContent .basicBoxList1 .conditionTable th,
+#content.cMypage #jobOfferDetailInfo .innerContent .basicBoxList1 .conditionTable th {
+	border: 1px solid #ccc;
+	border-left: none;
+	text-align: center;
+	vertical-align: middle;
+	width: 127px;
+}
+
+#content.cMypage .conditionDetail .innerContent .basicBoxList1 .conditionTable td,
+#content.cMypage #jobOfferDetailInfo .innerContent .basicBoxList1 .conditionTable td {
+	border: 1px solid #ccc;
+	border-right: none;
+	padding: 16px 0 12px 26px;
+}
+
+#content.cMypage .conditionDetail .innerContent .basicBoxList1 li {
+	border-bottom: none;
+}
+
+#content.cMypage .conditionDetail .innerContent .basicBoxList1 .conditionTable .arrowRBtn > span,
+#content.cMypage #jobOfferDetailInfo .innerContent .basicBoxList1 .conditionTable .arrowRBtn > span {
+	padding: 12px 35px 7px 7px;
+}
+
+#content.cMypage .conditionDetail .innerContent .basicBoxList1 li p.detailText,
+#content.cMypage #jobOfferDetailInfo .innerContent .basicBoxList1 li p.detailText {
+	padding: 10px 10px 10px 10px;
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent .otherCondition {
+	border-top: 1px solid #ccc;
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent .otherCondition table {
+  margin-bottom: 10px;
+    margin-top: -10px;
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent .otherCondition table label {
+	color: #000;
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent .basicBoxList1 .otherCondition th {
+	border: 1px solid #ccc;
+	border-left: none;
+	border-bottom: none;
+	text-align: center;
+	vertical-align: middle;
+	width: 188px;
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent .basicBoxList1 .otherCondition td {
+	border: 1px solid #ccc;
+	border-right: none;
+	border-bottom: none;
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent .basicBoxList1 .otherCondition ul li {
+	border-bottom: 1px solid #ccc;
+	padding: 15px 0 8px 30px;
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent .basicBoxList1 .otherCondition ul li:last-child {
+	border-bottom: none;
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent .infoList {
+	padding-bottom: 0;
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent .infoList li:last-child {
+	border-bottom: none;
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent .infoList li:first-child {
+	background: none;
+}
+
+#content.cMypage .conditionDetail .innerContent .infoList li,
+#content.cMypage #jobOfferDetailInfo .innerContent .infoList li {
+	padding: 0;
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent .infoList li:last-child ul.fmItemList li:last-child {
+	border-bottom: 0;
+	padding-bottom: 0;
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent .infoList li .entryBasicList1 {
+	margin-bottom: 6px;
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent .infoList li .entryBasicList1 > dt {
+	border-top: none;
+	padding: 20px 20px 13px 10px;
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent .infoList li .entryBasicList1 > dt span.name {
+	font-size: 140%;
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent .infoList li .entryBasicList1 > dd {
+	padding: 5px 20px 20px 20px;
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent .infoList li:first-child ul.fmItemList {
+	padding-top: 0;
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent .infoList li:first-child ul.fmItemList {
+	padding-top: 6px;
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent .infoList li ul.fmItemList {
+	padding-bottom: 0;
+	padding-top: 27px;
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent .infoList li:last-child ul.fmItemList:last-child {
+	margin-bottom: -26px;
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent .infoList li ul.fmItemList li:first-child {
+	margin-top: 0;
+	padding: 5px 0 14px 107px;
+	text-indent: -100px;
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent .infoList li ul.fmItemList li:last-child {
+	border-bottom: 1px solid #ccc;
+	padding: 15px 0 18px 7px;
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent .infoList li ul.fmItemList li p span.name {
+	font-size: 140%;
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent .infoList li ul.fmItemList li span {
+	margin-right: 0;
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent .infoList li ul.fmItemList li span.percent {
+	font-size: 150%;
+	line-height: 1;
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent .infoList li ul.fmItemList span a {
+	padding-right: 10px;
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent .infoList li ul.fmItemList a {
+	padding-right: 21px;
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent .infoList li ul.fmItemList img {
+	vertical-align: top;
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent .infoList li ul.fmItemList li {
+	padding: 9px 0 9px 7px;
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent .infoList li ul.fmItemList span.date {
+	color: #ff6600;
+}
+
+@media all and (orientation:landscape) {
+	#content.cMypage .tipList dt {
+		background: url(../images/mypage/bg_register.gif) no-repeat 0 0;
+		height: 75px;
+		text-indent: -9999px;
+	}
+	
+	#content.cMypage .tipList dt.update {
+		background: url(../images/mypage/bg_update.gif) no-repeat 0 0;
+	}
+	
+	#content.cMypage .tipList dd p:last-child {
+		width: 79%;
+	}
+	
+	#content.cMypage #jobOfferDetailInfo .innerContent .info p:nth-child(even) {
+		width: 63%;
+	}
+	
+	#content.cMypage #jobOfferDetailInfo .innerContent .info p:nth-child(even).skill {
+		width: 68%;
+	}
+	
+}
+
+#content.cMypage .linkReset a {
+	color: #000;
+}
+
+#content.cMypage .bookmarkTitle label {
+	color: #000;
+}
+
+#content.cMypage table.infoTable {
+	width: 100%;
+}
+
+#content.cMypage table.infoTable tr td {
+	border: 1px solid #ccc;
+	padding: 21px 15px 13px;
+}
+
+#content.cMypage table.infoTable tr td:first-child {
+	border-left: none;
+}
+	<1></1>
+#content.cMypage table.infoTable tr td:last-child {
+	border-right: none;
+}
+
+#content.cMypage table.infoTable tr:last-child td {
+	border-bottom: none;
+}
+
+#content.cMypage table.infoTable tr .sizeS {
+	border: 1px solid #ccc;
+	width: 25%;
+}
+
+#content.cMypage #jobOfferDetailInfo section.showContent .mh {
+	padding: 0;
+}
+
+#content.cMypage p.jobText {
+	border-top: 1px solid #ccc;
+	color: #036;
+	padding: 15px 0;
+	text-align: center;
+}
+
+#content.cMypage ul.icoList {
+	margin-bottom: -15px;
+}
+
+#content.cMypage ul.icoList li {
+	line-height: 1;
+	float: left;
+	padding: 0 6px 10px 0;
+}
+
+#content.cMypage ul.icoList li:last-child {
+	/*clear: left;*/
+	float: none;
+}
+
+#content p.titleLink {
+	border-top: 1px solid #ccc;
+    font-size: 130%;
+	font-weight: bold;
+	padding: 19px 20px 0;
+}
+
+#content.cMypage .productImage {
+	margin-bottom: 17px;
+}
+
+#content.cMypage .productImage img {
+	background: #fff;
+	border: 1px solid #ccc;
+	padding: 2px;
+}
+
+#content.cMypage ul.productList {
+	border-top: 1px solid #ccc;
+	margin-bottom: 22px;
+}
+
+#content.cMypage ul.productList li {
+	border-bottom: 1px solid #ccc;
+	padding: 19px 20px;
+}
+
+#content.cMypage ul.productList li p.title {
+	background: #838383;
+	color: #fff;
+	font-size: 70%;
+	line-height: 1;
+	margin-bottom: 10px;
+	text-align: center;
+	width: 82px;
+}
+
+#content.cMypage ul.productList li p a {
+	background: url(../images/ico_arrow_blue_s_r.png) no-repeat 0 3px;
+	float: right;
+	padding-left: 30px;
+}
+
+#content.cMypage ul.productList li p:last-child {
+	font-size: 90%;
+}
+
+#content.cMypage p.fmBox.alignC {
+	padding-bottom: 11px;
+}
+
+#content.cMypage div.pageLink {
+	border-bottom: 1px solid #ccc;
+	color: #2f3c66;
+	padding: 19px 0 15px 0;
+	text-align: center;
+}
+
+#content.cMypage div.pageLink div {
+	padding-bottom: 19px;
+}
+
+#content.cMypage div.pageLink div p {
+	display: inline-block;
+	margin-bottom: 0;
+}
+
+#content.cMypage div.pageLink div p.pageText {
+	font-size: 120%;
+	padding: 0 19px 0 18px;
+	vertical-align: middle;
+}
+
+#content.cMypage div.pageLink div p .backBtn {
+    padding: 0 19px 0 1px;
+	width: 155px;
+}
+
+#content.cMypage div.pageLink div p .backBtn span {
+	font-size: 24px;
+}
+
+#content.cMypage div.pageLink div p .arrowRBtn {
+	padding: 0 4px 0 10px;
+	width: 156px;
+}
+
+#content.cMypage div.pageLink div p .arrowRBtn span {
+	min-width: inherit;
+	padding: 9px 39px 9px 0;
+}
+
+#content.cMypage div.pageLink ul {
+	border-top: 1px solid #ccc;
+	padding-top: 19px;
+}
+
+#content.cMypage div.pageLink ul li {
+	display: inline;
+	font-weight: bold;
+	padding: 0 1px;
+}
+
+#content.cMypage div.pageLink ul li.active .btn1 {
+	background-image: -moz-linear-gradient(top, rgb(206,206,206) 0%, rgb(179,179,179) 20%, rgb(201,201,201) 79%, rgb(181,181,181) 100%);
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, rgb(206,206,206)),color-stop(0.2, rgb(179,179,179)),color-stop(0.81, rgb(201,201,201)),color-stop(1, rgb(181,181,181)));
+	-webkit-box-shadow:
+		0px 0px 10px 0px rgba(0,0,0,0.2),
+		inset 0px 0px 0px 1px rgb(206,206,206);
+	box-shadow:
+		0px 0px 10px 0px rgba(0,0,0,0.2),
+		inset 0px 0px 0px 1px rgb(206,206,206);
+	border: 2px solid #9b9b9b;
+	padding: 10px 18px 8px;
+}
+
+#content.cMypage div.fmBoxReset {
+	border-top: 1px solid #ccc;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+#content.cMypage div.fmBoxReset:before {
+	height: 17px;
+}
+
+#content.noContentHead {
+	margin-top: -10px;
+}
+
+#content.cMypage .infoDetail {
+	margin: 0 auto;
+	padding: 20px 0 17px;
+	text-align: center;
+	width: 620px;
+}
+
+#content.cMypage .infoDetail dt {
+	position: relative;
+	z-index: 7;
+}
+
+#content.cMypage .infoDetail dd {
+	position: relative;
+	text-align: left;
+}
+
+#content.cMypage .infoDetail div#infoContent {
+    background-color: #F3F3F3;
+    border: 5px solid #2F3C66;
+    border-radius: 10px 10px 10px 10px;
+    display: none;
+    padding: 37px 0 20px;
+    position: absolute;
+    left: 98px;
+    top: -33px;
+    width: 335px;
+    z-index: 6;
+}
+
+#content.cMypage .infoDetail div#infoContent p {
+	padding-top: 20px;
+	text-align: center;
+}
+
+#content.cMypage .infoDetail ul li:first-child  {
+	border-top: 1px solid #ccc;
+}
+
+#content.cMypage .infoDetail ul li:last-child  {
+	border-bottom: 1px solid #ccc;
+}
+
+#content.cMypage ul.fmItemText {
+	color: #003366;
+	text-align: center;
+}
+
+#content.cMypage .basicInner ul.fmItemText {
+	text-align: left;
+}
+
+#content.cMypage .aPlusBox {
+	border-top: 1px solid #ccc;
+	padding: 12px 0 8px;
+}
+
+#content.cMypage p.aPlusBox.considerationListBtn {
+	margin-bottom: 0;
+}
+
+#content.cMypage p.aPlusBox.considerationListBtn a.aArrow1,
+#content.cMypage .aPlusBox a {
+	background-image: url(../images/ico_plus_s.png);
+}
+
+#content.cMypage .fmItemText li {
+	border-bottom: 1px solid #ccc;
+	padding: 15px 20px;
+}
+
+#content.cMypage .basicInner .fmItemText li {
+	padding: 15px 0;
+}
+
+#content.cMypage .basicInner .fmItemText .linkText p {
+	margin-bottom: 10px;
+}
+
+#content.cMypage .basicInner .fmItemText .linkText li {
+	border-bottom: none;
+	padding: 18px 0 0 31px;
+	text-indent: -31px;
+}
+
+#content.cMypage .basicInner .fmItemText .linkText li a {
+	background: url(../images/ico_arrow.png) no-repeat 0 0;
+	padding-left: 31px;
+}
+
+#content.cMypage .basicInner .fmItemText li:first-child {
+	padding-top: 0;
+}
+
+#content.cMypage .basicInner .fmItemText td {
+	padding-left: 11px;
+}
+
+#content.cMypage .basicInner .fmItemText .brR {
+	padding-left: 0;
+}
+
+#content.cMypage .fmItemText li:last-child {
+	border-bottom: none;
+}
+
+#content.cMypage .fmItemText li .typeText {
+	color: #ff5518;
+}
+
+#content.cMypage .fmItemText li.lastList {
+	border-bottom: 1px solid #ccc;
+}
+
+#content.cMypage div.fmBoxReset p .btn3 {
+	margin-bottom: 5px;
+}
+
+#content.cMypage p.fmBox.openBtn,
+#content.cMypage p.fmBox.considerationListBtn {
+	margin: 0;
+}
+
+#content.cMypage div.showInfo {
+	padding: 0 0 30px;
+	text-align: center;
+}
+
+#content.cMypage div.showInfo p:first-child {
+	padding-top: 15px;
+}
+
+#content.cMypage div.showInfo p {
+	margin-bottom: 0;
+	padding-bottom: 15px;
+}
+
+#content.cMypage div.showInfo p:last-child {
+	padding-bottom: 0;
+}
+
+#content.cMypage p.fmBox.considerationListBtn a.aArrow1.open {
+	background-image: url(../images/ico_arrow_blue_s_r.png);
+}
+
+#content.cMypage p.detailBtn .open span {
+	background-image: url(../images/ico_arrow_blue_m_top.png);
+}
+
+#content.cMypage p.detailBtn {
+	margin-top: 15px;
+	text-align: center;
+}
+
+#content.cMypage dl.resumeList {
+	font-size: 100%;
+	padding: 14px 10px 12px 18px;
+}
+
+#content.cMypage ul.basicBoxList1 li.noBG dl.resumeList {
+	padding: 5px 10px 12px 18px;
+}
+
+#content.cMypage dl.resumeList dt.textReset {
+	margin-left: -15px;
+}
+
+#content.cMypage dl.resumeList dt {
+	color: #2f3c66;
+	margin-top: 15px;
+}
+
+#content.cMypage dl.setupList dt {
+	width: 33%;
+}
+
+@media all and (orientation:landscape) {
+	#content.cMypage dl.setupList dt {
+		width: 50%;
+	}
+}
+
+#content.cMypage dl.resumeList dd.floatR p .aPC {
+	margin-top: 15px;
+}
+
+#content.cMypage dl.resumeList dd p.registered,
+#content.cMypage dl.resumeList dd p.unregistered {
+	background: #d3e3f1;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+	color: #2f3c66;
+	margin: 6px 18px 0 0;
+	padding: 7px 0 4px 0;
+	text-align: center;
+	width: 207px;
+}
+
+#content.cMypage div.linkList p.underOn,
+#content.cMypage dl.resumeList dd p.unregistered,
+#content.cMypage dl.resumeList dd p.underOn {
+	background: #ffffcc!important;
+	color: #ff6600!important;
+}
+
+#content.cMypage div.linkList p.underOn,
+#content.cMypage div.linkList p.underOff,
+#content.cMypage dl.resumeList dd p.underOff,
+#content.cMypage dl.resumeList dd p.underOn {
+	background: #ededed;
+	border: 1px solid #ccc;
+	border-radius: 7px;
+	color: #999;
+	margin-top: 5px;
+	padding: 7px 0 4px 0;
+	text-align: center;
+	width: 207px;
+}
+
+#content.cMypage div.linkList p.underOn {
+	/*margin-left: 36px;*/
+}
+
+#content.cMypage div.linkList p.changeCondition {
+	min-width: 202px;
+	text-align: center;
+}
+
+#content.cMypage div.linkList p.underOn,
+#content.cMypage div.linkList p.underOff {
+	margin-top: 0;
+	padding: 10px 0;
+	vertical-align: middle;
+}
+
+#content.cMypage div.linkList div.linkListInner {
+	padding: 40px 0 30px;
+}
+
+#content.cMypage div.linkList div.linkListInner p strong {
+	color: #2f3c66;
+}
+
+#content.cMypage dl.resumeList dd a.aPC {
+	font-size: 73%;
+}
+
+#content.cMypage #myPageResumeSec p.leadText {
+	padding-top: 0;
+}
+
+#content.cMypage dl.resumeList dd .arrowRBtn > span,
+#content.cMypage .linkList p .arrowRBtn > span,
+#content.cMypage .linkList p .btn1.deleteBtn > span,
+#content.cMypage #myPageWithdrawalSec p .arrowRBtn > span {
+	min-width: 109px;
+	padding: 10px 35px 10px 0;
+}
+
+#content.cMypage #myPageResumeSec .basicBoxList1 > li,
+#content.cMypage #myPageLoginSec .basicBoxList1 > li,
+#content.cMypage #myPageServiceSec .basicBoxList1 > li,
+#content.cMypage #myPageChangeSec .basicBoxList1 > li {
+	padding: 0;
+}
+
+#content.cMypage #myPageResumeSec .basicBoxList1,
+#content.cMypage #myPageLoginSec .basicBoxList1,
+#content.cMypage #myPageServiceSec .basicBoxList1,
+#content.cMypage #myPageChangeSec .basicBoxList1 {
+	margin-bottom: 58px;
+}
+
+#content.cMypage #myPageLoginSec .basicBoxList1,
+#content.cMypage #myPageServiceSec .basicBoxList1,
+#content.cMypage #myPageChangeSec .basicBoxList1,
+#content.cMypage #myPageSetupSec .basicBoxList1,
+#content.cMypage #myPageWithdrawalSec .basicBoxList1,
+#content.cMypage dl.setupList {
+	margin-top: -20px;
+}
+
+#content.cMypage .basicBoxList1 .infoText {
+	background: #efefef;
+	border-top: 1px solid #cbcbcb;
+	padding: 7px 0 8px 18px;
+}
+
+#content.cMypage .linkList {
+	border-top: 1px solid #ccc;
+	padding: 18px 0;
+}
+
+#content.cMypage .linkList p {
+	display: inline-block;
+	margin: 0 7px 0 0;
+}
+
+#content.cMypage .noteText {
+	border-top: 1px solid #ccc;
+	padding: 14px 10px 12px 18px;
+}
+
+#content.cMypage #basicInfo {
+	margin-top: 20px;
+}
+
+#content.cMypage.cMypage #jobOfferDetailInfo .mhReset {
+	background-image:
+		-moz-linear-gradient(top, rgba(0,0,0,0.09) 0%, rgba(0,0,0,0) 100%);
+	background-image:
+		-webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0,0,0,0.09)), color-stop(1, rgba(0,0,0,0)));
+	background-position: left bottom!important;
+	background-repeat: no-repeat;
+	-webkit-background-size: 100% 19px;
+	background-size: 100% 19px;
+	border-bottom: none;
+	background-color: transparent;
+	padding: 0 0 19px 0!important;
+}
+
+#content.cMypage #jobOfferDetailInfo .mhReset + .innerContent .leadText:first-child {
+	padding: 0 20px 15px;
+}
+
+#content.cMypage .chkBtn {
+	margin-bottom: 0;
+	padding: 19px 0 21px;
+	text-align: center;
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent.shadowBG {
+	background: none;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+#content.cMypage #jobOfferDetailInfo .innerContent .btnReset .applicationBtn span {
+	padding: 2px 39px 2px 0;
+}
+
+#content.cMypage #jobOfferDetailInfo .entryBasicList1 .titleText {
+	display: block;
+	width: 80%;
+}
+
+@media all and (orientation:landscape) {
+	#content.cMypage #jobOfferDetailInfo .entryBasicList1 .titleText {
+		width: 88%;
+	}
+}
+
+#content.cMypage .brTop button span {
+	min-width: 146px;
+	padding: 10px 33px 10px 14px;
+}
+
+#content.cMypage #entryMessage {
+	margin-top: 44px;
+}
+
+#content.cMypage #entryMessage .innerContent.noBG #mailContent  {
+	margin-bottom: 18px;
+}
+
+#content.cMypage #entryMessage .innerContent.noBG .fmItemList .applicationBtn > span {
+	padding: 2px 4px 2px 0;
+}
+
+#content.cMypage #entryMessageConfirm .innerContent.noBG .fmItemList .applicationBtn > span {
+	padding: 2px 20px 2px 0;
+}
+
+#content.cMypage #entryMessageConfirm {
+	margin-top: 40px;
+}
+
+#content.cMypage #entryMessageConfirm .leadText em {
+	color: #ff3300;
+}
+
+#content.cMypage div.leadItem {
+	margin-top: -15px!important;
+}
+
+#content.cMypage ul.textList li {
+	padding-bottom: 25px;
+}
+
+#content.cMypage ul.textList li:last-child {
+	padding-bottom: 0;
+}
+
+#content.cMypage p.fmBtn + div.mypageBox {
+	margin-top: 30px;
+}
+
+#content.cMypage #mypageLeadBox .title {
+	margin-bottom: 0;
+	padding: 17px 16px 13px;
+}
+
+#content.cMypage #mypageLeadBox .title strong {
+	color: #f30;
+}
+
+#content.cMypage #mypageLeadBox + .fmItemList.fmItemText{
+	margin-top: 10px;
+}
+
+#content.cMypage .basicBoxList1.entryTargetList xxx {
+	width: 394px;
+}
+
+#content.cMypage .basicBoxList1.entryTargetList dd img.floatR {
+	margin: -30px -10px 0 0;
+}
+
+#content.cMypage .basicTextList li {
+	padding-left: 24px;
+	text-indent: -24px;
+}
+
+#content.cMypage dl.mypageBox.feature ul.checkboxList {
+	margin: 18px 0 0 0;
+}
+
+#content.cMypage dl.mypageBox.feature ul.checkboxList li {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 13px;
+	padding: 0 0 12px 19px;
+}
+
+#content.cMypage dl.mypageBox.feature ul.checkboxList li:last-child {
+	border-bottom: 0;
+	margin-bottom: 0;
+}
+
+#content.cMypage dl.mypageBox.feature ul.checkboxList li input[type=checkbox] {
+	float: left;
+	margin: 0 10px 0 0!important;
+}
+
+#content.cMypage dl.mypageBox.feature ul.checkboxList li label {	
+	color: #000;
+	float: left;
+	margin-top: -8px;
+	width: 95%;
+}
+
+#content.cMypage #jobOfferDetailInfo .mb0 {
+	margin-bottom: 0!important;
+	padding-bottom: 0;
+}
+
+#content.cMypage .basicBoxList1 li .applyJob {
+	width: 66%;
+}
+
+#content.cMypage .basicBoxList1 li .mt15 {
+	margin-top: 15px;
+}
+
+.bgBtmOther:after,
+#content.cMypage ul.resumeListReset {
+	background-image:
+		-moz-linear-gradient(top, rgba(0,0,0,0.17) 0%, rgba(0,0,0,0) 100%);
+	background-image:
+		-webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0,0,0,0.17)), color-stop(1, rgba(0,0,0,0)));
+	background-position: left top;
+	background-repeat: no-repeat;
+	-webkit-background-size: 100% 10px;
+	background-size: 100% 10px;
+	display: block;
+	background-position: left bottom;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+ 
+.bgBtmOther {
+	background: none!important;
+}
+
+#content.cMypage ul.resumeListReset li:first-child {
+	padding: 0 20px 15px;
+}
+
+#content.cMypage ul.resumeListReset li:last-child {
+	border-bottom: 1px solid #ccc;
+}
+
+#content.cMypage ul.resumeListReset dl.resumeList dt {
+	float: left;
+	margin: 0 24px 0 0;
+}
+
+#content.cMypage ul.resumeListReset dl.resumeList dd {
+	float: left;
+}
+
+#content.cMypage ul.resumeListReset dl.resumeList dd {
+	float: left;
+}
+
+#content.cMypage div.linkList.alignC .btn4,
+#content.cMypage div.linkList.alignC .btn3 {
+	padding: 10px;
+}
+
+#content.cMypage div.linkList.alignC .btn4 > span,
+#content.cMypage div.linkList.alignC .btn3 > span {
+	padding: 2px 39px 2px 0;
+}
+
+#content.cMypage ul.basicBoxList1 li.bgBtmOther {
+	border-bottom: none;
+	margin-bottom: -20px;
+}
+
+#content.cMypage ul.basicBoxList1 li.bgBtmOther div.linkList.alignC {
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 0;
+}
+
+#content.cMypage p.alignC.brBtm {
+	padding-bottom: 20px;
+}
+
+#content.cMypage section.noSpaceBtm p.fmSubmit:last-child {
+	margin-bottom: 19px;
+}
+
+#content.cMypage #mailList.mailBoxList > li:after {
+	background-color: #fff;
+	height: 30px!important;
+}
+
+#content.cMypage #mailList.mailBoxList > li.last:after {
+	border-bottom: none;
+	height: 30px!important;
+}
+
+#content.cMypage #mailList.mailBoxList li.last p.status {
+	color: #f60;
+}
+
+#content.cMypage .blackText {
+	color: #000!important;
+}
+
+#content.cMypage .blueText {
+	color: #003366!important;
+}
+
+#content.cMypage .mpBottomReset {
+	margin-bottom: 0!important;
+	padding-bottom: 0!important;
+}
+
+#content.cMypage .space {
+	padding-left: 50px;
+}
+
+#content.cMypage .fmBtn.bgBtmOther {
+	border-top: 1px solid #ccc;
+}
+
+#content.cMypage .fmBtn.bgBtmOther p {
+	border-bottom: 1px solid #ccc;
+	padding: 15px 0;
+}
+
+#content.cMypage .fmBox.bgBtmOther.alignC {
+	padding: 0;
+}
+
+#content.cMypage .entryBasicList1 > dd .fmItemList p.fmTitle {
+	margin-bottom: 6px;
+}
+
+#content.cMypage #mypageLeadBox.bgBtm {
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+}
+
+#content.cMypage #mypageLeadBox.bgBtm p.leadBox {
+	border-bottom: 1px solid #ccc;
+}
+
+#content.cMypage #mypageLeadBox.bgBtm + ul.fmItemList {
+	border-top: 2px solid #ccc;
+}
+
+#content.cMypage ul.fmItemList dl.itemListInner dd {
+	float: left;
+	margin: -1.4em 0 0;
+	padding: 0 0 0 3em;
+}
+
+#content.cMypage ul.fmItemList dl.itemListInner dd.leftDtMgn {
+	float: left;
+	margin: -1.5em 0 0 1em;
+	padding: 0 0 0 3em;
+}
+
+#content.cMypage .fmText {
+	display: inline-block;
+    vertical-align: middle;
+}
+
+#content.cMypage .fmText + span {
+	display: inline-block;
+	font-size: 130%;
+    vertical-align: middle;
+}
+
+#content.cMypage .entryBasicContentPd {
+	padding: 15px 20px 15px!important;
+}
+
+#content.cMypage .myPageSearchBox01 {
+	padding: 0 20px 15px;
+}
+
+#content.cMypage .myPageSearchBox01 > p {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+#content.cMypage #pageOfferDetailInfo .mh {
+	background-color: #dfdfdf;
+	background-image:
+		-moz-linear-gradient(top, rgba(0,0,0,0.17) 0%, rgba(0,0,0,0) 100%);
+	background-image:
+		-webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0,0,0,0.17)), color-stop(1, rgba(0,0,0,0)));
+	background-position: left top;
+	background-repeat: no-repeat;
+	-webkit-background-size: 100% 10px;
+	background-size: 100% 10px;
+	border-bottom: 1px solid #ccc;
+	color: #2f3c66;
+	display: block;
+	font-size: 28px;
+	padding-bottom: 0;
+	position: relative;
+}
+
+#content.cMypage #pageOfferDetailInfo .mh a {
+	color: #2f3c66;
+	display: block;
+	padding: 20px 65px 20px 20px;
+}
+
+#content.cMypage #pageOfferDetailInfo .mh .base {
+	background: url(../images/ico_arrow_blue_m_btm.png) no-repeat 96% center;
+}
+
+#content.cMypage #pageOfferDetailInfo .mh .open {
+	background-image: url(../images/ico_arrow_blue_m_top.png);
+}
+
+#content.cMypage #pageOfferDetailInfo .entryBasicList1 dd {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+#content.cMypage #pageOfferDetailInfo .entryBasicList1 .link {
+	background: url(../images/ico_arrow_blue_m_r.png) no-repeat 97% center;
+	display: block;
+	margin-right: -7px;
+}
+
+#content.cMypage #pageOfferDetailInfo #conditionList .conditionTable th {
+	background: #efefef;
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	padding: 17px 10px 16px 21px;
+	width: 130px;
+}
+
+#content.cMypage #pageOfferDetailInfo #conditionList .conditionTable tr:last-child th,
+#content.cMypage #pageOfferDetailInfo #conditionList .conditionTable tr:last-child td {
+	border-bottom: none;
+}
+
+#content.cMypage #pageOfferDetailInfo #conditionList .conditionTable td {
+	border-bottom: 1px solid #ccc;
+	padding: 13px 0 0 10px;
+}
+
+#content.cMypage .tableStyle + p.checkMoreBtn {
+	margin-top: -19px;
+	padding-top: 19px;
+}
+
+
+
+/* # cMatching
+---------------------------------------------------------------------------- */
+
+#content.cMatching #matchingNav > ul {
+	background-image: -moz-linear-gradient(top, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0,0,0,0.1)), color-stop(1, rgba(0,0,0,0)));
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	-webkit-background-size: 100% 10px;
+	background-size: 100% 10px;
+	padding-bottom: 10px;
+}
+
+#content.cMatching #matchingNav > ul > li {
+	background-color: rgb(223,223,223);
+	background-image: -moz-linear-gradient(top, rgba(181,181,181,1) 0%, rgba(181,181,181,0) 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(181,181,181,1)), color-stop(1, rgba(181,181,181,0)));	
+	background-position: left top;
+	background-repeat: no-repeat;
+	-webkit-background-size: 100% 11px;
+	background-size: 100% 11px;
+	font-size: 28px;
+}
+
+#content.cMatching #matchingNav > ul > li > a {
+	background: url(../images/ico_arrow_blue_m_r.png) no-repeat 96% center;
+	border-bottom: 1px solid #9b9b9b;
+	color: #2f3c66;
+	display: block;
+	font-weight: bold;
+	line-height: 1.21;
+	padding: 30px 70px 30px 20px;
+}
+
+#content.cMatching #matchingNav > ul > li a.pcLink {
+	background-image: url(../images/ico_pc_m.png);
+}
+
+
+/* # cJoin
+---------------------------------------------------------------------------- */
+
+#content.cJoin .fmHopeSubmit,
+#content.cJoin .basicBox,
+#content.cJoin .fmBoxLink,
+#content.cJoin .fmBoxLink:before {
+	background-image:
+		-moz-linear-gradient(top, rgba(0,0,0,0.09) 0%, rgba(0,0,0,0) 100%);
+	background-image:
+		-webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0,0,0,0.09)), color-stop(1, rgba(0,0,0,0)));
+	background-position: left top;
+	background-repeat: no-repeat;
+	-webkit-background-size: 100% 19px;
+	background-size: 100% 19px;
+}
+
+#content.cJoin .fmBoxLink {
+	background-position: left bottom;
+	border-top: 1px solid #ccc;
+	padding: 0 0 19px;
+}
+
+#content.cJoin .fmHopeSubmit {
+	border-top: 2px solid #ccc;
+	margin-bottom: 0!important;
+	padding: 25px 0 22px 0;
+}
+
+#content.cJoin #joinResumeSec .entrySec .entryBasicList1:after {
+	background: none;
+	border-top: none;
+	height: auto;
+}
+
+#content.cJoin #joinResumeSec .fmHopeSubmit {
+	border-top: 1px solid #ccc;
+}
+
+#content.cJoin.cEntry #jobOfferDetailInfo .mh {
+	padding: 0 0 19px 0;
+}
+
+#content.cJoin ul.radioDisabled span {
+	color: #999!important;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#content.cJoin label {
+	color: #000;
+}
+
+#content.cJoin label.lkColor{
+	color: #003366;
+}
+
+#content.cJoin .reset {
+	padding-left: 0;
+}
+
+#content.cJoin table.radioTable {
+	margin: 0 auto;
+	width: 594px;
+}
+
+#content.cJoin table.radioTable td {
+	border: 1px solid #ccc;
+	padding: 7px 10px;
+	text-align: center;
+}
+
+#content.cJoin #featureBox.joinBox {
+	background-image:
+		-moz-linear-gradient(top, rgba(0,0,0,0.09) 0%, rgba(0,0,0,0) 100%);
+	background-image:
+		-webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0,0,0,0.09)), color-stop(1, rgba(0,0,0,0)));
+	background-position: left top;
+	background-repeat: no-repeat;
+	border-top: 1px solid #ccc;
+	-webkit-background-size: 100% 19px;
+	background-size: 100% 19px;	
+	padding-top: 28px;
+}
+
+#content.cJoin div#feature {
+    background: none repeat scroll 0 0 #dAeef4;
+    border: 2px solid #8991aa;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+	margin: 0 auto 20px;
+	padding-bottom: 20px;
+	width: 593px;
+}
+
+#content.cMypage dl.element dt:first-child {
+	border-radius: 7px 7px 0 0;
+	border: 1px solid #80bbcd;
+	margin-top: 0!important;
+}
+
+#content.cJoin div#feature .featureTitle {
+	background: none;
+	color: #000;
+	font-size: inherit;
+	margin-bottom: 0;
+	padding: 23px 20px 0 36px;
+	text-align: left;
+	text-indent: -16px;
+	text-shadow: inherit;
+}
+
+#content.cJoin div#feature ul {
+	margin: 19px 0 0 0;
+}
+
+#content.cJoin div#feature ul li {
+	border-top: 1px solid #8991aa;
+	clear: both;
+	padding: 18px 0 16px;
+}
+
+#content.cJoin div#feature ul li:last-child {
+	border-bottom: none;
+	padding-bottom: 0;
+}
+
+#content.cJoin div#feature ul li p:first-child {
+	clear: both;
+	color: #003366;
+	float: left;
+	margin: 0 0 0 6px;
+	width: 199px;
+}
+
+#content.cJoin div#feature div {
+	float: right;
+	padding: 4px 4px 0 0;
+	width: 364px;
+}
+
+#content.cJoin div#feature ul li p.title {
+	float: none;
+	font-weight: bold;
+	margin: 0;
+	padding-bottom: 10px;
+	width: auto;
+}
+
+#content.cJoin div#feature ul li p.title input[type=checkbox] {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+#content.cJoin .entryBasicList1 ul.fmItemList li.lastList {
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 16px;
+}
+
+#content.cJoin .entryBasicList1.pdBtm {
+	padding-bottom: 46px;
+}
+
+#content.cJoin .basicBox {
+	background-position: bottom;
+	padding: 0 0 19px 0;
+}
+
+#content.cJoin .basicBox.pdBtm {
+	margin-bottom: 30px;
+}
+
+#content.cJoin .basicBoxInner {
+	border-bottom: 1px solid #ccc;
+	background-position: bottom;
+	padding: 0 20px 20px;
+}
+
+#content.cJoin .basicBoxInner p:first-child {
+	margin-bottom: 30px;
+}
+
+#content.cJoin .basicBoxInner .moreBtn {
+	text-align: center;
+}
+
+#content.cJoin .basicBoxInner .moreInfo p {
+	margin-bottom: 30px;
+}
+
+#content.cJoin .entrySec .joinBtn {
+	margin-bottom: 0;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+#content.cJoin .basicBox.noBG {
+	padding: 0;
+}
+
+#content.cJoin .basicBox.noBG .basicBoxInner {
+	border-bottom: none;
+	padding: 0 20px;
+}
+
+#content.cJoin #infoPersonal .entryNoteBoxInner,
+#content.cJoin #desire .entryNoteBoxInner,
+#content.cJoin #joinResumeSec .entryNoteBoxInner {
+	border-bottom: none;
+	padding: 0 20px;
+}
+
+#content.cJoin section#desire {
+	padding-top: 30px;
+}
+
+#content.cJoin.cEntry #infoConfirm dl.entryBasicList1 {
+	margin-bottom: 14px;
+}
+
+#content.cJoin #infoConfirm .entryNoteBox {
+	margin-top: 20px;
+}
+
+#content.cJoin #merit .entryNoteBoxInner {
+	border-bottom: 1px solid #ccc;
+	padding: 0 20px 18px 20px;
+}
+
+#content.cJoin #infoConfirm .entryNoteBoxInner {
+	border-bottom: none;
+	padding: 0 20px;
+}
+
+#content.cJoin .fmBoxLink {
+	margin-bottom: 16px;
+}
+
+#content.cJoin .fmBoxLink p {
+	padding: 13px 16px;
+}
+
+#content.cJoin .fmBoxLink p.guide {
+	border-bottom: 1px solid #ccc;
+	padding-top: 0;
+}
+
+#content.cJoin .fmBoxLink p.guide strong {
+	color: #003366;
+	font-size: 130%;
+}
+
+#content.cJoin.cEntry .entrySec > .entrySec {
+	margin-bottom: 0!important;
+}
+
+#content.cJoin.cEntry .entrySec > .entrySec.mb50 {
+	margin-bottom: 50px!important;
+}
+
+#content.cJoin.cEntry .entrySec .sh.sHead {
+	padding: 15px 20px 13px 20px;
+}
+
+#content.cJoin .fmBox {
+	margin-right: 30px;
+	width: 70%;
+}
+
+#content.cJoin .fmItemList li .floatL:last-child {
+	width: 23%;
+}
+
+#content.cJoin .fmItemList li .floatL:last-child select {
+	width: 78%;
+}
+
+#content.cJoin .fmBox select {
+	width: 100%;
+}
+
+@media all and (orientation:landscape) {
+	#content.cJoin .fmBox {
+		width: 60%;
+	}
+}
+
+#content.cJoin #contentHead.bh {
+	border-bottom: none;
+	border-top: 1px solid #ccc;
+	margin-top: 15px;
+}
+
+#content.cJoin #contentHead.bh + form {
+	margin-top: 0;
+}
+
+#content.cJoin #jobOfferDetailInfo .innerContent .leadText.noBD + #featureBox {
+	margin-top: 0;
+	padding-top: 0;
+}
+
+#content.cJoin #jobOfferDetailInfo .innerContent #featureBox .mypageBox div p:nth-child(2n) {
+    width: 75%;
+}
+
+#content.cJoin ul.fmItemList.disableText {
+	color: #999;
+}
+
+#content.cJoin .entryNoteBoxInner {
+    padding: 0 20px 19px;
+}
+
+#content.cJoin ul.fmItemList label.lbOn {
+	color: #000!important;
+}
+
+
+/* # footer
+---------------------------------------------------------------------------- */
+
+#siteFooter #pageTop {
+	bottom: -10px;
+	margin: 22px 15px 0 0;
+	position: relative;
+	text-align: right;
+	z-index: 1;
+}
+
+#siteFooter #pageTop .btn1 {
+	font-size: 22px;
+	padding-bottom: 15px;
+}
+
+#siteFooter #pageTop .btn1 span {
+	background: url(../images/ico_arrow_blue_s_top.png) no-repeat left center;
+	padding-left: 29px;	
+}
+
+#siteFooter #siteFInner {
+	background-image: -moz-linear-gradient(top, rgb(79,88,158) 0%, rgb(67,77,148) 50%, rgb(55,64,137) 50%, rgb(55,64,137) 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(79,88,158)), color-stop(0.5, rgb(67,77,148)), color-stop(0.5, rgb(55,64,137)), color-stop(1, rgb(55,64,137)));
+	background-position: left top;
+	background-repeat: no-repeat;
+	-webkit-background-size: 100% 15px;
+	background-size: 100% 15px;
+	padding-top: 15px;
+	position: relative;
+	z-index: 1;
+}
+
+#siteFooter #siteFPCBtn {  
+	background-image: -moz-linear-gradient(top, rgb(202,202,202) 0%, rgb(253,253,253) 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(202,202,202)), color-stop(1.0, rgb(253,253,253))));
+	background-repeat: no-repeat;
+	-webkit-background-size: 100% 13px;
+	background-size: 100% 13px;
+	border: 1px solid #fff;
+	border-bottom: none;
+	padding: 10px 0;
+	text-align: center;
+}
+
+#siteFooter #siteFPCBtn .btn1 span {
+	background: url(../images/ico_pcsite.gif) no-repeat left center;
+	min-height: 25px;
+	padding-bottom: 9px;
+	padding-left: 34px;
+	padding-top: 9px;
+}
+
+#siteFooter #siteFNav ul {
+	border-top: 1px solid #b4b4b4;
+	padding: 10px 0;
+	text-align: center;
+}
+
+#siteFooter #siteFNav li {
+	display: inline-block;
+	margin-right: 21px;
+	vertical-align: top;
+}
+
+#siteFooter #siteFNav li:last-child {
+	margin-right: 0;
+}
+
+#siteFooter #siteFNav li a {
+	background: url(../images/ico_arrow_blue_s_r.png) no-repeat left center;
+	display: block;
+	padding-left: 32px;
+	vertical-align: top;
+}
+
+#siteFooter #siteFCopy {
+	background-image: -moz-linear-gradient(top, #ddd, #fff);
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #ddd),color-stop(1, #fff));
+	background-repeat: no-repeat;
+	-webkit-background-size: 100% 15px;
+	background-size: 100% 15px;
+	border-top: 1px solid #b4b4b4;
+	font-size: 17px;
+	padding: 12px 0 38px;
+	text-align: center;
+}
+
+
+/* # common classes
+---------------------------------------------------------------------------- */
+
+/* Layout
+------------------------------------------------- */
+
+.textBody {
+	display: block;
+	margin-bottom: 0;
+	overflow: hidden;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+
+.textBody img {
+	max-width: 100%;
+	height: auto;
+}
+
+.floatL {
+	float: left;
+	margin-bottom: 0;
+}
+
+.floatR {
+	float: right;
+	margin-bottom: 0;
+}
+
+
+/* Align
+------------------------------------------------- */
+
+.alignC { text-align: center; }
+.alignL { text-align: left; }
+.alignR { text-align: right; }
+
+
+/* List
+------------------------------------------------- */
+
+
+/* Form
+------------------------------------------------- */
+
+input[type=email] {
+	box-shadow: none !important;
+}
+
+input[type=email],
+input[type=number],
+input[type=password],
+input[type=tel],
+input[type=text],
+textarea,
+.fmFit {
+	border: 2px solid #ccc;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	max-width: 614px;
+	padding: 11px;
+	width: 100%;
+}
+
+textarea {
+	min-height: 229px;
+}
+
+select {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	max-width: 620px;
+}
+
+.fmSizeFit { width: 100%; }
+.fmSize110 { width: 110px; }
+.fmSize140 { width: 140px!important; }
+.fmSize160 { width: 160px!important; }
+.fmSize183 { width: 183px!important; }
+.fmSize200 { width: 200px!important; }
+.fmSize240 { width: 240px!important; }
+.fmSize258 { width: 258px!important; }
+.fmSize350 { width: 350px!important; }
+.fmSize400 { width: 400px!important; }
+.fmSize455 { width: 455px; }
+.fmSize510 { width: 510px!important; }
+.fmSize530 { width: 530px; }
+.fmSize595 { width: 595px; }
+.fmSize53pc { width: 59%; }
+
+.fmSizeMin2em { min-width: 2em; }
+.fmSizeMin4em { min-width: 4em; }
+
+
+.fmSizeMl12 { margin-left: 12px; }
+.fmSizeMl8 { margin-left: 8px; }
+.fmSizeMr0 { margin-right: 0!important; }
+.fmSizeMr12 { margin-right: 12px; }
+
+.fmFont24 { font-size: 24px!important; }
+
+.mt10 {	margin-top: 10px!important; }
+.mt20 {	margin-top: 20px!important; }
+.mt25 {	margin-top: 25px!important; }
+.mt30 {	margin-top: 30px!important; }
+.mt40 {	margin-top: 40px!important; }
+
+.mb5 {	margin-bottom: 5px!important; }
+.mb10 {	margin-bottom: 10px!important; }
+.mb15 {	margin-bottom: 15px!important; }
+.mb20 {	margin-bottom: 20px!important; }
+.mb30 {	margin-bottom: 30px!important; }
+.mb35 {	margin-bottom: 35px!important; }
+.mb50 {	margin-bottom: 50px!important; }
+.mb65 {	margin-bottom: 65px!important; }
+
+.mbN30 { margin-bottom: -40px!important; }
+
+.ml15 {	margin-left: 15px!important; }
+.mr15 {	margin-right: 15px!important; }
+
+.mr0 {	margin-right: 0!important; }
+
+.pb10 { padding-bottom: 10px!important; }
+.pb20 { padding-bottom: 20px!important; }
+.pb30 { padding-bottom: 30px!important; }
+.pl20 { padding-left: 20px!important; }
+.pt30 { padding-top: 60px!important; }
+.pt20 { padding-top: 20px!important; }
+.brTop { border-top: 1px solid #ccc!important; }
+.brR { border-right: 1px solid #ccc!important; }
+.brBtm { border-bottom: 1px solid #ccc!important; }
+
+.noBrBtm {	border-bottom: none!important; }
+.noBrTop {	border-top: none!important; }
+.noPdBtm {	padding-bottom: 0!important; }
+.noPdTop {	padding-top: 0!important; }
+.noSpaceBtm {
+	background: none!important;
+	margin-bottom: 0!important;
+	padding-bottom: 0!important;
+}
+.noSpaceTop {
+	background: none!important;
+	margin-top: 0!important;
+	padding-top: 0!important;
+}
+
+.text120 { font-size: 120%!important; }
+.text13 { font-size: 130%; }
+
+.floatNone { float: none!important; }
+
+label,
+input[type=checkbox],
+input[type=radio] {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+input[type=radio] {
+	font-size: 17px;
+}
+
+.fmContent {
+	margin-bottom: 16px;
+}
+
+* > .fmContent:last-child {
+	margin-bottom: 0;
+}
+
+.fmSubmit {
+	margin-top: 10px;
+	text-align: center;
+}
+
+.fmCountTxt {
+	overflow: visible;
+	visibility: visible;
+	text-align: right;
+}
+
+.fmCountTxt.over {
+	color: #f60;
+}
+
+.fmItemList > li {
+	border-bottom: 1px solid #ccc;
+	padding: 15px 20px;
+}
+
+.fmItemList > .listFirst {
+	border-top: 1px solid #ccc;
+}
+
+.fmItemList > li .fmBox1 {
+	display: table-cell;
+}
+
+.fmItemList > li .fmBox1 ~ .fmBox1 {
+	padding-left: 18px;
+}
+
+.fmItemList > li:last-child {
+	border-bottom: 0;
+}
+
+.fmItemList > li.bt { border-top: 1px solid #ccc !important; }
+.fmItemList > li.bb { border-bottom: 1px solid #ccc !important; }
+
+.fmFormat {
+	white-space: nowrap;
+}
+
+.fmEx { }
+
+.fmErrorList {
+	background-color: #fdffce;
+	padding: 20px;
+}
+
+.fmErrorList li {
+	color: #f60;
+}
+
+.fmInputError {
+	background-color: #fbddd8;
+}
+
+
+/* Text
+------------------------------------------------- */
+
+span.confirmFocusTxt {
+	background-color: #9ec6bd;
+}
+
+
+/* Link
+------------------------------------------------- */
+
+.aArrow1,
+.aArrow2,
+.aArrow3,
+.aArrow4,
+.aArrow5,
+.aArrow6,
+.aArrow7,
+.aPC,
+.aDelete,
+.aPlusL{
+	background-position: left center;
+	background-repeat: no-repeat;
+	display: inline-block;
+	padding-left: 32px;
+}
+
+.aArrow1 { background-image: url(../images/ico_arrow_blue_s_r.png); }
+.aArrow2 { background-image: url(../images/ico_arrow_blue_s_l.png); }
+.aArrow3 { background-image: url(../images/ico_arrow_blue_s_btm.png); }
+.aArrow4 { background-image: url(../images/ico_arrow_blue_s_top.png); }
+.aArrow5 {
+	background-image: url(../images/ico_arrow_blue_m_r_login.png);
+	padding-left: 20px;
+}
+.aArrow6 { background-image: url(../images/ico_arrow_blue_m_r.png); }
+.aArrow7 { background-image: url(../images/ico_arrow_blue_m_top.png);
+	padding-left: 40px;	
+}
+.aPC { background-image: url(../images/ico_pc_m.png); }
+.aDelete {
+	background-image: url(../images/ico_delete.png);
+	padding-left: 40px;
+}
+.aPlusL {
+	background: url(../images/ico_plus.png) no-repeat;
+	padding-left: 40px;
+}
+
+/* Button
+------------------------------------------------- */
+
+.btn1,
+.btn2,
+.btn3,
+.btn4 {
+	background-repeat: no-repeat;
+	border: 2px solid #bebebe;
+	-moz-box-shadow:
+		0px 0px 10px 0px rgba(0,0,0,0.2),
+		inset 0px 0px 0px 1px rgb(255,255,255);
+	-webkit-box-shadow:
+		0px 0px 10px 0px rgba(0,0,0,0.2),
+		inset 0px 0px 0px 1px rgb(255,255,255);
+	box-shadow:
+		0px 0px 10px 0px rgba(0,0,0,0.2),
+		inset 0px 0px 0px 1px rgb(255,255,255);
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	display: inline-block;
+	line-height: 1.21;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.btn1 > span,
+.btn2 > span,
+.btn3 > span,
+.btn4 > span {
+	font-weight: bold;
+	display: inline-block;
+}
+
+.btn1 {
+	background-image: -moz-linear-gradient(top, rgb(255,255,255) 0%, rgb(219,219,219) 20%, rgb(246,246,246) 81%, rgb(205,205,205) 100%);
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, rgb(255,255,255)),color-stop(0.2, rgb(219,219,219)),color-stop(0.81, rgb(246,246,246)),color-stop(1, rgb(205,205,205)));
+	color: #2f3c66;
+	padding: 10px 20px;
+}
+
+.btn1 > span {
+	font-size: 24px;
+}
+
+.btn2 {
+	background-image: -moz-linear-gradient(top, rgb(96,105,169) 0%, rgb(105,113,182) 9%, rgb(80,88,155) 21%, rgb(28,34,82) 100%);
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, rgb(96,105,169)),color-stop(0.09, rgb(105,113,182)),color-stop(0.21, rgb(80,88,155)),color-stop(1, rgb(28,34,82)));
+	color: #fff;
+	padding: 18px 0;
+}
+
+.btn2 > span {
+	font-size: 25px;
+	width: 294px;
+}
+
+.btn3 {
+	background-image: -moz-linear-gradient(top, rgb(255,162,0) 7%, rgb(255,128,0) 36%, rgb(255,102,0) 73%, rgb(233,86,12) 100%);
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0.07, rgb(255,162,0)),color-stop(0.36, rgb(255,128,0)),color-stop(0.73, rgb(255,102,0)),color-stop(1, rgb(233,86,12))
+	);
+	border: 1px solid #fff;
+	-moz-box-shadow:
+		0px 0px 10px 0px rgba(0,0,0,0.2),
+		0px 0px 0px 2px rgb(255,120,0);
+	-webkit-box-shadow:
+		0px 0px 10px 0px rgba(0,0,0,0.2),
+		0px 0px 0px 2px rgb(255,120,0);
+	box-shadow:
+		0px 0px 10px 0px rgba(0,0,0,0.2),
+		0px 0px 0px 2px rgb(255,120,0);
+	color: #fff;
+	padding: 20px 11px;
+}
+
+.btn3 > span {
+	font-size: 26px;
+}
+
+.btn4 {
+	background-image: -moz-linear-gradient(top, rgb(144,194,251) 7%, rgb(66,135,215) 36%, rgb(66,135,215) 73%, rgb(42,102,170) 100%);
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0.07, rgb(144,194,251)),color-stop(0.36, rgb(66,135,215)),color-stop(0.73, rgb(66,135,215)),color-stop(1, rgb(42,102,170)));
+	-moz-box-shadow:
+		0px 0px 0px 2px rgb(66,136,215),
+		0px 0px 10px 0px rgba(0,0,0,0.2);
+	-webkit-box-shadow:
+		0px 0px 0px 2px rgb(66,136,215),
+		0px 0px 10px 0px rgba(0,0,0,0.2);
+	box-shadow:
+		0px 0px 0px 2px rgb(66,136,215),
+		0px 0px 10px 0px rgba(0,0,0,0.2);
+	border: 1px solid #fff;
+	color: #fff;
+	padding: 20px 11px;
+}
+
+.btn4 > span {
+	font-size: 26px;
+}
+
+.btn1.startBtn,
+.btn1.arrowTopBtn,
+.btn1.arrowBtmBtn,
+.btn1.arrowRBtn,
+.btn1.plusRBtn {
+	padding: 5px 10px;
+}
+
+.btn1.plusRBtn > span {
+	background: url(../images/ico_plus.png) no-repeat right center;
+	padding: 10px 39px 10px 0;
+}
+
+.btn1.arrowTopBtn > span {
+	background: url(../images/ico_arrow_blue_m_top.png) no-repeat right center;
+	padding: 10px 39px 10px 19px;
+}
+
+.btn1.arrowBtmBtn > span {
+	background: url(../images/ico_arrow_blue_m_btm.png) no-repeat right center;
+	padding: 10px 39px 10px 19px;	
+}
+
+.btn1.startBtn > span,
+.btn1.arrowRBtn > span {
+	background: url(../images/ico_arrow_blue_m_r.png) no-repeat right center;
+	padding: 10px 39px 10px 0;
+}
+
+.btn1.startBtn > span {
+	background: url(../images/ico_start_blue_m.png) no-repeat right center;
+}
+
+.btn3.arrowRBtn > span { background: url(../images/ico_arrow_orange_m_r.png) no-repeat right center; }
+.btn4.arrowRBtn > span { background: url(../images/ico_arrow_lblue_m_r.png) no-repeat right center; }
+.btn4.applicationBtn > span { background: url(../images/ico_arrow_lblue_m_r.png) no-repeat right center; }
+
+.btn3.arrowMPc > span { background: url(../images/ico_pc_m_orange.png) no-repeat right center; }
+.btn4.arrowMPc > span { background: url(../images/ico_pc_m_blue.png) no-repeat right center; }
+
+.loginBtn > span,
+.nextBtn > span,
+.applicationBtn > span {
+	background: url(../images/ico_arrow_orange_m_r.png) no-repeat right center;
+	min-width: 141px;
+	padding: 2px 39px;
+}
+
+.arrowRBtn > span,
+.plusRBtn > span,
+.arrowMPc > span {
+	padding-right: 39px;
+	min-width: 167px;
+}
+
+button.arrowRBtn > span {
+	min-width: inherit;
+}
+
+.backBtn {
+	padding: 5px 24px 5px 15px;
+}
+
+.backBtn > span {
+	background: url(../images/ico_arrow_blue_m_l.png) no-repeat left center;
+	font-size: 22px;
+	padding: 10px 0 10px 36px;
+}
+
+.searchBtn > span {
+	background: url(../images/ico_search2.png) no-repeat left center;
+	min-height: 32px;
+	padding: 1px 30px 1px 44px;
+}
+
+.openBtn > span {
+	background: url(../images/ico_arrow_blue_m_btm.png) no-repeat right center;
+	padding: 6px 35px 6px 0;
+}
+
+.openBtn.open > span {
+	background-image: url(../images/ico_arrow_blue_m_top.png);
+}
+
+
+/* —áŠO */
+.btn2 .optTxt {
+	font-size: 22px;
+}
+
+.btn2PCSiteBtn > span {
+	background: url(../images/ico_pc_l.png) no-repeat 95% center;
+	min-height: 38px;
+	padding: 3px 56px 3px 0;
+	width: 238px;
+}
+
+.btn2RegBtn > span {
+	background: url(../images/ico_arrow_blue_l_btm.png) no-repeat 95% center;
+	min-height: 38px;
+	padding: 3px 56px 3px 13px;
+	width: 225px;
+}
+
+.btn2RegBtn.open > span {
+	background-image: url(../images/ico_arrow_blue_l_top.png);
+}
+
+
+
+/* Table
+------------------------------------------------- */
+
+
+/* Others
+------------------------------------------------- */
+
+/* noBG */
+.noBG {
+	background-image: none !important;
+}
+
+.noBGbefore:before { background: none!important;}
+
+/* tab */
+.tab {
+	margin: 25px 0 15px;
+}
+
+.tab .tabIndex {
+	background-color: #fff;
+	background-image:
+		-moz-linear-gradient(top, rgb(79,88,158) 0%, rgb(67,77,148) 50%, rgb(55,64,137) 50%, rgb(55,64,137) 100%);
+	background-image:
+		-webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(79,88,158)), color-stop(0.5, rgb(67,77,148)), color-stop(0.5, rgb(55,64,137)), color-stop(1, rgb(55,64,137)));
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	-webkit-background-size: 100% 9px;
+	background-size: 100% 9px;
+	padding-bottom: 9px;
+	text-align: center;
+}
+
+.tab .tabIndex li {
+	font-weight: bold;
+	display: inline-block;
+	margin-right: 17px;
+	vertical-align: bottom;
+}
+
+.tab .tabIndex li a {
+	background-image: -moz-linear-gradient(top, rgb(255,255,255) 0%, rgb(219,219,219) 20%, rgb(246,246,246) 81%, rgb(205,205,205) 100%);
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, rgb(255,255,255)),color-stop(0.2, rgb(219,219,219)),color-stop(0.81, rgb(246,246,246)),color-stop(1, rgb(205,205,205)));
+	background-repeat: no-repeat;
+	border: 2px solid #bebebe;
+	border-bottom: none;
+	-moz-box-shadow:
+		0px 0px 10px 0px rgba(0,0,0,0.2),
+		inset 0px 0px 0px 1px rgb(255,255,255);
+	-webkit-box-shadow:
+		0px 0px 10px 0px rgba(0,0,0,0.2),
+		inset 0px 0px 0px 1px rgb(255,255,255);
+	box-shadow:
+		0px 0px 10px 0px rgba(0,0,0,0.2),
+		inset 0px 0px 0px 1px rgb(255,255,255);
+	-moz-border-radius: 10px 10px 0 0;
+	-webkit-border-radius: 10px 10px 0 0;
+	border-radius: 10px 10px 0 0;
+	color: #2f3c66;
+	display: inline-block;
+	line-height: 1.21;
+	text-align: center;
+	padding: 24px 13px;
+
+	vertical-align: middle;
+}
+
+.tab .tabIndex li a.selected,
+.tab .tabIndex li a:hover {
+	background-image: -moz-linear-gradient(top, rgb(96,105,169) 0%, rgb(105,113,182) 9%, rgb(80,88,155) 21%, rgb(28,34,82) 100%);
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, rgb(96,105,169)),color-stop(0.09, rgb(105,113,182)),color-stop(0.21, rgb(80,88,155)),color-stop(1, rgb(28,34,82)));
+	border-color: #62688f;
+	color: #fff;
+}
+
+.tab .tabIndex li:last-child {
+	margin-right: 0;
+}
+
+
+/* # clearfix
+---------------------------------------------------------------------------- */
+
+#content.cJob .btnSet1:after,
+#content.cJob #jobOfferDetailInfo div.productArea:after,
+#content.cMypage #entryMemberTab ul.tabContentReset dl.entryBasicList1 dd:after,
+#content.cMypage .tabContent.tabContentReset.basicBoxList2 > li p:after,
+#content .basicBoxList1 > li:after,
+#content.cMypage dl.mypageBox.feature ul.checkboxList li:after,
+div#feature ul li:after,
+#content.cMypage ul.productList li:after,
+#content.cMypage dl#feature dd:after,
+#content.cMypage dl.accessList:after,
+.fmItemList li:after,
+#siteHeader #siteHeaderInner:after,
+.basicContentList1 li:after,
+.clearfix:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+/*CDC’Ç‰Ácss - 20111123
+---------------------------------------------------------------------------- */
+
+.tname {
+	color:#2F3C66;
+	}
+.addsh {
+	font-size:120%;
+	}	
+
+
+/*ANDO’Ç‰Ácss - 20111212
+---------------------------------------------------------------------------- */
+.fontSize110 { 	font-size:110%; }
+.fontSize120 { 	font-size:120%; }
