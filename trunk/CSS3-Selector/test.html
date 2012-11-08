@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Untitled Document</title>
+<style type="text/css">
+.box {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	border: 5px solid #D94D3A;
+	width: 600px;
+	height: 200px;
+	padding: 5px;
+	margin: 1em auto auto auto;
+	position: relative;
+	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-o-justify-content: center;
+	justify-content: center;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	-o-align-items: center;
+	align-items: center;
+}
+
+.box > * {
+	-webkit-flex: 1 0 auto;
+	-moz-flex: 1 0 auto;
+	-o-flex: 1 0 auto;
+	-o-flex: 1 0 auto;
+	flex: 1 0 auto;
+}
+
+.box > div {
+	border: 2px dotted blue;
+	padding: 10px;
+	text-align: center;
+}
+</style>
+</head>
+
+<body>
+<section class="box">
+<div>A</div>
+<div>B</div>
+<div>C</div>
+</section>
+</body>
+</html>
