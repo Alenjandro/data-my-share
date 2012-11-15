@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# General Elements
+# html & body
+# content
+# clearfix
+# common
+
+----------------------------------------*/
+
+
+/* # content
+---------------------------------------------------------------------------- */
+
+.sideshow {
+	background: #000;
+	border: 10px solid #4d4d4d;
+	border-bottom: 0;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	width: 580px;
+	margin: 0 auto;
+}
+
+.sideshow ul li {
+	float: left;
+	text-align: center;
+	height: 325px;
+	width: 580px;
+}
+
+.sideshow div.group {
+	background: #4d4d4d;
+	margin: 0 -1px 0 -1px;
+	padding: 0 0 10px 0;
+	position: relative;	
+	width: 582px;
+}
+
+.sideshow div.group p.prev {
+	position: absolute;
+	top: -4px;
+	left: 8px;
+}
+
+.sideshow div.group p.next {
+	position: absolute;
+	top: -4px;
+	right: 11px;
+}
+
+.sideshow div.group div.pager {
+	background: #4d4d4d;
+	text-align: center;	
+}
+
+.sideshow div.group div.pager a {
+	background: url(../../images/single01/ico_cirlce.gif) no-repeat left top;
+	display: inline-block;
+	height: 7px;
+	text-indent: -9999px;
+	margin: 0 3px 0 4px;
+	width: 8px;
+	position: relative;
+}
+
+.sideshow div.group div.pager a.selected {
+	background: url(../../images/single01/ico_cirlce_o.gif) no-repeat left top;
+}
+
+
+/* # clearfix
+---------------------------------------------------------------------------- */
+
+.sideshow ul:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
