@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# General Elements
+# html & body
+# content
+# clearfix
+# common
+
+----------------------------------------*/
+
+
+/* # content
+---------------------------------------------------------------------------- */
+
+dl.accordinList {
+	border-top: 1px solid #ececec;
+}
+
+dl.accordinList dt {
+	background: #fafafa;
+	background: -moz-linear-gradient(top,  #fafafa 0%, #fafafa 24%, #f7f7f7 29%, #d7d9ce 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fafafa), color-stop(24%,#fafafa), color-stop(29%,#f7f7f7), color-stop(100%,#d7d9ce));
+	background: -webkit-linear-gradient(top,  #fafafa 0%,#fafafa 24%,#f7f7f7 29%,#d7d9ce 100%);
+	background: -o-linear-gradient(top,  #fafafa 0%,#fafafa 24%,#f7f7f7 29%,#d7d9ce 100%);
+	background: -ms-linear-gradient(top,  #fafafa 0%,#fafafa 24%,#f7f7f7 29%,#d7d9ce 100%);
+}
+
+dl.accordinList dt a {
+	background: url(../images/ico_arrow08.png) no-repeat 98% center;
+	color: #666;
+	font-size: 28px;
+	font-weight: bold;
+	display: block;
+	padding: 12px 12px 11px 12px;
+}
+
+dl.accordinList dt.open a {
+	background: url(../images/ico_arrow09.png) no-repeat 98% center;
+}
+
+dl.accordinList dd {
+	background: #4d4d4d;
+	color: #fff;
+	padding: 18px 13px 0 13px;
+}
+
+dl.accordinList dd ul li {
+	padding: 0 8px 0 26px;
+	text-indent: -26px;
+}
+
+dl.accordinList dd p.close {
+	padding-top: 63px;
+	text-align: center;
+}
+
+@media screen and (orientation:landscape) {
+    dl.accordinList dd p.close {
+		padding-top: 0;
+	}
+}
