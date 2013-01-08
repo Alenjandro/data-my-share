@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>Border radius generator | Tag html | Học web chuẩn</title>
+<meta name="description" content="Border radius generator giúp bạn tạo đường viền bo góc tròn chỉ bằng vài thao tác đơn giản.">
+<meta name="keywords" content="border radius,border radius generator,tạo border radius,tạo border góc">
+<link rel="stylesheet" type="text/css" href="gradient_files/reset.css" media="screen,print">
+<link rel="stylesheet" type="text/css" href="gradient_files/generator.css" media="screen,print">
+<link rel="stylesheet" type="text/css" href="gradient_files/modules.css" media="screen,print">
+<link href="gradient_files/colorPicker.css" rel="stylesheet" type="text/css" media="screen,print">
+<link rel="contents" href="http://hocwebchuan.com/" title="HOME">
+<script type="text/javascript" src="gradient_files/jquery-1.js"></script>
+<script type="text/javascript" src="gradient_files/jscolor.js"></script>
+<script type="text/javascript" src="gradient_files/generator-gradient.js"></script>
+
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
+<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+<script>
+    $(function() {
+        $( ".offset > span.slider" ).each(function() {
+			function refreshSwatch() {
+				var valD = $(this).slider( "value" );
+				$(this).next().html(valD);
+			}
+			
+            // read initial values from markup and remove that
+            var value = parseInt( $( this ).text(), 10 );
+            $( this ).empty().slider({
+                value: value,
+                range: "min",
+                animate: true,
+                orientation: "horizontal",
+				slide: refreshSwatch,
+           		change: refreshSwatch
+            });
+			$(this).next().html($(this).slider( "value" ));
+        });
+    });
+</script>
+</head>
+
+<body id="gradient">
+<div id="layout">
+<h2 class="bHead">Tạo border-radius</h2>
+
+<div id="sidebar">
+<div class="generator">
+<p class="title"><strong>Nhập chiều rộng và chiều cao</strong>: min 30px, max 600px.</p>
+<div class="section">
+<p class="hRadius"><label for="height">Height:</label> <input name="height" id="height" value="200" size="3" type="text"> px</p>
+<p class="wRadius"><label for="width">Width:</label> <input name="width" id="width" value="200" size="3" type="text"> px</p>
+<!-- class section --></div>
+<!-- class generator --></div>
+
+<p class="title"><strong>Dạng gradient</strong>:</p>
+<div class="section">
+<ul class="radioList">
+<li class="gLinear"><label for="linear">Linear:</label> <input type="radio" name="gStyle" id="linear" value=""></li>
+<li class="gCircle "><label for="circle">Circle :</label> <input type="radio" name="gStyle" id="circle" value=""></li>
+<li class="gEllipse "><label for="ellipse">Ellipse :</label> <input type="radio" name="gStyle" id="ellipse" value=""></li>
+</ul>
+<!-- class section --></div>
+
+<p class="title"><strong>Color</strong>:</p>
+<div class="section">
+<ul class="itemList">
+<li>
+<p class="gColor"><label for="cGradient">Màu bắt đầu:</label> <input type="text" name="cGradient" id="cGradient01" value="FF0000" size="6" class="color"></p>
+<p class="offset"><span class="slider" title="Độ tràn màu">50</span><span></span>%</p> 
+</li>
+<li>
+<p class="gColor"><label for="cGradient">Màu kết thúc:</label> <input type="text" name="cGradient" id="cGradient0n" value="330000" size="6" class="color"></p>
+<p class="offset"><span class="slider" title="Độ tràn màu">50</span><span></span>%</p> 
+</li>
+</ul>
+<!-- class section --></div>
+
+<div class="generator">
+<p class="title"><strong>Vị trí</strong></p>
+<div class="section">
+
+<!-- class section --></div>
+
+<p class="title"><strong>Kích cỡ</strong></p>
+<div class="section">
+<!-- class section --></div>
+<!-- class generator --></div>
+
+<p class="title"><strong>Source code:</strong></p>
+<div class="section">
+<div class="styleCode">
+<div class="sourceTxt">
+<pre>height: 200px; <br>width: 200px; <br>border: 2px double #FF0000; <br>border-radius: 33px 33px 33px 123px;<br>-moz-border-radius: 33px 33px 33px 123px;<br>-webkit-border-radius: 33px 33px 33px 123px;</pre>
+</div>
+<!-- class styleCode --></div>
+<!-- class section --></div>
+<!-- / id sidebar --></div>
+
+<div id="content">
+<p id="review">text</p>
+<!-- / id content --></div>
+<!-- / id layout --></div>
+
+
+</body></html>

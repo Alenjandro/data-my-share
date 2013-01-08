@@ -1,0 +1,238 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# element
+
+----------------------------------------*/
+
+
+/* # element
+---------------------------------------------------------------------------- */
+
+body { margin: 0;}
+h1 { border-bottom: 3px solid #990000; padding: 10px 0;}
+h2.bHead { font-weight: bold; font-size: 200%; text-align: center; margin: 20px 0 30px; }
+em { font-style: normal;}
+h1 img { border: 0;}
+p { margin: 0;}
+
+
+/* # layout
+---------------------------------------------------------------------------- */
+
+div#layout {
+	padding: 0 20px;
+	min-width: 1020px;
+}
+
+.section {
+	margin-bottom: 20px;
+}
+
+div#layout div#content {
+	border-left: 1px solid #ccc;
+	margin: 0 0 0 480px;
+	min-height: 650px;
+	padding: 20px 0 0 30px;
+}
+
+* html div#layout div#content {
+	height: 650px;
+}
+
+
+/* # sidebar
+---------------------------------------------------------------------------- */
+
+div#sidebar {
+	float: left;
+	padding: 20px 0 0 0;
+	width: 450px;
+}
+
+div#sidebar p {
+	margin-bottom: 10px;
+}
+
+.title {
+	clear: both;
+}
+
+div.sourceTxt {
+	background: #ecf9f9;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-o-border-radius: 4px;
+	-ms-border-radius: 4px;
+	border: 1px solid #ddd;
+	margin: 5px 0;
+	padding: 10px;
+}
+
+p#review {
+	border: 1px solid #ff0000;
+	height: 200px;
+	width: 200px;
+	text-align: center;
+}
+
+p#review {
+	background-color: #cc0000;
+	background: -moz-linear-gradient(bottom, #cc0000 30%, #330000 70%);
+	background: -o-linear-gradient(bottom, #cc0000 30%, #330000 70%);
+	background: -ms-linear-gradient(bottom, #cc0000 30%, #330000 70%);
+	background: -webkit-gradient(linear,left bottom,left top,color-stop(0.3, #cc0000),color-stop(0.7, #330000));
+	border: none;
+}
+
+.corner p {
+	float: left;
+}
+
+.section p label {
+	color: #00c;
+	display: inline-block;
+	text-align: right;
+	padding-right: 2px;
+	width: 100px;
+}
+
+.generator p.fRight {
+	float: right;
+}
+
+#cBorder {
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-right: 3px;
+}
+
+span.jPicker {
+	position: relative;
+	top: -2px;
+}
+
+.sourceTxt pre {
+	font-size: 13px;
+}
+
+.radioList li {
+	float: left;
+	margin-right: 10px;
+	width: auto;
+}
+
+.radioList li label {
+	color: #00c;
+	vertical-align: middle;
+}
+
+.radioList li input {
+	vertical-align: middle;
+}
+
+.itemList li p {
+	float: left;
+	padding-right: 5px;
+}
+
+.offset .slider {
+	display: inline-block;
+	height: 5px;
+	margin-right: 8px;
+	width: 100px;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+	height: 9px!important;
+	width: 9px!important;
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+	 margin-left: -3px!important;
+	top: -3px!important;
+}
+
+
+/* # footer
+---------------------------------------------------------------------------- */
+
+div#footer {
+	background: #1b1b1b;
+	clear: both;
+	margin: 30px 0 0 0;
+}
+
+div#footerInner {
+	margin: 0 auto;
+	padding-bottom: 10px;
+	width: 960px;
+}
+
+div#footerInner div.fSection {
+	float: right;
+	padding: 13px 0 0 1px;
+	width: 600px;
+}
+
+div#footerInner div.fSection ul {
+	background: url(/common/images/bg_line_w.gif) no-repeat right 6px;
+	margin: 0;
+	text-align: right;
+}
+
+div#footerInner div.fSection ul li {
+	background: url(/common/images/bg_line_w.gif) no-repeat left center;
+	display: inline;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 70%;
+	padding: 0 8px 0 11px;
+	width: auto;
+}
+
+div#footerInner div.fSection ul li a {
+	color: #ddd;
+}
+
+div#footerInner div.fSection ul li a:hover {
+	text-decoration: none;
+}
+
+div#footerInner p#copyright {
+	clear: both;
+	color: #ddd;
+	float: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	margin: 0;
+	padding-top: 13px;
+	width: 300px;
+}
+
+
+/* # clearfix
+---------------------------------------------------------------------------- */
+
+#layout,
+.radioList,
+.itemList li,
+div#footerInner,
+.corner {
+	zoom: 1;
+}
+
+#layout:after,
+.radioList:after,
+.itemList li:after,
+div#footerInner:after,
+.corner:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}
