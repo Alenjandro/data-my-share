@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>Background gradient generator | Tag html | Học web chuẩn</title>
+<meta name="description" content="Background gradient generator giúp bạn tạo background có nhiều biên độ khác nhau chỉ bằng vài thao tác đơn giản." />
+<meta name="keywords" content="background gradient,background gradient generator,tạo cackground gradient,tạo background" />
+<link rel="stylesheet" type="text/css" href="gradient_files/reset.css" media="screen,print" />
+<link rel="stylesheet" type="text/css" href="gradient_files/generator.css" media="screen,print" />
+<link rel="stylesheet" type="text/css" href="gradient_files/modules.css" media="screen,print" />
+<link href="gradient_files/colorPicker.css" rel="stylesheet" type="text/css" media="screen,print" />
+<link rel="contents" href="http://hocwebchuan.com/" title="HOME" />
+<script type="text/javascript" src="gradient_files/jquery-1.js"></script>
+<script type="text/javascript" src="gradient_files/jscolor.js"></script>
+<script type="text/javascript" src="gradient_files/generator-gradient.js"></script>
+</head>
+
+<body id="gradient">
+<div id="layout">
+<h1><a href="/"><img src="/common/images/logo.gif" alt="Học web chuẩn" /></a></h1>
+<h2 class="bHead">Tạo background gradient</h2>
+
+<div id="sidebar">
+<div class="generator">
+<h3 class="mHead"><strong>Nhập chiều rộng và chiều cao</strong>: min 30px, max 600px.</h3>
+<div class="section">
+<p class="hItem"><label for="height">Height:</label> <input name="height" id="height" value="200" size="3" type="text" /> px</p>
+<p class="wItem"><label for="width">Width:</label> <input name="width" id="width" value="200" size="3" type="text" /> px</p>
+<!-- class section --></div>
+<!-- class generator --></div>
+
+<h3 class="mHead"><strong>Color</strong>:</h3>
+<div class="section">
+<ul class="itemList">
+<li>
+<p class="gColor"><label for="cGradient01">Màu bắt đầu:</label> <input type="text" name="cGradient" id="cGradient01" value="FF0000" size="6" class="color" /></p>
+<p class="offset generator maxBackS"><input type="text" name="offset" id="offset01" value="50" size="3" /> %</p>
+</li>
+<li>
+<p class="gColor"><label for="cGradient0n">Màu kết thúc:</label> <input type="text" name="cGradient" id="cGradient0n" value="330000" size="6" class="color" /></p>
+<p class="offset generator maxBackS"><input type="text" name="offset" id="offset02" value="50" size="3" /> %</p>
+</li>
+</ul>
+<!-- class section --></div>
+
+<h3 class="mHead"><strong>Dạng gradient</strong>:</h3>
+<div class="section">
+<ul class="radioList">
+<li class="gLinear"><label for="linear">Linear:</label> <input type="radio" name="gStyle" id="linear" value="linear" /></li>
+<li class="gCircle "><label for="circle">Circle :</label> <input type="radio" name="gStyle" id="circle" value="circle" /></li>
+<li class="gEllipse "><label for="ellipse">Ellipse :</label> <input type="radio" name="gStyle" id="ellipse" value="ellipse" /></li>
+</ul>
+<!-- class section --></div>
+
+<div class="generator">
+<h3 class="mHead"><strong>Vị trí</strong></h3>
+<div class="section">
+
+<!-- class section --></div>
+
+<h3 class="mHead"><strong>Kích cỡ</strong></h3>
+<div class="section">
+<!-- class section --></div>
+<!-- class generator --></div>
+
+<h3 class="mHead"><strong>Source code:</strong></h3>
+<div class="section">
+<div class="styleCode">
+<p class="tam">a</p>
+<div class="sourceTxt">
+<pre>height: 200px;
+width: 200px;
+background-color: #cc0000;
+background: -moz-linear-gradient(bottom, #cc0000 30%, #330000 70%);
+background: -o-linear-gradient(bottom, #cc0000 30%, #330000 70%);
+background: -ms-linear-gradient(bottom, #cc0000 30%, #330000 70%);
+background: -webkit-gradient(linear,left bottom,left top,color-stop(0.3, #cc0000),color-stop(0.7, #330000));</pre>
+</div>
+<!-- class styleCode --></div>
+<!-- class section --></div>
+<!-- / id sidebar --></div>
+
+<div id="content">
+<p id="review">text</p>
+<!-- / id content --></div>
+<!-- / id layout --></div>
+<div id="footer">
+<div id="footerInner">
+<p id="copyright">(C) 2011-2021 Học Web Chuẩn All Rights Reserved.</p>
+<div class="fSection">
+<ul>
+<li id="fNavHome"><a href="/">Trang chủ</a></li>
+<li id="fNavAbout"><a href="/about.php">Giới thiệu</a></li>
+<li id="fNavContact"><a href="/contact/index.php">Góp ý - Liên hệ</a></li>
+<li id="fNavSitemap"><a href="/sitemap/">Site map</a></li>
+</ul>
+</div>
+</div>
+<!-- / id footer --></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-22625099-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
