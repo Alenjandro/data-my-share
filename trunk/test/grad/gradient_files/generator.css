@@ -14,6 +14,11 @@
 body { margin: 0;}
 h1 { border-bottom: 3px solid #990000; padding: 10px 0;}
 h2.bHead { font-weight: bold; font-size: 200%; text-align: center; margin: 20px 0 30px; }
+h3 {
+    background: url("/common/images/bg_mhead.gif") no-repeat scroll right bottom transparent;
+    margin-bottom: 15px;
+    padding: 5px 0 8px 10px;
+}
 em { font-style: normal;}
 h1 img { border: 0;}
 p { margin: 0;}
@@ -24,7 +29,6 @@ p { margin: 0;}
 
 div#layout {
 	padding: 0 20px;
-	min-width: 1020px;
 }
 
 .section {
@@ -33,9 +37,12 @@ div#layout {
 
 div#layout div#content {
 	border-left: 1px solid #ccc;
-	margin: 0 0 0 480px;
+	float: left;
+	margin: 0 0 0 0;
 	min-height: 650px;
+	margin-left: 30px;
 	padding: 20px 0 0 30px;
+	width: 670px;
 }
 
 * html div#layout div#content {
@@ -48,6 +55,8 @@ div#layout div#content {
 
 div#sidebar {
 	float: left;
+	height: 600px;
+	overflow: auto;
 	padding: 20px 0 0 0;
 	width: 450px;
 }
@@ -81,11 +90,12 @@ p#review {
 
 #gradient p#review {
 	background-color: #cc0000;
-	background: -moz-linear-gradient(bottom, #cc0000 30%, #330000 70%);
-	background: -o-linear-gradient(bottom, #cc0000 30%, #330000 70%);
-	background: -ms-linear-gradient(bottom, #cc0000 30%, #330000 70%);
-	background: -webkit-gradient(linear,left bottom,left top,color-stop(0.3, #cc0000),color-stop(0.7, #330000));
+	background: -moz-linear-gradient(bottom, #cc0000 0%, #330000 100%);
+	background: -o-linear-gradient(bottom, #cc0000 0%, #330000 100%);
+	background: -ms-linear-gradient(bottom, #cc0000 0%, #330000 100%);
+	background: -webkit-gradient(linear,left bottom,left top,color-stop(0, #cc0000),color-stop(1, #330000));
 	border: none;
+	margin-bottom: 30px;
 }
 
 .corner p {
@@ -134,7 +144,8 @@ span.jPicker {
 	vertical-align: middle;
 }
 
-.posList {
+.posList,
+.sizeOffset {
 	display: none;
 }
 
@@ -142,10 +153,11 @@ span.jPicker {
 	display: block;
 }
 
+/*15-01-2013*/
 .posList li {
 	float: left;
 	margin: 0 10px 5px 0;
-	width: 90px;
+	width: 105px;
 }
 
 .posList li button {
@@ -154,12 +166,15 @@ span.jPicker {
 	background: #fff;
 	cursor: pointer;
 	height: 50px;
-	width: 90px;
+	width: 105px;
 }
 
-.posList li button:hover {
+.posList li button:hover,
+.posList li button.active {
 	border: 1px solid #C30;
 }
+
+/*End 15-01-2013*/
 
 .itemList li p {
 	float: left;

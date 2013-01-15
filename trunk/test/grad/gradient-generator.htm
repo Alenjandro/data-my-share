@@ -24,10 +24,10 @@
 
 <div id="sidebar">
 <div class="generator">
-<h3 class="mHead"><strong>Nhập chiều rộng và chiều cao</strong>: min 30px, max 600px.</h3>
+<h3 class="mHead"><strong>Nhập chiều rộng và chiều cao</strong>:</h3>
 <div class="section">
-<p class="hItem"><label for="height">Height:</label> <input name="height" id="height" value="200" size="3" type="text" /> px</p>
-<p class="wItem"><label for="width">Width:</label> <input name="width" id="width" value="200" size="3" type="text" /> px</p>
+<p class="hItem"><label for="height">Height:</label> <input name="height" id="height" value="200" size="3" type="text" /> px (max: 300)</p>
+<p class="wItem"><label for="width">Width:</label> <input name="width" id="width" value="200" size="3" type="text" /> px (max: 600)</p>
 <!-- class section --></div>
 <!-- class generator --></div>
 
@@ -45,38 +45,18 @@
 </ul>
 <!-- class section --></div>
 
-<h3 class="mHead"><strong>Dạng gradient</strong>:</h3>
-<div class="section">
-<ul class="radioList">
-<li class="gLinear"><label for="linear">Linear:</label> <input type="radio" name="gStyle" id="linear" value="linear" /></li>
-<li class="gCircle "><label for="circle">Circle :</label> <input type="radio" name="gStyle" id="circle" value="circle" /></li>
-<li class="gEllipse "><label for="ellipse">Ellipse :</label> <input type="radio" name="gStyle" id="ellipse" value="ellipse" /></li>
-</ul>
-<!-- class section --></div>
-
-<div class="generator">
-<h3 class="mHead"><strong>Vị trí</strong></h3>
-<div class="section">
-
-<!-- class section --></div>
-
-<h3 class="mHead"><strong>Kích cỡ</strong></h3>
-<div class="section">
-<!-- class section --></div>
-<!-- class generator --></div>
 
 <h3 class="mHead"><strong>Source code:</strong></h3>
 <div class="section">
 <div class="styleCode">
-<p class="tam">a</p>
 <div class="sourceTxt">
-<pre>height: 200px;
-width: 200px;
-background-color: #cc0000;
-background: -moz-linear-gradient(bottom, #cc0000 30%, #330000 70%);
-background: -o-linear-gradient(bottom, #cc0000 30%, #330000 70%);
-background: -ms-linear-gradient(bottom, #cc0000 30%, #330000 70%);
-background: -webkit-gradient(linear,left bottom,left top,color-stop(0.3, #cc0000),color-stop(0.7, #330000));</pre>
+<p>height: 200px;<br />
+width: 200px;<br />
+background-color: #cc0000;<br />
+background: -moz-linear-gradient(bottom, #cc0000 30%, #330000 70%);<br />
+background: -o-linear-gradient(bottom, #cc0000 30%, #330000 70%);<br />
+background: -ms-linear-gradient(bottom, #cc0000 30%, #330000 70%);<br />
+background: -webkit-gradient(linear,left bottom,left top,color-stop(0.3, #cc0000),color-stop(0.7, #330000));</p>
 </div>
 <!-- class styleCode --></div>
 <!-- class section --></div>
@@ -84,6 +64,71 @@ background: -webkit-gradient(linear,left bottom,left top,color-stop(0.3, #cc0000
 
 <div id="content">
 <p id="review">text</p>
+<div class="element">
+<h3 class="mHead"><strong>Dạng gradient</strong>:</h3>
+<div class="section">
+<ul class="radioList gStyle">
+<li><button>linear</button></li>
+<li><button>circle</button></li>
+<li><button>ellipse</button></li>
+</ul>
+<!-- class section --></div>
+
+<h3 class="mHead"><strong>Vị trí</strong></h3>
+<div class="section">
+<ul class="posList gPosLinear">
+<li><button value="to top" class="active">bottom</button></li>
+<li><button value="to bottom">top</button></li>
+<li><button value="to right">left</button></li>
+<li><button value="to left">right</button></li>
+<li><button value="to right top">bottom left</button></li>
+<li><button value="to right bottom">top left</button></li>
+<li><button value="to left top">bottom right</button></li>
+<li><button value="to left bottom">top right</button></li>
+</ul>
+
+<ul class="posList gPosCircle">
+<li><button value="at left top">top left</button></li>
+<li><button value="at center top">top center</button></li>
+<li><button value="at right top">top right</button></li>
+<li><button value="at left center">center left</button></li>
+<li><button value="at center center" class="active">center center</button></li>
+<li><button value="at right center">center right</button></li>
+<li><button value="at left bottom">bottom left</button></li>
+<li><button value="at center bottom">bottom center</button></li>
+<li><button value="at right bottom">bottom right</button></li>
+</ul>
+
+<ul class="posList gPosEllipse">
+<li><button value="at left top">top left</button></li>
+<li><button value="at center top">top center</button></li>
+<li><button value="at right top">top right</button></li>
+<li><button value="at left center">center left</button></li>
+<li><button value="at center center" class="active">center center</button></li>
+<li><button value="at right center">center right</button></li>
+<li><button value="at left bottom">bottom left</button></li>
+<li><button value="at center bottom">bottom center</button></li>
+<li><button value="at right bottom">bottom right</button></li>
+</ul>
+<!-- class section --></div>
+
+<h3 class="mHead sizeOffset"><strong>Kích cỡ</strong></h3>
+<div class="section">
+<ul class="posList gSizeCircle">
+<li><button value="closest-side" class="active">closest-side</button></li>
+<li><button value="closest-corner">closest-corner</button></li>
+<li><button value="farthest-side">farthest-side</button></li>
+<li><button value="farthest-corner">farthest-corner</button></li>
+</ul>
+
+<ul class="posList gSizeEllipse">
+<li><button value="closest-side" class="active">closest-side</button></li>
+<li><button value="closest-corner">closest-corner</button></li>
+<li><button value="farthest-side">farthest-side</button></li>
+<li><button value="farthest-corner">farthest-corner</button></li>
+</ul>
+<!-- class section --></div>
+<!-- class element --></div>
 <!-- / id content --></div>
 <!-- / id layout --></div>
 <div id="footer">

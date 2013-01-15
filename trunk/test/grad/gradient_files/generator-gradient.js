@@ -46,26 +46,80 @@ $(function(){
 		var gStyle = $(this).text();
 		
 		if(gStyle=="linear"){
-			$('#review').css('background-image', '-moz-linear-gradient(30% 70% 90deg, #cc0000, #330000)');
+			$('.gPosLinear').show();
+			$('.gPosCircle, .gPosEllipse, .sizeOffset, .gSizeCircle, .gSizeEllipse').hide();
+			var gPos = $(".gPosLinear button").val();
+			$(".gPosLinear button").click(function () {
+				var gPos = $(this).val();
+				$(".gPosLinear button").removeClass('active');
+				$(this).addClass('active');
+				$('#review').css('background-image', 'linear-gradient('+gPos+', #cc0000 0%, #330000 100%)');
+			});
+			
+			$('#review').css('background-image', 'linear-gradient('+gPos+', #cc0000 0%, #330000 100%)');
 		}else if(gStyle=="circle"){
-			$('#review').css('background-image', 'radial-gradient(circle closest-side at center center, #cc0000 30%, #330000 70%)');
+			$('.gPosCircle, .sizeOffset, .gSizeCircle').show();
+			$('.gPosLinear, .gPosEllipse, .gSizeEllipse').hide();
+			var gSize = $(".gSizeCircle button.active").val();
+			var gPos = $(".gPosCircle button.active").val();
+			
+			$(".gPosCircle button").click(function () {
+				var gPos = $(this).val();
+				var gSize = $(".gSizeCircle button.active").val();
+				$(".gPosCircle button").removeClass('active');
+				$(this).addClass('active');
+				$('#review').css('background-image', 'radial-gradient(circle '+gSize+' '+gPos+', #cc0000 0%, #330000 100%)');
+			});
+			
+			$(".gSizeCircle button").click(function () {
+				var gSize = $(this).val();
+				var gPos = $(".gPosCircle button.active").val();
+				$(".gSizeCircle button").removeClass('active');
+				$(this).addClass('active');
+				$('#review').css('background-image', 'radial-gradient(circle '+gSize+' '+gPos+', #cc0000 0%, #330000 100%)');
+			});
+			
+			$('#review').css('background-image', 'radial-gradient(circle '+gSize+' '+gPos+', #cc0000 0%, #330000 100%)');
 		}else if(gStyle=="ellipse"){
-			$('#review').css('background-image', 'radial-gradient(ellipse closest-side at center center, #cc0000 30%, #330000 70%)');
-		}else $('#review').css('background-image', '-moz-linear-gradient(30% 70% 90deg, #cc0000, #330000)');
+			$('.gPosEllipse, .sizeOffse, .gSizeEllipse').show();
+			$('.gPosLinear, .gPosCircle, .gSizeCircle').hide();
+			
+			var gSize = $(".gSizeEllipse button.active").val();
+			var gPos = $(".gPosCircle button.active").val();
+			
+			$(".gPosEllipse button").click(function () {
+				var gPos = $(this).val();
+				var gSize = $(".gSizeEllipse button.active").val();
+				$(".gPosEllipse button").removeClass('active');
+				$(this).addClass('active');
+				$('#review').css('background-image', 'radial-gradient(ellipse '+gSize+' '+gPos+', #cc0000 0%, #330000 100%)');
+			});
+			
+			$(".gSizeEllipse button").click(function () {
+				var gSize = $(this).val();
+				var gPos = $(".gPosEllipse button.active").val();
+				$(".gSizeEllipse button").removeClass('active');
+				$(this).addClass('active');
+				$('#review').css('background-image', 'radial-gradient(ellipse '+gSize+' '+gPos+', #cc0000 0%, #330000 100%)');
+			});
+			
+			$('#review').css('background-image', 'radial-gradient(ellipse '+gSize+' '+gPos+', #cc0000 0%, #330000 100%)');
+			
+		}else {
+			$('.gPosLinear').show();
+			$('.gPosCircle, .gPosEllipse, .sizeOffset, .posList').hide();
+			$('#review').css('background-image', '-moz-linear-gradient(0% 100% 90deg, #cc0000, #330000)');
+		}
 	});
 });
 
 $(function(){
 	// configuration
-	var minH = 30;
-	var maxH = 600;
-	
-	var minW = 30;
-	var maxW = 600;
-	
-	var max1000 = 1000;
-	
+	var min30 = 30;
 	var max100 = 100;
+	var max300 = 300;
+	var max600 = 600;
+	var max1000 = 1000;
 	
 	// Chi chap nhan nhap so
 	$(".generator input").keydown(function(event) {
@@ -85,12 +139,12 @@ $(function(){
 	$('.hItem input').keyup(function () {
     	var valueH = $(this).val();
 		
-		if(valueH >maxH){
-			$(this).val(maxH);
-    		$("#review").css("height", maxH+'px');
-		}else if(valueH == "" || valueH < minH){
-			$(this).val(minH);
-			$("#review").css("height", minH+'px');
+		if(valueH >max300){
+			$(this).val(max300);
+    		$("#review").css("height", max300+'px');
+		}else if(valueH == "" || valueH < min30){
+			$(this).val(min30);
+			$("#review").css("height", min30+'px');
 		}else{$("#review").css("height", valueH+'px');}
     }).keyup();
 	
@@ -98,12 +152,12 @@ $(function(){
 	$('.wItem input').keyup(function () {
     	var valueW = $(this).val();
 		
-		if(valueW >maxW){
-    		$("#review").css("width", maxW+'px');
-			$(this).val(maxW);
-		}else if(valueW == "" || valueW <= minW){
-			$("#review").css("width", minW+'px');
-			$(this).val(minW);
+		if(valueW >max600){
+    		$("#review").css("width", max600+'px');
+			$(this).val(max600);
+		}else if(valueW == "" || valueW <= min30){
+			$("#review").css("width", min30+'px');
+			$(this).val(min30);
 		}else{$("#review").css("width", valueW+'px');}
     }).keyup();
 	
