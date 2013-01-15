@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>Text shadow generator | Tag html | Học web chuẩn</title>
+<meta name="description" content="Text shadow generator giúp bạn tạo một đoạn text với font và độ bóng chỉ bằng vài thao tác đơn giản." />
+<meta name="keywords" content="text shadow,text shadow generator,tạo text shadow" />
+<link rel="stylesheet" type="text/css" href="gradient_files/reset.css" media="screen,print" />
+<link rel="stylesheet" type="text/css" href="gradient_files/generator.css" media="screen,print" />
+<link rel="stylesheet" type="text/css" href="gradient_files/modules.css" media="screen,print" />
+<link href="gradient_files/colorPicker.css" rel="stylesheet" type="text/css" media="screen,print" />
+<link rel="contents" href="http://hocwebchuan.com/" title="HOME" />
+<script type="text/javascript" src="gradient_files/jquery-1.js"></script>
+<script type="text/javascript" src="gradient_files/jscolor.js"></script>
+<script type="text/javascript" src="gradient_files/generator-text-shadow.js"></script>
+</head>
+
+<body id="text-shadow">
+<div id="layout">
+<h1><a href="/"><img src="/common/images/logo.gif" alt="Học web chuẩn" /></a></h1>
+<h2 class="bHead">Tạo text shadow</h2>
+
+<div id="sidebar">
+<div class="generator">
+<h3 class="mHead"><strong>Nhập font</strong>:</h3>
+<div class="section">
+<p class="fontFamily"><label for="fontF">font-family:</label> <input name="fontF" id="fontF" value="" size="3" type="text" /></p>
+<p class="fontSize"><label for="fontS">font-size:</label> <input name="fontS" id="fontS" value="12" size="3" type="text" /> px</p>
+<p class="fontColor"><label for="fontC">color:</label> <input type="text" name="fontC" id="fontC" value="FF0000" size="6" class="color" /></p>
+<!-- class section --></div>
+<!-- class generator --></div>
+
+<h3 class="mHead"><strong>Shadow</strong>:</h3>
+<div class="section">
+<p class="sizeH"><label for="sizeH">Size chiều ngang:</label> <input name="sizeH" id="sizeH" value="4" size="3" type="text" /> px</p>
+<p class="sizeV"><label for="sizeV">Size chiều dọc:</label> <input name="sizeV" id="sizeV" value="4" size="3" type="text" /> px</p>
+<p class="blur"><label for="blur">Blur (độ nhòe):</label> <input name="blur" id="blur" value="4" size="3" type="text" /> px</p>
+<p class="sColor"><label for="sColor">Màu shadow:</label> <input type="text" name="sColor" id="sColor" value="FF0000" size="6" class="color" /></p>
+<!-- class section --></div>
+
+<h3 class="mHead"><strong>Source code:</strong></h3>
+<div class="section">
+<div class="styleCode">
+<p class="tam">a</p>
+<div class="sourceTxt">
+<pre>height: 200px;
+width: 200px;
+background-color: #cc0000;</pre>
+</div>
+<!-- class styleCode --></div>
+<!-- class section --></div>
+<!-- / id sidebar --></div>
+
+<div id="content">
+<p id="review">Text shadow</p>
+<!-- / id content --></div>
+<!-- / id layout --></div>
+<div id="footer">
+<div id="footerInner">
+<p id="copyright">(C) 2011-2021 Học Web Chuẩn All Rights Reserved.</p>
+<div class="fSection">
+<ul>
+<li id="fNavHome"><a href="/">Trang chủ</a></li>
+<li id="fNavAbout"><a href="/about.php">Giới thiệu</a></li>
+<li id="fNavContact"><a href="/contact/index.php">Góp ý - Liên hệ</a></li>
+<li id="fNavSitemap"><a href="/sitemap/">Site map</a></li>
+</ul>
+</div>
+</div>
+<!-- / id footer --></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-22625099-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
