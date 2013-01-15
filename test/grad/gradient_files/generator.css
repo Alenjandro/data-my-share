@@ -14,11 +14,7 @@
 body { margin: 0;}
 h1 { border-bottom: 3px solid #990000; padding: 10px 0;}
 h2.bHead { font-weight: bold; font-size: 200%; text-align: center; margin: 20px 0 30px; }
-h3 {
-    background: url("/common/images/bg_mhead.gif") no-repeat scroll right bottom transparent;
-    margin-bottom: 15px;
-    padding: 5px 0 8px 10px;
-}
+h3 { background: url(/common/images/bg_mhead.gif) no-repeat right bottom; padding: 5px 0 8px 10px; margin-bottom: 15px;}
 em { font-style: normal;}
 h1 img { border: 0;}
 p { margin: 0;}
@@ -32,7 +28,7 @@ div#layout {
 }
 
 .section {
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
 
 div#layout div#content {
@@ -40,7 +36,6 @@ div#layout div#content {
 	float: left;
 	margin: 0 0 0 0;
 	min-height: 650px;
-	margin-left: 30px;
 	padding: 20px 0 0 30px;
 	width: 670px;
 }
@@ -55,10 +50,10 @@ div#layout div#content {
 
 div#sidebar {
 	float: left;
-	height: 600px;
+	height: 650px;
 	overflow: auto;
 	padding: 20px 0 0 0;
-	width: 450px;
+	width: 480px;
 }
 
 div#sidebar p {
@@ -77,11 +72,15 @@ div.sourceTxt {
 	-o-border-radius: 4px;
 	-ms-border-radius: 4px;
 	border: 1px solid #ddd;
-	margin: 5px 0;
+	margin: 5px 10px 5px 0;
 	padding: 10px;
 }
 
 p#review {
+	font-family: sans-serif,Verdana,Arial,Helvetica;
+}
+
+#border-radius p#review {
 	border: 1px solid #ff0000;
 	height: 200px;
 	width: 200px;
@@ -98,6 +97,39 @@ p#review {
 	margin-bottom: 30px;
 }
 
+#text-shadow p#review {
+	font-size: 50px;
+	font-weight: bold;
+	color: #f00;
+	text-shadow: #333 4px 4px 4px;
+}
+
+#box-shadow p#review {
+	background: #ff0000;
+	border: 2px solid #fff;
+	border-radius: 10px;
+	color: #fff;
+	font-size: 200%;
+	height: 200px;
+	width: 400px;
+	box-shadow: 10px 10px 10px 10px #ccc;
+}
+
+#box-radius p#review {
+	background: #ff0000;
+	border: 5px solid #0606FF;
+	border-radius: 10px;
+	color: #fff;
+	font-size: 200%;
+	height: 200px;
+	width: 400px;
+	box-shadow: 10px 10px 10px 10px #ccc;
+}
+
+.corner {
+	margin-right: 15px;
+}
+
 .corner p {
 	float: left;
 }
@@ -105,8 +137,8 @@ p#review {
 .section p label {
 	color: #00c;
 	display: inline-block;
-	text-align: right;
-	padding-right: 2px;
+	text-align: left;
+	padding-left: 10px;
 	width: 100px;
 }
 
@@ -127,6 +159,10 @@ span.jPicker {
 
 .sourceTxt pre {
 	font-size: 13px;
+}
+
+.radioList {
+	padding-left: 10px;
 }
 
 .radioList li {
@@ -153,7 +189,6 @@ span.jPicker {
 	display: block;
 }
 
-/*15-01-2013*/
 .posList li {
 	float: left;
 	margin: 0 10px 5px 0;
@@ -174,18 +209,17 @@ span.jPicker {
 	border: 1px solid #C30;
 }
 
-/*End 15-01-2013*/
-
 .itemList li p {
 	float: left;
 	padding-right: 5px;
 }
 
+.offsetBorder .slider,
 .offset .slider {
 	display: inline-block;
 	height: 5px;
 	margin-right: 8px;
-	width: 100px;
+	width: 200px;
 }
 
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
@@ -194,24 +228,9 @@ span.jPicker {
 }
 
 .ui-slider-horizontal .ui-slider-handle {
-	 margin-left: -3px!important;
+	margin-left: -3px!important;
 	top: -3px!important;
 }
-
-
-/* # text shadow
----------------------------------------------------------------------------- */
-
-#text-shadow p#review {
-	font-size: 40px;
-	font-weight: bold;
-	border: none;
-	height: auto;
-	width: auto;
-	text-align: left;
-	text-shadow: 4px 4px 4px #cc0000;
-}
-
 
 
 /* # footer
