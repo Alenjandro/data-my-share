@@ -1,7 +1,3 @@
-function positionL(gPos) {
-	
-}
-
 $(function(){
 		
 	/*$("#cGradient01,#cGradient0n").change(function() {
@@ -43,28 +39,40 @@ $(function(){
 	
 	$(".gPosLinear button").click(function () {
 		var gPos = $(this).val();
+		var so = $('.sOffset').html();
+		var eo = $('.eOffset').html();
 		var cb = $("#cGradient01").val();
 		var cbn = $("#cGradient0n").val();
 		$(".gPosLinear button").removeClass('active');
 		$(this).addClass('active');
-		$('#review').css('background-image', 'linear-gradient('+gPos+', #'+cb+' 0%, #'+cbn+' 100%)');
+		$('#review').css('background-image', 'linear-gradient('+gPos+', #'+cb+' '+so+'%, #'+cbn+' '+eo+'%)');
 	});
 	
 	$(".gStyle button").click(function () {
 		var gStyle = $(this).text();
-		
+		var so = $('.sOffset').html();
+		var eo = $('.eOffset').html();
+		var cb = $("#cGradient01").val();
+		var cbn = $("#cGradient0n").val();
+		$(".gStyle button").removeClass();
+		$(this).addClass('active');
 		if(gStyle=="linear"){
 			$('.gPosLinear').show();
 			$('.gPosCircle, .gPosEllipse, .sizeOffset, .gSizeCircle, .gSizeEllipse').hide();
-			var gPos = $(".gPosLinear button").val();
+			
 			$(".gPosLinear button").click(function () {
 				var gPos = $(this).val();
+				var so = $('.sOffset').html();
+				var eo = $('.eOffset').html();
+				var cb = $("#cGradient01").val();
+				var cbn = $("#cGradient0n").val();
 				$(".gPosLinear button").removeClass('active');
 				$(this).addClass('active');
-				$('#review').css('background-image', 'linear-gradient('+gPos+', #cc0000 0%, #330000 100%)');
+				$('#review').css('background-image', 'linear-gradient('+gPos+', #'+cb+' '+so+'%, #'+cbn+' '+eo+'%)');
 			});
-			
-			$('#review').css('background-image', 'linear-gradient('+gPos+', #cc0000 0%, #330000 100%)');
+			//alert(gPos);
+			var gPos = $(".gPosLinear button.active").val();
+			$('#review').css('background-image', 'linear-gradient('+gPos+', #'+cb+' '+so+'%, #'+cbn+' '+eo+'%)');
 		}else if(gStyle=="circle"){
 			$('.gPosCircle, .sizeOffset, .gSizeCircle').show();
 			$('.gPosLinear, .gPosEllipse, .gSizeEllipse').hide();
@@ -73,113 +81,155 @@ $(function(){
 			
 			$(".gPosCircle button").click(function () {
 				var gPos = $(this).val();
+				var so = $('.sOffset').html();
+				var eo = $('.eOffset').html();
+				var cb = $("#cGradient01").val();
+				var cbn = $("#cGradient0n").val();
 				var gSize = $(".gSizeCircle button.active").val();
 				$(".gPosCircle button").removeClass('active');
 				$(this).addClass('active');
-				$('#review').css('background-image', 'radial-gradient(circle '+gSize+' '+gPos+', #cc0000 0%, #330000 100%)');
+				$('#review').css('background-image', 'radial-gradient(circle '+gSize+' '+gPos+', #'+cb+' '+so+'%, #'+cbn+' '+eo+'%)');
 			});
 			
 			$(".gSizeCircle button").click(function () {
 				var gSize = $(this).val();
+				var so = $('.sOffset').html();
+				var eo = $('.eOffset').html();
+				var cb = $("#cGradient01").val();
+				var cbn = $("#cGradient0n").val();
 				var gPos = $(".gPosCircle button.active").val();
 				$(".gSizeCircle button").removeClass('active');
 				$(this).addClass('active');
-				$('#review').css('background-image', 'radial-gradient(circle '+gSize+' '+gPos+', #cc0000 0%, #330000 100%)');
+				$('#review').css('background-image', 'radial-gradient(circle '+gSize+' '+gPos+', #'+cb+' '+so+'%, #'+cbn+' '+eo+'%)');
 			});
 			
-			$('#review').css('background-image', 'radial-gradient(circle '+gSize+' '+gPos+', #cc0000 0%, #330000 100%)');
+			$('#review').css('background-image', 'radial-gradient(circle '+gSize+' '+gPos+', #'+cb+' '+so+'%, #'+cbn+' '+eo+'%)');
 		}else if(gStyle=="ellipse"){
 			$('.gPosEllipse, .sizeOffse, .gSizeEllipse').show();
 			$('.gPosLinear, .gPosCircle, .gSizeCircle').hide();
 			
 			var gSize = $(".gSizeEllipse button.active").val();
-			var gPos = $(".gPosCircle button.active").val();
+			var gPos = $(".gPosEllipse button.active").val();
 			
 			$(".gPosEllipse button").click(function () {
 				var gPos = $(this).val();
+				var so = $('.sOffset').html();
+				var eo = $('.eOffset').html();
+				var cb = $("#cGradient01").val();
+				var cbn = $("#cGradient0n").val();
 				var gSize = $(".gSizeEllipse button.active").val();
 				$(".gPosEllipse button").removeClass('active');
 				$(this).addClass('active');
-				$('#review').css('background-image', 'radial-gradient(ellipse '+gSize+' '+gPos+', #cc0000 0%, #330000 100%)');
+				$('#review').css('background-image', 'radial-gradient(ellipse '+gSize+' '+gPos+', #'+cb+' '+so+'%, #'+cbn+' '+eo+'%)');
 			});
 			
 			$(".gSizeEllipse button").click(function () {
 				var gSize = $(this).val();
+				var so = $('.sOffset').html();
+				var eo = $('.eOffset').html();
+				var cb = $("#cGradient01").val();
+				var cbn = $("#cGradient0n").val();
 				var gPos = $(".gPosEllipse button.active").val();
 				$(".gSizeEllipse button").removeClass('active');
 				$(this).addClass('active');
-				$('#review').css('background-image', 'radial-gradient(ellipse '+gSize+' '+gPos+', #cc0000 0%, #330000 100%)');
+				$('#review').css('background-image', 'radial-gradient(ellipse '+gSize+' '+gPos+', #'+cb+' '+so+'%, #'+cbn+' '+eo+'%)');
 			});
 			
-			$('#review').css('background-image', 'radial-gradient(ellipse '+gSize+' '+gPos+', #cc0000 0%, #330000 100%)');
+			$('#review').css('background-image', 'radial-gradient(ellipse '+gSize+' '+gPos+', #'+cb+' '+so+'%, #'+cbn+' '+eo+'%)');
 			
 		}else {
 			$('.gPosLinear').show();
 			$('.gPosCircle, .gPosEllipse, .sizeOffset, .posList').hide();
-			$('#review').css('background-image', '-moz-linear-gradient(0% 100% 90deg, #cc0000, #330000)');
+			$('#review').css('background-image', '-moz-linear-gradient(center bottom, #cc0000 0%, #330000 100%)');
 		}
 	});
 	
 	$('input').change(function() {
 		var cb = $("#cGradient01").val();
 		var cbn = $("#cGradient0n").val();
-		$('#review').css('background-image', '-moz-linear-gradient(0% 100% 90deg, #'+cb+', #'+cbn+')');
+		var so = $('.sOffset').html();
+		var eo = $('.eOffset').html();
+		var gStyleAcctive = $(".gStyle button.active").text();
+		if(gStyleAcctive=="linear"){
+			var gPos = $(".gPosLinear button.active").val();
+			$('#review').css('background-image', '-moz-linear-gradient('+gPos+', #'+cb+' '+so+'%, #'+cbn+' '+eo+'%)');
+		}else if(gStyleAcctive=="circle"){
+			var gPos = $(".gPosCircle button.active").val();
+			var gSize = $(".gSizeCircle button.active").val();
+			$('#review').css('background-image', 'radial-gradient(circle '+gSize+' '+gPos+', #'+cb+' '+so+'%, #'+cbn+' '+eo+'%)');
+		}else if(gStyleAcctive=="ellipse"){
+			var gPos = $(".gPosEllipse button.active").val();
+			var gSize = $(".gSizeEllipse button.active").val();
+			$('#review').css('background-image', 'radial-gradient(ellipse '+gSize+' '+gPos+', #'+cb+' '+so+'%, #'+cbn+' '+eo+'%)');
+		}
+		
 		$(".gStyle button").click(function () {
 			var gStyle = $(this).text();
+			$(".gStyle button").removeClass('active');
+			$(this).addClass('active');
 			if(gStyle=="linear"){
-				var gPos = $(".gPosLinear button").val();
+				var gPos = $(".gPosLinear button.active").val();
 				$(".gPosLinear button").click(function () {
 					var cb = $("#cGradient01").val();
 					var cbn = $("#cGradient0n").val();
+					var so = $('.sOffset').html();
+					var eo = $('.eOffset').html();
 					var gPos = $(this).val();
-					$('#review').css('background-image', 'linear-gradient('+gPos+', #'+cb+' 0%, #'+cbn+' 100%)');
+					$('#review').css('background-image', 'linear-gradient('+gPos+', #'+cb+' '+so+'%, #'+cbn+' '+eo+'%)');
 				});
-				$('#review').css('background-image', 'linear-gradient('+gPos+', #'+cb+' 0%, #'+cbn+' 100%)');
+				$('#review').css('background-image', 'linear-gradient('+gPos+', #'+cb+' '+so+'%, #'+cbn+' '+eo+'%)');
 			}else if(gStyle=="circle"){
-				var gSize = $(".gSizeCircle button.active").val();
-				var gPos = $(".gPosCircle button.active").val();
 				
 				$(".gPosCircle button").click(function () {
 					var gPos = $(this).val();
 					var cb = $("#cGradient01").val();
 					var cbn = $("#cGradient0n").val();
+					var so = $('.sOffset').html();
+					var eo = $('.eOffset').html();
 					var gSize = $(".gSizeCircle button.active").val();
-					$('#review').css('background-image', 'radial-gradient(circle '+gSize+' '+gPos+', #'+cb+' 0%, #'+cbn+' 100%)');
+					$('#review').css('background-image', 'radial-gradient(circle '+gSize+' '+gPos+', #'+cb+' '+so+'%, #'+cbn+' '+eo+'%)');
 				});
 				
 				$(".gSizeCircle button").click(function () {
 					var gSize = $(this).val();
 					var cb = $("#cGradient01").val();
 					var cbn = $("#cGradient0n").val();
+					var so = $('.sOffset').html();
+					var eo = $('.eOffset').html();
 					var gPos = $(".gPosCircle button.active").val();
-					$('#review').css('background-image', 'radial-gradient(circle '+gSize+' '+gPos+', #'+cb+' 0%, #'+cbn+' 100%)');
+					$('#review').css('background-image', 'radial-gradient(circle '+gSize+' '+gPos+', #'+cb+' '+so+'%, #'+cbn+' '+eo+'%)');
 				});
 				
-				$('#review').css('background-image', 'radial-gradient(circle '+gSize+' '+gPos+', #'+cb+' 0%, #'+cbn+' 100%)');
+				var gSize = $(".gSizeCircle button.active").val();
+				var gPos = $(".gPosCircle button.active").val();
+				
+				$('#review').css('background-image', 'radial-gradient(circle '+gSize+' '+gPos+', #'+cb+' '+so+'%, #'+cbn+' '+eo+'%)');
 			}else if(gStyle=="ellipse"){
 				
 				var gSize = $(".gSizeEllipse button.active").val();
-				var gPos = $(".gPosCircle button.active").val();
+				var gPos = $(".gPosEllipse button.active").val();
 				
 				$(".gPosEllipse button").click(function () {
 					var gPos = $(this).val();
 					var cb = $("#cGradient01").val();
 					var cbn = $("#cGradient0n").val();
+					var so = $('.sOffset').html();
+					var eo = $('.eOffset').html();
 					var gSize = $(".gSizeEllipse button.active").val();
-					$('#review').css('background-image', 'radial-gradient(ellipse '+gSize+' '+gPos+', #'+cb+' 0%, #'+cbn+' 100%)');
+					$('#review').css('background-image', 'radial-gradient(ellipse '+gSize+' '+gPos+', #'+cb+' '+so+'%, #'+cbn+' '+eo+'%)');
 				});
 				
 				$(".gSizeEllipse button").click(function () {
 					var gSize = $(this).val();
 					var cb = $("#cGradient01").val();
 					var cbn = $("#cGradient0n").val();
+					var so = $('.sOffset').html();
+					var eo = $('.eOffset').html();
 					var gPos = $(".gPosEllipse button.active").val();
-					$('#review').css('background-image', 'radial-gradient(ellipse '+gSize+' '+gPos+', #'+cb+' 0%, #'+cbn+' 100%)');
+					$('#review').css('background-image', 'radial-gradient(ellipse '+gSize+' '+gPos+', #'+cb+' '+so+'%, #'+cbn+' '+eo+'%)');
 				});
 				
-				$('#review').css('background-image', 'radial-gradient(ellipse '+gSize+' '+gPos+', #'+cb+' 0%, #'+cbn+' 100%)');
-			}else {
-				$('#review').css('background-image', '-moz-linear-gradient(0% 100% 90deg, #'+cb+', #'+cbn+')');
+				$('#review').css('background-image', 'radial-gradient(ellipse '+gSize+' '+gPos+', #'+cb+' '+so+'%, #'+cbn+' '+eo+'%)');
 			}
 		});
 			
@@ -189,25 +239,29 @@ $(function(){
 		function refreshSwatch() {
 			var valD = $(this).slider( "value" );
 			$(this).next().html(valD);
-			var hs = $('.hShadow').html();
-			var vs = $('.vShadow').html();
-			var bs = $('.bShadow').html();
-			var cs01 = $('#cShadow').val();
+			var so = $('.sOffset').html();
+			var eo = $('.eOffset').html();
 			
-			var bgc01 = $("#bgColor").val();
-			var fc01 = $("#fColor").val();
-			var fs01 = $('#fSize').val();
+			var cb = $("#cGradient01").val();
+			var cbn = $("#cGradient0n").val();
 			
-			$("#cShadow").change(function() {
-				var cs= $("#cShadow").val();
-				$('#review').css('text-shadow',hs+'px '+vs+'px '+bs+'px '+'#'+cs);
-				
-			});
-			$('#review').css('text-shadow',hs+'px '+vs+'px '+bs+'px '+'#'+cs01);
-			$('.sourceTxt pre').html('background: #'+bgc01+'; <br />'+
+			var gStyleAcctive = $(".gStyle button.active").text();
+			if(gStyleAcctive=="linear"){
+				var gPos = $(".gPosLinear button.active").val();
+				$('#review').css('background-image', '-moz-linear-gradient('+gPos+', #'+cb+' '+so+'%, #'+cbn+' '+eo+'%)');
+			}else if(gStyleAcctive=="circle"){
+				var gPos = $(".gPosCircle button.active").val();
+				var gSize = $(".gSizeCircle button.active").val();
+				$('#review').css('background-image', 'radial-gradient(circle '+gSize+' '+gPos+', #'+cb+' '+so+'%, #'+cbn+' '+eo+'%)');
+			}else if(gStyleAcctive=="ellipse"){
+				var gPos = $(".gPosEllipse button.active").val();
+				var gSize = $(".gSizeEllipse button.active").val();
+				$('#review').css('background-image', 'radial-gradient(ellipse '+gSize+' '+gPos+', #'+cb+' '+so+'%, #'+cbn+' '+eo+'%)');
+			}
+			/*$('.sourceTxt pre').html('background: #'+bgc01+'; <br />'+
 'font-size: '+fs01+'px; <br />'+
 'color: #'+fc01+'; <br />'+
-'text-shadow: #'+cs01+' '+hs+'px '+vs+'px '+bs+'px;');
+'text-shadow: #'+cs01+' '+hs+'px '+vs+'px '+bs+'px;');*/
 		}
 		
 		var value = parseInt( $( this ).text(), 10 );
