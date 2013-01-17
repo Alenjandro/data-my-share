@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>Background gradient generator | Tag html | Học web chuẩn</title>
+<meta name="description" content="Background gradient generator giúp bạn tạo background có nhiều biên độ khác nhau chỉ bằng vài thao tác đơn giản." />
+<meta name="keywords" content="background gradient,background gradient generator,tạo cackground gradient,tạo background" />
+<link rel="stylesheet" type="text/css"href="http://hocwebchuan.com/common/css/reset.css" media="screen,print" />
+<link rel="stylesheet" type="text/css" href="gradient_files/generator.css" media="screen,print" />
+<link rel="stylesheet" type="text/css" href="http://hocwebchuan.com/common/css/modules.css" media="screen,print" />
+<link rel="stylesheet" type="text/css" href="http://hocwebchuan.com/common/css/jquery-ui.css" />
+<link rel="contents" href="/" title="HOME" />
+<script type="text/javascript" src="http://hocwebchuan.com/common/js/jquery-1.8.3.js"></script>
+<script type="text/javascript" src="http://hocwebchuan.com/common/js/jscolor.js"></script>
+<script type="text/javascript" src="gradient_files/generator-gradient.js"></script>
+<script type="text/javascript" src="http://hocwebchuan.com/common/js/jquery-ui.js"></script>
+</head>
+
+<body id="gradient">
+<div id="layout">
+<h1><a href="/"><img src="/common/images/logo.gif" alt="Học web chuẩn" /></a></h1>
+<h2 class="bHead">Tạo background gradient</h2>
+
+<div id="sidebar">
+<div class="generator">
+<h3 class="mHead"><strong>Nhập chiều rộng và chiều cao</strong>:</h3>
+<div class="section">
+<p class="hItem"><label for="height">Height:</label> <input name="height" id="height" value="200" size="3" type="text" /> px (max: 300)</p>
+<p class="wItem"><label for="width">Width:</label> <input name="width" id="width" value="200" size="3" type="text" /> px (max: 600)</p>
+<!-- class section --></div>
+<!-- class generator --></div>
+
+<h3 class="mHead"><strong>Color</strong>:</h3>
+<div class="section">
+<ul class="itemList">
+<li>
+<p class="gColor"><label for="cGradient01">Màu bắt đầu:</label> <input type="text" name="cGradient" id="cGradient01" value="FF0000" size="6" class="color" /></p>
+<p class="offset generator"><span class="slider" title="Độ tràn màu bắt đầu">50</span><span class="sOffset">4</span>%</p>
+</li>
+<li>
+<p class="gColor"><label for="cGradient0n">Màu kết thúc:</label> <input type="text" name="cGradient" id="cGradient0n" value="330000" size="6" class="color" /></p>
+<p class="offset02 generator"><span class="slider" title="Độ tràn màu kết thúc">50</span><span class="eOffset">4</span>%</p>
+</li>
+</ul>
+<!-- class section --></div>
+
+
+<h3 class="mHead"><strong>Source code:</strong></h3>
+<div class="section">
+<div class="styleCode">
+<div class="sourceTxt">
+<p>height: 200px;<br />
+width: 200px;<br />
+background-color: #cc0000;<br />
+background: -moz-linear-gradient(bottom, #cc0000 30%, #330000 70%);<br />
+background: -o-linear-gradient(bottom, #cc0000 30%, #330000 70%);<br />
+background: -ms-linear-gradient(bottom, #cc0000 30%, #330000 70%);<br />
+background: -webkit-gradient(linear,left bottom,left top,color-stop(0.3, #cc0000),color-stop(0.7, #330000));</p>
+</div>
+<!-- class styleCode --></div>
+<!-- class section --></div>
+<!-- / id sidebar --></div>
+
+<div id="content">
+<p id="review">text</p>
+<div class="element">
+<h3 class="mHead"><strong>Dạng gradient</strong>:</h3>
+<div class="section">
+<ul class="radioList gStyle">
+<li><button class="active">linear</button></li>
+<li><button>circle</button></li>
+<li><button>ellipse</button></li>
+</ul>
+<!-- class section --></div>
+
+<h3 class="mHead"><strong>Vị trí</strong></h3>
+<div class="section">
+<ul class="posList gPosLinear">
+<li><button value="to top" class="active">bottom</button></li>
+<li><button value="to bottom">top</button></li>
+<li><button value="to right">left</button></li>
+<li><button value="to left">right</button></li>
+<li><button value="to right top">bottom left</button></li>
+<li><button value="to right bottom">top left</button></li>
+<li><button value="to left top">bottom right</button></li>
+<li><button value="to left bottom">top right</button></li>
+</ul>
+
+<ul class="posList gPosCircle">
+<li><button value="at left top">top left</button></li>
+<li><button value="at center top">top center</button></li>
+<li><button value="at right top">top right</button></li>
+<li><button value="at left center">center left</button></li>
+<li><button value="at center center" class="active">center center</button></li>
+<li><button value="at right center">center right</button></li>
+<li><button value="at left bottom">bottom left</button></li>
+<li><button value="at center bottom">bottom center</button></li>
+<li><button value="at right bottom">bottom right</button></li>
+</ul>
+
+<ul class="posList gPosEllipse">
+<li><button value="at left top">top left</button></li>
+<li><button value="at center top">top center</button></li>
+<li><button value="at right top">top right</button></li>
+<li><button value="at left center">center left</button></li>
+<li><button value="at center center" class="active">center center</button></li>
+<li><button value="at right center">center right</button></li>
+<li><button value="at left bottom">bottom left</button></li>
+<li><button value="at center bottom">bottom center</button></li>
+<li><button value="at right bottom">bottom right</button></li>
+</ul>
+<!-- class section --></div>
+
+<h3 class="mHead sizeOffset"><strong>Kích cỡ</strong></h3>
+<div class="section">
+<ul class="posList gSizeCircle">
+<li><button value="closest-side" class="active">closest-side</button></li>
+<li><button value="closest-corner">closest-corner</button></li>
+<li><button value="farthest-side">farthest-side</button></li>
+<li><button value="farthest-corner">farthest-corner</button></li>
+</ul>
+
+<ul class="posList gSizeEllipse">
+<li><button value="closest-side" class="active">closest-side</button></li>
+<li><button value="closest-corner">closest-corner</button></li>
+<li><button value="farthest-side">farthest-side</button></li>
+<li><button value="farthest-corner">farthest-corner</button></li>
+</ul>
+<!-- class section --></div>
+<!-- class element --></div>
+<!-- / id content --></div>
+<!-- / id layout --></div>
+<div id="footer">
+<div id="footerInner">
+<p id="copyright">(C) 2011-2021 Học Web Chuẩn All Rights Reserved.</p>
+<div class="fSection">
+<ul>
+<li id="fNavHome"><a href="/">Trang chủ</a></li>
+<li id="fNavAbout"><a href="/about.php">Giới thiệu</a></li>
+<li id="fNavContact"><a href="/contact/index.php">Góp ý - Liên hệ</a></li>
+<li id="fNavSitemap"><a href="/sitemap/">Site map</a></li>
+</ul>
+</div>
+</div>
+<!-- / id footer --></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-22625099-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
