@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+<style type="text/css">
+.review {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	border: 1px solid #333;
+	min-height: 100px;
+	width: 300px;
+}
+
+.review {
+
+}
+
+button {
+	border: 1px solid #333;
+	border-radius: 3px;
+	height: 30px;
+	margin-right: 3px;
+	background: #f2f6f8;
+	background: -moz-linear-gradient(top, #f2f6f8 0%, #d8e1e7 49%, #b5c6d0 52%, #e0eff9 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f2f6f8), color-stop(49%,#d8e1e7), color-stop(52%,#b5c6d0), color-stop(100%,#e0eff9));
+	background: -webkit-linear-gradient(top, #f2f6f8 0%,#d8e1e7 49%,#b5c6d0 52%,#e0eff9 100%);
+	background: -o-linear-gradient(top, #f2f6f8 0%,#d8e1e7 49%,#b5c6d0 52%,#e0eff9 100%);
+	background: -ms-linear-gradient(top, #f2f6f8 0%,#d8e1e7 49%,#b5c6d0 52%,#e0eff9 100%);
+	background: linear-gradient(to bottom, #f2f6f8 0%,#d8e1e7 49%,#b5c6d0 52%,#e0eff9 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f6f8', endColorstr='#e0eff9',GradientType=0 );
+}
+
+button.active {
+	background: #ebf1f6;
+	background: -moz-linear-gradient(top, #ebf1f6 16%, #abd3ee 50%, #89c3eb 51%, #d5ebfb 86%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(16%,#ebf1f6), color-stop(50%,#abd3ee), color-stop(51%,#89c3eb), color-stop(86%,#d5ebfb));
+	background: -webkit-linear-gradient(top, #ebf1f6 16%,#abd3ee 50%,#89c3eb 51%,#d5ebfb 86%);
+	background: -o-linear-gradient(top, #ebf1f6 16%,#abd3ee 50%,#89c3eb 51%,#d5ebfb 86%);
+	background: -ms-linear-gradient(top, #ebf1f6 16%,#abd3ee 50%,#89c3eb 51%,#d5ebfb 86%);
+	background: linear-gradient(to bottom, #ebf1f6 16%,#abd3ee 50%,#89c3eb 51%,#d5ebfb 86%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebf1f6', endColorstr='#d5ebfb',GradientType=0 );
+}
+button::-moz-focus-inner { border: 0; }
+</style>
+</head>
+
+<body>
+<div class="review">Align Paragraph</div>
+<p class="fieldButton"><button value="left" class="alignL">left</button><button value="right" class="alignR">right</button><button value="center" class="alignC">center</button></p>
+</body>
+</html>
