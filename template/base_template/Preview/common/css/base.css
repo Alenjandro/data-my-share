@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# General Elements
+# body
+# layout
+# header
+# gNav
+# content
+# sidebar
+# footer
+# clearfix
+# common classes
+
+----------------------------------------*/
+
+
+/* # General Elements
+---------------------------------------------------------------------------- */
+
+a {
+	color: #1a5eba;
+	outline: none;
+}
+a:hover {
+	color: #FF3300;
+	text-decoration: none;
+}
+
+
+/* # body
+---------------------------------------------------------------------------- */
+
+body {
+	background-color: #fff;
+	color: #333;
+	font-size: 75%;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.5;
+}
+
+div#layout {
+	margin: 0 auto;
+	padding: 50px 0;
+	width: 1000px;
+}
+
+div#layout h1 {
+	font-size: 150%;
+	font-weight: bold;
+	padding: 0 0 20px 0;
+}
+
+div#layout ul li a {
+	display: block;
+	padding: 10px 0;
+	width: 300px;
+}
+
+
+/* # header
+---------------------------------------------------------------------------- */
+
+
+/* # gNav
+---------------------------------------------------------------------------- */
+
+
+/* # pageBody
+---------------------------------------------------------------------------- */
+
+
+/* # content
+---------------------------------------------------------------------------- */
+
+.ddimgtooltip {
+box-shadow: 3px 3px 5px #818181; /*shadow for CSS3 capable browsers.*/
+-webkit-box-shadow: 3px 3px 5px #818181;
+-moz-box-shadow: 3px 3px 5px #818181;
+display:none;
+position:absolute;
+border:1px solid black;
+background:white;
+color: black;
+z-index:2000;
+padding: 4px;
+}
+
+
+/* # sidebar
+---------------------------------------------------------------------------- */
+
+
+/* # footer
+---------------------------------------------------------------------------- */
+
+
+/* # clearfix
+---------------------------------------------------------------------------- */
+
+div#pageBody {
+	zoom: 1;
+}
+
+div#pageBody:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}
+
+
+/* # Common Classes
+---------------------------------------------------------------------------- */
