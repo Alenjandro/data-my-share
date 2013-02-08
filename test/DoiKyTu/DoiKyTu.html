@@ -1,0 +1,47 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html dir='ltr'> 
+<head> 
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/> 
+<meta content='true' name='MSSmartTagsPreventParsing'/> 
+<title>HTML Encode and Decode with Javascript - Strictly Software</title>
+<script type="text/javascript" src="strictly.js"></script>
+<script type="text/javascript" src="encoder.js"></script>
+<script type="text/javascript">
+function HTMLEncode(){var i=G('txtInput').value,db=G('chkDouble').checked;G('txtEncoded').value=Encoder.htmlEncode(i,db);}
+function HTMLDecode(){var i=G('txtEncoded').value;G('txtDecoded').value=Encoder.htmlDecode(i);}
+A(function(){
+G('txtInput').value=unescape(en);var db=G('chkDouble').checked;
+G('txtEncoded').value=Encoder.htmlEncode(unescape(en),db);
+G('txtDecoded').value=Encoder.htmlDecode(G('txtEncoded').value);
+})
+</script>
+</head> 
+<body> 
+
+<form id="frmEncoder" name="frmEncoder">
+	<fieldset>
+	<dl>
+		<dt><label for="txtInput">Paste text to encode Here</label></dt>
+		<dd><textarea id="txtInput" name="txtInput" style="height:200px;width:300px;" ></textarea></dd>
+		<dt><label for="chkDouble">Allow Double Encoding</label></dt>
+		<dd><input type="checkbox" id="chkDouble" name="chkDouble" checked="checked" /></dd>
+		<dt>&nbsp;</dt><dd>&nbsp;</dd>
+		<dt></dt>
+		<dd><input type="button" id="cmdEncode" name="cmdEncode" value="Encode" onclick="HTMLEncode();" />
+			<input type="button" id="cmdClear" name="cmdClear" value="Clear Form"  onclick="G('txtInput').value=G('txtEncoded').value=G('txtDecoded').value='';" /></dd>
+		<dt>&nbsp;</dt><dd>&nbsp;</dd>
+		<dt><label for="txtEncoded">HTML Encoded Text</label></dt>
+		<dd><textarea id="txtEncoded" name="txtEncoded" style="height:200px;width:300px;" ></textarea></dd>
+		<dt>&nbsp;</dt><dd>&nbsp;</dd>
+		<dt></dt>
+		<dd><input type="button" id="cmdDecode" name="cmdDecode" value="Decode" onclick="HTMLDecode();" />
+			<input type="button" id="cmdClear" name="cmdClear" value="Clear Form"  onclick="G('txtInput').value=G('txtEncoded').value=G('txtDecoded').value='';" /></dd>
+		<dt>&nbsp;</dt><dd>&nbsp;</dd>
+		<dt><label for="txtDecoded">HTML Decoded Text</label></dt>
+		<dd><textarea id="txtDecoded" name="txtDecoded" style="height:200px;width:300px;" ></textarea></dd>
+	</dl>
+	</fieldset>
+</form>
+</body> 
+</html> 
