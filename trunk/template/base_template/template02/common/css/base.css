@@ -113,40 +113,32 @@ div#gNav {
 	clear: both;
 	height: 40px;
 }
-
-div#gNav dl {
+div#gNav ul {
 	margin: 0 auto;
 	width: 960px;
 }
-
-div#gNav dl dt {
-	overflow: hidden;
-	position: absolute;
-	text-indent: -9999px;
-}
-
-div#gNav dl dd ul li {
+div#gNav ul li {
 	float: left;
 	width: auto;
 }
 
-div#gNav dl dd ul li a {
+div#gNav ul li a {
 	display: block;
 }
 
-div#gNav dl dd ul li a:hover {
+div#gNav ul li a:hover {
 	overflow: hidden;
 }
 
-div#gNav dl dd ul li a:hover img {
+div#gNav ul li a:hover img {
 	visibility: hidden;
 }
 
-div#gNav dl dd ul li#gNav01 a {background: url(../images/gnav_gnav01_o.gif) no-repeat left top;}
-div#gNav dl dd ul li#gNav02 a {background: url(../images/gnav_gnav02_o.gif) no-repeat left top;}
-div#gNav dl dd ul li#gNav03 a {background: url(../images/gnav_gnav03_o.gif) no-repeat left top;}
-div#gNav dl dd ul li#gNav04 a {background: url(../images/gnav_gnav04_o.gif) no-repeat left top;}
-div#gNav dl dd ul li#gNav05 a {background: url(../images/gnav_gnav05_o.gif) no-repeat left top;}
+div#gNav ul li#gNav01 a {background: url(../images/gnav_gnav01_o.gif) no-repeat left top;}
+div#gNav ul li#gNav02 a {background: url(../images/gnav_gnav02_o.gif) no-repeat left top;}
+div#gNav ul li#gNav03 a {background: url(../images/gnav_gnav03_o.gif) no-repeat left top;}
+div#gNav ul li#gNav04 a {background: url(../images/gnav_gnav04_o.gif) no-repeat left top;}
+div#gNav ul li#gNav05 a {background: url(../images/gnav_gnav05_o.gif) no-repeat left top;}
 
 
 /* # pageBody
@@ -275,7 +267,7 @@ div#footer ul.fNav li {
 ---------------------------------------------------------------------------- */
 
 div#header,
-div#gNav dl dd ul,
+div#gNav ul,
 div#pageBody,
 div#footer,
 ul.topicPath {
@@ -283,7 +275,7 @@ ul.topicPath {
 }
 
 div#header:after,
-div#gNav dl dd ul:after,
+div#gNav ul:after,
 div#pageBody:after,
 div#footer:after,
 ul.topicPath:after {

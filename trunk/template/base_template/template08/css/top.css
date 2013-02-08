@@ -16,7 +16,7 @@
 /* # gNav
 ---------------------------------------------------------------------------- */
 
-div#gNav dl dd ul li#gNav01 a img {
+div#gNav ul li#gNav01 a img {
 	visibility: hidden;
 }
 

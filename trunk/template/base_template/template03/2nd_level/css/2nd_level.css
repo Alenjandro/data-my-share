@@ -21,6 +21,6 @@
 /* # clearfix
 ---------------------------------------------------------------------------- */
 
-div#gNav dl dd ul li#gNav02 a img {
+div#gNav ul li#gNav02 a img {
 	visibility: hidden;
 }
