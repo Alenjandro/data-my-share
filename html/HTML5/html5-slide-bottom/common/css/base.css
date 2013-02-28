@@ -1,0 +1,219 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# Reset
+# General Elements
+# html & body
+# content
+# clearfix
+# common
+
+----------------------------------------*/
+
+
+/* # Reset
+---------------------------------------------------------------------------- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, figure, figcaption, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, button, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	background: transparent;
+	border: 0;
+	font-size: 100%;
+	font-weight: normal;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+ol, ul { list-style: none; } 
+
+table { 
+	border-collapse: collapse;
+	border-spacing: 0;
+	font-size: 100%;
+}
+
+caption, th, td {
+	font-weight: normal;
+	text-align: left;
+	vertical-align: top;
+}
+
+fieldset {
+	border: none;
+}
+
+input, textarea, select, label {
+	font-size: 100%;
+	vertical-align: middle;
+}
+
+select,
+textarea {
+       padding: 5px;
+}
+
+label, button {
+	cursor: pointer;
+}
+
+textarea {
+	overflow: auto;
+}
+
+header, hgroup, footer,article, section, nav, aside, figure, figcaption {
+	display: block;
+}
+
+a {
+	vertical-align: baseline;
+}
+
+img {
+	border: none;
+	max-width: 100%;
+	vertical-align: bottom;
+}
+
+em, strong {
+	font-weight: bold;
+	font-style: normal;
+}
+
+object {
+	outline: none;
+	vertical-align: middle;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+code {
+	font-family: monospace;
+}
+
+sup {
+	vertical-align: text-top;
+}
+
+sub {
+	vertical-align: text-bottom;
+}
+
+small {
+	font-style: normal;
+}
+
+ins {
+	text-decoration: none;
+}
+
+mark {
+	font-weight: bold;
+}
+
+del {
+	text-decoration: line-through;
+}
+
+abbr, acronym {
+	border: none;
+	font-variant: normal;
+}
+
+abbr[title], dfn[title] {
+	border-bottom: 1px dotted #333;
+	cursor: help;
+}
+
+address, caption, cite, code, dfn, var {
+	font-weight: normal;
+	font-style: normal;
+}
+
+hr {
+	display: none;
+}
+
+pre {
+	font-family: monospace;
+}
+
+rt { text-align: center; }
+
+rp { display: none; }
+
+optgroup { font-style: normal; }
+
+
+/* # General Elements
+---------------------------------------------------------------------------- */
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	line-height: 1.2;
+}
+
+table {
+	width: 100%;
+}
+
+label {
+	color: #333;
+	cursor: pointer;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+button {
+	font-family: 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+}
+
+
+/* # html & body
+---------------------------------------------------------------------------- */
+
+html {
+	-webkit-text-size-adjust: none;
+}
+
+body {
+	background: url(../images/bg_body.gif) no-repeat center top;
+	background-size: 100% 100%;
+	color: #000;
+	font-family: 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+	font-size: 14px;
+	line-height: 1.3;
+}
+
+
+/* # clearfix
+---------------------------------------------------------------------------- */
+
+.clearfix:after {
+	content: "";
+	clear: both;
+	display: block;
+}

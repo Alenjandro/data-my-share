@@ -1,0 +1,316 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# body
+# content
+
+----------------------------------------*/
+
+body {
+	background: #000;
+}
+
+
+/* # content
+---------------------------------------------------------------------------- */
+
+div.block {
+	background: #161616;
+	padding: 9px 7px 10px;
+}
+
+div.block ul.linkList {
+	float: left;
+}
+
+div.block ul.linkList li {
+	background: url(../common/images/bg_main01.gif) repeat-x 0 0;
+	background-size: 10px 35px;
+	float: left;
+	min-width: 100px;
+}
+
+div.block ul.linkList li a {
+	background: url(../common/images/bg_line03.gif) no-repeat 0 0;
+	background-size: 1px 35px;
+	color: #fff;
+	display: block;
+	font-family: 'Hiragino Kaku Gothic Pro','CI',Meiryo,'lr oSVbN',sans-serif;
+	font-size: 15px;
+	padding: 8px 10px 12px;
+	text-align: center;
+}
+
+div.block ul.linkList li:first-child {
+	background: url(../common/images/bg_main02.gif) no-repeat 0 0, url(../common/images/bg_main01.gif) repeat-x 0 0;
+	background-size: 10px 35px;
+}
+
+div.block ul.linkList li:first-child a {
+	background: none;
+}
+
+div.block ul.linkList li:last-child {
+	background: url(../common/images/bg_main03.gif) no-repeat right 0, url(../common/images/bg_main01.gif) repeat-x 0 0;
+}
+
+div.block p.search {
+	float: right;
+	font-family: 'Hiragino Kaku Gothic Pro','CI',Meiryo,'lr oSVbN',sans-serif;
+	font-size: 15px;
+	padding-top: 3px;
+}
+
+div.block p.search span {
+	color: #fff;
+	float: left;
+	padding: 7px 7px 0 0;
+}
+
+div.block p.search input {
+	border: none;
+	border-radius: 12px 0 0 12px;
+	direction: rtl;
+	float: left;
+	text-align: right;
+	padding: 5px 5px 5px 5px;
+	-webkit-appearance: none;
+	width: 80px;
+}
+
+div.block p.search button {
+	background: url(../common/images/bg_main03.gif) no-repeat right 0,url(../common/images/bg_line03.gif) no-repeat 0 0, url(../common/images/bg_main01.gif) repeat-x 0 0;
+	background-size: 10px 35px, 1px 35px;
+	color: #fff;
+	display: block;
+	font-family: 'Hiragino Kaku Gothic Pro','CI',Meiryo,'lr oSVbN',sans-serif;
+	font-size: 15px;
+	float: left;
+	margin-top: -1px;
+	padding: 5px 10px 10px;
+	text-align: center;
+	min-width: 85px;
+}
+
+table th {
+	background: #1a1a1a;
+	border-bottom: 1px solid #3f3f3f;
+	color: #fff;
+	font-family: "HelveticaNeue",Helvetica,Arial,sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 10px 5px 10px;
+	text-align: center;
+	width: 75px;
+}
+
+table tr.team01 th {
+	background: #1a1a1a url(../common/images/bg_th01.gif) repeat-x 0 0;
+}
+
+table tr.team02 th {
+	background: #1a1a1a url(../common/images/bg_th02.gif) repeat-x left bottom;
+	border-bottom: none;
+}
+
+table tr.headList th {
+	background: none;
+	border-bottom: none;
+	border-right: 1px solid #3f3f3f;
+	font-size: 15px;
+	font-weight: normal;
+	font-family: 'Hiragino Kaku Gothic Pro','CI',Meiryo,'lr oSVbN',sans-serif;
+	padding: 0;
+	width: auto;
+}
+
+table tr.headList th:last-child {
+	border-right: none;
+}
+
+table tr.headList th a {
+	background: url(../common/images/bg_line02.gif) no-repeat right top, url(../common/images/bg_main04.gif) repeat-x 0 0;
+	color: #fff;
+	display: block;
+	text-shadow: 0 -1px 1px #000;
+	min-height: 33px;
+	display: box;
+    box-align: center;
+	box-pack: center;
+    display: -moz-box;
+    -moz-box-align: center;
+	-moz-box-pack: center;
+    display: -webkit-box;
+    -webkit-box-align: center;
+	-webkit-box-pack: center;
+	width: 100%;	
+}
+
+table tr.headList th:first-child {
+	background: url(../common/images/bg_line02.gif) no-repeat right top, url(../common/images/bg_main05.gif) repeat-x 0 0;
+	vertical-align: middle;
+}
+
+table tr.headList th:last-child a {
+	background: url(../common/images/bg_main04.gif) repeat-x 0 0;
+}
+
+table tr.headList th.add {
+	font-size: 9px;
+}
+
+table tr.headList th.time {
+	font-size: 11px;
+}
+
+table td {
+	background: #292929;
+	border-bottom: 1px solid #3f3f3f;
+	border-right: 1px solid #3f3f3f;
+	vertical-align: middle;
+	text-align: right;
+}
+
+table tr.team01 td {
+	background: #292929 url(../common/images/bg_td01.gif) repeat-x 0 0;
+}
+
+table tr.team02 td {
+	background: #292929 url(../common/images/bg_td02.gif) repeat-x left bottom;
+	border-bottom: none;
+}
+
+table td:last-child {
+	border-right: none;
+}
+
+table td ul {
+	padding-right: 5px;
+}
+
+table td ul li {
+	display: inline-block;
+	width: auto;
+}
+
+table td ul li img {
+	margin-top: -5px;
+	vertical-align: middle;
+}
+
+div.movieSection {
+	position: relative;
+	overflow: hidden;
+}
+
+p.movieImage img {
+	width: 100%;
+}
+
+div.controlArea {
+	background: url(../common/images/bg_opacity.png) repeat 0 0;
+	position: absolute;
+	left: 0;
+	bottom: 23px;
+	width: 100%;
+	z-index: 2;
+}
+
+ul.time {
+	padding: 20px 28px 0;
+}
+
+ul.time li {
+	color: #fff;
+	display: inline;
+	float: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 19px;
+	width: auto;
+}
+
+ul.time li.progress {
+	background: url(../common/images/bg_opacity02.png) repeat 0 0;
+	border-radius: 6px;
+	display: block;
+	float: none;
+	height: 9px;
+	margin: 9px auto 0;
+	width: 436px;
+}
+
+ul.time li.progress img {
+	vertical-align: top;
+}
+
+ul.time li.currentTime {
+	margin-top: -15px;
+	float: right;
+}
+
+ul.control {
+	clear: both;
+	padding: 0 28px 9px;
+	text-align: center;
+}
+
+ul.control li {
+	display: inline;
+	padding: 0 20px;
+	width: auto;
+}
+
+ul.control li img {
+	vertical-align: middle;
+}
+
+p.arrowButton {
+	background: url(../common/images/bg_line01.gif) no-repeat center top;
+	cursor: pointer;
+	padding-top: 2px;
+	position: relative;
+	z-index: 3;
+}
+
+p.arrowButton a {
+	background: #000 url(../common/images/ico_arrow01.gif) no-repeat center center;
+	background-size: 12px 7px;
+	display: block;
+	height: 24px;
+	padding: 0 28px;
+}
+
+p.arrowButton.active a {
+	background: #000 url(../common/images/ico_arrow02.gif) no-repeat center center;
+	background-size: 12px 7px;
+}
+
+p.arrowButton img {
+	display: none;
+}
+
+div.infoSection {
+	bottom: 0;
+	position: absolute;
+	width: 100%;
+}
+
+div.infoContent {
+	height: 180px;
+	z-index: 10;
+	position: relative;
+}
+
+
+/* # clearfix
+---------------------------------------------------------------------------- */
+
+div.block:after,
+div.block ul.linkList:after,
+ul.time:after {
+	content: "";
+	clear: both;
+	display: block;
+}
