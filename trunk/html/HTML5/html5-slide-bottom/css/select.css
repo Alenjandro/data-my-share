@@ -1,0 +1,119 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# body
+# content
+
+----------------------------------------*/
+
+
+/* # body
+---------------------------------------------------------------------------- */
+
+body {
+	padding: 20px;
+}
+
+
+/* # content
+---------------------------------------------------------------------------- */
+
+ul.tabList {
+	margin: 0 auto 12px;
+	width: 238px;
+}
+
+ul.tabList li {
+	float: left;
+	width: auto;
+}
+
+ul.tabList li a {
+	background: url(../common/images/bg_tab_left.png) no-repeat 0 0;
+	background-size: 119px 35px;
+	color: #fff;
+	display: block;
+	font-size: 12px;
+	padding: 11px 0 10px;
+	text-align: center;
+	width: 119px;
+}
+
+ul.tabList li:last-child a {
+	background: url(../common/images/bg_tab_right.png) no-repeat 0 0;
+	font-family: "HelveticaNeue",Helvetica,Arial,sans-serif;	
+}
+
+ul.selectList {
+	background: #fcfcfc;
+	background: -moz-linear-gradient(top,  #fcfcfc 0%, #ebebeb 17%, #ebebeb 74%, #d0d0d0 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcfcfc), color-stop(17%,#ebebeb), color-stop(74%,#ebebeb), color-stop(100%,#d0d0d0));
+	background: -webkit-linear-gradient(top,  #fcfcfc 0%,#ebebeb 17%,#ebebeb 74%,#d0d0d0 100%);
+	background: -o-linear-gradient(top,  #fcfcfc 0%,#ebebeb 17%,#ebebeb 74%,#d0d0d0 100%);
+	border-radius: 8px;
+}
+
+ul.selectList li {
+	border-bottom: 1px solid #c1c1c1;
+	border-top: 1px solid #fafafa;
+}
+
+ul.selectList li:first-child {
+	border-top: none;
+}
+
+ul.selectList li:last-child {
+	border-bottom: none;
+}
+
+ul.selectList li a {
+	background: url(../common/images/btn_arrow.png) no-repeat 97% center;
+	background-size: 44px 44px;
+	display: block;
+	padding: 10px;
+	text-align: center;
+}
+
+ul.selectList li a span {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+ul.selectList li a span.left {
+	font-size: 22px;
+	text-align: right;
+	width: 40%;
+}
+
+ul.selectList li a span.right {
+	font-size: 24px;
+	text-align: left;
+	width: 40%;
+}
+
+ul.selectList li a span.middle {
+	font-family: 'Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+	font-size: 11px;
+	margin: 0 7px;
+	text-align: center;
+	width: 15%;
+}
+
+ul.selectList li a span.score {
+	display: block;
+	font-size: 34px;
+	font-weight: bold;
+	line-height: 1;
+}
+
+
+/* # clearfix
+---------------------------------------------------------------------------- */
+
+ul.tabList:after {
+	content: "";
+	clear: both;
+	display: block;
+}
