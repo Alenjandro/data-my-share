@@ -1,0 +1,1 @@
+<object width="400" height="265"><param name="movie" value="http://www.youtube.com/v/BMnZna107iE&hl=en" /></param><param name="wmode" value="transparent" /></param><embed src="http://www.youtube.com/v/BMnZna107iE&hl=en" type="application/x-shockwave-flash" wmode="transparent" width="400" height="265"></embed></object>

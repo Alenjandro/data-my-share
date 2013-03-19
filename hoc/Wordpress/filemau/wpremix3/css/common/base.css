@@ -1,0 +1,916 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# General Elements
+# body
+# layout
+# header
+# gNav
+# pageBody
+# content
+# sidebar
+# footer
+# clearfix
+# common classes
+# thickbox
+
+----------------------------------------*/
+
+
+/* # General Elements
+---------------------------------------------------------------------------- */
+
+a {
+	color: #003366;
+	outline: none;
+	text-decoration: underline;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+html.smallview {
+	font-size: 90%;
+}
+
+html.normalview {
+	font-size: 100%;
+}
+
+html.largeview {
+	font-size: 120%;
+}
+
+
+/* # body
+---------------------------------------------------------------------------- */
+
+body {
+	background: url(/wp/wp-content/themes/wpremix3/images/common/bg_body.gif) repeat-x left top;
+	color: #000;
+	font-size: 75%;
+	font-family: "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3";
+	line-height: 1.5;
+}
+
+
+/* # layout
+---------------------------------------------------------------------------- */
+
+div#layout div.topicPath {
+	clear: both;
+	padding: 12px 0 13px 0;
+}
+
+div#layout div.topicPath ul {
+	margin: 0 auto;
+	width: 985px;
+}
+
+div#layout div.topicPath ul li {
+	float: left;
+	display: inline;
+	padding: 0 8px 0 0;
+	width: auto;
+}
+
+div#layout div.topicPath ul li a {
+	background: url(/wp/wp-content/themes/wpremix3/images/common/ico_arrow02.gif) no-repeat right 3px;
+	color: #003399;
+	padding: 0 14px 0 0;
+}
+
+
+/* # header
+---------------------------------------------------------------------------- */
+
+div#header {
+	font-size: 0;
+	height: 69px;
+}
+
+div#header div.headerInner {
+	margin: 0 auto;
+	padding: 21px 0 0 0;
+	width: 985px;
+}
+
+#logo {
+	float: left;
+	display: inline;
+}
+
+div#header div.fontSwitch {
+	float: right;
+	display: inline;
+	width: 301px;
+}
+
+div#header div.fontSwitch dl dd ul li,
+div#header div.fontSwitch dl dd,
+div#header div.fontSwitch dl dt,
+div#header div.fontSwitch dl {
+	float: left;
+	display: inline;
+	width: auto;
+}
+
+div#header div.fontSwitch dl {
+	padding: 2px 0 0 0;
+}
+
+div#header div.fontSwitch dl dt {
+	padding: 11px 4px 0 0;
+}
+
+div#header div.fontSwitch dl dd ul li {
+	padding-left: 3px;
+	text-indent: -9999px;
+}
+
+div#header div.fontSwitch dl dd ul li a {
+	display: block;
+}
+
+div#header div.fontSwitch dl dd ul li#fontSmall {
+	padding-top: 6px;
+}
+
+div#header div.fontSwitch dl dd ul li#fontSmall a {
+	background: url(/wp/wp-content/themes/wpremix3/images/common/btn_small.gif) no-repeat 0 0;
+	height: 18px;
+	width: 19px;
+}
+
+html.smallview div#header div.fontSwitch dl dd ul li#fontSmall a,
+div#header div.fontSwitch dl dd ul li#fontSmall a:hover {
+	background: url(/wp/wp-content/themes/wpremix3/images/common/btn_small_o.gif) no-repeat 0 0;
+}
+
+div#header div.fontSwitch dl dd ul li#fontNormal {
+	padding-top: 3px;
+}
+
+div#header div.fontSwitch dl dd ul li#fontNormal a {
+	background: url(/wp/wp-content/themes/wpremix3/images/common/btn_normal.gif) no-repeat 0 0;
+	height: 21px; 
+	width: 22px;
+}
+
+html.normalview div#header div.fontSwitch dl dd ul li#fontNormal a,
+div#header div.fontSwitch dl dd ul li#fontNormal a:hover {
+	background: url(/wp/wp-content/themes/wpremix3/images/common/btn_normal_o.gif) no-repeat 0 0;
+}
+
+div#header div.fontSwitch dl dd ul li#fontLarge a {
+	background: url(/wp/wp-content/themes/wpremix3/images/common/btn_large.gif) no-repeat 0 0;
+	height: 24px; 
+	width: 25px;
+}
+
+html.largeview div#header div.fontSwitch dl dd ul li#fontLarge a,
+div#header div.fontSwitch dl dd ul li#fontLarge a:hover {
+	background: url(/wp/wp-content/themes/wpremix3/images/common/btn_large_o.gif) no-repeat 0 0;
+}
+
+div#header div.fontSwitch p {
+	float: right;
+	display: inline;
+}
+
+
+/* # gNav
+---------------------------------------------------------------------------- */
+
+div#gNav {
+	clear: both;
+}
+
+div#gNav dl {
+	margin: 0 auto;
+	width: 985px;
+}
+
+div#gNav dl dt {
+	overflow: hidden;
+	position: absolute;
+	text-indent: -9999em;
+}
+
+div#gNav dl dd ul li {
+	float: left;
+	width: auto;
+}
+
+div#gNav dl dd ul li a {
+	display: block;
+}
+
+div#gNav dl dd ul li a:hover {
+	overflow: hidden;
+}
+
+div#gNav dl dd ul li a:hover img {
+	visibility: hidden;
+}
+
+div#gNav dl dd ul li#gNavHome a { background: url(/wp/wp-content/themes/wpremix3/images/common/gnav_home_o.gif) no-repeat left top; }
+div#gNav dl dd ul li#gNavCompany a { background: url(/wp/wp-content/themes/wpremix3/images/common/gnav_company_o.gif) no-repeat left top; }
+div#gNav dl dd ul li#gNavProject a { background: url(/wp/wp-content/themes/wpremix3/images/common/gnav_project_o.gif) no-repeat left top; }
+div#gNav dl dd ul li#gNavRecruit a { background: url(/wp/wp-content/themes/wpremix3/images/common/gnav_recruit_o.gif) no-repeat left top; }
+div#gNav dl dd ul li#gNavInquiry a { background: url(/wp/wp-content/themes/wpremix3/images/common/gnav_inquiry_o.gif) no-repeat left top; }
+
+
+/* # pageBody
+---------------------------------------------------------------------------- */
+
+div#visual {
+	width: 1105px;
+	margin: 0 auto;
+}
+
+/* # pageBody
+---------------------------------------------------------------------------- */
+
+div#pageBody {
+	clear: both;
+	margin: 0 auto;
+	padding: 2px 20px 9px 20px;
+	width: 985px;
+}
+
+div#pageBody p.pageTop {
+	clear: both;
+	padding: 10px 14px 0 0;
+	text-align: right;
+}
+
+* html div#pageBody p.pageTop {
+	display: inline-block;
+}
+
+*:first-child + html div#pageBody p.pageTop {
+	display: inline-block;
+}
+
+
+/* # content
+---------------------------------------------------------------------------- */
+
+div#content {
+	float: left;
+	display: inline;
+	padding: 9px 0 0 1px;
+	width: 668px;
+}
+
+div#content p {
+	margin-bottom: 0;
+}
+
+div#content .bHead {
+	background: url(/wp/wp-content/themes/wpremix3/images/common/bg_bh.gif) repeat-x 0 19px;
+	font-size: 0;
+	height: 42px;
+	padding: 0 0 0 1px;
+}
+
+div#content .mHead {
+	background: url(/wp/wp-content/themes/wpremix3/images/common/bg_mh.gif) repeat-x left bottom;
+	font-size: 0;
+	height: 25px;
+	padding: 20px 0 0 0;
+}
+
+div#content p.headText em {
+	color: #ff0000;
+}
+
+div#content p.head01Text em {
+	color: #ff0000;
+}
+
+
+div#content p.headText a {
+	font-weight: bold;
+}
+
+div#content p.head01Text a {
+	font-weight: bold;
+}
+
+div#content p.headImage {
+	padding: 0 0 6px 0;
+}
+
+
+/* # sidebar
+---------------------------------------------------------------------------- */
+
+div#sidebar {
+	float: right;
+	display: inline;
+	width: 267px;
+}
+
+div#sidebar ul.banner li {
+	padding: 0 0 8px 0;
+}
+
+div#sidebar p.future {
+	padding: 0 0 5px 0;
+}
+
+div#sidebar p.inquiry,
+div#sidebar p.produced {
+	background: url(/wp/wp-content/themes/wpremix3/images/common/bg_dot.gif) repeat-x left top;
+	margin: 8px 0 0 0;
+	padding: 15px 0 0 0;
+}
+
+div#sidebar dl.lNav {
+	padding: 0 0 12px 0;
+}
+
+div#sidebar dl.lNav dd ul li {
+	width: auto;
+}
+
+div#sidebar dl.lNav dd ul li a {
+	display: block;
+}
+
+/*div#sidebar dl.lNav dd ul li a:hover {
+	overflow: hidden;
+}
+
+div#sidebar dl.lNav dd ul li a:hover img {
+	visibility: hidden;
+}
+
+dl.lNav dd ul li#lNavIdeal a { background: url(/wp/wp-content/themes/wpremix3/images/company/lnav_ideal_o.gif) no-repeat left top; }
+dl.lNav dd ul li#lNavMessage a { background: url(/wp/wp-content/themes/wpremix3/images/company/lnav_message_o.gif) no-repeat left top; }
+dl.lNav dd ul li#lNavAbout a { background: url(/wp/wp-content/themes/wpremix3/images/company/lnav_about_o.gif) no-repeat left top; }
+dl.lNav dd ul li#lNavExecutive a { background: url(/wp/wp-content/themes/wpremix3/images/company/lnav_executive_o.gif) no-repeat left top; }
+dl.lNav dd ul li#lNavChart a { background: url(/wp/wp-content/themes/wpremix3/images/company/lnav_chart_o.gif) no-repeat left top; }
+dl.lNav dd ul li#lNavHistory a { background: url(/wp/wp-content/themes/wpremix3/images/company/lnav_history_o.gif) no-repeat left top; }
+dl.lNav dd ul li#lNavLicense a { background: url(/wp/wp-content/themes/wpremix3/images/company/lnav_license_o.gif) no-repeat left top; }
+dl.lNav dd ul li#lNavAccess a { background: url(/wp/wp-content/themes/wpremix3/images/company/lnav_access_o.gif) no-repeat left top; }
+
+dl.lNav dd ul li#lNavIronmaking a { background: url(/wp/wp-content/themes/wpremix3/images/business/lnav_ironmaking_o.gif) no-repeat left top; }
+dl.lNav dd ul li#lNavEnvironment a { background: url(/wp/wp-content/themes/wpremix3/images/business/lnav_environment_o.gif) no-repeat left top; }
+dl.lNav dd ul li#lNavEnergy a { background: url(/wp/wp-content/themes/wpremix3/images/business/lnav_energy_o.gif) no-repeat left top; }
+dl.lNav dd ul li#lNavSimulatation a { background: url(/wp/wp-content/themes/wpremix3/images/business/lnav_simulation_o.gif) no-repeat left top; }
+dl.lNav dd ul li#lNavControl a { background: url(/wp/wp-content/themes/wpremix3/images/business/lnav_control_o.gif) no-repeat left top; }
+dl.lNav dd ul li#lNavConstruction a { background: url(/wp/wp-content/themes/wpremix3/images/business/lnav_construction_o.gif) no-repeat left top; }
+*/
+
+/* # footer
+---------------------------------------------------------------------------- */
+
+div#footer {
+	background: url(/wp/wp-content/themes/wpremix3/images/common/bg_footer.gif) repeat-x left top;
+	height: 40px;
+}
+
+div#footer div.footerInner {
+	margin: 0 auto;
+	padding: 14px 0 0 0;
+	width: 985px;
+}
+
+div#footer div.footerInner ul {
+	float: left;
+	display: inline;
+	margin: 0 0 0 -14px;
+}
+
+* html div#footer div.footerInner ul {
+	position: absolute;
+	z-index: 100;
+}
+
+div#footer div.footerInner ul li {
+	float: left;
+	font-size: 0;
+	display: inline;
+	padding: 0 17px 0 0;
+	width: auto;
+}
+
+div#footer div.footerInner ul li a {
+	background: url(/wp/wp-content/themes/wpremix3/images/common/ico_arrow01.gif) no-repeat 0 2px;
+	display: block;
+	height: 12px;
+	padding: 0 0 0 12px;
+}
+
+div#footer div.footerInner ul li a:hover {
+	background: url(/wp/wp-content/themes/wpremix3/images/common/ico_arrow01_o.gif) no-repeat 0 2px;
+}
+
+div#footer div.footerInner p {
+	float: right;
+	display: inline;
+	padding: 2px 0 0 0;
+}
+
+* html div#footer div.footerInner ul li a {
+	display: inline-block;
+}
+
+
+/* # clearfix
+---------------------------------------------------------------------------- */
+
+#TB_window ul.listImage,
+div#content ul.productList,
+div#content div.listSection ul,
+div#layout div.topicPath ul,
+div#gNav dl dd ul,
+div#pageBody {
+	zoom: 1;
+}
+
+#TB_window ul.listImage:after,
+div#content ul.productList:after,
+div#content div.listSection ul:after,
+div#layout div.topicPath ul:after,
+div#gNav dl dd ul:after,
+div#pageBody:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}
+
+
+/* # common classes
+---------------------------------------------------------------------------- */
+
+div#content div.listSection {
+	background: url(/wp/wp-content/themes/wpremix3/images/common/bg_box_bottom.gif) no-repeat left bottom;
+	padding: 12px 0 9px 0;
+}
+
+div#content div.listSection div.sectionInner {
+	background: url(/wp/wp-content/themes/wpremix3/images/common/bg_box_top.gif) no-repeat left top;
+	padding: 6px 0 0 0;
+}
+
+div#content div.listSection h3 {
+	border-bottom: 1px solid #cecece;
+	line-height: 1;
+	padding: 0 0 6px 1px;
+}
+
+div#content div.listSection h3 a {
+	background: url(/wp/wp-content/themes/wpremix3/images/common/ico_square.gif) no-repeat 0 3px;
+	padding: 0 0 0 12px;
+}
+
+div#content div.listSection ul {
+	border-left: 1px solid #cecece;
+	border-right: 1px solid #cecece;
+	margin: 0 0 -5px 0;
+	padding: 0 0 0 18px;
+}
+
+div#content div.listSection ul li {
+	float: left;
+	display: inline;
+	margin-right: 24px;
+	padding: 12px 0 15px 0;
+	width: 303px;
+}
+
+div#content div.listSection ul li p.detail {
+	padding: 4px 0 0 0;
+}
+
+div#content div.listSection ul li.right {
+	margin: 0;
+}
+
+div#content div.listSection ul li p {
+	font-size: 90%;
+}
+
+div#content div.listSection div.content {
+	padding: 4px 0 0 0;
+}
+
+div#content div.listSection div.content p.image {
+	padding: 2px 0 6px 0;
+}
+
+div#content div.listSection div.content p.image img {
+	border: 1px solid #cecece;
+	padding: 1px;
+}
+
+div#content div.listSection ul.voiceList {
+	padding-bottom: 6px;
+}
+
+div#content div.listSection ul.voiceList li {
+	margin-right: 22px!important;
+	padding-bottom: 5px;
+	min-height: 153px;
+	position: relative;
+}
+
+div#content div.listSection ul.voiceList li.right {
+	margin-right: 0!important;
+}
+
+* html div#content div.listSection ul.voiceList li {
+	height: 153px;
+}
+
+div#content div.listSection ul.voiceList li p.text {
+	bottom: 36px;
+	font-size: 90%;
+	position: absolute;
+	left: 130px;
+}
+
+div#content div.listSection ul.voiceList li p.text span {
+	display: block;
+	font-size: 110%;
+	font-weight: bold;
+	line-height: 1.2;
+}
+
+div#content div.listSection ul.voiceList li p.detail {
+	bottom: 11px;
+	padding: 0!important;
+	position: absolute;
+	left: 129px;
+}
+
+div#content div.contentArea {
+	padding: 19px  0 0 0;
+}
+
+div#content img.new {
+	padding: 2px 7px 0 0;
+	vertical-align: top;	
+}
+
+div#content img.pdf {
+	padding: 0 10px 0 8px;
+}
+
+div#content img.link {
+	vertical-align: middle;
+}
+
+div#content table.styleTable {
+	border-bottom: 1px solid #c3c3c3;
+	width: 100%;
+}
+
+div#content table.styleTable caption {
+	font-weight: bold;
+}
+
+div#content table.styleTable th {
+	background: #e9e9e9;
+	border-top: 1px solid #c3c3c3;
+	padding: 7px 0 4px 7px;
+	vertical-align: top;
+	width: 106px;
+}
+
+div#content table.styleTable td {
+	border-top: 1px solid #c3c3c3;
+	vertical-align: top;
+	padding: 7px 0 4px 14px;
+	width: auto;
+}
+
+
+div#content table.iqfm-table {
+	border-bottom: 1px solid #c3c3c3;
+	width: 100%;
+}
+
+div#content table.iqfm-table caption {
+	font-weight: bold;
+}
+
+div#content table.iqfm-table th {
+	background: #e9e9e9;
+	border-top: 1px solid #c3c3c3;
+	padding: 7px 0 4px 7px;
+	vertical-align: top;
+	width: 106px;
+}
+
+div#content table.iqfm-table td {
+	border-top: 1px solid #c3c3c3;
+	vertical-align: top;
+	padding: 7px 0 4px 14px;
+	width: auto;
+}
+
+
+div#content ul.productList {
+	margin: 0 -38px 0 0;
+	padding: 12px 0 0 0;
+}
+
+div#content ul.productList li {
+	float: left;
+	display: inline;
+	padding: 0 38px 16px 0;
+	position: relative;
+	width: 315px;
+}
+
+div#content ul.productList li h3 {
+	color: #4d4d4d;
+	font-size: 100%;
+	font-weight: bold;
+	height: 17px;
+	padding-bottom: 5px;
+}
+
+div#content ul.productList li h3 span.subTitle {
+	font-size: 90%;
+}
+
+div#content ul.productList li p.detail {
+	bottom: 43px;
+	position: absolute;
+	left: 232px;
+}
+
+div#content div.title {
+	position: relative;
+}
+
+div#content div.title p {
+	position: absolute;
+	right: 0;
+	top: -2px;
+}
+
+* html div#content div.title p {
+	right: -1px;
+}
+
+div#content dl.news {
+	padding: 0 0 19px 0;
+}
+
+div#content dl.news dd {
+	background: url(/wp/wp-content/themes/wpremix3/images/common/bg_dot.gif) repeat-x left bottom;
+	margin: -1.6em 0 0.5em 0;
+	padding: 0 0 0.4em 7.8em;
+}
+
+div#content dl.news dd a {
+	font-weight: bold;
+}
+
+div#content dl.news dd span {
+	font-weight: normal;
+}
+
+div#content div.sectionContent {
+	padding: 27px 0 2px 0;
+}
+
+div#content div.sectionContent h2 {
+	border-bottom: 1px solid #ccc;
+	font-weight: bold;
+	padding: 0 0 1px 0;
+}
+
+div#content div.sectionContent div {
+	padding: 6px 0 0 0;
+}
+
+div#content div.sectionContent div ol {
+	padding: 0 0 0 13px;
+}
+
+div#content div.sectionContent div ol li {
+	padding: 0 0 0 22px;
+	text-indent: -22px;
+}
+
+div#content div.sectionContent div ol li span {
+	padding: 0 9px 0 0;
+}
+
+div#content div.productSection {
+	margin-bottom: -21px;
+	padding: 27px 0 0 0;
+}
+
+div#content div.productLast {
+	margin-bottom: 0;
+}
+
+div#content div.productSection ul.productList {
+	padding: 10px 0 0 0;
+}
+
+/* # thickbox
+---------------------------------------------------------------------------- */
+
+#TB_overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index:0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	filter:alpha(opacity=60);
+	-moz-opacity: 0.6;
+	opacity: 0.6;
+}
+
+#TB_window {
+	position: absolute;
+	background: #fff;
+	z-index: 102;
+	color:#000000;
+	display:none;
+	padding: 9px 10px 5px 10px;
+	top: 0;
+}
+
+#TB_window img {
+	display:block;
+	text-align: center;
+}
+
+#TB_window a img {
+	display: inline;
+} 
+
+#TB_caption, #TB_prev{
+	height: 21px;
+}
+
+#TB_closeWindow, #TB_next{
+	height:21px;
+}
+
+#TB_prev {
+	float: left;
+}
+
+#TB_closeAjaxWindow {
+	position: relative;
+	width: 500px;
+}
+
+#TB_close {
+	position: absolute;
+	top: 0;
+}
+
+#TB_next {
+	float: right;
+}
+
+#TB_closeAjaxWindow img {
+	margin: 0;
+}
+
+#TB_ajaxContent{
+	overflow: auto;
+}
+
+#TB_load{
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 0px;
+	width: 100%;
+	overflow: visible;
+	visibility: visible;
+	display: block;
+	z-index:101;
+}
+
+#TB_loadContent  {
+	margin-left: -125px;
+	position: absolute;
+	top: -50px;
+	left: 50%;
+	width: 250px;
+	height: 100px;
+	visibility: visible;
+}
+
+#TB_SecondLine, #TB_ImageDIV, #TB_ajaxContent {
+	clear: both;
+}
+
+#TB_window h2 {
+	border-bottom: 1px solid #c3c3c3;
+	color: #333333;
+	font-size: 120%;
+	font-weight: bold;
+	height: 19px;
+	margin: 0 0 6px 0;
+	padding: 0 0 0 1px;
+}
+
+#TB_window ul.listImage {
+	width: 631px;
+}
+
+#TB_window ul.listImage li {
+	float: left;
+	display: inline;
+	padding: 0 0 9px 0;
+	width: 311px;
+}
+
+#TB_window ul.listImage li.listImageLast {
+	padding: 0;
+}
+
+#TB_window ul.listImage li.right {
+	float: right;
+}
+
+#TB_window div.text {
+	clear: both;
+}
+#TB_window div.text p {
+	padding: 8px 0 0 0;
+}
+
+#TB_window p.linkPdf {
+	padding: 6px 13px 0 0;
+	float: right;
+}
+
+#TB_window p.linkPdf img {
+	float: left;
+	vertical-align: text-bottom;
+	margin: 0 10px 0 0;
+}
+
+#TB_window div.meltContent p.image {
+	float: left;
+	padding: 12px 0 0 2px;
+}
+
+#TB_window div.meltContent div {
+	float: right;
+}
+
+#TB_window p.noteText {
+	font-weight: bold;
+	padding: 7px 0 0 0;
+}
+
+#TB_window div.meltContent div p.linkPdf {
+	float: none;
+	padding: 24px 0 0 5px;
+}
+
+#TB_window div.ethanolContent p.ethanol {
+	float: left;
+	padding: 1px 0 0 18px;
+}
+
+#TB_window div.ethanolContent p.image {
+	float: left;
+}
+
+#TB_window  div.ethanol {
+	padding: 27px 0 0 0;
+}
+
+#TB_window  div.ethanol p {
+	float: left;
+}
+
+#TB_window  div.ethanol p.linkPdf {
+	float: right;
+}
+
+span.pdfSize {
+	font-size: 90%;
+	font-weight: normal;
+}
+
+span.subTitle {
+	font-size: 80%;
+}

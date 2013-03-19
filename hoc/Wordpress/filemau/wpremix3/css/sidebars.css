@@ -1,0 +1,159 @@
+#sidebar h3 {
+	margin:0 0 12px;
+	padding:0 0 3px;
+	font-size:18px;
+	font-weight:normal;
+}
+#sidebar h5 {
+	margin:0 0 8px;
+	padding:0 0 3px;
+	font-size:18px;
+	font-weight:normal;
+}
+#sidebar .xboxcontent2 h5 {
+	margin:0 0 10px;
+	padding:0;
+	font-size:16px;
+	font-weight:bold;
+}
+#sidebar .sfeatures {
+	overflow:hidden;
+	height:100%;
+	margin-bottom:15px;
+	padding:5px;
+	margin-top:15px;
+}
+#sidebar .sfeatures h5 {
+	font-size:16px;
+	font-weight:bold
+}
+#sidebar .newsletter {
+	overflow:hidden;
+	height:100%;
+	margin-bottom:5px
+}
+#sidebar .nfield {
+	float:left;
+	width:45px;
+	font-weight:bold;
+	padding-top:3px
+}
+#sidebar .ntextfield {
+	width:160px;
+	font-size:11px;
+	padding:3px
+}
+#sidebar p {
+	margin:0 0 8px;
+	padding:0;
+	line-height:18px;
+	font-size:12px
+}
+#sidebar ul {
+	margin:0;
+	padding:0;
+	clear:both;
+}
+#sidebar li {
+	margin:0 0 8px 18px;
+	padding:0 0 5px;
+	line-height:20px;
+	list-style:disc;
+	font:12px Arial, Helvetica, sans-serif;
+}
+#sidebar li ul li {
+	padding:5px 0 0;
+	border:none;
+	line-height:22px
+}
+#sidebar li a {
+	text-decoration:none
+}
+#sidebar li a:hover {
+	text-decoration:underline
+}
+#sidebar .contactform {
+	margin:0;
+	padding:0;
+	min-height:280px;
+	font:normal 11px Arial;
+	width:240px;
+	overflow:hidden
+}
+#sidebar .contactform textarea, #sidebar .contactform input {
+	width:180px;
+	padding:2px
+}
+#sidebar .contactform textarea {
+	height:80px;
+	width:220px
+}
+#sidebar .contactform #contactsubmit {
+	width:100px;
+	cursor:pointer;
+}
+#sidebar .contactleft {
+	float:none;
+	padding:0;
+	margin:0;
+	font-weight:normal
+}
+#sidebar .contactright {
+	margin:0 0 10px;
+	padding:0;
+	font:normal 9px Arial, Helvetica, sans-serif !important;
+	float:none
+}
+#sidebar .subscribe h5 {
+	margin:0;
+	padding:0px 0 5px;
+	font-size:12px;
+	font-weight:bold;
+	border:none
+}
+#sidebar .subscribetextbg {
+	padding:0;
+	margin:0px 0 8px;
+	overflow:hidden
+}
+#sidebar .subscribe_textfield {
+	font:12px Arial, Helvetica, sans-serif;
+	margin:2px 0 0 2px;
+	padding:2px;
+	width:162px;
+	float:left
+}
+#sidebar .subscribe {
+	padding:10px 5px 5px;
+	overflow:hidden;
+	height:100%;
+	margin-bottom:11px
+}
+#blog_sidebar .subscribe h2 {
+	background:none;
+	border-top:none;
+	padding-top:0
+}
+.subscribe_b {
+	border:none;
+	margin-top:1px;
+	float:right
+}
+#sidebar p.i_email {
+	padding-left:28px
+}
+#sidebar p.i_rss {
+	padding-left:28px
+}
+#sidebar .ads {
+	margin-bottom:8px
+}
+#sidebar .testimonials, #r_sidebar .testimonials {
+	padding:0 0 10px 20px;
+	font:16px Georgia, "Times New Roman", Times, serif;
+	margin-bottom:18px;
+	line-height:20px;
+}
+.clientname {
+	float:right; font-size:12px;
+}

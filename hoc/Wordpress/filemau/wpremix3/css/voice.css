@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# gNav
+# content
+
+----------------------------------------*/
+
+
+/* # gNav
+---------------------------------------------------------------------------- */
+
+div#gNav dl dd ul li#gNavRecruit a img {
+	visibility: hidden;
+}
+
+
+/* # content
+---------------------------------------------------------------------------- */
+
+div#content div.introduce {
+	background: url(/wp/wp-content/themes/wpremix3/images/recruit/message/bg_introduce.gif) no-repeat left top;
+	height: 133px;
+	margin: 8px 0 28px 0;
+	padding: 28px 19px 18px 19px;
+	position: relative;
+}
+
+div#content div.voiceList {
+	padding: 4px 0 0 0;
+}
+
+div#content div.introduce p.photo img {
+	border: 1px solid #ccc;
+	padding: 1px;
+}	
+
+div#content div.introduce p.textLast,
+div#content div.introduce p.textOther,
+div#content div.introduce p.text {
+	bottom: 37px;
+	left: 230px;
+	position: absolute;
+	width: 385px;
+}
+
+div#content div.introduce p.textOther {
+	bottom: 28px;
+}
+
+div#content div.introduce p.textLast {
+	bottom: 42px;
+}
+
+div#content div.introduce p.textLast span,
+div#content div.introduce p.textOther span,
+div#content div.introduce p.text span {
+	border-top: 1px solid #ccc;
+	display: block;
+	font-size: 160%;
+	font-weight: bold;
+	margin-top: 4px;
+	padding-top : 5px;
+}
+
+div#content div.voiceDetail div.sectionInner {
+	padding: 0 0 36px 0;
+}
+
+div#content div.voiceDetail div.sectionInner h3 {
+	float: left;
+	display: inline;
+	font-size: 0;
+	padding: 0 0 0 0;
+	width: 165px;
+}
+
+div#content div.voiceDetail div.sectionInner p {
+	border-left: 1px solid #ccc;
+	float: left;
+	display: inline;
+	padding: 0 0 0 14px;
+	text-align: justify;
+	width: 487px;
+}
+
+
+/* # clearfix
+---------------------------------------------------------------------------- */
+
+div#content div.voiceDetail div.sectionInner {
+	zoom: 1;
+}
+
+div#content div.voiceDetail div.sectionInner:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}

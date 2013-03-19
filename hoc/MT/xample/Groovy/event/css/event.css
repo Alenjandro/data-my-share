@@ -1,0 +1,167 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# General Elements
+# gNav
+# content
+# clearfix
+# common classes
+
+----------------------------------------*/
+
+
+/* # General Elements
+---------------------------------------------------------------------------- */
+
+
+
+/* # content
+---------------------------------------------------------------------------- */
+
+div#content div.section {
+	margin-bottom: 30px;
+}
+
+div#content .section p.photo {
+	float: left;
+	margin: 0 20px 6px 0;
+	width: 144px;
+}
+
+div#content .section p.photo img {
+	background: url(../../common/images/bg_dot01.gif) repeat 0 0;
+	padding: 3px;
+}
+
+div#content .section div.sectionRight {
+	float: left;
+	width: 503px;
+}
+
+div#content div.infoSection {
+	padding: 0;
+}
+
+div#content .section div.sectionBlock dl,
+div#content .section div.sectionRight dl {
+	padding: 13px 0 0 0;
+}
+
+div#content .section div.sectionBlock dl dt,
+div#content .section div.sectionRight dl dt {
+	color: #b95443;
+}
+
+div#content .section div.sectionBlock dl dd,
+div#content .section div.sectionRight dl dd {
+	background: url(../../common/images/bg_dot06.gif) repeat-x left bottom;
+	margin: -2.5em 0 0.5em 0;
+	padding: 1em 0 0.5em 7em;
+}
+
+div#content .section div.sectionBlock dl dd.listLast,
+div#content .section div.sectionRight dl dd.listLast {
+	background: none;
+}
+
+div#content .section div.sectionBlock dl dd.listLast a,
+div#content .section div.sectionRight dl dd.listLast a {
+	text-align: right;
+	margin-left: auto;
+	width: 89px;
+}
+
+div#content .section div.sectionBlock dl dd.listLast p,
+div#content .section div.sectionRight dl dd.listLast p {
+	float: left;
+}
+
+div#content .section div.sectionBlock dl dd.listLast p.map,
+div#content .section div.sectionRight dl dd.listLast p.map {
+	float: right;
+}
+
+div#content .section p.sectionContent {
+	clear: both;
+	padding: 10px 0 0 2px;
+}
+
+.pageLink {
+	padding: 22px 0 16px 0;
+}
+
+div#content div.section {
+	margin-bottom: 0;
+}
+
+div#content div.sectionInner div.sectionInfo,
+div#content div.sectionInnerLast div.sectionInfo {
+	clear: both;
+	padding: 27px 0 0 0;
+}
+
+div#content div.sectionInner div.sectionInfo p.title,
+div#content div.sectionInnerLast div.sectionInfo p.title {
+	color: #b95443;
+	padding: 4px 0 11px 0;
+	font-weight: bold;
+}
+
+/*p.detailImg {
+	float: right;
+	margin-top: -26px;
+	padding: 0 0 10px 20px;
+}
+
+p.detailImg img {
+	background: url(../../common/images/bg_dot01.gif) repeat left top;
+	padding: 3px;
+}*/
+
+div#content div.sectionInfo p.entryBody img {
+	background: url(../../common/images/bg_dot01.gif) repeat left top;
+	padding: 3px;
+}
+
+p.inquiry {
+	background: url(../../common/images/bg_dash.gif) repeat-x left top;
+	margin: 32px 0 0 0;
+	padding-top: 31px;
+	text-align: center;
+}
+
+ul.link {
+	margin: 50px 0 7px 0;
+}
+
+div#sidebar div.section {
+	margin: 19px 0 0 0;
+}
+
+
+/* # clearfix
+---------------------------------------------------------------------------- */
+
+div#content .section,
+div#content .section div.sectionBlock dl dd.listLast,
+div#content .section div.sectionRight dl dd.listLast {
+	zoom: 1;
+}
+
+div#content .section:after,
+div#content .section div.sectionBlock dl dd.listLast:after,
+div#content .section div.sectionRight dl dd.listLast:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}
+
+
+/* # common classes
+---------------------------------------------------------------------------- */
+

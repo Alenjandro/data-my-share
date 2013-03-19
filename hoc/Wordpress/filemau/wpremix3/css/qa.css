@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# gNav
+# content
+
+----------------------------------------*/
+
+
+/* # gNav
+---------------------------------------------------------------------------- */
+div#gNav dl dd ul li#gNavRecruit a img {
+	visibility: hidden;
+}
+
+/* # content
+---------------------------------------------------------------------------- */
+
+div#content div.contentArea {
+	padding: 4px 0 0 0;
+}
+
+div#content div.contentArea dl {
+	background: url(/wp/wp-content/themes/wpremix3/images/common/bg_dash.gif) repeat-x left top;
+	margin-top: 15px;
+	padding: 9px 0 0 0;
+}
+
+div#content div.contentArea dl dt {
+	background: url(/wp/wp-content/themes/wpremix3/images/recruit/qa/ico_q.gif) no-repeat 8px top;
+	font-weight: bold;
+	padding: 4px 0 5px 39px;
+}
+
+div#content div.contentArea dl dd {
+	background: url(/wp/wp-content/themes/wpremix3/images/common/bg_dash.gif) repeat-x left bottom;
+	margin-bottom: 8px;
+	padding: 3px 0 6px 8px;
+}
+
+div#content div.contentArea dl dd p {
+	background: url(/wp/wp-content/themes/wpremix3/images/recruit/qa/ico_a.gif) no-repeat 0 0;
+	padding: 4px 0 5px 33px;
+}
+
+div#content div.contentArea dl dd p a {
+	color: #003399;
+	font-weight: bold;
+}

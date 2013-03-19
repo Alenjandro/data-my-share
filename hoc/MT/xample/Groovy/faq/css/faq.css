@@ -1,0 +1,276 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+# General Elements
+# content
+# clearfix
+
+/* # General Elements
+---------------------------------------------------------------------------- */
+
+div#gNav dl dd ul li#gNavFaq a img {
+	visibility: hidden;
+}
+
+div#gNav dl dd ul li#gNavFaq  a {
+	background: url(../../common/images/gnav_faq_s.gif) no-repeat 0 0;
+}
+
+/* # content
+---------------------------------------------------------------------------- */
+
+div#content div.section dl.faqSection {
+	padding-top: 1px;
+}
+
+div#content div.section dl.faqSection dt.faqTitle {
+	background: #eef3e0 url(../images/ico_q.gif) no-repeat 15px 6px;
+	border-top: 3px solid #8dac30;
+	color: #76941d;
+	font-size: 110%;
+	font-weight: bold;
+	line-height: 1.3;
+	padding: 0 20px 0 70px;
+}
+
+* html div#content div.section dl.faqSection dt.faqTitle {
+	background-position: 15px 9px;
+	padding: 0 20px 7px 70px;
+}
+
+*:first-child + html div#content div.section dl.faqSection dt.faqTitle {
+	background-position: 15px 9px;
+	padding: 0 20px 3px 70px;
+}
+
+div#content div.section dl.faqSection dt.faqTitle table td {
+	height: 53px;
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+* html div#content div.section dl.faqSection dt.faqTitle table td {
+	height: 41px;
+	padding-top: 5px;
+}
+
+*:first-child + html div#content div.section dl.faqSection dt.faqTitle table td {
+	height: 48px;
+	padding-top: 2px;
+}
+
+div#content div.section dl.faqSection dd {
+	background: url(../images/ico_a.gif) no-repeat 15px 24px;
+	padding: 26px 0 65px 70px;
+}
+
+div#content div.section dl.faqSection dd.faqLast {
+	padding-bottom: 0;
+}
+
+div#content div.section dl.faqSection dd p.faqTitle {
+	font-weight: bold;
+	padding: 0 0 12px 0;
+}
+
+div#content div.section dl.faqSection dd dl dt {
+	background: url(../../common/images/ico_square.gif) no-repeat left center;
+	border: none;
+	color: #76941d;
+	font-weight: bold;
+	margin: 4px 0 6px 0;
+	min-height: 0;
+	padding: 0 0 0 13px;
+}
+
+* html div#content div.section dl.faqSection dd dl dt {
+	height: auto;
+}
+
+div#content div.section dl.faqSection dd dl dd {
+	background: none;
+	padding: 0 0 25px 0;
+}
+
+div#content div.section dl.faqSection dd dl dd.last {
+	padding-bottom: 0;
+}
+
+div#content div.section dl.faqSection dd dl dd table {
+	width: 100%;
+}
+
+div#content div.section dl.faqSection dd dl dd table tr th {
+	background: #98b444;
+	border-bottom: 1px solid #7f9b2b;
+	border-top: 1px solid #7f9b2b;
+	color: #fff;
+	text-align: center;
+	font-weight: bold;
+	padding: 7px 5px 4px 5px;
+	width: 215px;
+}
+
+div#content div.section dl.faqSection dd dl dd table tr th.sizeM {
+	border-left: 1px solid #7f9b2b;
+	border-right: 1px solid #7f9b2b;
+	background: #fafbf6;
+	color: #76941d;
+	width: auto;
+}
+
+div#content div.section dl.faqSection dd dl dd table.styleTable  tr th,
+div#content div.section dl.faqSection dd dl dd table tr th.sizeB {
+	border-left: 1px solid #7f9b2b;
+	border-right: 1px solid #7f9b2b;
+	color: #76941d;
+	width: 214px;
+}
+
+div#content div.section dl.faqSection dd dl dd table tr th.sizeB {
+	color: #fff;
+}
+
+div#content div.section dl.faqSection dd dl dd table tr td {
+	text-align: center;
+	padding: 7px 5px 4px 5px;
+}
+
+div#content div.section dl.faqSection dd dl dd table tr td {
+	width: auto;
+}
+
+div#content div.section dl.faqSection dd dl dd table.styleTale tr td {
+	width: 214px;
+}
+
+div#content div.section dl.faqSection dd dl dd table.styleTale tr td.sizeSs {
+	width: auto;
+}
+
+div#content div.section dl.faqSection dd dl dd table.styleTale tr th.sizeSs {
+	width: auto;
+}
+
+p.note {
+	font-size: 80%;
+	padding: 5px 0 26px 0;
+}
+
+div#content div.section dl.faqSection dd dl dd table tr.total td {
+	background: #eef3e0;
+	border-bottom: 1px solid #7f9b2b;
+	border-top: 1px solid #7f9b2b;
+	color: #76941d;
+	font-weight: bold;
+}
+
+div#content div.section dl.faqSection dd dl dd table.styleTale tr td.sizeB {
+	border-left: 1px solid #7f9b2b;
+	border-right: 1px solid #7f9b2b;
+}
+
+div#content div.section dl.faqSection dd dl dd table.styleTale tr.total td.sizeB {
+	border: 1px solid #7f9b2b;
+}
+
+
+div#content div.section dl.faqSection dd dl dd table tr td.price {
+	background: url(../images/bg_dash.gif) repeat-x left bottom;
+}
+
+div#content div.section dl.faqSection dd dl dd table tr td.sizeM {
+	background: #fafbf6;
+	border: 1px solid #7f9b2b;
+	color: #76941d;
+}
+
+div#content div.section dl.faqSection dd dl.faqContent {
+	padding: 26px 0 0 0;
+}
+
+div#content div.section p.noteText {
+	background: url(../images/bg_dash.gif) repeat-x left bottom;
+	color: #000;
+	font-weight: bold;
+	font-size: 150%;
+	margin-bottom: 8px;
+	padding: 0 0 6px 0;
+}
+
+div#content div.section p.noteText span {
+	color: #cb7564;
+	padding: 0 0 0 9px;
+}
+
+div#content div.section ul.faqLink {
+	padding: 0 0 16px 0;
+}
+
+div#content div.section ul.faqLinkContent {
+	padding: 12px 0 7px 0;
+}
+
+div#content div.section ul.faqLink li {
+	float: left;
+	padding: 0 19px 0 0;
+	width: auto;
+}
+
+div#content div.section ul.faqLink li a {
+	color: #000;
+}
+
+div#content div.section ul.faqLink li.sizeS {
+	background: url(../../common/images/ico_arrow09.gif) no-repeat left 2px;
+	font-weight: bold;
+	padding: 0 0 0 22px;
+}
+
+div#content div.section div.linkDetail {
+	background: url(../../common/images/bg_dot01.gif) repeat left top;
+	padding: 3px;
+	clear: both;
+	margin-top: 17px;
+}
+
+div#content div.section div.linkDetail div {
+	background: #fff;
+	padding: 8px 15px 8px 15px;
+}
+
+
+div#content div.section div.linkDetail div p {
+	float: right;
+}
+
+div#content div.section div.linkDetail div p.text {
+	font-size: 80%;
+	float: left;
+	width:480px;
+}
+
+
+div#content div.section div.linkDetail div p.textWeight {
+	font-weight: bold;
+}
+
+
+/* # clearfix
+---------------------------------------------------------------------------- */
+
+div#content div.section ul.faqLink,
+div#content div.section div.linkDetail div {
+	zoom: 1;
+}
+
+div#content div.section ul.faqLink:after,
+div#content div.section div.linkDetail div:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}

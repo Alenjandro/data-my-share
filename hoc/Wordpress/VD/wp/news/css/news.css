@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# gNav
+# content
+# clearfix
+
+----------------------------------------*/
+
+
+/* # gNav
+---------------------------------------------------------------------------- */
+
+div#gNav dl dd ul li#gNavNews a img {
+	visibility: hidden;
+}
+
+
+/* # content
+---------------------------------------------------------------------------- */
+
+div#content {
+	margin-bottom: 8px;
+}
+
+div#content div.section h2 {
+	margin: -15px 0 0 0;
+	position: relative;
+	z-index: 10;
+}
+
+div#content div.section div.sectionInner {
+	margin-left: 17px;
+	padding: 10px 0 0 0;
+	width: 500px;
+}
+
+div#content div.section div.sectionInner h3 {
+	background: url(../images/bg_mh.gif) no-repeat left top;
+	color: #333;
+	display: block;
+	font-size: 130%;
+	font-weight: bold;
+	padding: 13px 0 0 23px;
+	width: 477px;
+}
+
+div#content div.section div.sectionInner div.info {
+	border: 1px solid #999;
+	border-top: none;
+	margin-top: -3px;
+	padding: 6px 15px 13px 11px;
+	width: 472px;
+}
+
+div#content div.section div.sectionInner div.info dl dt {
+	font-size: 120%;
+}
+
+div#content div.section div.sectionInner div.info dl dd {
+	background: url(../images/bg_line.gif) no-repeat 0 6px;
+	margin: -1.8em 0 0 5.8em;
+	padding: 0 0 0 0.75em;
+}
+
+div#content div.section div.sectionInner div.info dl dd p {
+	float: left;
+	display: inline;
+	padding: 2px 7px 0 0;
+	width: auto;
+}
+
+div#content div.section div.sectionInner div.info dl dd ul {
+	float: left;
+}
+
+div#content div.section div.sectionInner div.info dl dd ul li {
+	display: inline;
+	width: auto;
+}
+
+* html div#content div.section div.sectionInner div.info dl dd ul li img {
+	padding-top: 3px;
+}
+
+*:first-child + html div#content div.section div.sectionInner div.info dl dd ul li img {
+	padding-top: 2px;
+}
+
+div#content div.section div.sectionInner div.info p {
+	clear: both;
+	padding: 11px 0 0 0;
+	margin-top: 0;
+}
+
+p img.aligncenter {
+	display: block;
+	margin:0 auto;
+}
+
+.alignright {
+	float: right;
+}
+
+.alignleft {
+	float: left;
+}
+
+
+/* # clearfix
+---------------------------------------------------------------------------- */
+
+div#content div.section div.sectionInner div.info dl dd,
+div#content div.section div.sectionInner div.info dl dd ul,
+div#content div.section div.sectionInner div.info p {
+	zoom: 1;
+}
+
+div#content div.section div.sectionInner div.info dl dd:after,
+div#content div.section div.sectionInner div.info dl dd ul:after,
+div#content div.section div.sectionInner div.info p:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}

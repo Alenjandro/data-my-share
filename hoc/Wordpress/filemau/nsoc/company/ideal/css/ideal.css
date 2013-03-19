@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# gNav
+# content
+# sidebar
+
+----------------------------------------*/
+
+/* # gNav
+---------------------------------------------------------------------------- */
+
+div#gNav dl dd ul li#gNavCompany a img {
+	visibility: hidden;
+}
+
+
+/* # content
+---------------------------------------------------------------------------- */
+
+div#content div.ideal h3 {
+	padding: 21px 28px 18px 0;
+	text-align: center;
+}
+
+
+/* # sidebar
+---------------------------------------------------------------------------- */
+
+div#lNav ul li#ideal a {
+	background: url(../../images/lnav_ideal_o.gif) no-repeat left top; 
+	display: block;
+}
+
+div#lNav ul li#ideal a img {
+	visibility: hidden;
+}

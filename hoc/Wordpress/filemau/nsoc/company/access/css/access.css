@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# gNav
+# content
+# sidebar
+# clearfix
+
+----------------------------------------*/
+
+/* # gNav
+---------------------------------------------------------------------------- */
+
+div#gNav dl dd ul li#gNavCompany a img {
+	visibility: hidden;
+}
+
+
+/* # content
+---------------------------------------------------------------------------- */
+
+div#content ul.accessList {
+	margin-right: -18px;
+	padding: 10px 0 0 0;
+}
+
+div#content ul.accessList li {
+	display: inline;
+	float: left;
+	padding-right: 18px;
+	width: 324px;
+}
+
+div#content ul.accessList li img {
+	margin-bottom: 6px;
+}
+
+div#content ul.accessList li div p {	
+	float: left;
+}
+
+div#content ul.accessList li p.accessText {
+	padding-left: 11px;
+	width: 260px;
+}
+
+
+/* # sidebar
+---------------------------------------------------------------------------- */
+
+div#lNav ul li#access a {
+	background: url(../../images/lnav_access_o.gif) no-repeat left top; 
+	display: block;
+}
+
+div#lNav ul li#access a img {
+	visibility: hidden;
+}
+
+
+/* # clearfix
+---------------------------------------------------------------------------- */
+
+div#content ul.accessList li div,
+div#content ul.accessList {
+	zoom: 1;
+}
+
+div#content ul.accessList li div:after,
+div#content ul.accessList:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}

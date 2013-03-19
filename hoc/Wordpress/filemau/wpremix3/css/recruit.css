@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# gNav
+# content
+# clearfix
+
+----------------------------------------*/
+
+
+/* # gNav
+---------------------------------------------------------------------------- */
+
+div#gNav dl dd ul li#gNavRecruit a img {
+	visibility: hidden;
+}
+
+
+/* # content
+---------------------------------------------------------------------------- */
+
+div#content div.recruitSection {
+	padding: 20px 0 0 0;
+}
+
+
+div#content dl.news {
+	padding: 12px 0 19px 0;
+}
+
+
+
+/* # clearfix
+---------------------------------------------------------------------------- */
+
+div#content div.project ul {
+	zoom: 1;
+}
+
+div#content div.project ul:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}

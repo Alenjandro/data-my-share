@@ -1,0 +1,25 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<circle>
+	<title_belt>swf/pics/title_belt.png</title_belt>
+	<title_text>swf/pics/title_text.png</title_text>
+	<circle_images>
+		<image>swf/pics/circle_a.png</image>
+		<image>swf/pics/circle_b.png</image>
+		<image>swf/pics/circle_c.png</image>
+		<image>swf/pics/circle_d.png</image>
+		<image>swf/pics/circle_e.png</image>
+		<image>swf/pics/circle_f.png</image>
+		<image>swf/pics/circle_g.png</image>
+		<image>swf/pics/circle_h.png</image>
+		<image>swf/pics/circle_i.png</image>
+		<image>swf/pics/circle_j.png</image>
+		<image>swf/pics/circle_k.png</image>
+		<image>swf/pics/circle_l.png</image>
+		<image>swf/pics/circle_m.png</image>
+		<image>swf/pics/circle_n.png</image>
+		<image>swf/pics/circle_o.png</image>
+		<image>swf/pics/circle_p.png</image>
+		<image>swf/pics/circle_q.png</image>
+		<image>swf/pics/circle_r.png</image>
+	</circle_images>
+</circle>

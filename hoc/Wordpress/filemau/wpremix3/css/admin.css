@@ -1,0 +1,259 @@
+.inputline {
+	clear:both;
+	font-size:11px;
+	margin:1px auto;
+	overflow:hidden;
+	width:100%;
+	padding:2px;
+}
+
+.inputtitle {
+	float:left;
+	width:98%;
+	padding:3px 5px;
+	font-weight:bold;
+	font-size:12px;
+	background:#EAF3FA;
+	border:1px solid #E1E1E1;
+    -moz-border-radius :6px;
+    -webkit-border-radius: 6px;
+    -khtml-border-radius: 6px;
+    border-radius: 6px;
+}
+
+.inputtext {
+	float:left;
+	margin-right:10px;
+	padding-top:3px;
+	text-align:right;
+	width:25%;
+}
+
+.inputvalue {
+	float:left;
+	position:relative;
+	width:70%;
+}
+
+.inputvalue input, .inputvalue select {
+	border:1px solid #E1E1E1;
+	padding:2px 3px 3px;
+	min-width:180px;
+}
+
+.inputvalue input.large {
+	width:350px;
+}
+
+.inputvalue a {
+	padding:1px 3px;
+	background:#D54E21;
+	font-family:serif;
+	font-weight:bold;
+	text-decoration:none;
+	color:#FFF;
+    -moz-border-radius-bottomleft: 6px;
+    -moz-border-radius-bottomright: 6px;
+    -webkit-border-bottom-right-radius: 6px;
+    -webkit-border-bottom-left-radius: 6px;
+    -khtml-border-bottom-right-radius: 6px;
+    -khtml-border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.inputsubmit {
+	float:left;
+	width:65%;
+}
+
+.inputsubmitr {
+	float:right;
+	width:30%;
+}
+
+.inputlinegap {
+	height:10px;
+}
+
+.inputlinehr {
+	background:#F1F3F5 none repeat scroll 0 0;
+	clear:both;
+	height:2px;
+	margin:12px 5%;
+}
+
+.helpbox {
+	display:none;
+	background:#FFE095 none repeat scroll 0 0;
+	color:#645226;
+	font-size:0.8em;
+	margin:4px 4px 4px 1px;
+	padding:4px;
+	border:1px solid #645226;
+    -moz-border-radius : 3px;
+    -webkit-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    border-radius: 3px;
+}
+
+/* Header Option */
+#wpr_add_link {
+	width:50%;
+	margin-left:2px;
+}
+#help_wpr_add_link {
+	width:50%;
+	margin-left:4px;
+}
+.addlink {
+	overflow:auto;
+}
+.addlink label {
+	clear:left;
+	float:left;
+	width:50px;
+	margin-right:10px;
+	padding-top:3px;
+	text-align:right;
+}
+.addlink input {
+	float:left;
+}
+.addlink .button {
+	margin-left:20px;
+	text-align:center;
+}
+.addlink #link_title {
+	width:200px;
+}
+.addlink #link_url {
+	width:275px;
+}
+
+#custom_link_list {
+	padding:5px;
+}
+
+#custom_link_list li {
+	background:transparent url(../images/link.png) no-repeat;
+	padding-left:20px;
+}
+
+#custom_link_list li img {
+	cursor:pointer;
+}
+.inputimagebox {
+	clear:both;
+	margin:0 auto;
+	border: 1px dashed #CCCCCC;
+	padding:4px;
+	width:98%;
+}
+.inputimagebox img {
+	text-align:center;
+}
+
+/* SEO Options tab */
+.tagsbox { margin-top:4px; font-size:0.8em; background:#ffe095; padding:4px; color:#645226 }
+
+
+/*--taber --------------------------------------------------- -*/
+.tabberlive .tabbertabhide {
+	display:none;
+}
+/*--------------------------------------------------
+  .tabber = before the tabber interface is set up
+  .tabberlive = after the tabber interface is set up
+  --------------------------------------------------*/
+.tabber {
+	clear:both;
+}
+.tabberlive {
+	/* margin-top:1em;*/
+ margin-bottom: 10px;
+}
+/*--------------------------------------------------
+  ul.tabbernav = the tab navigation list
+  li.tabberactive = the active tab
+  --------------------------------------------------*/
+ul.tabbernav {
+	margin:0;
+	padding: 3px 0 0;
+	font: bold 11px Arial, Helvetica, sans-serif;
+ 	border-bottom: 1px solid #e5e5e5;
+}
+ul.tabbernav li {
+	list-style: none;
+	margin: 0;
+	display: inline;
+}
+ul.tabbernav li a {
+	padding: 5px 10px;
+	margin:0 ;
+	line-height:25px;
+	margin-left: 3px;
+	text-decoration: none;
+}
+ul.tabbernav li a:link {
+	color: #7c7c7c;
+}
+ul.tabbernav li a:visited {
+	color: #667;
+}
+ul.tabbernav li a:hover {
+	color: #000;
+	border-color: #e5e5e5;
+}
+ul.tabbernav li a { margin-left:3px; font-weight:bold; font-size:12px;}
+ul.tabbernav li.tabberactive a {
+	background: #3C6B95;
+	color:#FFF;
+	border: 1px solid #e5e5e5;
+	border-bottom: 2px solid #F1F1F1;
+    -moz-border-radius-topleft :6px;
+    -moz-border-radius-topright: 6px;
+    -webkit-border-top-right-radius: 6px;
+    -webkit-border-top-left-radius: 6px;
+    -khtml-border-top-right-radius: 6px;
+    -khtml-border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+}
+ul.tabbernav li.tabberactive a:hover {
+	color: #000;
+	background: #fff;
+	border-bottom: 1px solid #fff;
+}
+/*--------------------------------------------------
+  .tabbertab = the tab content
+  Add style only after the tabber interface is set up (.tabberlive)
+  --------------------------------------------------*/
+.tabberlive .tabbertab {
+	padding:5px 10px;
+	border-top:0;
+	margin-top:-18px;
+	border-left:1px solid #e5e5e5;
+	border-right:1px solid #e5e5e5;
+	border-bottom:1px solid #e5e5e5;
+	/* If you don't want the tab size changing whenever a tab is changed
+    you can set a fixed height */
+}
+/* If desired, hide the heading since a heading is provided by the tab */
+
+.tabberlive .tabbertab { margin-top:0px;}
+.tabberlive .tabbertab h2 {
+	display:none;
+}
+.tabberlive .tabbertab h3 {
+	display:none;
+}
+/* Example of using an ID to set different styles for the tabs on the page */
+.tabberlive#tablog_ {
+}
+.tabberlive#tab2 {
+}
+.tabberlive#tab2 .tabbertab {
+	height:150px;
+	overflow:hidden;
+}

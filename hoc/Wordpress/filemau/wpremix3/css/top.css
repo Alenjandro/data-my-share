@@ -1,0 +1,248 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# gNav
+# visual
+# content
+# clearfix
+
+----------------------------------------*/
+
+/* # gNav
+---------------------------------------------------------------------------- */
+
+div#gNav dl dd ul li#gNavHome a img {
+	visibility: hidden;
+}
+
+
+
+/* # visual
+---------------------------------------------------------------------------- */
+
+div#visual {
+	height: 373px;
+	position: relative;
+}
+
+div#visual #visualFlash {
+	position: relative;
+	z-index: 100;
+}
+
+div#visual p.visualImg {
+	left: 0;
+	position: absolute;
+	top: 0;
+}
+
+div#visual p.adobe {
+	right: 324px;
+	position: absolute;
+	top: 195px;
+	z-index: 50;
+}
+
+div#visual p {
+	text-align: center;
+}
+
+
+/* # content
+---------------------------------------------------------------------------- */
+
+div#content div.section {
+	clear: both;
+}
+
+div#content div.section div.title {
+	position: relative;
+}
+
+div#content div.section div.title p {
+	position: absolute;
+	right: 69px;
+	top: -2px;
+}
+
+div#content div.section div.title p.infoProject {
+	right: 0;
+	top: -2px;
+}
+
+div#content div.section div.title p.rss {
+	right: 0;
+	top: -2px;
+}
+
+* html div#content div.section div.title p.rss {
+	right: -1px;
+}
+
+div#content div.section dl.news {
+	padding: 12px 0 19px 0;
+}
+
+div#content div.section dl.news dt {
+}
+
+div#content div.section dl.news dd {
+	background: url(../images/common/bg_dot01.gif) repeat-x left bottom;
+	margin: -1.6em 0 0.5em 0;
+	padding: 0 0 0.4em 7.8em;
+}
+
+div#content div.section dl.news dd img.new {
+	padding: 2px 7px 0 0;
+	vertical-align: top;	
+}
+
+div#content div.section img.pdf {
+	padding: 0 10px 0 8px;
+}
+
+div#content div.section img.link {
+	vertical-align: middle;
+}
+
+div#content div.section dl.news dd a {
+	font-weight: bold;
+}
+
+div#content div.section dl.news dd span {
+	font-weight: normal;
+}
+
+div#content div.project {
+	background: url(../images/top/bg_project_bottom.gif) no-repeat left bottom;
+	padding: 12px 0 9px 0;
+}
+
+div#content div.projectInner {
+	background: url(../images/top/bg_project_top.gif) no-repeat left top;
+	padding: 6px 0 0 0;
+}
+
+div#content div.project h3 {
+	border-bottom: 1px solid #cecece;
+	line-height: 1;
+	padding: 0 0 6px 1px;
+}
+
+div#content div.project h3 a {
+	background: url(../images/common/ico_square.gif) no-repeat 0 3px;
+	padding: 0 0 0 12px;
+}
+
+div#content div.project ul {
+	border-left: 1px solid #cecece;
+	border-right: 1px solid #cecece;
+	margin: 0 0 -5px 0;
+	padding: 0 0 0 18px;
+}
+
+div#content div.project ul li {
+	float: left;
+	display: inline;
+	margin-right: 24px;
+	padding: 12px 0 15px 0;
+	width: 303px;
+}
+
+div#content div.project ul li.right {
+	margin: 0;
+}
+
+div#content div.project ul li p {
+	font-size: 90%;
+}
+
+div#content div.project ul li p.cateText {
+	min-height: 65px;
+}
+
+* html div#content div.project ul li p.cateText {
+	height: 65px;
+}
+
+div#content div.project ul li p.cateText02 {
+	min-height: 48px;
+}
+
+* html div#content div.project ul li p.cateText02 {
+	height: 48px;
+}
+
+div#content div.projectContent {
+	padding: 4px 0 0 0;
+}
+
+div#content div.projectContent p.image {
+	padding: 2px 0 6px 0;
+}
+
+div#content div.projectContent p.image img {
+	border: 1px solid #cecece;
+	padding: 1px;
+}
+
+
+/* # info
+---------------------------------------------------------------------------- */
+
+div#content div.section h2.mHead {
+	background: url(../images/common/bg_mh.gif) repeat-x left bottom;
+	font-size: 0;
+	height: 15px;
+	padding: 0 0 17px 1px;
+}
+
+div#content div.section div.sectionInner {
+	background: url(../images/common/bg_dot01.gif) repeat-x left bottom;
+	padding: 0 0 32px 0;
+}
+
+div#content div.section p.date {
+	font-size: 110%;
+	padding: 10px 0 17px 0;
+	text-align: right;
+}
+
+div#content div.section p.date span {
+	display: block;
+}
+
+div#content div.section div.detail .sHead {
+	font-size: 120%;
+}
+
+div#content div.section div.detail p.content {
+	padding: 28px 0 18px 0;
+}
+
+div#content div.section div.detail p.content strong {
+	display: block;
+}
+
+div#content div.section p.link a {
+	font-weight: bold;
+}
+
+
+/* # clearfix
+---------------------------------------------------------------------------- */
+
+div#content div.project ul {
+	zoom: 1;
+}
+
+div#content div.project ul:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}

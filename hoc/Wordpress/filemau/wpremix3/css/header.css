@@ -1,0 +1,103 @@
+/*Header 1 --------------------------------------------------------------- */
+
+#header1 {
+height:85px;
+
+}
+#header1 .h_left {
+float:left;
+width:350px;
+margin-top:14px;
+}
+#header1 .h_left img {
+margin-bottom:3px
+}
+#header1 .h_right {
+float:right;
+margin-top:9px
+}
+
+/*Header 2 --------------------------------------------------------------- */
+
+#header2 {
+height:100px;
+}
+#header2 .h_left {
+float:left;
+width:350px;
+margin-top:34px;
+margin-left:8px;
+}
+#header2 .h_left img {
+margin-bottom:3px
+}
+#header2 .h_right {
+float:right;
+overflow:hidden
+}
+#topnav {
+overflow:hidden;
+font:11px Arial, Helvetica, sans-serif;
+text-align:right;
+margin:0;
+padding:0
+}
+#topnav li {
+display:inline;
+background:none;
+text-align:right;
+margin:0;
+padding:0 5px
+}
+
+#header2 p {
+clear:both;
+font-size:12px;
+margin:0;
+padding:0 5px 0 0
+}
+#header2 p a {
+color:#333;
+text-decoration:underline
+}
+#header2 p a:hover{
+color:#c00;
+}
+#header2 .hspcaer {
+margin-top:32px
+}
+#header2 p.i_phone {
+padding-left:18px
+}
+#header2 p.i_mail {
+padding-left:18px
+}
+/*Header 1 --------------------------------------------------------------- */
+
+#header3 {
+height:140px;
+padding:0 10px;
+background:url(../images/headerbg4.jpg) no-repeat top;
+}
+#header3 .h_left {
+float:left;
+width:350px;
+margin-top:28px;
+}
+
+#header3 .logo {
+font:25px "Arial Black", Arial, Helvetica, sans-serif;
+color:#fff;
+margin-top:5px;
+text-transform:uppercase;
+float:left;
+}
+#header3 .logo a { color:#ffeeee; }
+#header3 .logo a:hover { color:#fff; }
+#header3 .description {
+font:12px Arial, Helvetica, sans-serif;
+clear:both;
+margin-top:-5px;
+color:#fff;
+}
+

@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# gNav
+# index
+# sidebar
+# clearfix
+
+----------------------------------------*/
+
+/* # gNav
+---------------------------------------------------------------------------- */
+
+div#gNav dl dd ul li#gNavRecruit a img {
+	visibility: hidden;
+}
+
+
+/* # index
+---------------------------------------------------------------------------- */
+
+div#content .sHead {
+	border-bottom: 1px solid #cecece;
+	padding: 0 0 10px 1px;
+}
+
+div#content div.section div.sectionInner p.leadText {
+	padding: 7px 0 0 3px;
+}
+
+div#content div.section div.sectionInner ul.message {
+	padding: 26px 0 0 0;
+}
+
+div#content div.section div.sectionInner ul.message li {
+	padding: 0 0 40px 0;
+}
+
+div#content div.section div.sectionInner ul.message li p.image {
+	float: left;
+	width: 170px;
+}
+
+div#content div.section div.sectionInner ul.message li p.image img {
+	border: 1px solid #ccc;
+	padding: 1px;
+}
+
+div#content div.section div.sectionInner ul.message li p.image span {
+	display: block;
+	padding: 4px 0 0 0;
+}
+
+div#content div.section div.sectionInner ul.message li p.image span img {
+	border: none;
+	padding: 0;
+}
+
+div#content div.section div.sectionInner ul.message li div.messageContent {
+	float: left;
+	width: 498px;
+}
+
+div#content div.section div.sectionInner ul.message li div.messageContent p {
+	padding: 10px 0 0 0;
+}
+
+
+/* # sidebar
+---------------------------------------------------------------------------- */
+
+div#lNav ul li#message a {
+	background: url(../recruit/images/lnav_message_o.gif) no-repeat left top; 
+	display: block;
+}
+
+div#lNav ul li#message a img {
+	visibility: hidden;
+}
+
+
+/* # clearfix
+---------------------------------------------------------------------------- */
+
+div#content div.section div.sectionInner ul.message li {
+	zoom: 1;
+}
+
+div#content div.section div.sectionInner ul.message li:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}

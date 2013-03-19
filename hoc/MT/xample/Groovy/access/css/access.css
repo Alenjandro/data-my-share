@@ -1,0 +1,124 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# gNav
+# content
+# clearfix
+
+----------------------------------------*/
+
+
+
+/* # gNav
+---------------------------------------------------------------------------- */
+
+div#gNav dl dd ul li#gNavAccess a img {
+	visibility: hidden;
+}
+
+div#gNav dl dd ul li#gNavAccess a {
+	background: url(../../common/images/gnav_access_s.gif) no-repeat 0 0;
+}
+
+
+/* # content
+---------------------------------------------------------------------------- */
+
+div#content div.section div.sectionInner {
+	background: url(../../common/images/bg_dot06.gif) repeat-x left top;
+	clear: both;
+	margin: 46px 0 0 0;
+	padding: 51px 0 0 0;
+}
+
+div#content div.section div.sectionInner .sectionLeft {
+	float: left;
+	width: 350px;
+}
+
+div#content div.sectionInner h3 img {
+	padding-bottom: 21px;
+	position: static;
+}
+
+div#content div.section div.sectionInner .sectionLeft dl {
+	margin: 33px 0 0 0;
+}
+
+div#content div.section div.sectionInner .sectionLeft dl dt {
+	color: #b95443;
+}
+
+div#content div.section div.sectionInner .sectionLeft dl dt.system {
+	background: url(../../common/images/img_system.gif) no-repeat left center;
+	padding: 3px 0 0 23px;
+}
+
+div#content div.section div.sectionInner .sectionLeft dl dd {
+	background: url(../../common/images/bg_dash.gif) repeat-x left top;
+	margin: -2.1em 0 0.6em 0;
+	padding: 0.6em 0 0.5em 7.6em;
+}
+
+div#content div.section div.sectionInner .sectionLeft dl dd.last {
+	margin: -2.1em 0 0.1em 0;
+	padding: 0.6em 0 0.6em 7.6em;
+}
+
+div#content div.section div.sectionInner .sectionLeft dl dd p.text {
+	padding: 7px 0 0 0;
+}
+
+div#content div.section div.sectionInner .sectionRight {
+	float: right;
+	width: 294px;
+}
+
+div#content div.section div.sectionInner p img,
+div#content div.section div.sectionInner .sectionRight p img {
+	background: url(../../common/images/bg_dot01.gif) repeat 0 0;
+	padding: 3px;
+	width: 288px;
+}
+
+div#content div.section div.sectionInner .sectionRight p.sectionImage {
+	margin-bottom: 20px;
+}
+
+div#content div.section div.sectionInner p img {
+	width: 667px;
+}
+
+div#content div.section div.sectionInner p a:hover img {
+	background: url(../../common/images/bg_dot04.gif) repeat 0 0;
+}
+
+div#content div.section div.sectionBanner {
+	margin: 60px 0 0 0;
+	padding: 27px 0 0 0;
+}
+
+div#content div.section div.sectionBanner p img {
+	margin: 6px 0 0 0;
+}
+
+
+/* # clearfix
+---------------------------------------------------------------------------- */
+
+div#content div.section div.sectionInner .sectionLeft dl dd,
+div#content div.section div.sectionInner {
+	zoom: 1;
+}
+
+div#content div.section div.sectionInner .sectionLeft dl dd:after,
+div#content div.section div.sectionInner:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}

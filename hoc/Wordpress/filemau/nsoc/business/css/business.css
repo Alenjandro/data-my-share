@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# gNav
+# content
+# clearfix
+
+----------------------------------------*/
+
+
+/* # gNav
+---------------------------------------------------------------------------- */
+
+div#gNav dl dd ul li#gNavProject a img {
+	visibility: hidden;
+}
+
+
+/* # content
+---------------------------------------------------------------------------- */
+
+div#content div.sectionInner ul.kuroshioList {
+	margin-right: -5px;
+	padding: 20px 0 0 0;
+}
+
+div#content div.sectionInner ul.kuroshioList li {
+	display: inline;
+	float: left;
+	padding-right: 5px;
+	width: auto;
+}
+
+div#content div.sectionInner ul.kuroshioList li span {
+	display: block;
+	padding-top: 9px;
+	text-align: right;
+}
+
+
+/* # clearfix
+---------------------------------------------------------------------------- */
+
+div#content div.sectionInner ul.kuroshioList {
+	zoom: 1;
+}
+
+div#content div.sectionInner ul.kuroshioList:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}

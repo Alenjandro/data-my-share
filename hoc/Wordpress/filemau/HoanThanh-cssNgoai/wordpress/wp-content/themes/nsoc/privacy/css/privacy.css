@@ -1,0 +1,120 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# sidebar
+# index
+# detail
+
+----------------------------------------*/
+
+/* # sidebar
+---------------------------------------------------------------------------- */
+
+div#sidebar ul.bannerList {
+	padding-top: 28px;
+}
+
+
+/* # index
+---------------------------------------------------------------------------- */
+
+div#content div.sectionInner h2 {
+	border-bottom: 1px solid #cecece;
+	font-weight: bold;
+	margin-bottom: 2px;
+	padding: 24px 0 1px 0;
+}
+
+div#content div.sectionInner ol.textList {
+	padding-right: 10px;
+}
+
+div#content div.sectionInner ol.textList li {
+	padding: 3px 0 0 15px;
+	text-indent: -12px;
+}
+
+div#content p.infoButton {
+	background: url(../../common/images/bg_mh.gif) repeat-x 0 0;
+	margin-top: 36px;
+	padding: 13px 0 0 0;
+	text-align: center;
+}
+
+
+/* # detail
+---------------------------------------------------------------------------- */
+
+div#content .tableStyle {
+	margin-top: 17px;
+	width: 668px;
+} 
+
+div#content .tableStyle th {
+	background: #ebebeb;
+	border: 1px solid #c3c3c3;
+	border-right: none;
+	font-weight: bold;
+	padding: 7px 10px 3px 14px;
+} 
+
+div#content .tableStyle td {
+	border: 1px solid #c3c3c3;
+	border-right: none;
+	padding: 11px 10px 11px 12px;
+	vertical-align: top;
+	width: 454px;
+} 
+
+div#content .tableStyle .firstCol {
+	border-left: none;
+	vertical-align: top;
+	width: 190px;
+}
+
+div#content .tableStyle td ul {
+	margin-bottom: -2px;
+}
+
+div#content .tableStyle td ul li {
+	padding: 0 0 2px 7px;
+	text-indent: -7px;
+}
+
+div#content ol.textStyle ol {
+	padding-bottom: 18px;
+}
+
+div#content ol.textStyle ol li {
+	padding: 0 0 0 13px;
+}
+
+div#content ol.textStyle li .tableStyle td.firstCol {
+	padding-left: 22px;
+	text-indent: -10px;
+}
+
+div#content .sectionList li {
+	padding: 0 0 2px 7px;
+	text-indent: -7px;
+}
+
+div#content p.textStyle,
+div#content div.sectionStyle {
+	line-height: 2;
+} 
+
+div#content div.sectionInner h3 {
+	font-weight: bold;
+	padding: 28px 0 3px 3px;
+}
+
+div#content p.fax {
+	padding-top: 34px;
+}
+
+div#content p.infoStyle {
+	margin-top: 15px;
+}

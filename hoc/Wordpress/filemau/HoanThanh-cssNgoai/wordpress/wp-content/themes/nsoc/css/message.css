@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# gNav
+# content
+# sidebar
+# clearfix
+
+----------------------------------------*/
+
+/* # gNav
+---------------------------------------------------------------------------- */
+
+div#gNav dl dd ul li#gNavCompany a img {
+	visibility: hidden;
+}
+
+
+/* # content
+---------------------------------------------------------------------------- */
+
+div#content div.messageSection {
+	padding: 12px 0 0 0;
+}
+
+div#content div.messageSection div.messageName {
+	float: left;
+	width: 156px;
+}
+
+div#content div.messageSection div.messageName p.image {
+	padding: 0 0 8px 0;
+}
+
+div#content div.messageSection div.messageName p.image img {
+	border: 1px solid #d5d5d5;
+}
+
+div#content div.messageSection div.messageContent {
+	float: right;
+	width: 483px;
+	padding: 1px 0 0 0;
+}
+
+div#content div.messageSection div.messageContent p {
+	padding: 24px 0 0 0;
+}
+
+
+/* # sidebar
+---------------------------------------------------------------------------- */
+
+div#lNav ul li#message a {
+	background: url(../company/images/lnav_message_o.gif) no-repeat left top; 
+	display: block;
+}
+
+div#lNav ul li#message a img {
+	visibility: hidden;
+}
+
+
+/* # clearfix
+---------------------------------------------------------------------------- */
+
+div#content div.messageSection{
+	zoom: 1;
+}
+
+div#content div.messageSection:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}

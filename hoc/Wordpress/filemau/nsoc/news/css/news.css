@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# sidebar
+
+----------------------------------------*/
+
+
+/* # sidebar
+---------------------------------------------------------------------------- */
+
+* html dl.news {
+	margin-top: -11px;
+}
+
+div#lNav ul li a {
+	background: url(../images/bg_lnav01.gif) no-repeat left top;
+	color: #333;
+	display: block;
+	font-size: 120%;
+	height: 25px;
+	padding: 7px 0 0 27px;
+	text-decoration: none;
+	width: 240px;
+}
+
+div#lNav ul li.active01 a,
+div#lNav ul li a:hover {
+	background: url(../images/bg_lnav01_o.gif) no-repeat left top;
+	text-decoration: none;
+}
+
+div#lNav ul li.lNavLast a {
+	background: url(../images/bg_lnav02.gif) no-repeat left top;
+}
+
+div#lNav ul li.active02 a,
+div#lNav ul li.lNavLast a:hover {
+	background: url(../images/bg_lnav02_o.gif) no-repeat left top;
+}

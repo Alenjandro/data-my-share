@@ -1,0 +1,165 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# layout
+# header
+# gNav
+# pageBody
+# footer
+# clearfix
+
+----------------------------------------*/
+
+
+/* # layout
+---------------------------------------------------------------------------- */
+
+div#layout {
+    background: url(../images/bg_layout.gif) repeat-x left top;
+}
+
+
+/* # header
+---------------------------------------------------------------------------- */
+
+div#header div#headerInner {
+	padding: 0;
+	margin: -5px auto 0 auto;
+	width: 1024px;
+}
+
+/* # gNav
+---------------------------------------------------------------------------- */
+
+div#gNav dl dd ul li#gNavHome a img {
+	visibility: hidden;
+}
+
+
+/* # pageBody
+---------------------------------------------------------------------------- */
+
+div#pageBody {
+	position: relative;
+}
+
+* html div#pageBody {
+	padding-left: 27px;
+}
+
+div#pageBody p.pickup {
+	position: absolute;
+	left: -50px;
+	top: 6px;
+}
+
+* html div#pageBody p.pickup {
+	left: -43px;
+}
+
+div#pageBody div.pickupSection {
+	padding: 65px 0 0 23px;
+}
+
+div#pageBody div.pickupSection div.pickupInner {
+	background: url(../images/bg_pickup.gif) no-repeat 0 0;
+	float: left;
+	height: 197px;
+	margin-right: 14px;
+	width: 382px;
+}
+
+div#pageBody div.pickupSection div.pickupInner div {
+	float: left;
+	padding: 16px 0 0 14px;
+	width: 223px;
+}
+
+div#pageBody div.pickupSection div.pickupInner div p {
+	padding: 12px 10px 0 0;
+}
+
+div#pageBody div.pickupSection div.pickupInner div p.more {
+	padding: 19px 0 0 1px;
+	font-weight: bold;
+}
+
+div#pageBody div.pickupSection div.pickupInner p.pickupImage {
+	float: right;
+	width: 133px;
+}
+
+div#pageBody div.newsSection {
+	clear: both;
+	padding-top: 30px;
+}
+
+div#pageBody div.newsSection div.news {
+	float: left;
+	width: 500px;
+}
+
+div#pageBody div.newsSection div.news h2 {
+	border-bottom: 1px solid #306030;
+	padding: 0 0 5px 3px;
+}
+
+div#pageBody div.newsSection div.news dl {
+	border-bottom: 1px solid #306030;
+	padding: 9px 20px 6px 20px;
+}
+
+div#pageBody div.newsSection div.news dl dt {
+	font-weight: bold;
+}
+
+div#pageBody div.newsSection div.news dl dd {
+	font-weight: bold;
+	margin: -1.5em 0 0 0;
+	padding: 0 0 0.4em 7.2em;
+}
+
+div#pageBody div.newsSection div.news dl dd a {
+	color: #333;
+}
+
+div#pageBody div.newsSection div.bannerSection {
+	float: right;
+	padding: 8px 2px 0 0;
+	width: 260px;
+}
+
+div#pageBody div.newsSection div.bannerSection ul.bannerList li {
+	padding: 0 0 10px 0;
+}
+
+
+/* # footer
+---------------------------------------------------------------------------- */
+
+div#footer p.office {
+	margin-top: 29px;
+	padding-top: 7px;
+	height: 29px;
+}
+
+
+/* # clearfix
+---------------------------------------------------------------------------- */
+
+div#pageBody div.pickupSection,
+div#pageBody div.pickupSection div.pickupInner  {
+	zoom: 1;
+}
+
+div#pageBody div.pickupSection:after,
+div#pageBody div.pickupSection div.pickupInner:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}

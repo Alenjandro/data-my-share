@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# gNav
+# content
+# sidebar
+# clearfix
+
+----------------------------------------*/
+
+
+/* # gNav
+---------------------------------------------------------------------------- */
+
+div#gNav dl dd ul li#gNavSmileface a img {
+	visibility: hidden;
+}
+
+
+/* # content
+---------------------------------------------------------------------------- */
+
+div#content div.section div.sectionInner p.fbBanner {
+	margin-top: 15px;
+}
+
+div#content div.section div.sectionInner ul.smilefaceList {
+    margin: 0 -10px 0 0;
+    padding: 0;
+	width: 540px;
+}
+
+*:first-child + html div#content div.section div.sectionInner ul.smilefaceList {
+	padding-bottom: 10px;
+}
+
+div#content div.section div.sectionInner ul.smilefaceList li {
+    border: 1px solid #fdd32a;
+	display: inline;
+	float: left;
+	margin: 0 5px 10px 0;
+	padding: 4px 4px 2px 4px;
+	width: 120px;
+}
+
+div#content div.section div.sectionInner ul.smilefaceList li.last {
+    margin: 0 0 10px 0;
+}
+
+div#content div.section div.sectionInner ul.smilefaceList li p.smilefaceLink {
+	padding: 4px 0 0 0;
+	text-align: center;
+}
+
+
+/* # sidebar
+---------------------------------------------------------------------------- */
+
+div#sidebar ul.bannerList {
+	margin: 8px 0 20px 0;
+}
+
+div#sidebar div.linkList {
+    background: url(../../common/images/bg_dot01.gif) repeat-x left top;
+	padding: 18px 0 0 0;
+}
+
+div.twtr-hd {
+	background: url(../images/bg_twitter_top.gif) no-repeat left top;
+	padding-top: 5px;
+}
+
+div.twtr-doc {
+	background: #316331 url(../images/bg_twitter_bottom.gif) no-repeat left bottom;
+	padding-bottom:5px;
+}
+
+div.twtr-reference-tweet {
+	background: url(../images/bg_twitterinner_top.gif) no-repeat left top!important;
+	padding-top: 6px;
+}
+
+div.twtr-ft {
+    background: url(../images/bg_twitterinner_bottom.gif) no-repeat left top!important;
+	margin-top: -6px;
+	padding: 8px 0 0 0;
+	padding-bottom: 6px;
+}
+
+/* # clearfix
+---------------------------------------------------------------------------- */
+
+div#content div.section div.sectionInner ul.smilefaceList,
+div.twtr-reference-tweet,
+div.twtr-tweets {
+	zoom: 1;
+}
+
+div#content div.section div.sectionInner ul.smilefaceList:after,
+div.twtr-reference-tweet:after,
+div.twtr-tweets:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}

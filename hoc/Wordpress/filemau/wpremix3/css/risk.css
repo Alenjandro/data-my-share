@@ -1,0 +1,154 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+#content
+
+----------------------------------------*/
+
+
+/* # content
+---------------------------------------------------------------------------- */
+
+div#content div.sectionContent div ol {
+	padding: 0 0 0 2px;
+}
+
+div#content div.sectionContent div ol li {
+	padding: 0 0 2px 22px;
+	text-indent: -22px;
+}
+
+div#content div.sectionContent div ol li span {
+	padding: 0 4px 0 0;
+}
+
+div#content div.sectionContent div p.note {
+	font-size: 90%;
+	padding: 3px 0 0 0;
+}
+
+div#content div.sectionContent div ul {
+	padding: 0 0 0 4px;
+}
+
+div#content div.sectionContent div ul li {
+	padding: 0 0 4px 22px;
+	text-indent: -22px;
+}
+
+div#content div.sectionContent div ul li.last {
+	padding: 0 0 0 22px;
+}
+
+div#content div.sectionContent div.choose {
+	padding: 18px 0 0 0;
+}
+
+div#content div.sectionContent div table.chooseTable {
+	border-top: 1px solid #c3c3c3;
+	width: 669px;
+}
+
+div#content div.sectionContent div table.chooseTable th {
+	border-bottom: 1px solid #c3c3c3;
+	border-left: 1px solid #c3c3c3;
+	padding: 6px 10px 4px 10px;
+	text-align: center;
+}
+
+div#content div.sectionContent div table.chooseTable td {
+	border-bottom: 1px solid #c3c3c3;
+	border-left: 1px solid #c3c3c3;
+	padding: 7px 10px 6px 10px;
+	text-align: left;
+	vertical-align: top;
+}
+
+div#content div.sectionContent div table.chooseTable td a {
+	color: #003399;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+div#content div.sectionContent div table.chooseTable td a:hover {
+	text-decoration: none;
+}
+
+div#content div.sectionContent div table.chooseTable th {
+	background: #ebebeb;
+	font-weight:bold;
+}
+
+div#content div.sectionContent div table.chooseTable th.window,
+div#content div.sectionContent div table.chooseTable td.window {
+	background: #ebebeb;
+	border-left: none;
+	width: 106px;
+}
+
+div#content div.sectionContent div table.chooseTable td.window {
+	background: none;
+	border-left: none;
+}
+
+div#content div.sectionContent div table.chooseTable th.reception,
+div#content div.sectionContent div table.chooseTable td.reception {
+	width: 65px;
+}
+
+div#content div.sectionContent div table.chooseTable th.use,
+div#content div.sectionContent div table.chooseTable td.use {
+	width: 227px;
+}
+
+div#content div.sectionContent div table.chooseTable th.report,
+div#content div.sectionContent div table.chooseTable td.report {
+	width: 115px;
+}
+
+div#content div.sectionContent div table.chooseTable th.notification {
+	width: auto;
+}
+
+div#content div.sectionContent div table.chooseTable td.notification {
+	padding: 19px 10px 0 13px;
+	width: auto;
+}
+
+div#content dl.contact {
+	padding: 15px 0 0 0;
+}
+
+div#content dl.contact dt {
+	font-weight: bold;
+	padding: 0 0 0 6px;
+}
+
+div#content dl.contact dd {
+	padding: 0 0 19px 0;
+}
+
+div#content dl.contact dd ol {
+	padding: 0 0 0 3px;
+}
+
+div#content dl.contact dd ol li {
+	padding: 0 0 0 40px;
+	text-indent: -40px;
+}
+
+div#content dl.contact dd ol li a {
+	color: #003399;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+div#content dl.contact dd ol li a:hover {
+	text-decoration: none;
+}
+
+div#content dl.contact dd.last {
+	padding: 0 0 0 3px;
+}

@@ -1,0 +1,461 @@
+/*
+------------------------------------------------------------------------
+Theme Name: 	WP Remix
+Author URI:		http://www.premiumthemes.net/
+Description:   	The WordPress Master Theme. One Theme, Many Possiblities
+Version:       	3.0
+Author:        	R5 Ltd And R.Bhavesh
+Author URI:    	http://www.r5ltd.co.uk and http://cssace.com
+------------------------------------------------------------------------
+
+Support:       WP Remix, http://wpremix.com/support
+Updated:       June 11, 2009
+Copyright:     (c) 2009 WP Remix
+
+All rights reserved.
+*/
+
+@import url("css/misc.css");		/* css reset - do not edit this */
+@import url("css/dropmenu.css");	/* styling dropdown menu */
+@import url("css/homepages.css");	/* styling homepage templates */
+@import url("css/innerpages.css");	/* styling innerpage templates */
+@import url("css/blog-common.css");		/* styling blog */
+@import url("css/header.css");		/* header option styling blog */
+@import url("css/sidebars.css");		/* styling blog */
+@import url("css/footer.css");		/* footer option */
+@import url("css/blog.css");		/* styling blog */
+@import url("css/color-default.css");		/* styling color schemes css  */
+
+body {
+text-align:center;
+font: 12px Arial, Helvetica, sans-serif;
+}
+/* Links -----------------------------------------------------------------------*/
+a {
+outline:none;
+}
+ul {
+list-style:none;
+}
+.clear {
+clear:both;
+}
+.bold {
+font-weight:bold;
+}
+p.aright {
+text-align:right;
+}
+.italic {
+font-style:italic;
+}
+/* section alignment --------- */
+
+.alignleft {
+float:left;
+}
+.alignright {
+float:right;
+}
+/* image alignment left, right & center --------- */
+
+.imgleft {
+float:left;
+margin:0 12px 12px 0;
+padding:3px;
+}
+.imgright {
+float:right;
+margin:0 0 12px 12px;
+padding:3px;
+}
+.imgleft_n {
+float:left;
+margin:0 40px 12px 0;
+padding:3px;
+}
+.img_center {
+margin:10px 0;
+padding:5px;
+}
+code {
+font-size:12px;
+}
+/* blog & content css common ---------------------------------------------------- */
+
+h1 {
+font-size:28px;
+font-weight:400;
+margin:0 0 12px;
+padding:0 0 5px;
+}
+h2 {
+font-size:22px;
+font-weight:400;
+margin:0 0 8px;
+padding:0;
+}
+h2 a {
+text-decoration:none;
+}
+h2 a:hover {
+text-decoration:none;
+}
+h3 {
+font-size:18px;
+font-weight:400;
+margin:0 0 10px;
+padding:0;
+}
+h4 {
+font-size:16px;
+font-weight:700;
+margin:15px 0 5px;
+padding:0 0 5px;
+}
+h5 {
+font-size:14px;
+font-weight:700;
+margin:0 0 10px;
+padding:0;
+}
+h6 {
+font-size:12px;
+font-weight:700;
+margin:5px 0;
+padding:0 0 5px;
+}
+p {
+font-size:12px;
+line-height:18px;
+margin:0 0 12px;
+}
+p a {
+text-decoration:none;
+}
+
+ul {
+font:12px Arial, Helvetica, sans-serif;
+margin:0 0 15px 6px;
+padding:0;
+}
+ul li ul {
+margin:8px 0 5px;
+padding:0;
+}
+ol {
+line-height:18px;
+font-size:12px;
+background:none;
+margin:0 0 0 5px;
+padding:0 0 10px 20px;
+}
+ol li {
+background:none;
+list-style-type:decimal;
+margin:0 0 5px;
+padding:0;
+}
+ol li ol {
+margin:8px 0 5px 24px;
+padding:0;
+}
+blockquote {
+	background:url(images/quote2.png) no-repeat;
+	background-position:5px 8px;
+	margin-bottom:10px;
+	font:bold 12px Arial, Helvetica, sans-serif;
+	line-height:18px;
+	padding:5px 0px 5px 30px;
+	margin-bottom:10px;
+}
+blockquote p { font:bold 12px Arial, Helvetica, sans-serif;  }
+.clientname {
+	font-size:11px; font-weight:normal; color:#666;
+	margin-bottom:12px;
+}
+
+li,ul li ul li {
+line-height:18px;
+margin:0 0 5px;
+padding:0 0 0 12px;
+}
+/* instruction elements -------------------------------------- */
+address {
+font-style:italic;
+}
+p.alert,p.download,p.info,p.note {
+margin:10px 0 0;
+padding:10px 10px 10px 36px;
+}
+p.alert {
+padding:10px 10px 10px 36px;
+}
+
+/* STRUCTURE ----------------------------------*/
+#header {
+height:65px;
+margin:0 auto;
+}
+#content-wrap {
+overflow:hidden;
+height:100%;
+}
+#wrapper {
+text-align:left;
+width:840px;
+margin:0 auto;
+padding:0 10px;
+overflow:hidden;
+height:100%;
+}
+#main {
+overflow:hidden;
+clear:both;
+}
+#main .subcolumns {
+width:400px;
+}
+#content {
+width:580px;
+padding-bottom:10px;
+}
+#content2 {
+width:560px;
+}
+#content, #content2 { 
+float:left;
+}
+#sidebar {
+width:240px;
+margin-bottom:15px;
+}
+#sidebar2 {
+width:260px;
+margin-bottom:15px;
+}
+#sidebar, #sidebar2 {
+float:right;
+}
+
+
+
+#footer {
+clear:both;
+overflow:hidden;
+text-align:left;
+height:100%;
+width:840px;
+margin:0 auto;
+padding:5px 10px;
+}
+#sidebar span {
+font-size:12px;
+}
+#content .subcolumns,#sidebar .subcolumns {
+width:280px;
+}
+/* Header Section  ----------------------------------*/
+#header .logo {
+font:25px "Arial Black", Arial, Helvetica, sans-serif;
+color:#fff;
+margin-top:5px;
+text-transform:uppercase;
+float:left;
+}
+#header .h_left {
+float:left;
+/*width:320px;*/
+}
+#header .description {
+font:12px Arial, Helvetica, sans-serif;
+clear:both;
+margin-top:-5px;
+}
+/* ------------------------------  footer ---------------------------------------  */
+
+#footer p {
+font-size:12px;
+line-height:20px;
+float:left;
+font-family:Arial, Helvetica, sans-serif;
+margin:5px 0;
+padding:0;
+}
+#footer span {
+margin-top:-8px;
+font-size:11px;
+padding-left:1px;
+}
+#footer span a {
+text-decoration:none;
+}
+#footer span a:hover {
+text-decoration:none;
+}
+#flinks {
+list-style:none;
+float:right;
+}
+#flinks li {
+display:inline;
+line-height:26px;
+text-align:right;
+padding:0 5px;
+}
+#flinks li a {
+font-size:11px;
+text-decoration:none;
+}
+#flinks li a:hover {
+display:inline;
+}
+/* TOP SEARCH FORM -----------------------------------------------------------------------*/
+#search {
+float:right;
+margin-top:20px;
+width:205px;
+height:21px;
+padding:2px 0 0 15px;
+}
+* html #search {
+width:208px;
+overflow:hidden;
+}
+#search .s {
+font:12px Arial, Helvetica, sans-serif;
+width:170px;
+float:left;
+margin-right:5px;
+padding:2px;
+}
+#searchform .sgo {
+width:26px;
+height:23px;
+margin:-2px 0 0;
+}
+/* Root = Horizontal, Secondary = Vertical ------------------------------------------------ */
+
+#nav {
+width:840px;
+height:28px;
+position:relative;
+margin:0 auto 5px;
+}
+#nav .rss {
+font:bold 12px Arial, Helvetica, sans-serif;
+padding-left:18px;
+position:absolute;
+top:7px;
+right:8px;
+}
+
+/* breadcrumb start -----------------------------------------------------------------------*/
+ 
+#content-wrap .breadcrumb{
+font:10px Arial, Helvetica, sans-serif;
+text-transform:uppercase;
+text-align:left;
+clear:both;
+line-height:25px;
+padding-left:5px;
+margin-bottom:10px;
+}
+a.button {
+margin-bottom:8px;
+font-weight:700;
+font-size:12px;
+padding:3px 15px 3px 10px;
+}
+
+.submit {
+margin-bottom:8px;
+font-weight:700;
+font-size:12px;
+cursor:pointer;
+padding:3px 15px 3px 10px;
+}
+.postads {
+text-align:center;
+overflow:hidden;
+height:100%;
+margin-bottom:25px;
+}
+.small { font-size:11px; color:#666; }
+.small a { color:#666; }
+.small a:hover { color:#000; }
+
+
+/*------- Demo  ---------*/
+
+#demotop { background:#000; height:50px; overflow:hidden; } 
+#demotop-in { width:860px; margin:0 auto;  }
+#demotop-in h5 { float:left; font:bold 14px Georgia, "Times New Roman", Times, serif; color:#fff; margin:0; padding:8px 0 0 0; }
+#demotop-in p { font-size:11px; color:#9f9f9f; clear:both;  float:left; }
+
+.img_button {
+	position:relative;
+	display:block;
+	font-size:12px;
+}
+.img_button span {
+	height:100%;
+	width:100%;
+	position:absolute;
+	bottom:0;
+	left:0;
+	cursor:pointer;
+}
+.img_button span a {
+	display:block;
+}
+
+.b_purchasedownload2 {
+	top:9px;
+	right:0;
+	float:right;
+}
+.b_purchasedownload2 span, .b_purchasedownload2 span a {
+	background:url(images/b_purchasedownload2.png) no-repeat;
+}
+.b_purchasedownload2 span a, .b_purchasedownload2 {
+	width:190px;
+	height:32px;
+}
+.b_purchasedownload2 span:hover {
+	background-position:0 -32px;
+}
+
+/* NEW 2.7 */
+.thread-alt {
+	background-color: #f8f8f8;
+}
+.thread-even {
+	background-color: white;
+}
+.depth-1 {
+border: 1px solid #ddd;
+}
+
+.even, .alt {
+
+	border-left: 1px solid #ddd;
+}
+.commentlist li ul li {
+	font-size: 1em;
+}
+#commentform {
+	margin: 5px 10px 0 0;
+	}
+#respond:after {
+		content: "."; 
+	    display: block; 
+	    height: 0; 
+	    clear: both; 
+	    visibility: hidden;
+	}
+.commentlist li ul li { 
+	margin-right: -5px;
+	margin-left: 10px;
+}
+.children { padding: 0; }

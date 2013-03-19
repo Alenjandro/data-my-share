@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# gNav
+# content
+# clearfix
+
+----------------------------------------*/
+
+/* # gNav
+---------------------------------------------------------------------------- */
+
+div#gNav dl dd ul li#gNavCompany a img {
+	visibility: hidden;
+}
+
+/* # content
+---------------------------------------------------------------------------- */
+
+div.contentArea div.messageLeft {
+	float: left;
+	display: inline;
+	padding: 0 0 0 1px;
+	width: 158px;
+}
+
+div.contentArea div.messageLeft p.directorText {
+	padding: 5px 0 0 0;
+	text-align: right;
+}
+
+div.contentArea div.messageRight {
+	float: right;
+	display: inline;
+	padding: 4px 0 0 0;
+	width: 469px;
+}
+
+div.contentArea div.messageRight div.messageRightInner {
+	padding: 0 0 27px 0;
+}
+
+div.contentArea div.messageRight div.messageRightInner h3 {
+	padding: 0 0 9px 0;
+}
+
+div.contentArea div.messageRight div.messageRightInner h3.design {
+	padding: 0 0 19px 0;
+}
+
+div.contentArea div.messageRight div.messageRightInner p.last {
+	padding: 17px 0 0 0;
+}
+
+
+/* # clearfix
+---------------------------------------------------------------------------- */
+
+div.contentArea {
+	zoom: 1;
+}
+
+div.contentArea:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}

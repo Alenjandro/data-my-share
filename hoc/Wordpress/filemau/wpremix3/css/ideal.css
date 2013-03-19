@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# gNav
+# content
+
+----------------------------------------*/
+
+
+/* # gNav
+---------------------------------------------------------------------------- */
+
+div#gNav dl dd ul li#gNavCompany a img {
+	visibility: hidden;
+}
+
+
+/* # content
+---------------------------------------------------------------------------- */
+
+div#content div.section div.sectionInner {
+	position: relative;
+}
+
+div#content div.section div.sectionInner p {
+	padding: 6px 0 0 1px;
+}
+
+div#content div.section div.sectionInner p.plantBtn {
+	position: absolute;
+	top: 319px;
+	left: 158px;
+}
+
+div#content div.section div.sectionInner p.engBtn {
+	position: absolute;
+	top: 319px;
+	left: 485px;
+}
+
+
+

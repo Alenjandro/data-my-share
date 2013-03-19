@@ -1,0 +1,171 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# gNav
+# pageBody
+# content
+# sidebar
+# clearfix
+
+----------------------------------------*/
+
+
+/* # gNav
+---------------------------------------------------------------------------- */
+
+div#gNav dl dd ul li#gNavHome a img {
+	visibility: hidden;
+}
+
+/* # visual
+---------------------------------------------------------------------------- */
+
+div#visual {
+	clear: both;
+}
+
+div#visual p {
+	margin: 0 auto;
+	width: 985px;
+}
+
+
+/* # pageBody
+---------------------------------------------------------------------------- */
+
+div#pageBody {
+	padding: 23px 0 0 0;
+}
+
+* html div#pageBody p.pageTop {
+	padding-top: 53px;
+}
+
+*:first-child + html div#pageBody p.pageTop {
+	padding-top: 53px;
+}
+
+
+/* # content
+---------------------------------------------------------------------------- */
+
+div#content {
+	margin-top: -1px;
+	padding: 0 0 0 1px;
+}
+
+div#content div.mhSection {
+	height: 25px;
+	position: relative;
+}
+
+div#content div.mhSection p {
+	position: absolute;
+	right: 1px;
+	top: 0;
+}
+
+* html div#content div.mhSection p {
+	right: 0;
+}
+
+dl.news {
+	color: #202020;
+	margin-bottom: 21px;
+	padding: 14px 0 0 0;
+}
+
+div#content div.boxList {
+	background: url(../common/images/bg_boxbottom.gif) no-repeat left bottom;
+	margin-top: 12px;
+	padding-bottom: 5px;
+}
+
+div#content div.listContent {
+	background: url(../common/images/bg_boxtop.gif) no-repeat left top;
+	padding-top: 5px;
+}
+
+div#content div.listContent ul {
+	border-left: 1px solid #cecece;
+	border-right: 1px solid #cecece;
+	margin-right: 1px;
+	padding: 14px 11px 7px 12px;
+	width: 643px;
+}
+
+div#content div.listContent ul li {
+	color: #202020;
+	display: inline;
+	float: left;
+	padding-right: 23px;
+	width: 310px;
+}
+
+div#content div.listContent ul li.right {
+	padding-right: 0;
+}
+
+div#content div.listContent ul li p.image {
+	float: left;
+}
+
+div#content div.listContent ul li p.image img {
+	border: 1px solid #ccc;
+	padding: 1px;
+}
+
+div#content div.listContent ul li div {
+	float: left;
+	padding-left: 10px;
+	width: 190px;
+}
+
+div#content div.listContent ul li div h3 {
+	border-bottom: 1px solid #cecece;
+	padding: 0 0 5px 0;
+}
+
+div#content div.listContent ul li div h3 img {
+	background: url(../common/images/ico_square.gif) no-repeat 0 4px;
+	padding: 0 0 0 12px;
+}
+
+div#content div.listContent ul li div p.text {
+	font-size: 80%;
+	min-height: 52px;
+	padding: 2px 0 5px 0;
+}
+
+* html div#content div.listContent ul li div p.text {
+	height: 52px;
+}
+
+
+/* # sidebar
+---------------------------------------------------------------------------- */
+
+div#sidebar {
+	padding-top: 0;
+}
+
+
+/* # clearfix
+---------------------------------------------------------------------------- */
+
+div#content div.listContent ul li,
+div#content div.listContent ul {
+	zoom: 1;
+}
+
+div#content div.listContent ul li:after,
+div#content div.listContent ul:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}

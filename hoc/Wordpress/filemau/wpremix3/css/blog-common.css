@@ -1,0 +1,347 @@
+/* trackback css --------------------------------------------------------- */	
+
+#blog_content .trackbacklist {
+list-style:none;
+margin:8px 0 0;
+padding:0
+}
+#blog_content .trackbacklist li {
+list-style:none;
+margin:0 0 8px;
+padding:0 0 5px 18px
+}
+/* Comments form ----------------------------------*/
+
+#commentform {
+margin-top:10px;
+margin-bottom:10px;
+overflow:hidden;
+}
+#commentform label {
+float:left;
+text-align:left;
+margin-bottom:15px;
+font-size:11px;
+font-weight:bold
+}
+#blog_content .textarea {
+float:right;
+margin-bottom:10px;
+font:12px Arial, Helvetica, sans-serif;
+padding:5px
+}
+#blog_content .Cbutton {
+border:none;
+font:bold 11px Arial, Helvetica, sans-serif;
+clear:both;
+float:left;
+width:100px;
+cursor:pointer;
+padding:4px
+}
+
+
+/*	Comments --------------------- */
+#blog_content .gravatar {
+width:40px;
+height:40px;
+display:block;
+float:right;
+margin:0 0 10px 10px
+}
+#blog_content .commentmainauthor {
+clear:both;
+overflow:hidden;
+height:100%;
+margin-bottom:20px;
+padding:8px 10px
+}
+#blog_content .commentmain {
+clear:both;
+overflow:hidden;
+height:100%;
+margin-bottom:20px;
+padding:8px 10px
+}
+#blog_content .comment_right {
+float:right;
+font-size:11px;
+width:72%;
+padding:5px 0 0 15px
+}
+#blog_content .comment_left {
+margin-bottom:15px;
+float:left;
+font-size:11px;
+width:12%
+}
+#blog_content .comment_left span {
+font-size:11px
+}
+#blog_content .bookmark {
+float:right;
+margin:0 -9px 0 0;
+padding:0
+}
+#blog_content .bookmark li {
+float:left;
+list-style:none;
+background:none;
+font:11px Arial, Helvetica, sans-serif;
+margin:0 3px 0 0;
+padding:0
+}
+#blog_content .bookmark li a {
+display:block;
+width:16px;
+height:16px;
+text-indent:-9009px;
+margin-left:6px
+}
+#blog_content .post_paginate {
+font-weight:bold
+}
+#blog_content .post_paginate p a {
+text-decoration:underline;
+margin-right:5px
+}
+/* Previous/Next Page Navigation ----------------------------------------------------------------*/
+.page-nav {
+clear:both;
+height:22px;
+margin:15px 0;
+padding:2px 0
+}
+.nav-previous {
+float:left;
+text-align:left;
+margin-top:4px
+}
+.nav-next {
+float:right;
+text-align:right;
+margin-top:4px
+}
+.page-nav a {
+text-decoration:none
+}
+.nav-previous a {
+padding-left:14px;
+font-size:11px;
+text-transform:uppercase;
+}
+.nav-next a {
+padding-right:12px;
+font-size:11px;
+text-transform:uppercase;
+}
+* html .nav-previous,* html .nav-next {
+margin-top:3px
+}
+/* page navigatin css --------------------------------------------------------- */	
+#blog_content .wp-pagenavi {
+text-align:center;
+font-size:12px
+}
+#blog_content .wp-pagenavi a,#blog_content .wp-pagenavi a:link,#blog_content .wp-pagenavi a:active {
+text-decoration:none;
+line-height:24px;
+margin:2px;
+padding:3px 8px
+}
+
+#blog_content .wp-pagenavi span.pages {
+font-size:12px;
+margin:2px;
+padding:3px 8px
+}
+#blog_content .wp-pagenavi span.current {
+line-height:24px;
+font-size:12px;
+font-weight:bold;
+margin:2px;
+padding:3px 8px
+}
+#blog_content .wp-pagenavi span.extend {
+line-height:25px;
+margin:2px;
+padding:3px 8px
+}
+
+
+
+/* widget calendar ---------------------------  */
+
+#wp-calendar {
+width:90%;
+color:#2a271c;
+margin:0 auto
+}
+#sidebar .widget_calendar h2,widgettitle {
+display:none
+}
+#sidebar #calendar_wrap caption {
+font:bold 13px "Trebuchet MS", Verdana, Arial;
+text-align:left;
+margin:0 0 5px;
+padding:2px 0 3px 22px
+}
+
+/*========================================================== { 404 Page Seting }============================================================== */
+
+#blog_content h2.error_title {
+text-align:center;
+font-size:14px;
+font-weight:bold;
+margin-bottom:20px
+}
+#blog_content .category {
+overflow:hidden;
+height:100%;
+min-height:100px;
+padding:0
+}
+* hmtl #blog_content .category {
+height:150px
+}
+#blog_content .category li {
+float:left;
+width:170px;
+background:url(../images/bullet3.png) no-repeat 0 5px;
+font:12px Arial, Helvetica, sans-serif;
+margin:0 20px 2px 0;
+padding:0 0 3px 10px
+}
+/*--taber --------------------------------------------------- -*/
+.tabberlive .tabbertabhide {
+	display:none;
+}
+/*--------------------------------------------------
+  .tabber = before the tabber interface is set up
+  .tabberlive = after the tabber interface is set up
+  --------------------------------------------------*/
+.tabber {
+	clear:both;
+}
+.tabberlive {
+	/* margin-top:1em;*/
+ margin-bottom: 10px;
+}
+/*--------------------------------------------------
+  ul.tabbernav = the tab navigation list
+  li.tabberactive = the active tab
+  --------------------------------------------------*/
+ul.tabbernav {
+	margin:0;
+	padding: 3px 0;
+	font: bold 11px Arial, Helvetica, sans-serif;
+}
+ul.tabbernav li {
+	list-style: none;
+	margin: 0;
+	display: inline;
+}
+ul.tabbernav li a {
+	padding: 3px 5px 3px 5px;
+	margin:0 ;
+	line-height:22px;
+	margin-left: 3px;
+	text-decoration: none;
+}
+#sidebar ul.tabbernav li { border-bottom:none; }
+#sidebar ul.tabbernav li a { padding: 3px 3px 2px 3px;  line-height:23px; }
+#sidebar ul.tabbernav li a { margin-left:-10px; font-weight:bold; font-size:11px;}
+#content ul.tabbernav li a { margin-left:3px; font-weight:bold; font-size:12px;}
+ul.tabbernav li.tabberactive a {
+	text-decoration:none;
+}
+/*--------------------------------------------------
+  .tabbertab = the tab content
+  Add style only after the tabber interface is set up (.tabberlive)
+  --------------------------------------------------*/
+.tabberlive .tabbertab {
+	padding:5px;
+	border-top:0;
+	margin-top:-18px;
+	/* If you don't want the tab size changing whenever a tab is changed
+    you can set a fixed height */
+}
+/* If desired, hide the heading since a heading is provided by the tab */
+
+#sidebar .tabberlive .tabbertab { margin-top:-3px;}
+#content .tabberlive .tabbertab { margin-top:0px;}
+.tabberlive .tabbertab h2 {
+	display:none;
+}
+.tabberlive .tabbertab h3 {
+	display:none;
+}
+/* Example of using an ID to set different styles for the tabs on the page */
+.tabberlive#tablog_ {
+}
+.tabberlive#tab2 {
+}
+.tabberlive#tab2 .tabbertab {
+	height:150px;
+	overflow:hidden;
+}
+ 
+#blog_sidebar .comments2,#sidebar .comments2 {
+clear:both;
+overflow:hidden;
+height:100%;
+padding:3px 0 5px 15px
+}
+#blog_sidebar .tabslist,#sidebar .tabslist {
+list-style:none;
+margin:8px 0 0;
+padding:0
+}
+#blog_sidebar .tabslist li,#sidebar .tabslist li {
+list-style:none;
+margin:0 0 8px;
+padding:0 0 5px 12px
+}
+#blog_sidebar .tabslist li a,#sidebar .comments2 a,#sidebar .tabslist li a {
+text-decoration:none
+}
+#blog_sidebar .tabslist li a:hover,#sidebar .comments2 a:hover,#sidebar .tabslist li a:hover {
+text-decoration:underline
+}
+#blog_sidebar .tabbertab h5,#sidebar .tabbertab h5 {
+display:none
+}
+/* misc */
+#blog_content{overflow:hidden!important;}
+
+/* Widget Search Section ------------ */
+
+#blog_sidebar #search, #blog_sidebar_r #search, #blog_sidebar_l #search { 
+width:auto; 
+background:none; 
+overflow:hidden; 
+height:100%; 
+float:none; 
+} 
+#blog_sidebar h2 { 
+clear:both; 
+}
+#blog_sidebar #searchform, #blog_sidebar_r #searchform, #blog_sidebar_l #searchform {
+margin:0 auto;
+text-align:left;
+float:none;
+background:none;
+}
+#blog_sidebar #searchform input, #blog_sidebar_l #searchform input, #blog_sidebar_r #searchform input {
+margin-bottom:5px;
+padding:3px;
+font:bold 11px Arial, Helvetica, sans-serif;
+}
+#blog_sidebar #search, #blog_sidebar_l #search, #blog_sidebar_r #search {
+border:none;
+background:#fff url(../images/i_search.png) no-repeat 3px 5px;
+}
+#blog_sidebar #search #s, #blog_sidebar_l #search #s, #blog_sidebar_r #search #s   { 
+border:1px solid #ccc; 
+font:normal 11px Arial, Helvetica, sans-serif; 
+}

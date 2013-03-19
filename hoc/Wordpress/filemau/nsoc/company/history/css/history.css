@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# gNav
+# sidebar
+
+----------------------------------------*/
+
+/* # gNav
+---------------------------------------------------------------------------- */
+
+div#gNav dl dd ul li#gNavCompany a img {
+	visibility: hidden;
+}
+
+
+/* # sidebar
+---------------------------------------------------------------------------- */
+
+div#lNav ul li#history a {
+	background: url(../../images/lnav_history_o.gif) no-repeat left top; 
+	display: block;
+}
+
+div#lNav ul li#history a img {
+	visibility: hidden;
+}

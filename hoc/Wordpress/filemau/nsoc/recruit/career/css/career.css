@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# gNav
+# content
+# sidebar
+
+----------------------------------------*/
+
+/* # gNav
+---------------------------------------------------------------------------- */
+
+div#gNav dl dd ul li#gNavRecruit a img {
+	visibility: hidden;
+}
+
+
+/* # content
+---------------------------------------------------------------------------- */
+
+
+div#content div.section div.sectionInner p.leadText {
+	padding: 19px 12px 0 0;
+	text-align: center;
+}
+
+div#content div.section div.sectionInner ol li {
+	padding-left: 13px;
+	text-indent: -13px;
+}
+
+div#content div.section div.sectionInner div.tableSection {
+	padding: 40px 0 0 0;
+}
+
+div#content div.section div.sectionInner div.tableSection table {
+	margin: 5px 0 51px 0;
+	width: 100%;
+}
+
+div#content div.section div.sectionInner div.tableSection table caption {
+	font-weight: bold;
+	padding-bottom: 5px;
+}
+
+div#content div.section div.sectionInner div.tableSection table.last {
+	margin: 0;
+}
+
+div#content div.section div.sectionInner div.tableSection table th {
+	background: #e9e9e9;
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	padding: 16px 0 0 8px;
+	vertical-align: top;
+	width: 94px;
+}
+
+div#content div.section div.sectionInner div.tableSection table td {
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	padding: 14px 0 14px 14px;
+}
+
+
+/* # sidebar
+---------------------------------------------------------------------------- */
+
+div#lNav ul li#career a {
+	background: url(../../images/lnav_career_o.gif) no-repeat left top; 
+	display: block;
+}
+
+div#lNav ul li#career a img {
+	visibility: hidden;
+}

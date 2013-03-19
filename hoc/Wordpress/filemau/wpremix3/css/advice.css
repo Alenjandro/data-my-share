@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# content
+
+----------------------------------------*/
+
+/* # content
+---------------------------------------------------------------------------- */
+
+div#content p.head01Text {
+	display: none;
+}
+
+div#content p.head02Text {
+	padding-bottom: 15px;
+}
+
+div#content h1 {
+	font-size: 110%!important;
+	font-weight: bold;
+}
+
+div#content div.adviceTable table#iqfm-input-2,
+div#content div.adviceTable table#iqfm-confirm-2 {
+	border: none!important;
+}
+
+div#content div.adviceTable table#iqfm-input-2 th,
+div#content div.adviceTable table#iqfm-confirm-2 th {
+	display: none;
+}
+
+div#content div.adviceTable table#iqfm-input-2 td,
+div#content div.adviceTable table#iqfm-confirm-2 td {
+	padding: 0 0 15px 0;
+	border: none!important;
+}
+
+div#content div.adviceTable table#iqfm-input-2 textarea,
+div#content div.section div.sectionIner div.adviceTable form#inquiryform-2 table#iqfm-confirm-2.iqfm-table tbody tr td#iqfm-confirm-body-1.iqfm-confirm-body {
+	height: 100px;
+	overflow: auto;
+	width: 665px;
+	border: 1px solid #ccc;
+}
+
+div#content div.section div.sectionIner div.adviceTable form#inquiryform-2 table#iqfm-confirm-2.iqfm-table tbody tr td#iqfm-confirm-body-1.iqfm-confirm-body {
+	border: 1px solid #ccc!important;
+}
+
+div#content div.section div.sectionIner div.adviceTable form#inquiryform-2 table#iqfm-confirm-2.iqfm-table {
+	margin-bottom: 15px!important;
+}
+
+p.confirmButton {
+	text-align: center;
+}
+
+#iqfm-input-8 input,
+#iqfm-input-9 input {
+	width: 470px;
+}
+
+div.buttons {
+	margin-left: 300px;
+	width: 150px;
+}
+div.buttons p.submitButton {
+	display: inline;
+	padding-right: 10px;
+}
+
+div.buttons p.backButton {
+	display: inline;
+}
+
+p.toLink {
+	display: none;
+}
+
+p.toLink02 {
+	margin-top: 10px;
+}

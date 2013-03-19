@@ -1,0 +1,292 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# gNav
+# content
+# clearfix
+
+----------------------------------------*/
+
+
+/* # gNav
+---------------------------------------------------------------------------- */
+
+div#gNav dl dd ul li#gNavGuarantee a img {
+	visibility: hidden;
+}
+
+div#gNav dl dd ul li#gNavGuarantee a {
+	background: url(../../common/images/gnav_guarantee_s.gif) no-repeat 0 0;
+}
+
+
+/* # content
+---------------------------------------------------------------------------- */
+
+div#content div.section dl.guaranteeSection dd {
+	padding: 17px 0 20px 0;
+}
+
+
+div#content div.section dl.guaranteeSection dd div.guaranteeContent {
+	background: url(../../common/images/bg_dot01.gif) repeat left top;
+	margin: 28px 0 40px 0;
+	padding: 3px;
+}
+
+div#content div.section dl.guaranteeSection dd div.guaranteeContent div {
+	background: #fff;
+	padding: 14px 43px 18px 53px;
+}
+
+div#content div.section dl.guaranteeSection dd div.guaranteeContent div p {
+	float: left;
+	width: auto;
+}
+
+div#content div.section dl.guaranteeSection dd div.guaranteeContent div p.text {
+	float: right;
+	padding: 11px 0 0 0;
+	width: 476px;
+}
+
+div#content div.section div.sectionInner {
+	padding: 0 0 57px 0;
+}
+
+div#content div.section div.sectionInnerLast {
+	padding-bottom: 0;
+}
+
+div#content div.section div.sectionInner h3 {
+	background: url(../../common/images/bg_shead.gif) repeat-x left bottom;
+	margin-bottom: 13px;
+	padding: 0 0 18px 0;
+}
+
+div#content div.section div.sectionInner h3 img {
+	position: static;
+}
+
+div#content div.section div.sectionInner p {
+	padding-bottom: 14px;
+}
+
+div#content div.section div.sectionInner p.guaranteeText {
+	padding-bottom: 21px;
+}
+
+div#content div.section div.sectionInner p.title {
+	color: #8dac30;
+	font-size: 110%;
+	font-weight: bold;
+	padding: 0 0 10px 0;
+}
+
+div#content div.section div.sectionInner p.warrantyTitle {
+	background: url(../../common/images/bg_dash.gif) repeat-x left bottom;
+	color: #8dac30;
+	font-size: 110%;
+	font-weight: bold;
+}
+
+div#content div.section div.sectionInner ul.detailLink {
+	padding-top: 0;
+}
+
+div#content div.section div.sectionInner ul.detailLink li {
+	background: url(../../common/images/ico_arrow01.gif) no-repeat 0 2px;
+	padding: 0 0 0 18px;
+}
+
+div#content div.section div.sectionInner div.maintenance p {
+	float: right;
+	padding: 0 31px 0 0;
+	width: auto;
+}
+
+div#content div.section div.sectionInner div.maintenance p.maintenanceText {
+	float: left;
+	padding: 0;
+	width: 404px;
+}
+
+table.styleTable {
+	background: url(../../common/images/bg_dot01.gif) repeat left top;
+	padding: 1px 0 0 0;
+	width: 100%;
+}
+
+table.styleTable tr th {
+	width: auto;
+}
+
+table.styleTable tr.tableHead th {
+	font-weight: bold;
+}
+
+table.styleTable tr th,
+table.styleTable tr td {
+	vertical-align: top;
+	padding: 6px 10px 6px 15px;
+}
+
+table.styleTable tr td {
+	width: 497px;
+}
+
+table.styleTable tr.tableHead th.sizeB {
+	background: #fff url(../../common/images/bg_dash.gif) repeat-x left bottom;
+}
+
+table.styleTable tr th,
+table.styleTable tr td {
+	background: url(../../common/images/bg_dash.gif) repeat-x left bottom;
+}
+
+table.styleTable tr td {
+	background: #fff url(../../common/images/bg_dash.gif) repeat-x left bottom;
+}
+
+table.styleTable tr td ul {
+	padding-bottom: 3px;
+}
+
+table.styleTable tr td ul li {
+	background: url(../../common/images/ico_circle.gif) no-repeat left 4px;
+	padding: 0 0 0 15px;
+}
+
+table.styleTable tr td ul li span {
+	display: block;
+	float: left;
+	min-width: 200px;
+	margin-right: 39px;
+}
+
+* html table.styleTable tr td ul li span {
+	width: 200px;
+	margin-right: 36px;
+}
+
+table.styleTable tr td ul li span.size {
+	width: auto;
+}
+
+
+/* lightbox
+ ---------------------------------------------------------------------------------*/
+ 
+.piro_overlay {
+	position: fixed;
+	_position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background:#000;
+	display: none;
+	z-index:99997;
+}
+
+.loading span{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -15px;
+	margin-left: -15px;
+	width: 30px;
+	height: 30px;
+	display: block;
+	z-index: 100008;
+	background: none
+}
+
+.loading span span{
+	position: absolute;
+	display: block;
+	width: 30px;
+	height: 30px;
+	z-index: 100009;
+	background: url(../images/img_loading.gif) center center no-repeat!important;
+}
+
+.caption {
+	display: none!important;
+}
+
+.piro_nav{
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin: 0;
+	display: block;
+	padding: 0;
+	background: none;
+}
+
+a.piro_close {
+	position: absolute;
+	top: -1px;
+	right: -3px;
+	height: 41px;
+	width: 45px;
+	background: url(../images/ico_close.gif) no-repeat;
+	cursor: pointer;
+	z-index: 100006;
+}
+
+* html a.piro_close{
+	top: 0;
+}
+
+*:first-child + html a.piro_close{
+	top: 0;
+}
+
+.pirobox_content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	padding: 0;
+	width: 800px;
+	height: 600px;
+	margin:-300px 0 0 -400px;
+	display: block;
+	z-index: 99998;
+}
+
+@media all and (-webkit-min-device-pixel-ratio:10000), not all and (-webkit-min-device-pixel-ratio:0) { head~body .pirobox_content {top:75%; } } 
+
+.t_l, .t_r, .t_c, .c_l, .c_r, .b_l, .b_r {
+	width: 20px;
+	height: 20px;
+}
+
+.c_c div {
+	width: 760px;
+	height: 560px;
+	margin: 0;
+	padding: 0;
+}
+
+
+/* # clearfix
+---------------------------------------------------------------------------- */
+
+div#content div.section dl.guaranteeSection dd div.guaranteeContent div,
+div#content div.section div.sectionInner div.maintenance {
+	zoom: 1;
+}
+
+div#content div.section dl.guaranteeSection dd div.guaranteeContent div:after,
+div#content div.section div.sectionInner div.maintenance:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}
