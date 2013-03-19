@@ -1,0 +1,488 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# General Elements
+# body
+# header
+# gNav
+# pageBody
+# content
+# sidebar
+# footer
+# clearfix
+
+----------------------------------------*/
+
+
+/* # General Elements
+---------------------------------------------------------------------------- */
+
+a {
+	color: #408214;
+	outline: none;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+
+/* # body
+---------------------------------------------------------------------------- */
+
+body {
+	background: #fdffe9;
+	font-size: 75%;
+	font-family: "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3";
+	line-height: 1.5;
+}
+
+
+/* # header
+---------------------------------------------------------------------------- */
+
+div#header {
+	background: #000 url(../images/bg_header.gif) repeat-x center bottom;
+}
+
+div#hSection {
+	margin: 0 auto;
+	width: 950px;
+}
+
+div#hSection h1 {
+	color: #b3b3b3;
+	font-size: 90%;
+	float: left;
+	padding: 3px 0 0 0;
+	width: 600px;
+}
+
+div#hSection p.home {
+	float: right;
+	padding: 0;
+	width: auto;
+}
+
+div#headSection {
+	background: none;
+	height: 160px;
+}
+
+div#headSection div#headerInner {
+	margin: 0 auto;
+	width: 950px;
+}
+
+div#headSection div#headerInner #logo {
+	padding: 50px 0 0 0;
+}
+
+div#headSection div#headerInner p {
+	padding: 31px 0 0;
+}
+
+
+/* # pageBody
+---------------------------------------------------------------------------- */
+
+div#pageBody {
+	clear: both;
+	padding: 60px 0 11px 0;
+}
+
+
+/* # content
+---------------------------------------------------------------------------- */
+
+div#content {
+	clear: both;
+	float: left;
+	width: 663px;
+}
+
+div#content div.section div.searchResultsStyle {
+	padding: 0 0 15px 0;
+	font-size: 120%;
+}
+
+div#content div.section div.searchResultsStyle p.searchText strong {
+	color: #408214;
+}
+
+div#content div.section div.searchResultsStyle ul {
+	padding-top: 10px;
+}
+
+div#content div.section div.sectionInner {
+	clear: both;
+	margin-bottom: 50px;
+}
+
+div#content div.section div.sectionInner .calendar {
+	background: url(../images/bg_date.gif) no-repeat 0 0;
+	float: left;
+	height: 67px;
+	padding: 3px 0 0 0;
+	text-align: center;
+	width: 64px;
+}
+
+div#content div.section div.sectionInner .calendar .month {
+	color: #fff;
+	font-size: 90%;
+}
+
+div#content div.section div.sectionInner .calendar table td {
+	height: 47px;
+	width: 64px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+div#content div.section div.sectionInner .calendar .day {
+	color: #7b9e4c;
+	font-weight: bold;
+	padding: 4px 0 0 0;
+	line-height: 1.2;
+}
+
+div#content div.section div.sectionInner .calendar .day strong {
+	color: #618b3d;
+	font-size: 20px;
+}
+
+div#content div.section div.sectionInner .sectionBlock {
+	float: right;
+	margin: 4px 0 0 0;
+	width: 588px;
+}
+
+div#content div.section div.sectionInner .sectionBlock h2 {
+	background: url(../images/bg_dot01.gif) repeat-x left bottom;
+	color: #408214;
+	font-size: 180%;
+	font-weight: bold;
+	margin-bottom: 5px;
+	padding-bottom: 11px;
+}
+
+div#content div.section div.sectionInner .sectionBlock ul.blockList li {
+	background: url(../images/bg_line.gif) no-repeat right center;
+	float: left;
+	margin-right: 14px;
+	padding-right: 14px;
+	width: auto;
+}
+
+div#content div.section div.sectionInner .sectionBlock ul.blockList li strong {
+	padding-left: 3px;
+}
+
+div#content div.section div.sectionInner .sectionBlock ul.blockList li.last {
+	background: none;
+}
+
+div#content div.section div.sectionInner .sectionBlock p.text {
+	margin: 38px 0 27px 0;
+}
+
+div#content div.section div.sectionInner .sectionBlock p.text img {
+	background: url(../images/bg_dot02.gif) repeat 0 0;
+	padding: 3px;
+}
+
+div#content div.section div.sectionInner .sectionBlock .tag {
+	clear: both;
+	background: url(../images/bg_tag_top.gif) no-repeat left top;
+	padding-top: 3px;
+}
+
+div#content div.section div.sectionInner .sectionBlock .tag dl {
+	background: url(../images/bg_tag_bottom.gif) no-repeat left bottom;
+	padding: 8px 0 11px 0;
+}
+
+div#content div.section div.sectionInner .sectionBlock .tag dl dt {
+	float: left;
+	padding: 0 8px 0 16px;
+	width: auto;
+}
+
+div#content div.section div.sectionInner .sectionBlock .tag dl dd {
+	padding: 0 0 0 4em;
+}
+
+div#content div.section div.sectionInner .sectionBlock .tag dl dd ul.tagList li {
+	background: none;
+	float: left;
+	margin-right: 5px;
+	padding-right: 0;
+	width: auto;
+}
+
+div#content div.section div.sectionInner .sectionBlock .tag dl dd ul.tagList li a {
+	font-weight: bold;
+	padding-right: 2px;
+}
+
+.pageLink {
+	margin: 0;
+	padding: 0 0 80px 75px;
+}
+
+.pageLink ul li span.current_page {
+	background: url(../images/bg_linkpage_s.gif) no-repeat 0 0;
+}
+
+.pageLink ul li a {
+	background: url(../images/bg_linkpage.gif) no-repeat 0 0;
+	color: #408214;
+}
+
+.pageLink ul li a:hover {
+	color: #408214;
+	background: url(../images/bg_pagelink_o.gif) no-repeat 0 0; 
+}
+
+.pageLink ul li a.link_before,
+.pageLink ul li a.link_next {
+	background: url(../images/img_linkpage_next_o.gif) no-repeat 0 0!important;
+	display: block;
+	height: 25px;
+	width: 25px;
+}
+
+.pageLink ul li a.link_before {
+	background: url(../images/img_linkpage_previous_o.gif) no-repeat 0 0!important;
+}
+
+.pageLink ul li a.link_before:hover,
+.pageLink ul li a.link_next:hover {
+	overflow: hidden;
+}
+
+.pageLink ul li a.link_before:hover img,
+.pageLink ul li a.link_next:hover img {
+	visibility: hidden;
+}
+
+
+/* # sidebar
+---------------------------------------------------------------------------- */
+
+div#sidebar {
+	float: right;
+	margin-bottom: 50px;
+	width: 230px;
+}
+
+div#sidebar form input#retrieval {
+	height: 23px;
+	vertical-align:bottom;
+}
+
+input#retrieval {
+	display: block;
+	width: 58px;
+	margin-top: -4px;	
+}
+
+* html div#sidebar form input {
+	float: left;
+	vertical-align: middle;
+}
+
+div#sidebar form input.sizeB {
+	background: #c4d9a9;
+	border: none;
+	float: left;
+	height: 21px;
+	width: 170px;
+}
+
+* html div#sidebar form input.sizeB {
+	height: 18px;
+	padding: 5px 0 0 0;
+}
+
+*:first-child + html div#sidebar form input.sizeB {
+	height: 18px;
+	padding: 5px 0 0 0;
+}
+
+div#sidebar .dateBlock {
+	clear: both;
+	margin: 39px 0 7px 0;
+	position: relative;
+	width: 230px;
+}
+
+*:first-child + html div#sidebar .dateBlock {
+	margin: 37px 0 7px 0;
+}
+
+div#sidebar .dateBlock .date {
+	color: #408214;
+	font-weight: bold;
+	line-height: 1.2;
+	text-align: center;
+}
+
+div#sidebar .dateBlock .next {
+	position: absolute;
+	right: 0;
+	top: 2px;
+}
+
+div#sidebar .dateBlock .previous {
+	position: absolute;
+	left: 0;
+	top: 2px;
+}
+
+div#sidebar div.dateSidebar table {
+	margin-bottom: 3px;
+	width: 100%;
+}
+
+div#sidebar table td {
+	background: url(../images/bg_table.gif) repeat 0 0;
+	border-left: 1px solid #fdffe9;
+	border-top: 1px solid #fdffe9;
+	height: 30px;
+	text-align: center;
+	width: 32px;
+}
+
+* html div#sidebar table td {
+	width: 31px;
+}
+
+*:first-child + html div#sidebar table td {
+	width: 31px;
+}
+
+div#sidebar table td a {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+div#sidebar table td a:hover {
+	text-decoration: none;
+}
+
+div#sidebar div.section {
+	margin: 37px 0 0 0;
+	padding-bottom: 0;
+	width: 230px;
+}
+
+div#sidebar div.section h3 {
+	background: url(../images/bg_dot01.gif) repeat-x left bottom;
+	margin-bottom: 5px;
+	padding-bottom: 13px;
+}
+
+div#sidebar div.section ul li a {
+	background: url(../images/ico_arrow01.gif) no-repeat left 5px;
+	color: #408214;
+	display: inline-block;
+	padding-left: 15px;
+}
+
+div#sidebar div.section ul li {
+	padding: 6px 0 0 0;
+}
+
+
+/* # footer
+---------------------------------------------------------------------------- */
+
+div#footer {
+	background: #78a753;
+	height: 214px;
+}
+
+div#footer .contact {
+	color: #fff;
+	clear: both;
+	float: left;
+	padding: 25px 0 0 0;
+	width: 605px;
+}
+
+div#footer .contact dl {
+	background: none;
+	min-height: 104px;
+	width: 650px;
+}
+
+div#footer .contact dl dt {
+	font-weight: bold;
+}
+
+div#footer .contact dl dd ul {
+	padding: 5px 0 0 0;
+}
+
+div#footer .contact dl dd ul li {
+	color: #fff;
+	float: left;
+	padding-right: 0;
+	width: 198px;
+}
+
+.pagetop {
+	font-size: 0;
+	padding: 0 0 14px 848px;
+	width: 102px!important;
+}
+
+.pagetop a {
+	background: url(../images/btn_pagetop_o.gif) no-repeat 0 0;
+	display: block;
+	height: 10px;
+	width: 102px;
+}
+
+.pagetop a:hover {
+	overflow: hidden;
+}
+
+.pagetop a:hover img {
+	visibility: hidden;
+}
+
+
+/* # clearfix
+---------------------------------------------------------------------------- */
+
+div#headerInner,
+div#pageBody,
+div#sidebar form input,
+div#content div.section div.sectionInner,
+div#content div.section div.sectionInner .sectionBlock ul.blockList li,
+div#content div.section div.sectionInner .sectionBlock .tag dl,
+div#content div.section div.sectionInner .sectionBlock .tag dl dd ul.tagList li {
+	zoom: 1;
+}
+
+div#headerInner:after,
+div#pageBody:after,
+div#sidebar form input:after,
+div#content div.section div.sectionInner:after,
+div#content div.section div.sectionInner .sectionBlock ul.blockList li:after,
+div#content div.section div.sectionInner .sectionBlock .tag dl:after,
+div#content div.section div.sectionInner .sectionBlock .tag dl dd ul.tagList li:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}
+>>>>>>> .r12064

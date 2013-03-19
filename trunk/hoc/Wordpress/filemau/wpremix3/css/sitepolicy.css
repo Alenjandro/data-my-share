@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+#content
+
+----------------------------------------*/
+
+
+/* # content
+---------------------------------------------------------------------------- */
+
+div.section div.sectionInner p.note {
+	background: #efefef;
+	font-weight: bold;
+	margin: 4px 0 0 0;
+	padding: 21px 20px 22px 17px;
+}
+
+div.section div.sectionInner div.contact {
+	margin: 26px auto 0;
+	border: 1px solid #cecece;
+	width: 416px;
+}
+
+div.section div.sectionInner div.contact p.inquiry {
+	float: left;
+	padding: 11px 0 0 18px;
+	width: 159px;
+}
+
+div.section div.sectionInner div.contact p.fax {
+	float: right;
+	padding: 5px 18px 12px 0;
+	width: 202px;
+}
+
+
+/* # clearfix
+---------------------------------------------------------------------------- */
+
+div.section div.sectionInner div.contact {
+	zoom: 1;
+}
+
+div.section div.sectionInner div.contact:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}

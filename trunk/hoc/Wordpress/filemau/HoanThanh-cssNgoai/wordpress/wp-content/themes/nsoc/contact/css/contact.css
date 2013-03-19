@@ -1,0 +1,186 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# gNav
+# content
+# sidebar
+# clearfix
+
+----------------------------------------*/
+
+/* # gNav
+---------------------------------------------------------------------------- */
+
+div#gNav dl dd ul li#gNavInquiry a img {
+	visibility: hidden;
+}
+
+
+/* # content
+---------------------------------------------------------------------------- */
+
+div#content em {
+	color: #ff0000;
+}
+
+div#content a {
+	color: #003399;
+	font-weight: bold;
+}
+
+div#content table.contact {
+	margin-top: 16px;
+	width: 670px;
+}
+
+div#content table.contact .error {
+	background: #ffc;
+}
+
+div#content p img.back {
+	padding-right: 10px;
+}
+
+div#content table.contact th.colFirst {
+	background: #e9e9e9 url(../images/bg_table.gif) repeat-x 0 0;
+}
+
+div#content table.contact th {
+	background: #e9e9e9;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	padding: 10px 5px 8px 10px;
+	vertical-align: top;
+	width: 190px;
+}
+
+div#content table.contact th span {
+	font-size: 90%;
+}
+
+div#content table.contact td {
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	padding: 10px 0 8px 12px;
+	width: 474px;
+}
+
+* html div#content table.contact td {
+	padding: 8px 0 8px 12px;
+}
+
+*:first-child + html div#content table.contact td {
+	padding: 8px 0 8px 12px;
+}
+
+div#content table.contact ul li {
+	width: auto;
+}
+
+div#content table.contact ul.radioList {
+	margin-bottom: -3px;
+}
+
+div#content table.contact ul.radioList li {
+	padding-bottom: 3px;
+}
+
+div#content table.contact ul.radioList li input {
+	vertical-align: top;
+}
+
+* html div#content table.contact ul.radioList li input {
+	vertical-align: middle;
+}
+
+*:first-child + html div#content table.contact ul.radioList li input {
+	vertical-align: middle;
+}
+
+div#content p.confirm {
+	padding-top: 11px;
+	text-align: center;
+}
+
+div#content textarea {
+	height: 70px;
+	overflow: auto;
+	width: 468px;
+}
+
+div#content table.contact ul.inputList li {
+	float: left;
+	padding-right: 26px;
+}
+
+div#content table.contact ul.inputList li input {
+	margin-left: 8px;
+}
+
+div#content .sizeSs {
+	width: 77px;
+}
+
+div#content .sizeS {
+	width: 161px;
+}
+
+div#content .sizeM {
+	width: 250px;
+}
+
+div#content .sizeL {
+	width: 467px;
+}
+
+div#content ul.phoneList li {
+	background: url(../images/bg_line.gif) no-repeat left center;
+	float: left;
+	padding: 0 15px 0 21px;
+}
+
+div#content ul.phoneList li.phoneFirst {
+	background: none;
+	padding-left: 0;
+}
+
+div#content ul.radioStyle li {
+	float: left;
+	padding-right: 3px;
+}
+
+div#content ul.radioStyle li input {
+	margin-top: -2px;
+	vertical-align: middle;
+}
+
+
+/* # sidebar
+---------------------------------------------------------------------------- */
+
+div#sidebar ul.bannerList {
+	padding-top: 28px;
+}
+
+
+/* # clearfix
+---------------------------------------------------------------------------- */
+
+div#content ul.radioStyle,
+div#content ul.phoneList,
+div#content table.contact ul.inputList {
+	zoom: 1;
+}
+
+div#content ul.radioStyle:after,
+div#content ul.phoneList:after,
+div#content table.contact ul.inputList:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+} 

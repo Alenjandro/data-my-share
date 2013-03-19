@@ -1,0 +1,140 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# gNav
+# content
+# clearfix
+
+----------------------------------------*/
+
+
+/* # gNav
+---------------------------------------------------------------------------- */
+
+div#gNav dl dd ul li#gNavDownload a img {
+	visibility: hidden;
+}
+
+
+/* # content
+---------------------------------------------------------------------------- */
+
+div#content div.section div.sectionInner div.sectionContent ul.grapefruit {
+	margin: 0 -27px 0 0;
+	padding: 15px 17px 5px 20px;
+	width: 522px;
+}
+
+div#content div.section div.sectionInner div.sectionContent ul.grapefruit li {
+	display: inline;
+	float: left;
+	margin-right: 27px;
+	width: 234px;
+}
+
+div#content div.section div.sectionInner div.sectionContent ul.grapefruit li ul {
+	padding: 12px 0 0 0;
+	width: 234px;
+}
+
+div#content div.section div.sectionInner div.sectionContent ul.grapefruit li ul li {
+	background: url(../../common/images/ico_arrow04.gif) no-repeat 0 3px;	
+	margin-right: 0;
+	padding: 0 0 4px 12px;
+	width: 222px;
+}
+
+div#content div.section div.sectionInner div.sectionContent ul.grapefruit li ul li a {
+	text-decoration: underline;
+}
+
+div#content div.section div.sectionInner div.sectionContent ul.grapefruit li ul li a:hover {
+	text-decoration: none;
+}
+
+div#content div.section div.sectionInner div.sectionContent h4 {
+	color: #336633;
+	clear: both;
+	font-weight: bold;
+	padding: 4px 0 0 0;
+}
+
+div#content div.section div.sectionInner div.sectionContent p.osTxt {
+	padding: 0 20px 0 0;
+}
+
+div#content div.section div.sectionInner div.sectionContent ul.list {
+	padding: 4px 16px 26px 0;
+}
+
+div#content div.section div.sectionInner div.sectionContent ul.list li {
+	color: #2a552b;
+}
+
+div#content div.section div.sectionInner div.sectionContent ul.folder {
+	margin: -30px -30px 0 0;
+	padding: 15px 17px 13px 20px;
+	width: 525px;	
+}
+
+div#content div.section div.sectionInner div.sectionContent ul.folder li {
+	display: inline;
+	border: 1px solid #fdd32a;
+	float: left;
+	margin-right: 30px;
+	margin-top: 30px;
+	width: 143px;
+	height: 143px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+div#content div.section div.sectionInner div.sectionContent p.link {
+	clear: both;
+	color: #7f7f7f;
+	padding: 0 22px 3px 0;
+	text-align: right;
+}
+
+div#content div.section div.sectionInner div.sectionContent ul.iconList {
+	padding: 0 0 0 307px;
+	text-align: left;
+}
+
+div#content div.section div.sectionInner div.sectionContent ul.iconList li {
+	display: inline;
+	padding: 0 15px 10px 0;
+}
+
+div#content div.section div.sectionInner div.sectionContent ul.iconList li a {
+	background: url(../../common/images/ico_arrow04.gif) no-repeat left top;
+	padding-left: 12px;
+	text-decoration: underline;
+}
+
+div#content div.section div.sectionInner div.sectionContent ul.iconList li a:hover {
+	text-decoration: none;
+}
+
+
+
+
+/* # clearfix
+---------------------------------------------------------------------------- */
+
+div#content div.section div.sectionInner div.sectionContent ul.grapefruit,
+div#content div.section div.sectionInner div.sectionContent ul.foldert {
+	zoom: 1;
+}
+
+div#content div.section div.sectionInner div.sectionContent ul.grapefruit:after,
+div#content div.section div.sectionInner div.sectionContent ul.folder:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}

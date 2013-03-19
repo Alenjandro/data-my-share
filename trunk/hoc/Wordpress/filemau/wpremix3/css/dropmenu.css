@@ -1,0 +1,141 @@
+/*  
+VERTICAL and HORIZONTAL dropmenu settings
+*/
+ul#navmenu-h, ul#navmenu-h li, ul#navmenu-h ul{ margin: 0; padding: 0; border: 0 none;list-style: none;}
+ul#navmenu-h ul ul { margin-top:-1px;}
+ul#navmenu-h ul:after /*From IE 7 lack of compliance*/ {
+	clear: both; display: block; font: 1px/0px serif; content: "."; height: 0; visibility: hidden; }
+
+ul#navmenu-h {
+	height: 28px;
+}
+ul#navmenu-h li {
+	height:25px;
+	float: left;
+	display: inline;
+	position: relative;
+}
+ul#navmenu-h ul {
+	width: 160px;
+	top: 28px;
+	left: 0;
+	display: none;
+	position: absolute;
+}
+ul#navmenu-h ul li {
+	width: 160px;
+	float: left;
+	display: block !important;
+	display: inline;
+}
+/* Root Menu */
+ul#navmenu-h li a, ul#navmenu-v li a {
+	border-left: none;
+	padding: 0 10px;
+	float: none !important;
+	float: left;
+	display: block;
+	font: bold 12px Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	height: auto !important;
+	height: 1%;
+	line-height:26px;
+}
+/* 2nd Menu */
+ul#navmenu-h li:hover li a, ul#navmenu-v li:hover li a,
+ul#navmenu-h li.iehover li a, ul#navmenu-v li.iehover li a { 
+	float: none;
+	_border-top:none;
+}
+ul#navmenu-h ul ul,
+ul#navmenu-h ul ul ul,
+ul#navmenu-h ul ul ul ul {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 160px;
+}
+
+/* NO EDIT PAST THIS LINE - Do Not Move - Must Come Before display:block for Gecko */
+
+ul#navmenu-h li:hover ul ul, ul#navmenu-v li:hover ul ul,
+ul#navmenu-h li:hover ul ul ul, ul#navmenu-v li:hover ul ul ul,
+ul#navmenu-h li:hover ul ul ul ul, ul#navmenu-v li:hover ul ul ul ul,
+ul#navmenu-h li.iehover ul ul, ul#navmenu-v li.iehover ul ul,
+ul#navmenu-h li.iehover ul ul ul, ul#navmenu-v li.iehover ul ul ul,
+ul#navmenu-h li.iehover ul ul ul ul, ul#navmenu-v li.iehover ul ul ul ul {
+	display: none;
+}
+ul#navmenu-h li:hover ul, ul#navmenu-v li:hover ul,
+ul#navmenu-h ul li:hover ul, ul#navmenu-v ul li:hover ul,
+ul#navmenu-h ul ul li:hover ul, ul#navmenu-v ul ul li:hover ul,
+ul#navmenu-h ul ul ul li:hover ul, ul#navmenu-v ul ul ul li:hover ul,
+ul#navmenu-h li.iehover ul, ul#navmenu-v li.iehover ul,
+ul#navmenu-h ul li.iehover ul, ul#navmenu-v ul li.iehover ul,
+ul#navmenu-h ul ul li.iehover ul, ul#navmenu-v ul ul li.iehover ul,
+ul#navmenu-h ul ul ul li.iehover ul, ul#navmenu-v ul ul ul li.iehover ul {
+	display: block;
+}
+/* #end -------------- */
+
+/*  
+VERTICAL and HORIZONTAL dropmenu settings
+*/
+ 
+ul#navmenu-v, #sidebar ul#navmenu-v,
+ul#navmenu-v li, #sidebar ul#navmenu-v li,
+ul#navmenu-v ul, #sidebar ul#navmenu-v ul {
+  margin: 0;
+  border: 0 none;
+  padding: 0;
+  width: 180px; /*For KHTML*/
+  list-style: none;
+}
+ul#navmenu-v:after /*From IE 7 lack of compliance*/{
+  clear: both;
+  display: block;
+  font: 1px/0px serif;
+  content: ".";
+  height: 0;
+  visibility: hidden;
+}
+ul#navmenu-v li {
+  float: left; /*For IE 7 lack of compliance*/
+  display: block !important; /*For GOOD browsers*/
+  display: inline; /*For IE*/
+  position: relative;
+}
+ul#navmenu-v ul,
+ul#navmenu-v ul ul,
+ul#navmenu-v ul ul ul {
+  display: none;
+  position: absolute;
+  top: 0;
+  right:180px;	
+ /*If you wish to use vertical dropmenu on left sidebar, simply change the value right to left here. e.g. = left:180px;*/
+}
+#r_sidebar h3.vmenuspcaer { padding-top:18px;  }
+
+/* inner pages sidebar vmenu css -------------------------------- */
+
+#sidebar ul#navmenu-v li  
+#sidebar ul#navmenu-v,
+#sidebar ul#navmenu-v li,
+#sidebar ul#navmenu-v ul {
+  margin: 0;
+  border: 0 none;
+  padding: 0;
+  width: 240px; /*For KHTML*/
+  list-style: none;
+}
+#sidebar ul#navmenu-v ul,
+#sidebar ul#navmenu-v ul ul,
+#sidebar ul#navmenu-v ul ul ul {
+  right:240px;	/*If you wish to use vertical dropmenu on left sidebar, simply change the value right to left here. e.g. = left:240px;*/
+}
+#sidebar ul#navmenu-v li a:hover { text-decoration:none; }
+
+* html #sidebar ul#navmenu-v li a{ 
+  width: 220px;
+  padding:0 10px;
+}

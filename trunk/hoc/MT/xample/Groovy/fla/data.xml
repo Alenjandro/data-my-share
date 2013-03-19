@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<images>
+	<num>3</num>
+	<sec>4</sec>
+	<large>
+		<img>fla/0.jpg</img>
+		<url>http://groovy-home.jp/quality/index.html</url>
+		<target>_self</target>
+	</large>
+	<large>
+		<img>fla/1.jpg</img>
+		<url>http://groovy-home.jp/voice/index.html</url>
+		<target>_self</target>
+	</large>
+	<large>
+		<img>fla/2.jpg</img>
+		<url>http://groovy-home.jp/gallery/index.html</url>
+		<target>_self</target>
+	</large>
+	<small>
+		<off>fla/icn0_off.png</off>
+		<on>fla/icn0_on.png</on>
+	</small>
+	<small>
+		<off>fla/icn1_off.png</off>
+		<on>fla/icn1_on.png</on>
+	</small>
+	<small>
+		<off>fla/icn2_off.png</off>
+		<on>fla/icn2_on.png</on>
+	</small>
+</images>

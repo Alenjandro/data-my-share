@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# General Elements
+# gNav
+# pageBody
+# content
+# sidebar
+# clearfix
+# common classes
+
+----------------------------------------*/
+
+
+/* # content
+---------------------------------------------------------------------------- */
+
+.pageLink {
+	padding: 22px 0 16px 0;
+}
+
+div#content div.sectionInner div.sectionInfo,
+div#content div.sectionInnerLast div.sectionInfo {
+	position: relative;
+}
+
+div#content div.sectionInner div.sectionInfo p.title,
+div#content div.sectionInnerLast div.sectionInfo p.title {
+	color: #b95443;
+	padding: 4px 0 11px 0;
+	font-weight: bold;
+}
+
+/*p.detailImg {
+	float: right;
+	margin-top: -26px;
+	padding: 0 0 10px 20px;
+}*/
+
+div#content div.sectionInfo p.entryBody img {
+	background: url(../../common/images/bg_dot01.gif) repeat left top;
+	padding: 3px;
+}
+
+ul.link {
+	background: url(../../common/images/bg_dash.gif) repeat-x left top;
+	margin: 32px 0 0;
+	padding: 21px 0 7px 0;
+}
+
+
+/* # clearfix
+---------------------------------------------------------------------------- */
+
+div#content div.sectionInner div.sectionInfo,
+div#content div.sectionInnerLast div.sectionInfo {
+	zoom: 1;
+}
+
+div#content div.sectionInner div.sectionInfo:after,
+div#content div.sectionInnerLast div.sectionInfo:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}
+
+
+/* # common classes
+---------------------------------------------------------------------------- */
+

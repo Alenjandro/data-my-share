@@ -1,0 +1,142 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# content
+
+----------------------------------------*/
+
+/* # content
+---------------------------------------------------------------------------- */
+
+div#content ol.privacySection {
+	padding: 25px 0 0 0;
+}
+
+div#content table {
+	width: 100%;
+}
+
+div#content table th {
+	border: 1px solid #c3c3c3;
+	border-left: none;
+	padding: 12px 10px 10px 13px;
+	vertical-align: top;
+	width: 184px;
+}
+
+div#content table td {
+	border-bottom: 1px solid #c3c3c3;
+	border-top: 1px solid #c3c3c3;
+	padding: 10px 10px 9px 13px;
+	vertical-align: top;
+	width: auto;
+}
+
+div#content table tr.tableTitle th {
+	background: #ebebeb;
+	border-bottom: 1px solid #c3c3c3;
+	border-top: 1px solid #c3c3c3;
+	font-weight: bold;
+	width: auto;
+}
+
+div#content ol.privacySection li {
+	padding: 1px 0 0 0;
+}
+
+div#content ol.privacySection li dl dt {
+	padding: 1px 0 0 0;
+}
+
+
+div#content ol.privacySection li dl dd {
+	padding: 0 0 17px 0;
+}
+
+div#content ol.privacySection li dl dd.last {
+	padding-bottom: 0;
+}
+
+div#content ol.privacySection li dl dd ol {
+	padding: 0 0 0 12px;
+}
+
+div#content ol.privacySection li dl dd ol li {
+	text-indent: -12px;
+	padding: 0 0 0 12px;
+}
+
+div#content ol.privacySection li h3 {
+	border-bottom: 1px solid #ccc;
+	font-weight: bold;
+	padding: 0 0 1px 0;
+}
+
+div#content ol.privacySection li ol li {
+	text-indent: -18px;
+	padding: 0 0 3px 18px;
+	width: auto;
+}
+
+
+div#content ol.privacySection li table ul li {
+	text-indent: -7px;
+	padding: 0 0 2px 7px;
+	width: auto;
+}
+
+div#content ol.privacySection div {
+	padding: 6px 0 17px 2px;
+}
+
+div#content ol.privacySection p {
+	padding-bottom: 15px;
+}
+
+
+
+div#content ul.contact {
+	background: url(/wp/wp-content/themes/wpremix3/images/common/bg_dot.gif) repeat-x left bottom;
+	padding: 0 0 6px 0;
+}
+
+div#content ul.contact li {
+	display: inline;
+	float: left;
+	padding: 0 19px 0 0;
+	width: auto;
+}
+
+div#content ul.contact li.contactLast {
+	padding-right: 0;
+}
+
+div#content ul.contact li.plant {
+	padding: 4px 38px 0 0;
+}
+
+div#content p.privacyButton {
+	background: url(/wp/wp-content/themes/wpremix3/images/common/bg_mh.gif) repeat-x left top;
+	text-align: center;
+	margin-top: 27px;
+	padding: 13px 0 0 0;
+}
+
+/* # clearfix
+---------------------------------------------------------------------------- */
+
+div#content ul.contact {
+	zoom: 1;
+}
+
+div#content ul.contact:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}
+

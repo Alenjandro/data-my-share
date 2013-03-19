@@ -1,0 +1,227 @@
+/* STRUCTURE ----------------------------------*/
+
+#blog_content {
+width:560px;
+float:left;
+margin-top:10px;
+}
+#blog_sidebar {
+width:255px;
+float:right;
+background: url(../images/b1_sidebarbg.png) repeat-y left;
+margin-top:10px;
+}
+.sidebar_top {
+background:url(../images/sidebar1_top.png) no-repeat top left;
+}
+.sidebar_bottom {
+background:url(../images/sidebar1_bottom.png) no-repeat bottom left;
+padding-left:20px;
+overflow:hidden;
+height:100%;
+}
+#blog_content h2 {
+margin:0 0 0 0;
+padding:0;
+font-size:22px;
+color:#cc0000;
+font-weight:normal;
+}
+/*post css start ----------------------------------*/
+#blog_content .posts {
+padding-bottom:5px;
+margin-bottom:25px;
+overflow:hidden;
+height:100%;
+}
+#blog_content .post_top {
+padding:0;
+margin-bottom:10px;
+overflow:hidden;
+height:100%;
+background:url(../images/sepretor_hr.png) repeat-x bottom;
+}
+#blog_content .pright {
+width:90%;
+float:right;
+padding-left:15px;
+background:url(../images/sepretor_vr.png) repeat-y left;
+}
+#blog_content .post_top p {
+font-size:11px;
+margin:0;
+padding:0;
+color:#666;
+}
+#blog_content .post_top span {
+font-size:11px;
+color:#666;
+}
+#blog_content .calendar {
+width:40px;
+float:left;
+padding-top:5px;
+font-size:24px;
+margin-top:3px;
+text-align:center;
+line-height:20px;
+}
+#blog_content .month {
+font-size:12px;
+font-weight:bold;
+text-align:center;
+text-transform:uppercase;
+}
+.i_author {
+padding-left:13px;
+padding-right:10px;
+background:url(../images/i_author.png) no-repeat 0 3px;
+}
+.i_comment2 {
+padding-left:13px;
+padding-right:10px;
+background:url(../images/i_comment2.png) no-repeat 0 3px;
+}
+#blog_content .post_bottom {
+padding:4px 0;
+overflow:hidden;
+height:100%;
+color:#939393;
+clear:both;
+background:url(../images/sepretor_hr.png) repeat-x bottom;
+}
+#blog_content .post_bottom p, .post_bottom span {
+margin:0 0 0 0;
+padding:0 0 0 0;
+font-size:11px;
+}
+#blog_content .post_bottom a {
+color:#666;
+text-decoration:none;
+}
+#blog_content .post_bottom a:hover, #blog_content .post_top span a:hover {
+color:#000;
+text-decoration:underline;
+}
+#blog_content .cate {
+float:left;
+width:50%;
+background:url(../images/i_categories.png) no-repeat 0 5px;
+padding-left:15px;
+padding-top:2px;
+}
+#blog_content .tags {
+background:url(../images/i_tag.png) no-repeat 0 4px;
+padding-left:15px;
+}
+#blog_content .pbottom {
+float:right;
+width:40%;
+text-align:right;
+}
+#blog_content .post-ratings {
+font-size:11px;
+font-style:normal;
+padding-left:8px;
+margin:8px 0;
+}
+#blog_content .more-link {
+text-align:right;
+float:right;
+font-size:10px;
+text-transform:uppercase;
+background:url(../images/i_continue.png) no-repeat right;
+padding-right:10px;
+margin-bottom:10px;
+}
+/* comment form --------------------------- */						
+#commentform label {
+width:110px;
+padding:0 0 10px 0;
+}
+#commentform { padding-bottom:25px; height:100%; overflow:hidden; }
+.field { 
+overflow:hidden; 
+height:100%; 
+}
+#blog_content .textarea {
+width:420px;
+}
+#blog_content .Cbutton {
+margin-left:120px; _margin-left:118px;
+}
+/* sidebar -------------------------------------------------------------------------------- */
+#blog_sidebar h5, #blog_sidebar h2 {
+margin:0;
+padding:0 0 3px 0;
+font-size:13px;
+font-weight:bold;
+color:#c00;
+background:url(../images/sepretor_hr.png) repeat-x bottom;
+}
+.advt {
+overflow:hidden;
+height:100%;
+padding-bottom:15px;
+margin-bottom:8px;
+background:url(../images/advt_spcaer.png) repeat-x bottom;
+}
+.advt img {
+margin-bottom:8px;
+}
+/* widget search  ===================================================  */	
+
+#blog_sidebar #searchform {
+overflow:hidden;
+height:100%;
+width:100%;
+margin:0 auto;
+text-align:left;
+}
+#blog_sidebar #searchform input {
+margin-bottom:5px;
+}
+#blog_sidebar #search br {
+display:none;
+}
+#blog_sidebar ul {
+margin:0 0 25px 0;
+padding:0;
+}
+#blog_sidebar li {
+margin:0 0 25px 0;
+padding:0;
+font-size:12px;
+list-style-type: none;
+background:none;
+}
+#blog_sidebar ul li ul {
+margin:0;
+padding:0;
+background:none;
+}
+#blog_sidebar ul li ul li {
+margin: 0;
+padding: 3px 0 3px 15px;
+background:url(../images/bullet2.png) no-repeat;
+background-position:0 9px;
+}
+#blog_sidebar ul li ul li a {
+line-height:18px;
+text-decoration: none;
+}
+#blog_sidebar ul li ul li a:hover {
+text-decoration: underline;
+}
+#blog_sidebar ul li ul li ul li {
+margin:0;
+padding: 3px 0 3px 15px;
+background:none;
+}
+#blog_sidebar ul li ul li ul li a {
+text-decoration: none;
+}
+#blog_sidebar ul li ul li ul {
+padding: 0;
+margin: 0;
+}

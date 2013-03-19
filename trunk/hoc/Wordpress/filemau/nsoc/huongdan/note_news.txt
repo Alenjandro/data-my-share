@@ -1,0 +1,7 @@
+<dt><?php the_date('Y”NnŒŽj“ú'); ?></dt>
+=> khi su dung se khong tao duoc news cung ngay.
+
+
+
+<dt><?php the_time(get_option('date_format')); ?></dt>
+=> ok

@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<menuItems>
+	<timer_time>5</timer_time>
+	<tween_time>1</tween_time>
+	<tween_type>easeOutExpo</tween_type>
+	<item>
+		<image>http://www.npd.nsc-eng.co.jp/wp/wp-content/themes/wpremix3/swf/pics/a.png</image>
+		<link>http://</link>
+	</item>
+	<item>
+		<image>/wp/wp-content/themes/wpremix3/swf/pics/b.png</image>
+		<link>tes2</link>
+	</item>
+	<item>
+		<image>http://www.npd.nsc-eng.co.jp/wp/wp-content/themes/wpremix3/swf/pics/c.png</image>
+		<link>tes3</link>
+	</item>
+	<item>
+		<image>http://www.npd.nsc-eng.co.jp/wp/wp-content/themes/wpremix3/swf/pics/d.png</image>
+		<link>tes4</link>
+	</item>
+	<item>
+		<image>http://www.npd.nsc-eng.co.jp/wp/wp-content/themes/wpremix3/swf/pics/e.png</image>
+		<link>tes5</link>
+	</item>
+	<item>
+		<image>http://www.npd.nsc-eng.co.jp/wp/wp-content/themes/wpremix3/swf/pics/f.png</image>
+		<link>tes6</link>
+	</item>
+</menuItems>

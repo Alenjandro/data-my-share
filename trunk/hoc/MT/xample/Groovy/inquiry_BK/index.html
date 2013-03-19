@@ -1,0 +1,491 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>GROOVY HOME</title>
+<meta name="description" content="健康住宅&amp;注文住宅のグルービーホーム" />
+<meta name="keywords" content="健康住宅,注文住宅,株式会社 宝建,グルービーホーム,自然素材,分譲住宅" />
+<link href="../common/css/import.css" rel="stylesheet" type="text/css" media="screen,print" />
+<link href="css/inquiry.css" rel="stylesheet" type="text/css" media="screen,print" />
+<link href="../common/css/print.css" rel="stylesheet" type="text/css" media="print" />
+<script type="text/javascript" src="../common/js/jquery-1.2.6.min.js"></script>
+<script type="text/javascript" src="../common/js/script.js"></script>
+<link rel="contents" href="/" title="ホーム" />
+</head>
+
+<body>
+<div id="layout"><!-- #BeginLibraryItem "/Library/header.lbi" --><div id="header">
+<div id="hSection">
+<h1>グルービーホームは、デザイン性の高い注文住宅&amp;健康住宅を愛知県・三河を中心（岡崎・豊橋）に展開しています。</h1>
+<ul id="hNav">
+<li><a href="../profile/index.html"><img src="../common/images/hnav_company.gif" alt="会社情報" class="imgover" /></a></li>
+<li><a href="../links/index.html"><img src="../common/images/hnav_link.gif" alt="リンク" class="imgover" /></a></li>
+<li><a href="../sitemap/index.html"><img src="../common/images/hnav_sitemap.gif" alt="サイトマップ" class="imgover" /></a></li>
+<li><a href="../index.html"><img src="../common/images/btn_toppage.gif" alt="トップページ" class="imgover" /></a></li>
+</ul>
+</div>
+
+<div id="headSection">
+<div id="headerInner">
+<p id="logo"><a href="../index.html"><img src="../common/images/logo.gif" alt="For your satisfaction
+GROOVY HOME" /></a></p>
+<p><img src="../common/images/txt_contact.gif" alt="0120-968-373" /></p>
+<!-- / id headerInner --></div>
+</div>
+<!-- / id header --></div><!-- #EndLibraryItem --><!-- #BeginLibraryItem "/Library/gnav.lbi" --><div id="gNav">
+<dl>
+<dt>主なカテゴリ</dt>
+<dd>
+<ul>
+<li id="gNavQuality"><a href="../quality/index.html"><img src="../common/images/gnav_quality.gif" alt="家づくりへの想い
+QUALITY" /></a></li>
+<li id="gNavGallery"><a href="../gallery/list.html"><img src="../common/images/gnav_gallery.gif" alt="施工例ギャラリー
+GALLERY" /></a></li>
+<li id="gNavFlow"><a href="../flow/index.html"><img src="../common/images/gnav_flow.gif" alt="家づくりの流れ
+FLOW" /></a></li>
+<li id="gNavGuarantee"><a href="../guarantee/index.html"><img src="../common/images/gnav_guarantee.gif" alt="保証・メンテナンス
+GUARANTEE" /></a></li>
+<li id="gNavVoice"><a href="../voice/list.html"><img src="../common/images/gnav_voice.gif" alt="お客様の声
+VOICE" /></a></li>
+<li id="gNavAccess"><a href="../access/index.html"><img src="../common/images/gnav_access.gif" alt="アクセス
+ACCESS" /></a></li>
+<li id="gNavFaq"><a href="../faq/index.html"><img src="../common/images/gnav_faq.gif" alt="よくある質問
+FAQ" /></a></li>
+</ul>
+</dd>
+</dl>
+<!-- / id gNav --></div><!-- #EndLibraryItem --><div id="pageBody">
+<ul class="topicPath">
+<li><a href="../index.html">トップページ</a></li>
+<li>資料請求・お問い合わせ</li>
+<!-- / class topicPath --></ul>
+
+<div id="content">
+<h2 class="mHead"><img src="images/mh_inquiry.gif" alt="INQUIRY 資料請求・お問い合わせ" /></h2>
+<p>グルービーホームのWEBサイトをご覧いただきましてありがとうございます。<br />
+グルービーホームの家づくりに関する資料は、以下のフォームよりご請求くださいませ。<br />
+また、イベントやその他お問合わせもすべてこちらのフォームより承らせていただいております。<br /> 
+お電話（フリーダイヤル：0120-968-373）でのお問い合わせも可能です。お気軽にお問合わせくださいませ。</p>
+
+<form action="mail.php" method="post" name="inquiryForm" id="inquiryForm">
+<div class="sHeadSection">
+<h3><img src="images/sh_document.gif" alt="資料請求に関して" /></h3>
+<p class="sHeadText">以下の資料の中から請求ご希望の資料をご選択ください。（複数選択可）</p>
+<ul class="document">
+<li><input type="checkbox" name="f[0][]" id="f[0][]" value="グルービーホームについての資料" /><label for="f[0][]">グルービーホームについての資料 </label>
+</li>
+<li><input type="checkbox" name="f[0][]" id="f[0][]" value="施工事例集" /><label for="f[0][]">施工事例集</label>
+</li>
+<li><input type="checkbox" name="f[0][]" id="f[0][]" value="見学会・イベント情報" /><label for="f[0][]">見学会・イベント情報</label>
+</li>
+<li class="documentLast"><input type="checkbox" name="f[0][]" id="other01" value="その他" />
+<label for="other01">その他</label>
+  <span>
+  <input type="text" name="f[1]" id="f[1]" value="" size="90" class="sizeB" /><br />
+  例）土地に関する資料が欲しい</span></li>
+<!-- / class document --></ul>
+<!-- / class sHeadSection --></div>
+
+<div class="sHeadSection">
+<h3><img src="images/sh_inquiry.gif" alt="お問い合わせに関して" /></h3>
+<p class="sHeadText">以下の入力欄にお問合わせ内容をご入力ください。<br />
+<span>（当サイトに関するご意見・ご感想なども、下欄にご入力お願いします。）</span></p>
+<p><textarea name="f[2]" id="f[2]" cols="93" rows="6" class="sizeB"></textarea>
+</p>
+<!-- / class sHeadSection --></div>
+
+<div class="sHeadSection">
+<h3><img src="images/sh_info.gif" alt="お客様情報のご入力" /></h3>
+<p>以下の入力欄にお客様情報をご入力ください。</p>
+<p class="inquiryText">の項目は必ず入力してください。</p>
+
+<table class="inquiryTable">
+<tr>
+<th><span>お名前</span></th>
+<td>
+<ul>
+<li><label for="f[3][]">姓</label>
+<span><input type="text" id="f[3][]" name="f[3][]" value="" size="13" />
+<br />
+例）山田 太郎</span></li>
+<li><label for="f[3][]">名</label>
+<input type="text" id="f[3][]" name="f[3][]" value="" size="13" />
+</li>
+</ul></td>
+</tr>
+
+<tr>
+<th><span>フリガナ</span></th>
+<td>
+<ul>
+<li><label for="f[4][]">セイ</label>
+  <span>
+  <input type="text" id="f[4][]" name="f[4][]" value="" size="13" />
+ 例）ヤマダ タロウ</span></li>
+<li><label for="f[4][]">メイ</label><input type="text" id="f[4][]" name="f[4][]" value="" size="13" /><em>（全角カタカナ）</em></li>
+</ul></td>
+</tr>
+
+<tr>
+<th>ご住所</th>
+<td>
+<ul class="address">
+<li><label for="f[5][]">郵便番号</label><input type="text" name="f[5][]" id="f[5][]" value="" size="7" class="sizeSs" /> - <input type="text" name="f[5][]" id="f[5][]" value="" size="7" class="sizeSs" /><em>（半角数字）</em></li>
+<li><label for="f[6]">都道府県</label><select id="f[6]" name="f[6]">
+<option value="">選択してください</option>
+<option value="北海道">北海道</option>
+<option value="青森県">青森県</option>
+<option value="秋田県">秋田県</option>
+<option value="岩手県">岩手県</option>
+<option value="山形県">山形県</option>
+<option value="宮城県">宮城県</option>
+<option value="福島県">福島県</option>
+<option value="山梨県">山梨県</option>
+<option value="長野県">長野県</option>
+<option value="新潟県">新潟県</option>
+<option value="富山県">富山県</option>
+<option value="石川県">石川県</option>
+<option value="福井県">福井県</option>
+<option value="茨城県">茨城県</option>
+<option value="栃木県">栃木県</option>
+<option value="群馬県">群馬県</option>
+<option value="埼玉県">埼玉県</option>
+<option value="千葉県">千葉県</option>
+<option value="東京都">東京都</option>
+<option value="神奈川県">神奈川県</option>
+<option value="愛知県">愛知県</option>
+<option value="静岡県">静岡県</option>
+<option value="岐阜県">岐阜県</option>
+<option value="三重県">三重県</option>
+<option value="大阪府">大阪府</option>
+<option value="兵庫県">兵庫県</option>
+<option value="京都府">京都府</option>
+<option value="滋賀県">滋賀県</option>
+<option value="奈良県">奈良県</option>  
+<option value="和歌山県">和歌山県</option>    
+<option value="岡山県">岡山県</option>
+<option value="広島県">広島県</option>
+<option value="鳥取県">鳥取県</option>
+<option value="島根県">島根県</option>
+<option value="山口県">山口県</option>
+<option value="徳島県">徳島県</option>
+<option value="香川県">香川県</option>
+<option value="愛媛県">愛媛県</option>
+<option value="高知県">高知県</option>
+<option value="福岡県">福岡県</option>
+<option value="佐賀県">佐賀県</option>
+<option value="長崎県">長崎県</option>
+<option value="熊本県">熊本県</option>
+<option value="大分県">大分県</option>
+<option value="宮崎県">宮崎県</option>
+<option value="鹿児島県">鹿児島県</option>
+<option value="沖縄県">沖縄県</option>
+</select>
+</li>
+<li><label for="f[7]">市区町村以下</label><span><input type="text" name="f[7]" id="f[7]" value="" size="80" class="sizeM" /><br />
+例）岡崎市羽根町字陣馬300</span></li>
+<li class="addressLast"><label for="f[8]">マンション名など</label><span><input type="text" name="f[8]" id="f[8]" value="" size="75" class="sizeMs" /><br />例）グルービーマンション101号</span></li>
+</ul></td>
+</tr>
+
+<tr>
+<th><label for="f[9][]"><span>お電話番号</span></label></th>
+<td><input type="text" name="f[9][]" id="f[9][]" value="" size="7" class="sizeS" /> - <input type="text" name="f[9][]" id="f[9][]" value="" size="7" class="sizeS" /> - <input type="text" name="f[9][]" id="f[9][]" value="" size="7" class="sizeS" /> <em>（半角数字）</em></td>
+</tr>
+
+<tr>
+<th><label for="f[10]"><span>メールアドレス</span></label></th>
+<td><input type="text" name="f[10]" id="f[10]" value="" size="85" class="sizeB" /><em>（半角）</em></td>
+</tr>
+</table>
+
+<!-- / class sHeadSection --></div>
+
+<div class="sHeadSection">
+<h3><img src="images/sh_plan.gif" alt="建築計画についてお尋ねします" /></h3>
+<p>もしよろしければ、以下のアンケートにお答えください。</p>
+<dl class="plan">
+<dt>建築時期はいつ頃とお考えですか？</dt>
+<dd>
+<ul>
+<li><input type="checkbox" name="f[11][]" id="f[11][]" value="すぐにでも" />
+<label for="f[11][]">すぐにでも</label>
+</li>
+<li><input type="checkbox" name="f[11][]" id="f[11][]" value="半年以内" />
+<label for="f[11][]">半年以内</label>
+</li>
+<li><input type="checkbox" name="f[11][]" id="f[11][]" value="1年以内" /><label for="f[11][]">1年以内</label>
+</li>
+<li><input type="checkbox" name="f[11][]" id="f[11][]" value="2年以内" /><label for="f[11][]">2年以内</label>
+</li>
+<li><input type="checkbox" name="f[11][]" id="f[11][]" value="3年以上" /><label for="f[11][]">3年以上</label>
+</li>
+<li><input type="checkbox" name="f[11][]" id="f[11][]" value="予定なし" /><label for="f[11][]">予定なし</label>
+</li>
+</ul>
+</dd>
+<dt>ご計画の建物は？</dt>
+<dd>
+
+<ul>
+<li><input type="checkbox" name="f[12][]" id="f[12][]" value="新築" /><label for="f[12][]">新築</label>
+</li>
+<li><input type="checkbox" name="f[12][]" id="f[12][]" value="建替え" /><label for="f[12][]">建替え</label>
+</li>
+<li><input type="checkbox" name="f[12][]" id="f[12][]" value="増築" /><label for="f[12][]">増築</label>
+</li>
+<li><input type="checkbox" name="f[12][]" id="f[12][]" value="リフォーム" /><label for="f[12][]">リフォーム</label>
+</li>
+<li><input type="checkbox" name="f[12][]" id="f[12][]" value="その他" /><label for="f[12][]">その他</label>
+<input type="text" name="f[13]" id="f[13]" value="" size="50" class="sizeB" />
+</li>
+</ul>
+</dd>
+<dt>ご建築の予定地は？</dt>
+<dd>
+<ul class="groundList">
+<li>
+<ul>
+<li><input type="checkbox" name="f[14][]" id="f[14][]" value="ある" /><label for="f[14][]">ある</label>
+</li>
+<li><label for="f[15]">現在地</label>
+<input type="text" name="f[15]" id="f[15]" value="" size="7" class="sizeS" />
+<em>坪</em></li>
+</ul>
+</li>
+
+<li>
+<ul>
+<li><input type="checkbox" name="f[16][]" id="f[16][]" value="ある" /><label for="f[16][]">ある</label>
+</li>
+<li><input type="text" name="f[17]" id="f[17]" value="" size="14" class="sizeM" /><label for="f[17]">市・郡</label>
+</li>
+<li><input type="text" name="f[18]" id="f[18]" value="" size="14" class="sizeM" /><label for="f[18]">町</label>
+</li>
+<li><input type="text" name="f[19]" id="f[19]" value="" size="7" class="sizeS" /><label for="f[19]">坪</label>
+</li>
+</ul>
+</li>
+
+<li class="groundListLast">
+<ul>
+<li><input type="checkbox" name="f[20][]" id="f[20][]" value="ない" /><label for="f[20][]">ない</label>
+</li>
+<li><input type="text" name="f[21]" id="f[21]" value="" size="14" class="sizeM" /><label for="f[21]">市・郡</label>
+</li>
+<li><input type="text" name="f[22]" id="f[22]" value="" size="14" class="sizeM" /><label for="f[22]">町</label>
+</li>
+<li><input type="text" name="f[23]" id="f[23]" value="" size="7" class="sizeS" /><label for="f[23]">坪位</label>
+</li>
+<li><input type="text" name="f[24]" id="f[24]" value="" size="7" class="sizeS" /><label for="f[24]">万円位で探している</label>
+</li>
+</ul>
+</li>
+
+</ul>
+</dd>
+<dt>建物のご予算はどれくらいで予定していますか？</dt>
+<dd>
+<ul>
+<li><input type="text" name="f[25]" id="f[25]" value="" size="7" class="sizeS" /><label for="f[25]">坪位</label>
+</li>
+<li><input type="text" name="f[26]" id="f[26]" value="" size="7" class="sizeS"  /><label for="f[26]">万円位で予定している</label>
+</li>
+</ul>
+<p class="text"><label for="f[27]">自己資金</label>
+<input type="text" name="f[27]" id="f[27]" value="" size="7" class="sizeS"  />
+万円位で予定している</p>
+</dd>
+</dl>
+
+<div class="confirm">
+<p><input type="image" src="images/btn_confirm.gif" alt="入力内容を確認する" title="入力内容を確認する" class="imgover" /></p>
+<p class="reset"><a href="javascript:document.forms.inquiryForm.reset()"><img src="images/btn_reset.gif" alt="リセットする" class="imgover" /></a></p>
+</div>
+<!-- / class sHeadSection --></div>
+<input type="hidden" name="mode" value="conf" />
+</form>
+<ul class="listContent">
+<li>●いただいた質問に関しては、社内担当部門にて迅速に回答を差し上げられるよう努めますが、回答を差し上げるまでにお時間をいただく場合もございます。また、年末年始ほか当社休業日にいただいたお問い合わせについては、翌営業日 以降の対応になりますので、ご了承ください。</li>
+<li>●お問い合わせの内容によっては、書面や電話・FAXによりご回答を差し上げる場合がございます。その際、お客様にご入力いただきました質問内容などの情報を転載・利用させていただく場合がございます。</li>
+<li>●当社はお客様に関わる個人情報を正しく扱うことが、当社にとって重要な責務であると考えております。<br />
+ご入力いただきましたお名前、ご住所などの個人情報は「お問い合わせに対する回答」および「請求いただいた資料の送付」 以外の目的では使用いたしません。</li>
+<li>●当社では、お送りいただきましたお名前、ご住所などの個人情報は、法令で定められた場合を除き、個人の同意なく第三者に開示することはありません。当社では第三者がお客様の個人情報に不当に触れることがないよう、合理的な範囲内で厳重に管理いたします。</li>
+</ul>
+<!-- / id content --></div>
+
+<div id="sidebar">
+<ul class="bannerList">
+<li>
+<p><a href="index.html"><img src="../common/images/bnr_inquiry.gif" alt="資料請求お問い合わせ" class="imgover" /></a></p>
+<p class="bannerText"><a href="index.html">資料請求・お問い合わせはこちら</a></p></li>
+<li class="banner">
+<p><a href="../exhibition/index.html"><img src="../common/images/bnr_exhibition.jpg" alt="展示場のご案内" /></a></p>
+<p class="bannerText"><a href="../exhibition/index.html">グルービーホームの展示場案内はこちら</a></p></li>
+<li class="banner last">
+<p><a href="../blog/index.html" target="_blank"><img src="../common/images/bnr_blog.jpg" alt="グルービースタッフの真心blog" /></a></p>
+<p class="bannerText"><a href="../blog/index.html" target="_blank">グルービーホームスタッフの真心ブログ</a></p></li>
+</ul>
+
+<div class="section">
+<h2><img src="../common/images/mh_event.gif" alt="EVENT 見学会・イベント" /></h2>
+<ul class="eventList">
+<li>
+<p><a href="#"><img src="../common/images/img_event01.jpg" alt="" /></a></p>
+<dl>
+<dt>2010.09.15<span><img src="../common/images/img_new02.gif" alt="NEW" /></span></dt>
+<dd><a href="#">ダミーイベントテキストダミーイベントテキストダミーイベントテキストダミー。</a></dd>
+</dl>
+</li>
+
+<li>
+<p><a href="#"><img src="../common/images/img_event02.jpg" alt="" /></a></p>
+<dl>
+<dt>2010.09.15<span><img src="../common/images/img_new02.gif" alt="NEW" /></span></dt>
+<dd><a href="#">ダミーイベントテキストダミーイベントテキストダミーイベントテキストダミー。</a></dd>
+</dl>
+</li>
+
+<li>
+<p><a href="#"><img src="../common/images/img_event03.jpg" alt="" /></a></p>
+<dl>
+<dt>2010.09.15<span><img src="../common/images/img_new02.gif" alt="NEW" /></span></dt>
+<dd><a href="#">ダミーイベントテキストダミーイベントテキストダミーイベントテキストダミー。</a></dd>
+</dl>
+</li>
+
+<li>
+<p><a href="#"><img src="../common/images/img_event04.jpg" alt="" /></a></p>
+<dl>
+<dt>2010.09.15<span><img src="../common/images/img_new02.gif" alt="NEW" /></span></dt>
+<dd><a href="#">ダミーイベントテキストダミーイベントテキストダミーイベントテキストダミー。</a></dd>
+</dl>
+</li>
+
+<li class="lastList">
+<p><a href="#"><img src="../common/images/img_event05.jpg" alt="" /></a></p>
+<dl>
+<dt>2010.09.15<span><img src="../common/images/img_new02.gif" alt="NEW" /></span></dt>
+<dd><a href="#">ダミーイベントテキストダミーイベントテキストダミーイベントテキストダミー。</a></dd>
+</dl>
+</li>
+</ul>
+<p class="list"><a href="../event/list.html"><img src="../common/images/btn_list.gif" alt="一覧を見る" class="imgover" /></a></p>
+<!-- / class section --></div>
+
+<div class="section">
+<h2><img src="../common/images/mh_news.gif" alt="NEWS 新着トピックス" /></h2>
+<dl class="news">
+<dt>2010.09.15<span><img src="../common/images/img_new02.gif" alt="NEW" /></span></dt>
+<dd><a href="#">ダミートピックステキストダミートピックステキス。</a></dd>
+<dt>2010.09.15</dt>
+<dd><a href="#">ダミートピックステキストダミートピックステキス。</a></dd>
+<dt>2010.09.15</dt>
+<dd><a href="#">ダミートピックステキストダミートピックステキス。</a></dd>
+</dl>
+<p class="list"><a href="../news/list.html"><img src="../common/images/btn_list.gif" alt="一覧を見る" class="imgover" /></a></p>
+<!-- / class section --></div>
+<!-- / id sidebar --></div>
+<!-- / id pageBody --></div>
+<!-- / id layout --></div>
+<!-- #BeginLibraryItem "/Library/footer.lbi" --><div id="footer">
+<p class="pagetop"><a href="#layout"><img src="../common/images/btn_pagetop.gif" alt="このページの先頭へ" class="imgover" /></a></p>
+<div id="footerInner">
+<ul id="fNav">
+<li class="fNavFirst">
+<p><a href="../index.html">トップページ</a></p></li>
+
+<li class="fNavBlock fNavSizeB">
+<p><a href="../quality/index.html">家づくりへの想い</a></p>
+<ul>
+<li><a href="../quality/quality01.html">&quot;ピュア&quot;な家づくりをしていただくために</a></li>
+<li><a href="../quality/quality02.html">居住空間のデザインクオリティ</a></li>
+<li><a href="../quality/quality03.html">健康素材へのこだわり</a></li>
+<li><a href="../quality/quality04.html">家の要は安全な基本構造</a></li>
+<li><a href="../quality/quality05.html">適性価格の追求</a></li>
+</ul>
+</li>
+
+<li class="fNavBlock">
+<ul>
+<li><p><a href="../gallery/list.html">施工例ギャラリー</a></p></li>
+<li><p><a href="../flow/index.html">家づくりの流れ</a></p></li>
+<li><p><a href="../guarantee/index.html">保証・メンテナンス</a></p></li>
+<li><p><a href="../voice/list.html">お客様の声</a></p></li>
+</ul>
+</li>
+
+<li class="fNavBlock">
+<ul>
+<li><p><a href="../access/index.html">アクセス</a></p>
+<ul>
+<li><a href="../exhibition/index.html">展示場案内</a></li>
+</ul>
+</li>
+<li><p><a href="../faq/index.html">よくある質問</a></p></li>
+<li><p><a href="../quality/semiorder.html">セミオーダーハウス</a></p></li>
+</ul>
+</li>
+
+<li class="fNavBlock fNavSizeM">
+<ul>
+<li><a href="../news/list.html">新着トピックス</a></li>
+<li><a href="../event/list.html">見学会・イベント</a></li>
+<li><a href="../blog/index.html" target="_blank">グルービースタッフの真心blog</a></li>
+<li><a href="index.html">資料請求・お問い合わせ</a></li>
+</ul>
+</li>
+
+<li class="fNavBlock fNavLast">
+<ul>
+<li><a href="../profile/index.html">会社情報</a></li>
+<li><a href="../links/index.html">リンク</a></li>
+<li><a href="../sitemap/index.html">サイトマップ</a></li>
+</ul>
+</li>
+</ul>
+<!-- / id footerInner --></div>
+
+<div class="innerBlock">
+<div class="contact">
+<dl>
+<dt>株式会社宝建　グルービーホーム</dt>
+<dd>
+<ul>
+<li>[ 岡崎ショールーム ]<br />
+〒444-0815<br />
+愛知県岡崎市羽根町字陣場300<br />
+TEL：0564-59-0234<br />
+FAX：0564-59-0235</li>
+<li class="listRight">[ 豊橋営業所 ]<br />
+〒440-0832<br />
+愛知県豊橋市中岩田五丁目1番地16<br />
+TEL：0532-69-3678<br />
+FAX：0532-69-3679<br />
+</li>
+</ul>
+</dd>
+</dl>
+
+<ul class="contactRight">
+<li>
+<p>会社情報はこちらから</p>
+<p><a href="../profile/index.html"><img src="../common/images/btn_info.gif" alt="会社情報" class="imgover" /></a></p>
+</li>
+
+<li>
+<p>お問い合わせはこちらから</p>
+<p><a href="index.html"><img src="../common/images/btn_inquiry.gif" alt="お問い合わせ" class="imgover" /></a></p>
+</li>
+</ul>
+</div>
+
+<div class="footerBlock">
+<p id="copyright"><img src="../common/images/txt_copyright.gif" alt="Copyright (C) Groovy Home. All Rights Reserved." /></p>
+<p><a href="#"><img src="../common/images/bnr_footer.gif" alt="グルービーホーム株式会社宝建" /></a></p>
+</div>
+</div>
+<!-- / id footer --></div><!-- #EndLibraryItem --></body>
+</html>

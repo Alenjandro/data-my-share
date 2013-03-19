@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# gNav
+# content
+# sidebar
+
+----------------------------------------*/
+
+/* # gNav
+---------------------------------------------------------------------------- */
+
+div#gNav dl dd ul li#gNavCompany a img {
+	visibility: hidden;
+}
+
+
+/* # content
+---------------------------------------------------------------------------- */
+
+div#content div.aboutSection {
+	padding: 7px 0 0 0;
+}
+
+div#content div.aboutSection table {
+	width: 100%;
+}
+
+div#content div.aboutSection table th {
+	background: #e9e9e9;
+	border-bottom: 1px solid #c3c3c3;
+	border-top: 1px solid #c3c3c3;
+	padding: 7px 0 4px 10px;
+	width: 88px;
+}
+
+div#content div.aboutSection table td {
+	border-bottom: 1px solid #c3c3c3;	
+	border-top: 1px solid #c3c3c3;
+	padding: 7px 0 4px 28px;
+	width: auto;
+}
+
+div#content div.aboutSection table td img {
+	margin-left: 7px;
+	vertical-align: top;
+}
+
+* html div#content div.aboutSection table td img {
+	vertical-align: middle;
+}
+
+*:first-child + html div#content div.aboutSection table td img {
+	vertical-align: middle;
+}
+
+div#content div.aboutSection h4 {
+	padding: 12px 0 4px 1px;
+}
+
+div#content div.aboutSection dl dt {
+	padding: 0 0 0 2px;
+}
+
+div#content div.aboutSection dl dd {
+	font-size: 120%;
+	margin: -1.4em  0 0.2em 4.4em;
+}
+
+div#content div.aboutSection dl dd span {
+	padding: 0 0 0 26px;
+}
+
+div#content div.aboutSection dl dd span a {
+	color: #000;
+}
+
+
+/* # sidebar
+---------------------------------------------------------------------------- */
+
+div#lNav ul li#about a {
+	background: url(../company/images/lnav_about_o.gif) no-repeat left top; 
+	display: block;
+}
+
+div#lNav ul li#about a img {
+	visibility: hidden;
+}

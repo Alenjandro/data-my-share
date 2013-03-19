@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# content
+
+----------------------------------------*/
+
+/* # content
+---------------------------------------------------------------------------- */
+
+div#content ol.privacySection {
+	padding: 25px 0 0 0;
+}
+
+div#content ol.privacySection li {
+	padding: 1px 0 3px 0;
+}
+
+div#content ol.privacySection li h3 {
+	border-bottom: 1px solid #ccc;
+	font-weight: bold;
+	padding: 0 0 1px 0;
+}
+
+div#content ol.privacySection li ol li {
+	text-indent: -18px;
+	padding: 0 0 3px 18px;
+	width: auto;
+}
+
+div#content ol.privacySection div {
+	padding: 6px 0 17px 2px;
+}
+
+div#content ul.contact {
+	background: url(/wp/wp-content/themes/wpremix3/images/common/bg_dot.gif) repeat-x left bottom;
+	padding: 0 0 6px 0;
+}
+
+div#content ul.contact li {
+	display: inline;
+	float: left;
+	padding: 0 19px 0 0;
+	width: auto;
+}
+
+div#content ul.contact li.contactLast {
+	padding-right: 0;
+}
+
+div#content ul.contact li.plant {
+	line-height: 1;
+	padding: 8px 38px 0 0;
+}
+
+div#content p.privacyButton {
+	background: url(/wp/wp-content/themes/wpremix3/images/common/bg_mh.gif) repeat-x left top;
+	text-align: center;
+	margin-top: 27px;
+	padding: 13px 0 0 0;
+}
+
+/* # clearfix
+---------------------------------------------------------------------------- */
+
+div#content ul.contact {
+	zoom: 1;
+}
+
+div#content ul.contact:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}
+

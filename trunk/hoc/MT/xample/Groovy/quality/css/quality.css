@@ -1,0 +1,855 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# semiorder
+# content
+# semiorder
+# quality01
+# quality02
+# quality03
+# quality04
+# quality05
+# clearfix
+
+----------------------------------------*/
+
+/* # gNav
+---------------------------------------------------------------------------- */
+
+div#gNav dl dd ul li#gNavQuality a img {
+	visibility: hidden;
+}
+
+div#gNav dl dd ul li#gNavQuality a {
+	background: url(../../common/images/gnav_quality_s.gif) no-repeat 0 0;
+}
+
+body#semiorder div#gNav dl dd ul li#gNavQuality a {
+	background: url(../../common/images/gnav_quality.gif) no-repeat 0 0;
+}
+
+body#semiorder div#gNav dl dd ul li#gNavQuality a:hover {
+	background: url(../../common/images/gnav_quality_o.gif) no-repeat 0 0;
+}
+
+
+/* # semiorder
+---------------------------------------------------------------------------- */
+
+div#content div.section .pure p.pureImage {
+	float: left;
+	margin: -25px 14px 0 -39px;
+	position: relative;
+	width: auto;
+	z-index: 100;
+}
+
+* html div#content div.section .pure p.pureImage {
+	margin: -25px 11px 0 -39px;
+}
+
+div#content div.section .pure dl {
+	padding: 20px 0 0 0;
+}
+
+div#content div.section .pure dl dd {
+	margin: 18px 0 0 124px;
+	text-indent: 6px;
+}
+
+* html div#content div.section .pure dl dd {
+	margin: 18px 0 0 121px;
+}
+
+div#content div.section div.sectionInner h3 {
+	background: url(../../common/images/bg_shead.gif) repeat-x left bottom;
+	clear: both;
+	margin-bottom: 24px;
+	padding: 0 0 15px 0;
+}
+
+div#content div.section div.sectionInner h3 img {
+	position: static;
+}
+
+div#content div.section div.sectionSemiorder {
+	margin: 79px 0 0 0;
+	padding-bottom: 0;
+}
+
+div#content div.section div.sectionSemiorder dl.point dt {
+	clear: both;
+	position: relative;
+	z-index: 200;
+}
+
+div#content div.section div.sectionSemiorder dl.point dd {
+	background: url(../../common/images/bg_dash.gif) repeat-x left bottom;
+	clear: both;
+	margin-bottom: 25px;
+	padding-bottom: 22px;
+}
+
+div#content div.section div.sectionSemiorder dl.point dd.last {
+	background: none;
+	margin-bottom: 0;
+	padding: 0;
+}
+
+div#content div.section div.sectionSemiorder dl.point dd div {
+	float: left;
+	padding: 0 20px 0 0;
+	width: 300px;
+}
+
+div#content div.section div.sectionSemiorder dl.point dd div.pointTwo {
+	width: 450px;
+}
+
+div#content div.section div.sectionSemiorder dl.point dd div.pointFour {
+	width: 340px;
+}
+
+div#content div.section div.sectionSemiorder dl.point dd p {
+	padding-top: 16px;
+}
+
+div#content div.section div.sectionSemiorder dl.point dd div p.last {
+	padding-bottom: 0;
+}
+
+div#content div.section div.sectionSemiorder dl.point dd div.pointFour ol {
+	padding: 18px 0 0 6px;
+}
+
+div#content div.section div.sectionSemiorder dl.point dd div.pointFour ol li {
+	font-weight: bold;
+}
+
+div#content div.section div.sectionSemiorder dl.point dd p.pointImage {
+	float: right;
+	margin-top: -40px;
+	position: relative;
+	width: auto;
+	z-index: 100;
+}
+
+div#content div.section div.sectionSemiorder dl.point dd ul.pointList {
+	padding: 22px 0 50px 0;
+}
+
+div#content div.section div.sectionSemiorder dl.point dd ul.pointList li {
+	float: left;
+	width: auto;
+}
+
+div#content div.section div.sectionSemiorder dl.point dd p.pureButton {
+	clear: both;
+	text-align: center;
+	padding-top: 0;
+}
+
+
+/* # content
+---------------------------------------------------------------------------- */
+
+div#content div.section div.qualitySection {
+	background: url(../images/bg_quality.gif) repeat-x left top;
+	padding: 0 26px 0 20px;
+}
+
+div#content div.section div.qualitySection h3 {
+	padding: 29px 0 0 0;
+}
+
+div#content div.section div.qualitySection ol.qualityContent {
+	margin-top: -3px;
+}
+
+div#content div.section div.qualitySection ol.qualityContent li {
+	background: url(../images/bg_dot1.gif) repeat left top;
+	margin-top: 15px;
+	padding: 3px;
+}
+
+div#content div.section div.qualitySection ol.qualityContent li div.qualityDetail  {
+	position: relative;
+	background: #fff;
+	padding: 5px;
+}
+
+div#content div.section div.qualitySection ol.qualityContent li div.qualityDetail p.image {
+	float: left;
+}
+
+div#content div.section div.qualitySection ol.qualityContent li div.qualityDetail div {
+	float: right;
+	padding: 10px 18px 0 0;
+	width: 468px;
+}
+
+div#content div.section div.qualitySection ol.qualityContent li div.qualityDetail div p.title {
+	background: url(../../common/images/bg_dash.gif) repeat-x left bottom;
+	clear: both;
+	margin-bottom: 11px;
+	padding: 0 0 9px 0;
+}
+
+div#content div.section div.qualitySection ol.qualityContent li div.qualityDetail p.linkDetail {
+	right: -13px;
+	position: absolute;
+	top: 48px;
+}
+
+div#sidebar div.lNavSection {
+	background: url(../images/bg_lnav.gif) repeat-x left bottom;
+	margin-bottom: 40px;
+	padding: 0 0 4px 0;
+}
+
+
+/* # quality01
+---------------------------------------------------------------------------- */
+
+div#content div.section div.sectionPureMind {
+	margin: 0!important;
+}
+
+div#content dl.mHeadSection {
+	position: relative;
+}
+
+div#content dl.quality01 {
+	background: url(../images/bg_quality01.jpg) no-repeat left top;
+	clear: both;
+	min-height: 320px;	
+}
+
+* html div#content dl.quality01 {
+	height: 320px;
+}
+
+div#content dl.mHeadSection dt.title {
+	padding: 40px 0 18px 0;
+}
+
+div#content dl.mHeadSection dd p strong {
+	margin: 18px 0 0 0;
+}
+
+div#content dl.mHeadSection dd {
+	width: 480px;
+}
+
+div#content dl.mHeadSection dd p.image {
+	top: 21px;
+	right: 20px;
+	padding: 0;
+	position: absolute;
+}
+
+* html div#content dl.mHeadSection dd p.image {
+	right: 19px;
+}
+
+div#content dl.mHeadSection dd p strong {
+	display: block;
+	padding: 0 0 0 5px;
+}
+
+div#content div.section .sHeadContent {
+	clear: both;
+	position: relative;
+	margin: 60px 0 0 0;
+	z-index: 100;
+}
+
+div#content div.section .sHeadContent h3 img {
+	margin: 0 15px 5px 0;
+}
+
+div#content div.section .sHeadContent ul.pureContent li {
+	background: url(../../common/images/bg_dot01.gif) repeat left top;
+	clear: both;
+	margin-top: 15px;
+	padding: 3px;
+	width: 667px;
+}
+
+div#content div.section .sHeadContent ul.pureContent li div.pureDetail {
+	background: #fff;
+	padding: 17px 0 17px 25px;
+}
+
+div#content div.section .sHeadContent ul.pureContent li div.pureDetail div {
+	float: left;
+	padding-right: 22px;
+	width: 490px;
+}
+
+* html div#content div.section .sHeadContent ul.pureContent li div.pureDetail div {
+	padding-right: 19px;
+}
+
+div#content div.section .sHeadContent ul.pureContent li div.pureDetail div p.title {
+	clear: both;
+	padding-bottom: 13px;
+}
+
+div#content div.section div.sectionBanner p a img {
+	background: url(../../common/images/bg_dot01.gif) repeat 0 0;
+	padding: 3px;
+}
+
+div#content div.section div.sectionBanner p a:hover img {
+	background: url(../../common/images/bg_dot04.gif) repeat 0 0;
+}
+
+div#content div.section div.sectionBanner {
+	margin: 57px 0 0 0;
+}
+
+div#content div.section div.sectionBanner p img {
+	margin: 6px 0 0 0;
+}
+
+
+/* # quality02
+---------------------------------------------------------------------------- */
+
+div#content div.section .sHeadContent {
+	clear: both;
+/*	padding: 0 0 78px 0;*/
+}
+
+div#content div.section .sHeadContentLast  {
+	padding: 0;
+}
+
+div#content dl.quality02 {
+	background: url(../images/bg_quality02.jpg) no-repeat left top;
+	min-height: 312px;
+	position: relative;
+}
+
+* html div#content dl.quality02 {
+	height: 312px;
+}
+
+div#content dl.quality02 dt.title {
+	padding: 3px 0 0 0!important;
+}
+
+div#content div.section .sectionIdeology {
+	margin: -30px 0 0 0;
+}
+
+div#content div.section .sHeadContent ul.ideology {
+	padding: 11px 0 18px 0;
+}
+
+div#content div.section .sHeadContent ul.ideology li {
+	float: left;
+	width: 316px;
+	padding: 0 41px 37px 0;
+}
+
+div#content div.section .sHeadContent ul.ideology li.last {
+	padding-bottom: 0;
+}
+
+div#content div.section .sHeadContent ul.ideology li.ideologyRight {
+	padding-right: 0;
+}
+
+div#content div.section .sHeadContent ul.ideology li p.image img {
+	background: url(../../common/images/bg_dot01.gif) repeat left top;
+	padding: 3px;
+}
+
+div#content div.section .sHeadContent ul.ideology li p.title {
+	padding: 9px 0 6px 0;
+}
+
+div#content div.section .sHeadContent ul.infoList li,
+div#content div.section .sHeadContent ol.infoList li {
+	background: url(../../common/images/bg_dot01.gif) repeat left top;
+	clear: both;
+	margin-top: 15px;
+	padding: 3px;
+	width: 667px;
+}
+
+div#content div.section .sHeadContent ul.infoList li div.infoDetail,
+div#content div.section .sHeadContent ol.infoList li div.infoDetail {
+	background: #fff;
+	padding: 15px 0 16px 15px;
+}
+
+div#content div.section .sHeadContent ul.infoList li div.infoDetail div,
+div#content div.section .sHeadContent ol.infoList li div.infoDetail div {
+	float: right;
+	padding: 3px 22px 0 0;
+	width: 493px;
+}
+
+div#content div.section .sHeadContent ul.infoList li div.infoDetail div p.image,
+div#content div.section .sHeadContent ol.infoList li div.infoDetail div p.image {
+	float: left;
+}
+
+div#content div.section .sHeadContent ul.infoList li div.infoDetail div p.title,
+div#content div.section .sHeadContent ol.infoList li div.infoDetail div p.title {
+	padding-bottom: 13px;
+}
+
+div#content div.section .sHeadContent p.sHeadText {
+	padding: 12px 0 2px 0;
+}
+
+
+/* # quality03
+---------------------------------------------------------------------------- */
+
+div#content dl.quality03 {
+	background: url(../images/bg_quality03.jpg) no-repeat left top;
+	min-height: 255px;
+}
+
+* html div#content dl.quality03 {
+	height: 255px;
+}
+
+div#content dl.quality03 dt.title {
+	padding: 14px 0 12px 0!important;
+}
+
+div#content div.section .sHeadList {
+	clear: both;
+	padding-bottom: 0;
+}
+
+div#content div.section .sHeadList h3 {
+	clear: both;
+	margin: 0 0 16px 0;
+}
+
+div#content div.section .sHeadList ul.materialSection {
+	background: url(../images/bg_dot02.gif) repeat-y left top;
+	width: 673px;
+}
+
+div#content div.section .sHeadList ul.materialSection li {
+	float: left;
+	margin-right: 20px;
+	padding-right: 21px;
+	width: 316px;
+}
+
+div#content div.section .sHeadList ul.materialSection li p.title {
+	clear: both;
+}
+
+
+div#content div.section .sHeadList ul.materialList li.last,
+div#content div.section .sHeadList ul.materialSection li.rightList {
+	background: none;
+	margin-right: 0;
+	padding-right: 0;
+}
+
+div#content div.section .sHeadList ul.materialSection li p.sectionImage img,
+div#content div.section .sHeadList ul.materialList li p.sectionImage img {
+	background: url(../../common/images/bg_dot01.gif) repeat 0 0;
+	margin-bottom: 15px;
+	padding: 3px;
+}
+
+div#content div.section .sHeadList ul.houseSection li p.photo img {
+	background: url(../../common/images/bg_dot01.gif) repeat 0 0;
+	margin-bottom: 5px;
+	padding: 3px;
+}
+
+div#content div.section .sHeadList ul.materialSection li p.sectionImage img.phamtom {
+	background: none;
+	margin: -98px 0 0 178px;
+	width: 127px;
+}
+
+div#content div.section .sHeadList ul.materialSection li p.phatomText img {
+	margin: -30px 0 0 0;
+}
+
+div#content div.section .sHeadList ul.materialList li p.title img,
+div#content div.section .sHeadList ul.materialSection li p.title img {
+	background: none;
+	padding-bottom: 17px;
+}
+
+div#content div.section .sHeadList ul.materialList {
+	clear: both;
+}
+
+div#content div.section .sHeadList ul.materialList li {
+	background: url(../../common/images/bg_dash.gif) repeat-x left top;
+	padding: 9px 0 0 0;
+	clear: both;
+	float: none;
+	margin: 11px 0 0 0;
+	
+}
+
+div#content div.section .sHeadList ul.materialList li ul {
+	background: url(../images/bg_dot03.gif) repeat-y left top;
+}
+
+div#content div.section .sHeadList ul.materialList li ul li {	
+	background: none;
+	clear: none;
+	float: left;
+	margin: 3px 41px 0 0;
+	padding-bottom: 6px;
+	width: 197px;
+}
+
+div#content div.section .sHeadList ul.houseSection li {
+	background: url(../../common/images/bg_dash.gif) repeat-x left top;
+	margin-top: 16px;
+	padding: 20px 0 0 0;
+}
+
+div#content div.section .sHeadList ul.houseSection li p.photo,
+div#content div.section .sHeadList ul.houseSection li p.photoMap {
+	float: left;
+	width: auto;
+}
+
+div#content div.section .sHeadList ul.houseSection li div {
+	float: right;
+	width: 336px;
+}
+
+div#content div.section .sHeadList ul.houseSection li div p,
+div#content div.section .sHeadList ul.houseSection li.houseList div {
+	padding-left: 1px;
+}
+
+div#content div.section .sHeadList ul.houseSection li div p.title {
+	padding: 0 0 10px 0;
+}
+
+div#content div.section .sHeadList ul.houseSection li.houseList p.photo {
+	float: right;
+	width: auto;
+}
+
+div#content div.section .sHeadList ul.houseSection li.houseList div {
+	float: left;
+	margin-right: 30px;
+	width: 445px;
+}
+
+div#content div.section .sHeadList ul.houseSection li.houseList div.blockLeft {
+	width: 340px;
+}
+
+div#content div.section .sHeadList ul.houseSection li.houseList div.blockLeft p.title img {
+	padding-top: 0;
+}
+
+div#content div.section .sHeadList ul.houseSection li.houseList div.blockLeft p img {
+	padding: 21px 0 0 0;
+}
+
+div#content div.section .sHeadList ul.houseSection li div.environmentLeft {
+	width: 436px;
+	padding-right: 20px;
+}
+
+
+/* # quality04
+---------------------------------------------------------------------------- */
+
+div#content div.section .sHeadList h3 img {
+	margin: 0 15px 0 0;
+}
+
+div#content div.section .sHeadList h3.sHeadTitle {
+	background: url(../../common/images/bg_shead.gif) repeat-x left bottom;
+	margin-bottom: 20px;
+	padding-bottom: 15px;
+}
+
+div#content dl.quality04 {
+	background: url(../images/bg_quality04.jpg) no-repeat left top;
+	min-height: 240px;
+}
+
+* html div#content dl.quality04 {
+	height: 240px;
+}
+
+div#content dl.quality04 dt.title {
+	padding: 22px 0 18px 0!important;
+}
+
+div#content div.section .sHeadList div.houseList p.photo,
+div#content div.section .sHeadList div.houseList p.photoMap {
+	float: left;
+	width: auto;
+}
+
+div#content div.section .sHeadList .build p.sectionImage img,
+div#content div.section .sHeadList div.houseList p.photo img {
+	background: url(../../common/images/bg_dot01.gif) repeat 0 0;
+	padding: 3px;
+}
+
+div#content div.section .sHeadList div.houseList {
+	padding-bottom: 9px;
+}
+
+div#content div.section .sHeadList div.houseList div {
+	float: right;
+	padding-right: 39px;
+	width: 336px;
+}
+
+div#content div.section .sHeadList div.houseList div p.title {
+	padding-bottom: 16px;
+}
+
+div#content div.section .sHeadList ul.qualityList li p {
+	width: 315px;
+}
+div#content div.section .sHeadList ul.qualityList li.rightList div p.sectionImage {
+	float: left;
+	padding: 0 0 0 11px;
+	width: auto;
+}
+
+div#content div.section .sHeadList ul.qualityList li.rightList div p {
+	float: right;
+	width: 139px;
+}
+
+div#content div.section .sHeadList ul.qualityList li.rightList div {
+	background: url(../../common/images/bg_dash.gif) repeat-x left bottom;
+	margin-bottom: 15px;
+}
+
+div#content div.section .sHeadList ul.qualityList li.rightList div p {
+	padding: 0 0 15px 0;
+}
+
+div#content div.section .sHeadList ul.qualityList li {
+	background: url(../images/bg_dot05.gif) no-repeat left bottom;
+	clear: both;
+	float: none;
+	margin: 0 0 18px 0;
+	padding: 0 0 8px 0;
+	width: auto;
+}
+
+div#content div.section .sHeadList ul.qualityList li.lastList {
+	background: none;
+}
+
+div#content div.section .sHeadList ul.qualityList li ul li {
+	background: none;
+	clear: none;
+	float: left;
+	margin: 0;
+	width: 325px;
+}
+
+div#content div.section .sHeadList ul.qualityList li ul li.rightList {
+	margin-left: 21px;
+}
+
+div#content div.section .sHeadList ul.qualityList li ul li.rightList p {
+	padding-left: 11px;
+}
+
+div#content div.section .sHeadList .build {
+	background: url(../../common/images/bg_dash.gif) repeat-x left top;
+	clear: both;
+	margin: 12px 0 0 0;
+	padding: 17px 0 0 0;
+}
+
+div#content div.section .sHeadList .build p.sectionImage img {
+	float: left;
+	margin-right: 15px;
+	width: auto;
+}
+
+div#content div.section .sHeadList .build div {
+	float: right;
+	width: 500px;
+}
+
+div#content div.section .sHeadList .build p.title {
+	padding-bottom: 13px;
+}
+
+div#content div.section .sHeadList .build p.buildImage {
+	margin-top: 17px;
+}
+
+div#content div.section .sHeadList .main {
+	background: url(../../common/images/bg_dot01.gif) repeat 0 0;
+	margin: 16px 0 0 0;
+	padding: 3px;
+}
+
+div#content div.section .sHeadList .main div {
+	background: #fff;
+	padding-bottom: 9px;
+}
+
+div#content div.section .sHeadList .main ul {
+	margin: 15px 0 0 22px;
+}
+
+div#content div.section .sHeadList .main ul li {
+	float: left;
+	margin: 0 19px 0 0;
+	width: 196px;
+}
+
+div#content div.section .sHeadList .main ul li.last {
+	margin: 0;
+}
+
+div#content div.section .sHeadList .main ul li p.title {
+	margin-bottom: 8px;
+}
+
+div#content div.section .sHeadList .main ul li p.mainImage img {
+	background: url(../../common/images/bg_dot01.gif) repeat 0 0;
+	margin: 7px 0 1px 0;
+	padding: 3px;
+}
+
+div#content div.section .sHeadList .main ul li p.noteText {
+	font-size: 90%;
+}
+
+div#content div.section .sHeadList ul.materialList li p.sectionTitle img,
+div#content div.section .sHeadList ul.materialSection li p.sectionTitle img {
+	padding-bottom: 12px;
+}
+
+
+/* # quality05
+---------------------------------------------------------------------------- */
+
+div#content dl.quality05 {
+	background:url(../images/bg_quality05.jpg) no-repeat left top;
+	min-height: 230px;
+}
+
+* html div#content dl.quality05 {
+	height: 230px;
+}
+
+div#content div.section .sHeadContent ol.infoList li div.valueDetail {
+	padding: 12px 16px 11px 15px;
+}
+
+div#content div.section .sHeadContent ol.infoList li div.valueDetail .image {
+	padding: 20px 16px 0 16px;
+}
+
+div#content div.section .sHeadContent ol.infoList li div.valueDetail div {
+	background: url(../images/bg_dot06.gif) repeat-y left top;
+	padding: 0 0 5px 36px;
+	width: 498px;
+}
+
+div#content div.section .sHeadContent ol.infoList li div.valueDetail div p.title {
+	padding: 6px 0 13px 0;
+}
+
+div#content div.section .sHeadContent ol.infoList li div.valueDetail div p {
+	padding: 0 0 0 1px;
+}
+
+div#content div.section .sHeadContent div.semioderSection {
+	background: #fffbe0 url(../images/bg_semioder.jpg) no-repeat right bottom;
+	border: 1px solid #f2edc8;
+	margin: 60px 0 0 0;
+	min-height: 142px;
+	padding: 20px 0 0 26px;
+}
+
+* html div#content div.section .sHeadContent div.semioderSection {
+	height: 142px;
+}
+
+div#content div.section .sHeadContent div.semioderSection h3 {
+	padding: 0 0 11px 1px;
+}
+
+div#content div.section .sHeadContent div.semioderSection p {
+	font-size: 90%;
+	width: 450px;
+}
+
+div#content div.section .sHeadContent div.semioderSection p img {
+	margin: 13px 0 0 0;
+}
+
+/* # clearfix
+---------------------------------------------------------------------------- */
+
+div#content div.section div.qualitySection ol.qualityContent li div.qualityDetail,
+div#content div.section ul.semioderList,
+div#content div.section ul.semioderList li ul,
+div#content div.section div.sectionSemiorder dl.point dd ul.pointList,
+div#content div.section div.sectionSemiorder dl.point dd,
+div#content div.section .pure,
+div#content div.section .sHeadContent.pureContent ul li div.pureDetail,
+div#content div.section .sHeadContent ul.ideology,
+div#content div.section .sHeadList ul.materialSection,
+div#content div.section .sHeadList ul.materialList li ul,
+div#content div.section .sHeadList ul.houseSection li,
+div#content div.section .sHeadList div.houseList,
+div#content div.section .sHeadList ul.qualityList li.rightList div,
+div#content div.section .sHeadList ul.qualityList li ul,
+div#content div.section .sHeadList .build,
+div#content div.section .sHeadList .main ul,
+div#content div.section .sHeadContent ul.infoList li div.infoDetail,
+div#content div.section .sHeadContent ol.infoList li div.infoDetail {
+	zoom: 1;
+}
+
+div#content div.section div.qualitySection ol.qualityContent li div.qualityDetail:after,
+div#content div.section ul.semioderList:after,
+div#content div.section ul.semioderList li ul:after,
+div#content div.section div.sectionSemiorder dl.point dd ul.pointList:after,
+div#content div.section div.sectionSemiorder dl.point dd:after,
+div#content div.section .pure:after,
+div#content div.section .sHeadContent ul.pureContent li div.pureDetail:after,
+div#content div.section .sHeadContent ul.ideology:after,
+div#content div.section .sHeadList ul.materialSection:after,
+div#content div.section .sHeadList ul.materialList li ul:after,
+div#content div.section .sHeadList ul.houseSection li:after,
+div#content div.section .sHeadList div.houseList:after,
+div#content div.section .sHeadList ul.qualityList li.rightList div:after,
+div#content div.section .sHeadList ul.qualityList li ul:after,
+div#content div.section .sHeadList .build:after,
+div#content div.section .sHeadList .main ul:after,
+div#content div.section .sHeadContent ul.infoList li div.infoDetail:after,
+div#content div.section .sHeadContent ol.infoList li div.infoDetail:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}

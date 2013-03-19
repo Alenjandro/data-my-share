@@ -1,0 +1,1 @@
+jQuery.fn.sortable = function() { return false; }

@@ -1,0 +1,24 @@
+Copy 2 doan code trong file "CopyVaoFunction" vao file: wordpress/wp-includes/function.php
+
+
+Su dung:
+topicPath: (breadcrumbs)
+
+<div id="topicPath">
+<?php get_breadcrumbs(); ?>
+<!-- / class topicPath --></div>
+
+===============================================================
+
+Auto <title>: (hierarchical_title)
+
+<title><?php hierarchical_title('|'); ?></title>
+
+
+===============================================================
+
+Import:
+
+Vao: http://localhost/wp/wp-admin/
+sidebar ben trai, vao phan tool>import de import file "wordpress.import".
+Sau khi import, ta co the check dc nhung trang + post da lam.

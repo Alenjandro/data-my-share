@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# gNav
+# content
+
+----------------------------------------*/
+
+
+/* # gNav
+---------------------------------------------------------------------------- */
+
+div#gNav dl dd ul li#gNavCompany a img {
+	visibility: hidden;
+}
+
+
+/* # content
+---------------------------------------------------------------------------- */
+
+div#content div.section div.sectionInner p.title {
+	padding: 0 0 18px 27px;
+}
+
+div#content div.section div.sectionInner p {
+	padding: 0 0 0 2px;
+}

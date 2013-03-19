@@ -1,0 +1,148 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# gNav
+# content
+# clearfix
+
+----------------------------------------*/
+
+
+/* # gNav
+---------------------------------------------------------------------------- */
+
+div#gNav dl dd ul li#gNavProject a img {
+	visibility: hidden;
+}
+
+
+/* # content
+---------------------------------------------------------------------------- */
+
+div#content div.productSection {
+	clear: both;
+	margin: 0 0 17px 0;
+	padding-top: 6px;
+}
+
+div#content div.numericSection p.image {
+	float: left;
+	width: 178px;
+}
+
+div#content div.numericSection p.image span {
+	display: block;
+	padding: 4px 0 0 0;
+	text-align: right;
+}
+
+div#content div.numericSection p.image span img {
+	padding: 8px 15px 0 0;
+}
+
+div#content div.numericSection p.image a {
+	font-size: 90%;
+	font-weight: bold;
+}
+
+div#content div.numericSection div.numericContent {
+	float: right;
+	padding: 3px 0 0 0;
+	width: 451px;
+}
+
+div#content div.numericSection div.numericContent h3 {
+	clear: both;
+	padding: 0 0 9px 0;
+}
+
+div#content div.numericSection div.numericContent dl dt {
+	border-bottom: 1px solid #ccc;
+	color: #000;
+	font-weight: bold;
+	padding: 0 0 2px 0;
+}
+
+div#content div.numericSection div.numericContent dl dd ul {
+	padding: 2px 0 6px 16px;
+}
+
+div#content div.numericSection div.numericContent dl dd ul li {
+	padding: 0 0 3px 0;
+}
+
+div#content div.numericSection p.adobeReader {
+	padding: 24px 0 31px 0;
+}
+
+div#content div.numericSection p.adobeReader img {
+	float: left;
+	display: inline;
+}
+
+div#content div.numericSection p.adobeReader span {
+	float: left;
+	font-size: 90%;
+	display: inline;
+	padding: 3px 0 0 12px;
+	width: 325px;
+}
+
+div#content div.numericSection ul.backList li {
+	background: url(/wp/wp-content/themes/wpremix3/images/common/bg_dot.gif) repeat-x left top;
+	clear: both;
+	padding: 8px 0 3px 3px;
+}
+
+* html div#content div.numericSection ul.backList li {
+	margin-bottom: -5px;
+	padding: 8px 0 0 3px;
+}
+
+div#content div.numericSection ul.backList li a {
+	font-weight: bold;
+}
+
+div#content div.numericSection ul.backList li span.adobe a {
+	background: url(/wp/wp-content/themes/wpremix3/images/common/ico_link.gif) no-repeat right 2px;
+	padding: 0 14px 0 0;
+}
+
+div#content div.numericSection ul.backList li span {
+	display: block;
+	float: left;
+	width: 130px;
+}
+
+div#content div.numericSection ul.backList li img {
+	padding: 0 4px 0 0;
+}
+
+div#content div.numericSection ul.backList li span.adobe {
+	width: 321px;
+}
+
+
+/* # clearfix
+---------------------------------------------------------------------------- */
+
+div#content div.numericSection ul.backList li,
+div#content div.numericSection,
+div#content div.numericSection p.adobeReader,
+div#content div.productContent {
+	zoom: 1;
+}
+
+div#content div.numericSection ul.backList li:after,
+div#content div.numericSection:after,
+div#content div.numericSection p.adobeReader:after,
+div#content div.productContent:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}

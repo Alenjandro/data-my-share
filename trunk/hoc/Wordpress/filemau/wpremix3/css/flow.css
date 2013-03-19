@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# gNav
+# content
+# clearfix
+
+----------------------------------------*/
+
+
+/* # gNav
+---------------------------------------------------------------------------- */
+div#gNav dl dd ul li#gNavRecruit a img {
+	visibility: hidden;
+}
+
+/* # content
+---------------------------------------------------------------------------- */
+
+div#content div.contentArea {
+	padding: 4px 0 0 0;
+}
+
+div#content div.contentArea ol {
+	padding: 13px 0 0 0;
+}
+
+div#content div.contentArea ol li {
+	background: url(/wp/wp-content/themes/wpremix3/images/recruit/flow/img_arrow.gif) no-repeat left bottom;
+	clear: both;
+	margin-bottom: 8px;
+	padding: 0 0 63px 0;
+}
+
+div#content div.contentArea ol li p.image {
+	float: left;
+}
+
+div#content div.contentArea ol li div.flowContent {
+	float: left;
+	padding: 0 0 0 31px;
+	width: 507px;
+}
+
+div#content div.contentArea ol li div.flowContent h3 {
+	border-bottom: 1px solid #d5d5d5;
+	padding: 0 0 5px 0;
+}
+
+div#content div.contentArea ol li div.flowContent div {
+	padding: 4px 0 0 3px;
+}
+
+div#content div.contentArea ol li.application {
+    padding: 0 0 72px 5px;
+}
+
+div#content div.contentArea ol li.decision {
+	background: none;
+    padding: 0 0 0 38px;
+}
+
+div#content div.contentArea p.logo {
+	font-size: 80%;
+	font-weight: bold;
+	margin-left: -5px;
+	padding: 11px 0 0 0;
+	position: relative;
+	z-index: 1;
+}
+
+div#content div.contentArea p.logo img {
+	vertical-align: text-bottom;
+	padding: 0 9px 0 3px;
+}
+
+div#content div.contentArea p.logo a {
+	background: url(/wp/wp-content/themes/wpremix3/images/common/ico_link.gif) no-repeat right 3px;
+	color: #003399;
+	padding: 0 15px 0 0;
+}
+
+
+/* # clearfix
+---------------------------------------------------------------------------- */
+
+div#content div.contentArea ol li {
+	zoom: 1;
+}
+
+div#content div.contentArea ol li:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}

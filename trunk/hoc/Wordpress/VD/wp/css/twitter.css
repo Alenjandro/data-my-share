@@ -1,0 +1,151 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# content
+# footer
+# clearfix
+
+----------------------------------------*/
+
+
+/* # content
+---------------------------------------------------------------------------- */
+
+div#pageBody {
+	background: #d1e8f1 url(../images/twitter/bg_pagebody.gif) no-repeat left top;
+}
+
+div#content {
+	border: none;
+	margin: 0;
+	padding: 28px 0 0 0;
+	width: 822px;
+}
+
+div#content h2 {
+	padding:0 0 14px 15px;
+}
+
+div#content h3 {
+	padding:0 0 0 11px;
+}
+
+div#content div.sectionTwitter {
+	float: left;
+	display: inline;
+	width: 570px;
+}
+
+div#content div.sectionTwitter div.snoboy {
+	padding: 39px 0 0 24px;
+}
+
+div#content div.sectionTwitter div.snoboy p.snoboyImage {
+	float: left;
+	display: inline;
+}
+
+div#content div.sectionTwitter div.snoboy div {
+	float: left;
+	display: inline;
+	padding: 7px 0 0 24px;
+	width: 338px;
+}
+
+div#content div.sectionTwitter div.snoboy div h4 {
+	padding: 0 0 14px 0;
+}
+
+div#content div.sectionTwitter div.linkSection {
+	padding:23px 0 41px 44px;
+	clear: both;
+}
+
+div#content div.sectionTwitter div.linkSection p {
+	float: left;
+	display: inline;
+}
+
+div#content div.sectionTwitter div.linkSection p.linkText {
+	padding: 14px 11px 0 0;
+}
+
+div#content div.sectionTwitter p.fairyImg {
+	padding-left: 23px;
+}
+
+div#content div.snoboySection {
+	float: right;
+	margin: 6px 0 0 0;
+	width: 206px;
+}
+
+div#content div.snoboySection div.twtr-doc {
+	margin-bottom: 17px;
+}
+
+div#footer p.office {
+	background: url(../images/twitter/bg_office_arrow.gif) no-repeat 0 0;
+	margin: 58px auto 0;
+	padding: 9px 0 0 0;
+	height: 27px;
+	text-align: center;
+	width: 392px;
+}
+
+div.twtr-hd {
+	background: url(../images/twitter/bg_twitter_top.gif) no-repeat left top;
+	padding-top: 9px;
+}
+
+div.twtr-doc {
+	background: #83C9D4 url(../images/twitter/bg_twitter_bottom.gif) no-repeat left bottom;
+	padding-bottom: 7px;
+}
+
+div.twtr-reference-tweet {
+	background: url(../images/twitter/bg_content_top.gif) no-repeat -1px top!important;
+	padding-top: 5px;
+}
+
+div.twtr-tweets {
+	background: url(../images/twitter/bg_content_bottom.gif) no-repeat left bottom;
+	padding-bottom: 6px;
+}
+
+
+/* # footer
+---------------------------------------------------------------------------- */
+
+div#footer {
+	background: #d1e8f1;
+	padding: 58px 0 0 0;
+}
+
+div#footer p.office {
+	margin-top: 0;
+}
+
+
+/* # clearfix
+---------------------------------------------------------------------------- */
+
+div.section div.sectionInner,
+div#content div.sectionTwitter div.linkSection,
+div#content div.sectionTwitter div.snoboy {
+	zoom: 1;
+}
+
+
+div.section div.sectionInner:after,
+div#content div.sectionTwitter div.linkSection:after,
+div#content div.sectionTwitter div.snoboy:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}

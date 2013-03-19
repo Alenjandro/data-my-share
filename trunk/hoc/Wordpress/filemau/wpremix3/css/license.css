@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# gNav
+# content
+
+----------------------------------------*/
+
+
+/* # gNav
+---------------------------------------------------------------------------- */
+
+div#gNav dl dd ul li#gNavCompany a img {
+	visibility: hidden;
+}
+
+
+/* # content
+---------------------------------------------------------------------------- */
+
+div.section div.sectionInner div.contentArea ul.licenseList {
+	border-top: 1px solid #c3c3c3;
+	float: left;
+	padding: 7px 0 0 0;
+	width: 317px;
+}
+
+div.section div.sectionInner div.contentArea ul.licenseListRight {
+	float: right;
+	width: 317px;
+}
+
+div.section div.sectionInner div.contentArea ul.licenseList li {
+	border-bottom: 1px solid #c3c3c3;
+	margin-bottom: 7px;
+	padding: 0 0 4px 10px;
+	width: auto;
+}
+
+* html div.section div.sectionInner div.contentArea ul.licenseList li {
+	margin-bottom: 5px;
+	padding: 0 0 4px 10px;
+}
+
+*:first-child + html div.section div.sectionInner div.contentArea ul.licenseList li {
+	margin-bottom: 5px;
+	padding: 0 0 4px 10px;
+}
+
+div.section div.sectionInner div.contentArea ul.licenseList li p {
+	float: left;
+	display: inline;
+	padding: 0 0 0 0;
+	width: 240px;
+}
+
+div.section div.sectionInner div.contentArea ul.licenseList li p.nameText {
+	float: right;
+	display: inline;
+	padding: 0 10px 0 0;
+	text-align: right;
+	width: 56px;
+}
+
+
+/* # clearfix
+---------------------------------------------------------------------------- */
+
+div.section div.sectionInner div.contentArea,
+div.section div.sectionInner ul.licenseList li {
+	zoom: 1;
+}
+
+div.section div.sectionInner div.contentArea:after,
+div.section div.sectionInner ul.licenseList li:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}

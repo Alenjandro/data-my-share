@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# gNav
+# content
+
+----------------------------------------*/
+
+
+/* # gNav
+---------------------------------------------------------------------------- */
+div#gNav dl dd ul li#gNavCompany a img {
+	visibility: hidden;
+}
+
+/* # content
+---------------------------------------------------------------------------- */
+
+div#content table.styleTable td ul li {
+	padding: 0 0 4px 0;
+}
+
+div#content table.styleTable td p.access {
+	padding: 0 0 2px 6px;
+}
+
+div#content table.styleTable td dl dd {
+	padding: 0 0 11px 7px;
+}
+
+div#content table.styleTable td dl dd.last {
+	padding-bottom: 0;
+}

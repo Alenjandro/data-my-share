@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# gNav
+# content
+
+----------------------------------------*/
+
+
+/* # gNav
+---------------------------------------------------------------------------- */
+div#gNav dl dd ul li#gNavRecruit a img {
+	visibility: hidden;
+}
+
+/* # content
+---------------------------------------------------------------------------- */
+
+div#content div.contentArea {
+	padding: 4px 0 0 0;
+}
+
+div#content div.contentArea p.headText {
+	text-indent: 12px;
+	padding: 2px 0 28px 0;
+}

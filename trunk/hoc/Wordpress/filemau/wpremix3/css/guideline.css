@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# gNav
+# content
+
+----------------------------------------*/
+
+
+/* # gNav
+---------------------------------------------------------------------------- */
+div#gNav dl dd ul li#gNavRecruit a img {
+	visibility: hidden;
+}
+
+/* # content
+---------------------------------------------------------------------------- */
+
+div#content table.styleTable {
+	border-bottom: 1px solid #c3c3c3;
+	margin-bottom: 30px;
+	width: 100%;
+}
+
+div#content table.styleTable caption {
+	font-weight: bold;
+}
+
+div#content table.styleTable td dl {
+	padding: 23px 0 0 0;
+}
+
+div#content table.styleTable td ol li {
+	text-indent: -17px;
+	padding: 2px 0 0 5px;
+	width: auto;
+}
+
+div#content table.styleTable td p.logo {
+	font-size: 80%;
+	font-weight: bold;
+	padding: 0 0 3px 0;
+	margin-top: -3px;
+}
+
+div#content table.styleTable td p.logo img {
+	vertical-align: text-bottom;
+	padding: 0 9px 0 3px;
+}
+
+div#content table.styleTable td p.logo a {
+	background: url(/wp/wp-content/themes/wpremix3/images/common/ico_link.gif) no-repeat right 3px;
+	color: #003399;
+	padding: 0 10px 0 0;
+}
+
+div#content table.styleTable td dl dd {
+	padding: 2px 0 2px 24px;
+}
+
+div#content table.styleTable td dl dd.last {
+	padding-bottom: 0;
+}

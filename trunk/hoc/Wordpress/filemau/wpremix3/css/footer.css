@@ -1,0 +1,56 @@
+/* footer 1 -----------------------------------------------------------------------*/
+#footer1 {
+clear:both;
+overflow:hidden;
+height:100px;
+padding:10px 0;
+}
+#footer1 h2 {
+font:bold 12px Arial, Helvetica, sans-serif;
+margin:0;
+padding:5px 0 5px 0;
+}
+#footer1 .fblock	p {
+font-size:11px;
+text-align:justify;
+line-height:16px;
+margin:0
+}
+#footer1 .fblock {
+width:240px;
+overflow:hidden;
+height:100%;
+padding:0 10px
+}
+#footer1 p.email {
+text-decoration:none;
+line-height:inherit;
+margin:0;
+padding:0 0 3px 22px;
+background:url(../images/i_mail.png) no-repeat 0 3px;
+}
+#footer1 p.rss {
+text-decoration:none;
+margin:0 0 3px;
+padding:0 0 0 22px;
+background:url(../images/rss.png) no-repeat;
+}
+#footer1 .fblock_spacer {
+margin-left:30px
+}
+#footer1 .subscribefield {
+width:155px;
+margin-top:3px;
+float:left;
+padding:2px
+}
+#footer1 .subscribe_b {
+margin-top:3px;
+margin-left:3px;
+text-transform:lowercase;
+text-align:center;
+width:70px;
+float:left;
+cursor:pointer;
+height:22px;
+}

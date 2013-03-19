@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# content
+# sidebar
+
+----------------------------------------*/
+
+
+/* # content
+---------------------------------------------------------------------------- */
+
+div#content div.sectionInner h2 {
+	border-bottom: 1px solid #cecece;
+	font-weight: bold;
+	margin-bottom: 3px;
+	padding: 22px 0 3px 0;
+}
+
+
+/* # sidebar
+---------------------------------------------------------------------------- */
+
+div#sidebar ul.bannerList {
+	padding-top: 28px;
+}

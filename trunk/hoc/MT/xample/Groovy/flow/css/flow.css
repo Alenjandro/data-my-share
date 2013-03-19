@@ -1,0 +1,262 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# gNav
+# content
+# clearfix
+
+----------------------------------------*/
+
+
+
+/* # gNav
+---------------------------------------------------------------------------- */
+
+div#gNav dl dd ul li#gNavFlow a img {
+	visibility: hidden;
+}
+
+div#gNav dl dd ul li#gNavFlow a {
+	background: url(../../common/images/gnav_flow_s.gif) no-repeat 0 0;
+}
+
+
+/* # content
+---------------------------------------------------------------------------- */
+
+div#content div.section ol.sectionStep {
+	background: url(../images/bg_step_content.gif) repeat-y right top;
+	clear: both;
+	position: relative;
+}
+
+div#content div.section ol li.sectionStepFirst {
+	padding-top: 0!important;
+}
+
+div#content div.section ol li.sectionStepFirst div {
+	padding: 31px 0 0 0;
+}
+
+div#content div.section ol li {
+	background: url(../images/bg_step_dot.gif) no-repeat left bottom;
+	clear: both;
+	padding: 21px 0 43px 0;
+	position: relative;
+}
+
+div#content div.section ol li.sectionStepLast {
+	background: #fff;
+	padding: 21px 0 0 0;
+	position: relative;
+}
+
+div#content div.section ol li dl {
+	float: left;
+	margin-right: 10px;
+	width: 485px;
+}
+
+* html div#content div.section ol li dl {
+	margin-right: 7px;
+}
+
+div#content div.section ol li.sectionStep12 {
+	padding-bottom: 49px;
+	position: relative;
+}
+
+div#content div.section ol li.sectionStep19 {
+	position: relative;
+}
+
+div#content div.section ol li p.photo img {
+	border: 1px solid #e3e3e3;
+	margin-left: 10px;
+}
+
+div#content div.section ol li dl dd {
+	padding: 14px 0 0 66px;
+}
+
+div#content div.section ol li dl dd p {
+	padding-left: 1px;
+}
+
+div#content div.section ol li dl dd p.top {
+	position: absolute;
+	right: 0;
+	top: 1px;
+	z-index: 100;
+}
+
+* html div#content div.section ol li dl dd p.top {
+	right: -1px;
+}
+
+div#content div.section ol li dl dd p.arrow {
+	position: absolute;
+	right: 0;
+	top: 40%;
+	z-index: 100;
+}
+
+* html div#content div.section ol li dl dd p.arrow {
+	right: -1px;
+}
+
+div#content div.section ol li dl dd p.sectionArrow {
+	position: absolute;
+	right: 0;
+	top: 83.5%;
+	z-index: 100;
+}
+
+* html div#content div.section ol li dl dd p.sectionArrow {
+	right: -1px;
+}
+
+div#content div.section ol li.sectionStep12 dl dd p.sectionArrow12 {
+	position: absolute;
+	right: 0;
+	top: -36px;
+	z-index: 100;
+}
+
+* html div#content div.section ol li.sectionStep12 dl dd p.sectionArrow12 {
+	right: -1px;
+}
+
+div#content div.section ol li.sectionStep19 dl dd p.sectionArrow19 {
+	position: absolute;
+	right: 0;
+	top: -45px;
+	z-index: 100;
+}
+
+* html div#content div.section ol li.sectionStep19 dl dd p.sectionArrow19 {
+	right: -1px;
+}
+
+div#content div.section ol li dl dd p.jio {
+	position: absolute;
+	bottom: 38px;
+	right: 2px;
+	z-index: 100;
+}
+
+div#content div.section ol li dl dd p.contract {
+	position: absolute;
+	right: 33px;
+	top: -10px;
+	z-index: 100;
+}
+
+div#content div.section ol li dl dd div.customer {
+	background: url(../images/bg_dot.gif) repeat left top;
+	margin: 11px 0 0 0;
+	padding: 3px;
+}
+
+div#content div.section ol li dl dd div.customer div {
+	background: #f9ffe6;
+	padding: 10px 13px 8px 13px;
+}
+
+div#content div.section ol li dl dd div.customer div p {
+	padding-left: 0;
+}
+
+div#content div.section ol li dl dd div.customer div p.customerTitle {
+	margin-bottom: 4px; 
+}
+
+div#content div.section ol li div.memo {
+	border: 1px solid #e3e3e3;
+	font-size: 90%;
+	margin: 10px 0 0 0;
+	min-height: 58px;
+}
+
+div#content div.section ol li div.memo table tr td {
+	height: 58px;
+	vertical-align: middle;
+}
+
+div#content div.section ol li div.memo p.memoImage img {
+	float: left;
+	margin-right: 6px;
+	width: auto;
+}
+
+div#content div.section ol li div.memo div {
+	float: left;
+	width: 320px;
+}
+
+div#content div.section ol li div.memo ul {
+	background: none;
+}
+
+div#content div.section ol li div.memo ul li {
+	background: none;
+	clear: none;
+	float: left;
+	padding: 0;
+	width: 105px;
+}
+
+div#content div.section ol li div.memo p.event {
+	padding: 0 0 5px 0;
+	line-height: 1;
+}
+
+div#content div.section ol li div.memo p.event strong {
+	font-size: 120%;
+}
+
+div#content div.section ol li div.memo p.event img {
+	margin-right: 5px;
+	vertical-align: top;
+}
+
+div#content div.section ol li.sectionStepLast dl dd p.arrowLast {
+	position: absolute;
+	right: 0;
+	top: 0!important;
+}
+
+* html div#content div.section ol li.sectionStepLast dl dd p.arrowLast {
+	right: -1px;
+}
+
+div#content div.section ul.buttonList li {
+	float: left;
+	font-size: 0;
+	padding-bottom: 1px;
+	width: auto;
+}
+
+/* # clearfix
+---------------------------------------------------------------------------- */
+
+div#content div.section ul.buttonList,
+div#content div.section ol li,
+div#content div.section ol li div.memo,
+div#content div.section ol li div.memo ul {
+	zoom: 1;
+}
+
+div#content div.section ul.buttonList:after,
+div#content div.section ol li:after,
+div#content div.section ol li div.memo:after,
+div#content div.section ol li div.memo ul:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}

@@ -1,0 +1,207 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# content
+# clearfix
+
+----------------------------------------*/
+
+
+
+/* # content
+---------------------------------------------------------------------------- */
+
+p.leadText {
+	padding: 0 0 41px 0;
+}
+div#content div.section .exhibitionImage {
+	border-bottom: 4px solid #603c1e;
+	height: 596px;
+	position: relative;
+	width: 673px;
+}
+
+div#content div.section .exhibitionImage dl {
+	top: 356px;
+	left: 0;
+	position: absolute;
+	/*margin: -239px 0 0 0;*/
+}
+
+div#content div.section .exhibitionImage dl dt {
+	padding: 0 0 0 43px;
+}
+
+div#content div.section .exhibitionImage dl dt img {
+	padding: 15px 0 18px 0;
+	vertical-align: middle;
+}
+
+div#content div.section .exhibitionImage dl dt img.space {
+	padding: 0 0 0 25px!important;
+}
+
+div#content div.section .exhibitionImage dl dd {
+	color: #fff;
+	margin: -23px 0 0 0;
+	padding: 0 44px 36px 44px;
+	width: 585px;
+}
+
+* html div#content div.section .exhibitionImage dl dd {
+	margin: -24px 0 0 0;
+	padding: 0 44px 26px 44px;
+}
+
+div#content div.section div.sectionInner {
+	padding: 70px 0 0 0;
+}
+
+div#content div.section div.point {
+	margin: 0;
+	padding: 0;
+}
+
+div#content div.section div.sectionInner div.orderList {
+	float: left;
+	padding: 35px 0 0 0;
+	width: 337px;
+}
+
+div#content div.section div.sectionInner ol.textList li {
+	padding-bottom: 23px;
+}
+
+* html div#content div.section div.sectionInner ol.textList li {
+	padding-bottom: 21px;
+}
+
+*:first-child + html div#content div.section div.sectionInner ol.textList li {
+	padding-bottom: 21px;
+}
+
+div#content div.section div.sectionInner ol.textList li.last {
+	padding-bottom: 0;
+}
+
+div#content div.section div.sectionInner ol.textList li p {
+	float: left;
+	padding: 2px 0 0 0;
+	width: 270px;
+}
+
+div#content div.section div.sectionInner ol.textList li p.number {	
+	padding: 0 11px 0 0;
+	width: 30px;
+}
+
+* html div#content div.section div.sectionInner ol.textList li p.number {
+	padding-right: 8px;
+}
+
+div#content div.section div.sectionInner ol.textList li p.number img {
+	background: none;
+	padding-left: 0;
+	width: 30px;
+}
+
+div#content div.section div.sectionInner ol.imageList li {
+	float: left;
+	width: auto;
+}
+
+div#content div.section div.sectionInner .sectionLeft {
+	float: left;
+	padding-top: 0;
+	width: 350px;
+}
+
+div#content div.point h3 img {
+	padding-bottom: 21px;
+}
+
+div#content div.sectionInner h3 img {
+	position: static;
+}
+
+div#content div.section div.sectionInner .sectionLeft dl {
+	margin: 27px 0 0 0;
+}
+
+div#content div.section div.sectionInner .sectionLeft dl dt {
+	color: #b95443;
+}
+
+div#content div.section div.sectionInner .sectionLeft dl dt.system {
+	background: url(../../common/images/img_system.gif) no-repeat left center;
+	padding: 3px 0 0 23px;
+}
+
+div#content div.section div.sectionInner .sectionLeft dl dd {
+	background: url(../../common/images/bg_dash.gif) repeat-x left top;
+	margin: -2.1em 0 0.6em 0;
+	padding: 0.6em 0 0.6em 7.6em;
+}
+
+div#content div.section div.sectionInner .sectionLeft dl dd.last {
+	margin: -2.1em 0 0.1em 0;
+	padding: 0.6em 0 0.6em 7.6em;
+}
+
+div#content div.section div.sectionInner .sectionLeft dl dd p.text {
+	padding: 7px 0 0 0;
+}
+
+div#content div.section div.sectionInner .sectionRight {
+	float: right;
+	padding-top: 0;
+	width: 294px;
+}
+
+div#content div.section div.sectionInner p img {
+	width: 667px;
+}
+
+div#content div.section div.sectionInner p a:hover img {
+	background: url(../../common/images/bg_dot04.gif) repeat 0 0;
+}
+
+div#content div.section div.sectionBanner {
+	margin: 60px 0 0 0;
+	padding: 27px 0 0 0;
+}
+
+div#content div.section div.sectionBanner p img {
+	margin: 6px 0 0 0;
+}
+
+div#content div.section p.reservation {
+	background: url(../../common/images/bg_dash.gif) repeat-x left top;
+	clear: both;
+	margin: 47px 0 0 0;
+	padding: 31px 0 0 0;
+	text-align: center;
+}
+
+
+/* # clearfix
+---------------------------------------------------------------------------- */
+
+div#content div.section div.sectionInner .sectionLeft dl dd,
+div#content div.section div.sectionInner,
+div#content div.section div.sectionInner ol.textList li {
+	zoom: 1;
+}
+
+div#content div.section div.sectionInner .sectionLeft dl dd:after,
+div#content div.section div.sectionInner:after,
+div#content div.section div.sectionInner ol.textList li:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}

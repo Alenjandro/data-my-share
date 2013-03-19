@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# content
+# gNav
+# sidebar
+
+----------------------------------------*/
+
+/* # gNav
+---------------------------------------------------------------------------- */
+
+div#gNav dl dd ul li#gNavCompany a img {
+	visibility: hidden;
+}
+
+
+/* # content
+---------------------------------------------------------------------------- */
+
+div#content p.chart {
+	margin-left: -3px;
+	padding: 16px 0 0 0;
+	position: relative;
+	z-index: 100;
+}
+
+
+/* # sidebar
+---------------------------------------------------------------------------- */
+
+div#lNav ul li#chart a {
+	background: url(../company/images/lnav_chart_o.gif) no-repeat left top; 
+	display: block;
+}
+
+div#lNav ul li#chart a img {
+	visibility: hidden;
+}

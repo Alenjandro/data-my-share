@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# content
+# clearfix
+
+----------------------------------------*/
+
+
+/* # content
+---------------------------------------------------------------------------- */
+
+div#content {
+	border: none;
+	margin: 0;
+	padding: 34px 0 0 0;
+	width: 822px;
+}
+
+* html div#content {
+	padding-left: 9px;
+}
+
+div#content div.section {
+	clear: both;
+	padding-bottom: 14px;
+}
+
+div#content div.section ul.character {
+	padding-top: 14px;
+	width: 831px;
+}
+
+div#content div.section ul.character li {
+	display: inline;
+	float: left;
+	width: auto;
+}
+
+div#content div.section ul.character li p {
+	margin-bottom: 7px;
+}
+
+
+
+
+/* # clearfix
+---------------------------------------------------------------------------- */
+
+div#content div.section ul.character {
+	zoom: 1;
+}
+
+div#content div.section ul.character:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}

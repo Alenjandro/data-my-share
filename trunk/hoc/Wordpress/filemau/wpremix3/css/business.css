@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# gNav
+# content
+
+----------------------------------------*/
+
+
+/* # gNav
+---------------------------------------------------------------------------- */
+
+div#gNav dl dd ul li#gNavProject a img {
+	visibility: hidden;
+}
+
+div.content p.cateText {
+	min-height: 48px;
+}
+
+* html div.content p.cateText {
+	\height: 48px;
+}
+
+div.content p.cateText02 {
+	min-height: 65px;
+}
+
+* html div.content p.cateText02 {
+	height: 65px;
+}
+
+div#flashOject {
+	height: 243px;
+	position: relative;
+}
+
+div#flashOject #businessFlash {
+	position: relative;
+	z-index: 100;
+}
+
+div#flashOject p.businessImg {
+	left: 0;
+	position: absolute;
+	top: 0;
+}
+
+div#flashOject p.adobe {
+	right: 80px;
+	position: absolute;
+	top: 186px;
+	z-index: 50;
+}

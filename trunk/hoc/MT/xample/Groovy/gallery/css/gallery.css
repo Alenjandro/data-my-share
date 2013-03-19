@@ -1,0 +1,424 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# General Elements
+# gNav
+# content
+# clearfix
+# common classes
+
+----------------------------------------*/
+
+
+/* # General Elements
+---------------------------------------------------------------------------- */
+
+
+
+/* # gNav
+---------------------------------------------------------------------------- */
+
+div#gNav dl dd ul li#gNavGallery a img {
+	visibility: hidden;
+}
+
+div#gNav dl dd ul li#gNavGallery a {
+	background: url(../../common/images/gnav_gallery_s.gif) no-repeat 0 0;
+}
+
+
+/* # content
+---------------------------------------------------------------------------- */
+
+div.gallery {
+	clear: both;
+	margin: 58px auto 0 auto;
+	padding: 0 0 0 0;
+	position: relative;
+}
+
+div.gallery ul {
+	margin-right: -30px;
+}
+
+* htm ldiv.gallery ul li ul {
+	margin-right: -60px;
+	width: 703px;
+}
+
+div.gallery ul li ul li {
+	float: left;
+	margin: 0 30px 26px 0;
+	position: relative;
+	width: 204px;
+}
+
+div.gallery ul li p a img {
+	background: url(../../common/images/bg_dot01.gif) repeat 0 0;
+	padding: 3px;
+	margin: 0 0 6px 0;
+}
+
+div.gallery ul li p a:hover img {
+	background: url(../../common/images/bg_dot04.gif) repeat 0 0;
+}
+
+div.gallery ul li dl dt {
+	background: url(../../common/images/ico_arrow01.gif) no-repeat left 1px;
+	font-weight: bold;
+	position: relative;
+	padding-left: 17px;
+	line-height: 1.25;
+}
+
+*:first-child + html div.gallery ul li dl dt {
+	background: url(../../common/images/ico_arrow01.gif) no-repeat left 2px;
+}
+
+div.gallery ul li dl dt a {
+	color: #292929;
+}
+
+div.gallery ul li dl dt span {
+	color: #8e8e8e;
+	font-weight: normal;
+	font-size: 90%;
+}
+
+div.gallery ul li dl dt span.new img {
+	position: absolute;
+	right: 0;
+	top: 1px;
+}
+
+div.gallery ul li dl dd {
+	padding: 0 0 0 2px;
+}
+
+div.section h3.sHead {
+	background: url(../../common/images/ico_sh.gif) no-repeat left center;
+	color: #56442e;
+	font-size: 140%;
+	font-weight: bold;
+	margin-bottom: 9px;
+	padding-left: 24px;
+}
+
+div.detailBlock {
+	clear: both;
+	margin-top: -7px!important;
+	padding: 0!important;
+}
+
+div.detailBlock dl.comment {
+	float: left;
+	width: 410px;
+}
+
+div.detailBlock dl dt {
+	padding-bottom: 13px;
+	line-height: 1;
+}
+
+div.detailBlock dl.info {
+	float: right;
+	width: 228px;
+}
+
+div.detailBlock dl.info ul.listButton li {
+	background: none;
+	float: left;
+	font-size: 0;
+	padding: 0;
+	line-height: 1;
+	width: auto;
+}
+
+div.detailBlock dl.info ul.listButton {
+	padding: 0;
+}
+
+div.detailBlock dl.info ul.listButton li#full {
+	padding: 0 4px 0 0;
+}
+
+
+div.detailBlock dl.info ul.listButton li#full {
+	background: url(../images/btn_full.gif) no-repeat left top;
+}
+
+div.detailBlock dl.info ul.listButton li#semi {
+	background: url(../images/btn_semi.gif) no-repeat left top;
+}
+
+div.detailBlock dl.info ul.listButton li.active img {
+	visibility: hidden;
+}
+
+div.detailBlock dl.info ul {
+	padding: 10px 0 0 0;
+}
+
+div.detailBlock dl.info ul li {
+	background: url(../../common/images/bg_dot05.gif) repeat-x left bottom;
+	padding: 7px 0 5px 0;
+}
+
+div.detailBlock dl.info ul li.lastList {
+	background: none;
+}
+
+.pageLink {
+	padding: 0 0 16px 0;
+}
+
+div.galleryDetail {
+	background: #292929;
+}
+
+div.galleryDetail ul li {
+	float: left;
+	width: auto;
+}
+
+div.galleryDetail ul li a img {
+	background: url(../images/bg_datail.gif) no-repeat left top;
+}
+
+div.galleryDetail ul li img {
+	background: url(../images/bg_datail.gif) repeat left top;
+	padding: 3px; 
+}
+
+
+/* # gallery slide show
+---------------------------------------------------------------------------- */
+
+.ad-gallery {
+	width: 673px;
+}
+
+.ad-gallery, .ad-gallery * {
+	margin: 0;
+	padding: 0;
+}
+
+.ad-gallery .ad-image-wrapper {
+	background: #292929;
+	height: 475px;
+	text-align: center;
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+
+.ad-gallery .ad-image-wrapper .ad-loader {
+	border: 1px solid #CCC;
+	left: 48%;
+	top: 48%;
+	position: absolute;
+	z-index: 10;
+}
+
+.ad-gallery .ad-image-wrapper .ad-next {
+	cursor: pointer;
+	display: block;
+	height: 100%;
+	right: 0;
+	top: 2px;
+	position: absolute;
+	width: 25%;
+	z-index: 100;
+}
+
+.ad-gallery .ad-image-wrapper .ad-prev {
+	cursor: pointer;
+	display: block;
+	left: 0;
+	top: 2px;
+	height: 100%;
+	position: absolute;
+	width: 25%;
+	z-index: 100;
+}
+.ad-gallery .ad-image-wrapper .ad-prev,
+.ad-gallery .ad-image-wrapper .ad-next {
+	background: url(non-existing.jpg);
+}
+
+.ad-gallery .ad-image-wrapper .ad-prev .ad-prev-image,
+.ad-gallery .ad-image-wrapper .ad-next .ad-next-image {
+	background: url(../images/img_prev_large.gif);
+	height: 39px;
+	display: none;
+	left: 0;
+	top: 47%;
+	position: absolute;
+	width: 40px;
+	z-index: 101;
+}
+
+.ad-gallery .ad-image-wrapper .ad-next .ad-next-image {
+	background: url(../images/img_next_large.gif);
+	left: auto;
+	height: 39px;
+	right: 0;
+	width: 40px;
+}
+
+.ad-image {
+	padding-bottom: 50px;
+	width: auto!important;
+}
+
+.ad-gallery .ad-image-wrapper .ad-image .ad-image-description {
+	background: #000;
+	color: #fff;
+	text-align: left;
+	padding: 8px 7px 11px 28px;
+	position: relative;
+	width: 638px!important;
+	opacity: 1;
+}
+
+.ad-gallery .ad-image-wrapper .ad-image .ad-image-description .ad-description-title {
+	display: block;
+}
+
+.ad-gallery .ad-nav {
+	position: relative;
+	width: 100%;
+}
+
+.ad-gallery .ad-forward, .ad-gallery .ad-back {
+	height: 100%;
+	top: 0;
+	position: absolute;
+	z-index: 10;
+}
+
+* html .ad-gallery .ad-forward,
+.ad-gallery .ad-back {
+	height: 100px;
+}
+
+.ad-gallery .ad-back {
+	background: url(../images/bg_prev_small.gif) no-repeat 0px 37px;
+	cursor: pointer;
+	display: block;
+	left: 11px;
+	width: 13px;
+}
+
+.ad-gallery .ad-forward {
+	background: url(../images/bg_next_small.gif) no-repeat 0px 37px;
+	cursor: pointer;
+	display: block;
+	right: 5px;
+	width: 13px;
+}
+
+.ad-gallery .ad-nav  {
+	background: url(../images/bg_gallery_content.gif) repeat-x left top;
+	padding: 14px 28px 15px 29px;
+	width: 616px;
+}
+
+.ad-gallery .ad-nav .ad-thumbs {
+	width: 616px;
+	overflow: hidden;
+}
+
+.ad-gallery .ad-thumbs .ad-thumb-list {
+	float: left;
+	width: 9000px;
+}
+
+.ad-gallery .ad-thumbs li {
+	float: left;
+	padding-right: 10px;
+	width: auto;
+}
+
+.ad-gallery .ad-thumbs li a {
+	display: block;
+	text-align: center;
+	width: 88px;
+}
+
+.ad-gallery .ad-thumbs li a {
+	background: url(../images/bg_gallary.gif) repeat left top;
+	display: block;
+	padding: 3px;
+}
+
+.ad-gallery .ad-thumbs li a.ad-active {
+	background: url(../images/bg_gallary_o.gif) repeat left top;
+}
+
+.ad-preloads {
+	left: -9000px;
+	top: -9000px;
+	position: absolute;
+}
+
+ul.ad-thumb-list li a:hover {
+	background: url(../images/bg_gallary_o.gif) repeat left top;
+}
+
+#descriptions {
+	background: #000;
+    position: relative;
+	left: 0;
+    height: 27px;
+    width: 640px;
+    padding: 8px 0 0 18px;
+	overflow: hidden;
+	top: -126px;
+	z-index: 500;
+	width: auto!important;
+}
+
+#descriptions .ad-image-description {
+	background: #000;
+	color: #fff;
+	height: 35px!important;
+	position: absolute;
+	width: 95%;
+}
+
+#descriptions .ad-image-description .ad-description-title {
+	display: block;
+}
+
+
+/* # clearfix
+---------------------------------------------------------------------------- */
+
+div#gallery,
+div#content div.gallery ul,
+div.detailBlock,
+div.detailBlock dl.info ul.listButton,
+div.galleryDetail  {
+	zoom: 1;
+}
+
+div#gallery:after,
+div#content div.gallery ul:after,
+div.detailBlock:after,
+div.detailBlock dl.info ul.listButton:after,
+div.galleryDetail:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}
+
+
+/* # common classes
+---------------------------------------------------------------------------- */
+

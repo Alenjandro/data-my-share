@@ -1,0 +1,213 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# General Elements
+# gNav
+# pageBody
+# content
+# sidebar
+# clearfix
+# common classes
+
+----------------------------------------*/
+
+
+/* # General Elements
+---------------------------------------------------------------------------- */
+
+div#gNav dl dd ul li#gNavVoice a img {
+	visibility: hidden;
+}
+
+div#gNav dl dd ul li#gNavVoice  a {
+	background: url(../../common/images/gnav_voice_s.gif) no-repeat 0 0;
+}
+
+
+/* # content
+---------------------------------------------------------------------------- */
+
+div#content p.visual {
+	height: 500px;
+	width: 673px;
+}
+
+div#content p.visual img.gallery {
+	position: absolute;
+	bottom: 7px;	
+	right: 53px;
+}
+
+div#content ul.voiceContent {
+	clear: both;
+	padding: 25px 0 40px 0;
+	width: 709px;
+}
+
+div#content ul.voiceContent li ul li {
+	float: left;
+	padding: 15px 30px 0 0;
+	width: 204px;
+}
+
+div#content ul.voiceContent li ul {
+	clear: both;
+}
+
+div#content ul.voiceContent li ul li.last {
+	padding-right: 0;
+}
+
+div#content ul.voiceContent li a {
+	color: #000;
+}
+
+div#content ul.voiceContent li.voiceLast {
+	padding-right: 0;
+}
+
+div#content ul.voiceContent li p {
+	padding: 0 0 4px 0;
+}
+
+div#content ul.voiceContent li p a img {
+	background: url(../../common/images/bg_dot01.gif) repeat left top;
+	padding: 3px;
+}
+
+div#content ul.voiceContent li p a:hover img {
+	background: url(../../common/images/bg_dot04.gif) repeat left top;
+}
+
+div#content ul.voiceContent li p.voiceText {
+	position: relative;
+	font-size: 80%;
+	color: #7f7f7f;
+	padding: 0 0 0 40px;
+}
+
+div#content ul.voiceContent li p.voiceText img {
+	background: none;
+	padding: 0;
+	top: 0;
+	left: 0;
+	padding: 0 20px 0 0;
+	position: absolute;
+}
+
+div#content ul.voiceContent li p.voiceText strong {
+	color: #000;
+	font-size: 120%;
+	display: block;
+}
+
+div#content ul.voiceContent li p.voiceText span {
+	padding: 0 0 0 11px;
+}
+
+div.voiceDetail {
+	padding: 23px 0 10px 0;
+}
+
+div.voiceDetail p.detailImage {
+	float: right;
+	margin-top: -54px;
+	padding: 7px 0 10px 20px;
+}
+
+div.voiceDetail p.entryBody img {
+	background: url(../../common/images/bg_dot01.gif) repeat left top;
+	padding: 3px;
+}
+
+div.voiceDetail p.title {
+	color: #b25d90;
+	font-weight: bold;
+	padding: 0 0 8px 0;
+}
+
+div.voiceDetail p.title strong {
+	display: block;
+	font-size: 140%;
+}
+
+div#content div.contruction {
+	background: url(../../common/images/bg_dot01.gif) repeat left top;
+	margin: 28px 0 -3px 0;
+	padding: 3px;
+}
+
+div#content div.contruction dl {
+	background: #fff;
+	padding: 10px 27px 10px 196px;
+	min-height: 86px;
+	position: relative;
+}
+
+* html div#content div.contruction dl {
+	height: 86px;
+}
+
+div#content div.contruction dl dt {
+	background: url(../../common/images/bg_dash.gif) repeat-x left bottom;
+	padding: 11px 0 12px 0;
+}
+
+div#content div.contruction dd {
+	padding: 9px 0 9px 0;
+}
+
+div#content div.contruction dl p.constructionImage {
+	position: absolute;
+	left: 7px;
+	top:7px;
+}
+
+ul.linkVoice li {
+	width: 300px;
+}
+
+ul.linkVoice li span {
+	background: url(../images/bg_line.gif) no-repeat left top;
+	font-size: 80%;
+	color: #7f7f7f;
+	font-weight: normal;
+	margin: 0 0 0 8px;
+	padding: 0 0 0 9px;
+}
+
+.pageLink {
+	padding: 0 0 16px 0;
+}
+
+.link {
+	padding-bottom: 7px;
+}
+
+
+/* # clearfix
+---------------------------------------------------------------------------- */
+
+div#content ul.voiceContent,
+div#content ul.voiceContent li p.voiceText,
+div#content div.contruction dl {
+	zoom: 1;
+}
+
+div#content ul.voiceContent:after,
+div#content ul.voiceContent li p.voiceText:after,
+div#content div.contruction dl:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}
+
+
+/* # common classes
+---------------------------------------------------------------------------- */
+

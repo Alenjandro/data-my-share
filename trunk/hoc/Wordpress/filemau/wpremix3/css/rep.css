@@ -1,0 +1,95 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# content
+# clearfix
+
+----------------------------------------*/
+
+
+/* # gNav
+---------------------------------------------------------------------------- */
+
+div#gNav dl dd ul li#gNavRecruit a img {
+	visibility: hidden;
+}
+
+
+/* # content
+---------------------------------------------------------------------------- */
+
+div.contentArea div.resourcesRight {
+	float: right;
+	display: inline;
+	padding: 61px 1px 0 0;
+	width: 237px;
+}
+
+div.contentArea div.resourcesRight p.photoImage {
+	border: 1px solid #ccc;
+	padding: 1px 1px;
+}
+
+div.contentArea div.resourcesRight p {
+	padding: 6px 0 0 0;
+	text-align: right;
+}
+
+div.contentArea div.resourcesLeft {
+	float: left;
+	display: inline;
+	width: 416px;
+}
+
+div.contentArea div.resourcesLeft div h3 {
+	padding: 0 0 20px 0;
+}
+
+div.contentArea div.resourcesLeft dl.portrait {
+	background: url(/wp/wp-content/themes/wpremix3/images/recruit/rep/bg_portrait.gif) no-repeat left top;
+	height: 114px;
+	margin: 16px 0 3px 0;
+	padding: 13px 12px 13px 16px;
+}
+
+* html div.contentArea div.resourcesLeft dl.portrait {
+	margin: 16px 0 1px 0;
+	padding: 13px 12px 2px 16px;
+}
+
+*:first-child + html div.contentArea div.resourcesLeft dl.portrait {
+	margin: 16px 0 1px 0;
+}
+
+div.contentArea div.resourcesLeft dl.portrait dt {
+	font-size: 0;
+	padding: 0 0 12px 0;
+}
+
+div.contentArea div.resourcesLeft dl.portrait dd ul {
+	padding: 0 0 0 4px;
+}
+
+div.contentArea div.resourcesLeft dl.portrait dd ul li {
+	font-size: 0;
+	padding: 0 0 12px 0;
+}
+
+
+/* # clearfix
+---------------------------------------------------------------------------- */
+
+div.contentArea {
+	zoom: 1;
+}
+
+div.contentArea:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}
