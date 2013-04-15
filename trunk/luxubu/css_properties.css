@@ -1,0 +1,292 @@
+@charset "utf-8";
+
+/* ****************************************************************** 
+
+	CB-STANDARD CSS Properties v1.0.0
+
+	CB-STANDARDにおけるCSSプロパティの記述順序規則です。
+	
+	大きく分けて、
+	1. ボックスモデルの配置や表示に関わる「視覚整形モデル」
+	2. 「ボックスモデル」
+	3. 「コンテンツ内容」
+	という順番で記述していきます。
+	
+	-- 主要プロパティの記述順序 --
+	
+	display
+	position
+	z-index
+	float
+	overflow
+	width
+	height
+	margin
+	padding
+	border
+	background
+	color
+	font
+	line-height
+	vertical-align
+	text-align
+	
+	細かいプロパティに関してはあくまで「推奨」ですが、
+	上記に挙がっている主要プロパティの記述順に関しては
+	コーディングルール上「必須」とします。
+	
+	ここに記載されていないプロパティに関しては、上記の法則に則り適宜追加してください。
+	
+	
+	最終更新日 2013/1/16
+
+	【参考】
+	mozilla.org Base Styles
+	http://www.mozilla.org/css/base/content.css
+
+****************************************************************** */
+
+body {
+/*==================================================================
+	0. ベンダープレフィックス
+===================================================================*/
+	1. -webkit-xxxxxx /* Safari Chrome用 */
+	2. -moz-xxxxxx /* Firefox用 */
+	3. -o-xxxxxx /* Opera用 */
+	4. -ms-xxxxxx /* IE用 */
+	5. xxxxxx /* 本来のプロパティを最後に書く */
+
+/* ------------------------------------------------------------------
+	【補足】 ベンダープレフィックスが必要かどうかは、下記サイトで調べることができます。
+	http://caniuse.com/
+-------------------------------------------------------------------*/
+
+/*==================================================================
+	1. 表示や配置など「視覚整形モデル」に関するプロパティ
+===================================================================*/
+	display
+
+	position
+		1. top
+		2. right
+		3. bottom
+		4. left
+
+	z-index
+	float
+	clear
+	
+	overflow
+		overflow-x
+		overflow-y
+		overflow-style
+
+	visibility
+	clip
+
+/* ------------------------------------------------------------------
+	1-1. 変形・時間的変化・アニメーション
+-------------------------------------------------------------------*/
+	transform
+		1. transform-origin
+		2. transform-style
+		
+	transition
+		1. transition-property
+		2. transition-duration
+		3. transition-timing-function
+		4. transition-delay
+
+	animation
+		1. animation-name
+		2. animation-duration
+		3. animation-timing-function
+		4. animation-iteration-count
+		5. animation-direction
+		6. animation-play-state
+		7. animation-delay
+
+/*==================================================================
+	2. ボックスモデルに関するプロパティ
+===================================================================*/
+	opacity
+
+	box-sizing /* box-sizingはボックスモデルの数値指定に大きな影響を及ぼすため、原則サイト毎にまとめて適用する */
+
+	box-shadow
+	box-flex
+	box-flex-group
+	box-orient
+	box-direction
+	box-ordinal-group
+	box-align
+	box-pack
+	box-lines
+
+	columns
+		1. column-width
+		2. column-count
+		3. column-gap
+		4. column-rule
+		5. column-rule-color
+		6. column-rule-style
+		7. column-rule-width
+		8. break-after
+		9. break-before
+		10. break-inside
+		11. column-span
+		12. column-fill
+
+	width
+		1. min-width
+		2. max-width
+
+	height
+		1. min-height
+		2. max-height
+
+	margin
+		1. margin-top
+		2. margin-right
+		3. margin-bottom
+		4. margin-left
+
+	padding
+		1. padding-top
+		2. padding-right
+		3. padding-bottom
+		4. padding-left
+
+	border:1px solid #333;/* width style color */
+		1. border-top
+		2. border-right
+		3. border-bottom
+		4. border-left
+		5. border-width
+		6. border-top-width
+		7. border-right-width
+		8. border-bottom-width
+		9. border-left-width
+		10. border-style
+		11. border-top-style
+		12. border-right-style
+		13. border-bottom-style
+		14. border-left-style
+		15. border-color
+		16. border-top-color
+		17. border-right-color
+		18. border-bottom-color
+		19. border-left-color
+		
+	border-radius
+		1. border-top-left-radius
+		2. border-top-right-radius
+		3. border-bottom-left-radius
+		4. border-bottom-right-radius
+
+
+/*==================================================================
+	3. 背景と前景に関するプロパティ
+===================================================================*/
+	background:#333 url(img/common/xxx.png) repeat 80px 30%;/* 省略可能な箇所は省略する */
+		1. background-color
+		2. background-image
+		3. background-repeat
+		4. background-position
+		5. background-attachment
+		6. background-size
+		7. background-clip
+		8. background-origin
+
+/* ------------------------------------------------------------------
+	3-1. グラデーション（使用の際はフォールバック用の記述も書いておく）
+-------------------------------------------------------------------*/
+
+	background:#FFF;/* フォールバック */
+	background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0, #FFF), color-stop(1, #E6E6E6));/* Safari 4-5, Chrome 1-9, Android 1.6-3.0 */
+	background-image:-webkit-linear-gradient(top, #FFF, #E6E6E6);/* Safari 5.1+, iOS Safari 5.1+, Chrome 10+ */
+	background-image:-moz-linear-gradient(top, #FFF, #E6E6E6);/* Firefox 3.6+ */
+	background-image:-o-linear-gradient(top, #FFF, #E6E6E6);/* Opera 11.10+ */
+	-pie-background:linear-gradient(top, #FFF, #E6E6E6);/* IE 6-9 */
+	background-image:-ms-linear-gradient(top, #FFF, #E6E6E6);/* IE 10+ */
+	background: linear-gradient(to bottom, #FFF, #E6E6E6);
+
+
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#FFFFFFFF', endColorstr='#FFEEEEEE'); 
+	/* 旧IE向け。PIEよりも描画速度が速い。角丸と併用はできない
+
+/*	【補足】SVGを用いてグラデーション表現も可能です。「SVG Gradient Background Maker」を使用。
+	http://ie.microsoft.com/testdrive/Graphics/SVGGradientBackgroundMaker/Default.html
+-------------------------------------------------------------------*/
+
+/*==================================================================
+	4. フォントとテキストに関するプロパティ
+===================================================================*/
+	color:#F00; /* 16進数の値は原則大文字で統一 */
+	
+	font:13px/1.231 Verdana, Arial, sans-serif;/* fontの省略はline-heightを含む為、任意とする */
+		1. font-size
+		2. font-family
+		3. font-style
+		4. font-weight
+		5. font-variant
+		6. font-stretch
+		7. font-size-adjust
+	line-height
+	
+	vertical-align
+	text-align
+	text-indent
+	text-decoration
+	text-shadow
+	text-transform
+	text-wrap
+	text-justify
+	text-overflow
+
+	letter-spacing
+	word-spacing
+	word-break
+	word-wrap
+	white-space
+
+	list-style
+		1. list-style-type
+		2. list-style-image
+		3. list-style-position
+
+/*==================================================================
+	5. 表に関するプロパティ
+===================================================================*/
+	caption-side
+	table-layout
+	border-collapse
+	border-spacing
+	empty-cells
+
+/*==================================================================
+	6. 生成内容に関するプロパティ
+===================================================================*/
+	content
+	counter-increment
+	counter-reset
+	quotes
+
+/*==================================================================
+	7. インターフェースに関するプロパティ
+===================================================================*/
+	outline
+		1. outline-width
+		2. outline-style
+		3. outline-color
+		4. outline-offset
+	cursor
+	resize
+	appearance
+
+/*==================================================================
+	8. その他
+===================================================================*/
+	zoom
+	behavior /* IE対策として外部スクリプトの読み込みに使用 */
+}
